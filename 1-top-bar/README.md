@@ -1,10 +1,10 @@
 # Top Bar — HML5 & CSS3 Snippet
 
-This snippet is implemented with [Sass](https://github.com/nex3/sass), with help from [Bourbon](https://github.com/thoughtbot/bourbon).
-
 **Demo**: [demo.webinterfacelab.com/1-top-bar](http://demo.webinterfacelab.com/1-top-bar/)
 
 ![Preview](http://www.webinterfacelab.com/snippets/top-bar/preview.png)
+
+This snippet is implemented with [Sass](https://github.com/nex3/sass), with help from [Bourbon](https://github.com/thoughtbot/bourbon).
 
 To compile:
 
@@ -14,7 +14,7 @@ To compile and watch:
 
 `sass --watch scss:css -r ../bourbon/lib/bourbon.rb`
 
-## Tested
+## Browser Compatibility
 
 * Firefox 4-9
 * Safari 4-5
@@ -28,7 +28,7 @@ Coded by [Thibaut Courouble](http://github.com/Thibaut).
 
 PSD Source by [Premium Pixels](http://www.premiumpixels.com/freebies/sticky-admin-bar-psd/).
 
-For more snippets visit us at [WebInterfaceLab.com](http://www.webinterfacelab.com) or follow us on Twitter [@WebInterfaceLab](http://twitter.com/WebInterfaceLab).
+For more snippets visit [WebInterfaceLab.com](http://www.webinterfacelab.com) or follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab).
 
 ## License
 
