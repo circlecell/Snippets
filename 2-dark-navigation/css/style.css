@@ -1,0 +1,119 @@
+body {
+  background: #ecedef;
+  color: #404040;
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px; }
+
+.container {
+  width: 540px;
+  margin-left: auto;
+  margin-right: auto; }
+
+header {
+  background: #3d4144 url("../img/bg.png") 0 0 repeat;
+  border-bottom: 5px solid #ddd;
+  padding-top: 100px; }
+
+nav {
+  height: 36px;
+  border-top: 1px solid #353939;
+  border-bottom: 1px solid #2e3131;
+  background: #464b4c;
+  background-color: #464b4c;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #464b4c), color-stop(100%, #3f4344));
+  background-image: -webkit-linear-gradient(top, #464b4c, #3f4344);
+  background-image: -moz-linear-gradient(top, #464b4c, #3f4344);
+  background-image: -ms-linear-gradient(top, #464b4c, #3f4344);
+  background-image: -o-linear-gradient(top, #464b4c, #3f4344);
+  background-image: linear-gradient(top, #464b4c, #3f4344);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06); }
+  nav a {
+    -webkit-transition-property: background-color, line-height;
+    -moz-transition-property: background-color, line-height;
+    -ms-transition-property: background-color, line-height;
+    -o-transition-property: background-color, line-height;
+    transition-property: background-color, line-height;
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    -ms-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
+  nav ul {
+    float: left;
+    padding: 0;
+    border-left: 1px solid #353939;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid #4d5354;
+    border-right: 1px solid rgba(255, 255, 255, 0.06); }
+  nav li {
+    float: left; }
+  nav a {
+    display: block;
+    padding: 0 20px;
+    line-height: 36px;
+    color: #ddd;
+    text-shadow: 0 -1px 0 #2e3131;
+    border-left: 1px solid #4d5354;
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+    border-right: 1px solid #353939;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    cursor: pointer; }
+    nav a:hover {
+      background: #4d5354;
+      background: rgba(255, 255, 255, 0.05); }
+  nav li.active a, nav li.active a:hover, nav a:active {
+    border-left: 0;
+    border-right: 0;
+    padding: 0 21px;
+    line-height: 33px;
+    border-bottom: 3px solid #48a9c0;
+    color: #eee;
+    background-color: #484e4f;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #484e4f), color-stop(100%, #323637));
+    background-image: -webkit-linear-gradient(top, #484e4f, #323637);
+    background-image: -moz-linear-gradient(top, #484e4f, #323637);
+    background-image: -ms-linear-gradient(top, #484e4f, #323637);
+    background-image: -o-linear-gradient(top, #484e4f, #323637);
+    background-image: linear-gradient(top, #484e4f, #323637);
+    background-color: #3c4141;
+    -webkit-box-shadow: inset 0 -1px 0 #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 -1px 0 #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: inset 0 -1px 0 #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: inset 0 -1px 0 #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -1px 0 #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2); }
+  nav li.green a, nav li.green a:active {
+    border-bottom-color: #56c93d; }
+  nav li.red a, nav li.red a:active {
+    border-bottom-color: #a54e49; }
+  nav li.purple a, nav li.purple a:active {
+    border-bottom-color: #c052b9; }
+  nav li.yellow a, nav li.yellow a:active {
+    border-bottom-color: #c0bb30; }
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+  color: #bbb;
+  text-shadow: 0 1px 0 #fff; }
+  .about a {
+    color: #1e7ad3;
+    text-decoration: none; }
+    .about a:hover {
+      border-bottom: 1px solid #1e7ad3; }
