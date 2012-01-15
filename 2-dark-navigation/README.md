@@ -2,6 +2,8 @@
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass), with help from [Bourbon](https://github.com/thoughtbot/bourbon).
 
+**Demo**: [demo.webinterfacelab.com/2-dark-navigation](http://demo.webinterfacelab.com/2-dark-navigation/)
+
 ![Preview](http://www.webinterfacelab.com/snippets/dark-navigation/preview.png)
 
 To compile:

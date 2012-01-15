@@ -2,6 +2,8 @@
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass), with help from [Bourbon](https://github.com/thoughtbot/bourbon).
 
+**Demo**: [demo.webinterfacelab.com/1-top-bar](http://demo.webinterfacelab.com/1-top-bar/)
+
 ![Preview](http://www.webinterfacelab.com/snippets/top-bar/preview.png)
 
 To compile:
