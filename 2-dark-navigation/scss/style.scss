@@ -30,7 +30,6 @@ nav {
   height: $navHeight;
   border-top: 1px solid darken($navBackgroundColor, 7%);
   border-bottom: 1px solid darken($navBackgroundColor, 10%);
-  background: $navBackgroundColor;
   @include linear-gradient(top, $navBackgroundColor, darken($navBackgroundColor, 3%));
   @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, .06));
   
@@ -73,8 +72,7 @@ nav {
     line-height: $navHeight - 3px;
     border-bottom: 3px solid #48a9c0;
     color: #eee;
-    @include linear-gradient(top, lighten($navBackgroundColor, 1%), darken($navBackgroundColor, 8%));
-    background-color: darken($navBackgroundColor, 4%);
+    @include linear-gradient(bottom, darken($navBackgroundColor, 8%), lighten($navBackgroundColor, 1%));
     @include box-shadow(inset 0 -1px 0 darken($navBackgroundColor, 20%), inset 0 -1px 8px rgba(0, 0, 0, .2));
   }
   

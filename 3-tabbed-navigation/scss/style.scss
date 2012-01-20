@@ -56,14 +56,12 @@ nav {
         font-weight: bold;
         text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
         border-radius: 3px 3px 0 0;
-        background: $navBackgroundColor;
-        @include linear-gradient(top, lighten($navBackgroundColor, 12%), $navBackgroundColor);
+        @include linear-gradient(bottom, $navBackgroundColor, lighten($navBackgroundColor, 12%));
         @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, .3), inset 0 -2px 2px rgba(0, 0, 0, .03), 0 2px 0 #fff, 0 0 2px rgba(0, 0, 0, .2));
 
         &:hover {
           text-decoration: none;
-          background: lighten($navBackgroundColor, 3%);
-          @include linear-gradient(top, lighten($navBackgroundColor, 18%), lighten($navBackgroundColor, 5%));
+          @include linear-gradient(bottom, lighten($navBackgroundColor, 5%), lighten($navBackgroundColor, 18%));
         }
       }
       
