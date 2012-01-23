@@ -1,0 +1,117 @@
+body {
+  background: #fafafa;
+  color: #404040;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px; }
+
+a {
+  color: #1e7ad3;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.container, .main {
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.main {
+  padding-top: 50px; }
+  .main div {
+    margin-bottom: 20px; }
+
+.progress {
+  height: 20px;
+  background: #ebebeb;
+  border-radius: 10px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent; }
+  .progress > span {
+    position: relative;
+    float: left;
+    margin: 0 -1px;
+    min-width: 30px;
+    height: 18px;
+    line-height: 18px;
+    text-align: right;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bfbfbf #b3b3b3 #9e9e9e;
+    background-color: #cccccc;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(30%, #dbdbdb), color-stop(100%, #f0f0f0));
+    background-image: -webkit-linear-gradient(bottom, #cccccc 0%, #dbdbdb 30%, #f0f0f0 100%);
+    background-image: -moz-linear-gradient(bottom, #cccccc 0%, #dbdbdb 30%, #f0f0f0 100%);
+    background-image: -ms-linear-gradient(bottom, #cccccc 0%, #dbdbdb 30%, #f0f0f0 100%);
+    background-image: -o-linear-gradient(bottom, #cccccc 0%, #dbdbdb 30%, #f0f0f0 100%);
+    background-image: linear-gradient(bottom, #cccccc 0%, #dbdbdb 30%, #f0f0f0 100%);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2); }
+    .progress > span span {
+      padding: 0 8px;
+      font-size: 11px;
+      font-weight: bold;
+      color: #404040;
+      color: rgba(0, 0, 0, 0.7);
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
+    .progress > span:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      height: 18px;
+      border-radius: 10px;
+      background: url("../img/progress.png") 0 0 repeat-x; }
+  .progress .green {
+    border-color: #78b337 #6ba031 #568128;
+    background-color: #85c440;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #85c440), color-stop(30%, #99ce5f), color-stop(100%, #b7dc8e));
+    background-image: -webkit-linear-gradient(bottom, #85c440 0%, #99ce5f 30%, #b7dc8e 100%);
+    background-image: -moz-linear-gradient(bottom, #85c440 0%, #99ce5f 30%, #b7dc8e 100%);
+    background-image: -ms-linear-gradient(bottom, #85c440 0%, #99ce5f 30%, #b7dc8e 100%);
+    background-image: -o-linear-gradient(bottom, #85c440 0%, #99ce5f 30%, #b7dc8e 100%);
+    background-image: linear-gradient(bottom, #85c440 0%, #99ce5f 30%, #b7dc8e 100%); }
+  .progress .red {
+    border-color: #c73321 #b12d1e #8e2418;
+    background-color: #db3a27;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #db3a27), color-stop(30%, #e15a4a), color-stop(100%, #ea8a7e));
+    background-image: -webkit-linear-gradient(bottom, #db3a27 0%, #e15a4a 30%, #ea8a7e 100%);
+    background-image: -moz-linear-gradient(bottom, #db3a27 0%, #e15a4a 30%, #ea8a7e 100%);
+    background-image: -ms-linear-gradient(bottom, #db3a27 0%, #e15a4a 30%, #ea8a7e 100%);
+    background-image: -o-linear-gradient(bottom, #db3a27 0%, #e15a4a 30%, #ea8a7e 100%);
+    background-image: linear-gradient(bottom, #db3a27 0%, #e15a4a 30%, #ea8a7e 100%); }
+  .progress .orange {
+    border-color: #f0ad24 #eba310 #c5880d;
+    background-color: #f2b63c;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2b63c), color-stop(30%, #f5c462), color-stop(100%, #f8da9c));
+    background-image: -webkit-linear-gradient(bottom, #f2b63c 0%, #f5c462 30%, #f8da9c 100%);
+    background-image: -moz-linear-gradient(bottom, #f2b63c 0%, #f5c462 30%, #f8da9c 100%);
+    background-image: -ms-linear-gradient(bottom, #f2b63c 0%, #f5c462 30%, #f8da9c 100%);
+    background-image: -o-linear-gradient(bottom, #f2b63c 0%, #f5c462 30%, #f8da9c 100%);
+    background-image: linear-gradient(bottom, #f2b63c 0%, #f5c462 30%, #f8da9c 100%); }
+  .progress .blue {
+    border-color: #459fd6 #3094d2 #277db2;
+    background-color: #5aaadb;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5aaadb), color-stop(30%, #7bbbe2), color-stop(100%, #aed5ed));
+    background-image: -webkit-linear-gradient(bottom, #5aaadb 0%, #7bbbe2 30%, #aed5ed 100%);
+    background-image: -moz-linear-gradient(bottom, #5aaadb 0%, #7bbbe2 30%, #aed5ed 100%);
+    background-image: -ms-linear-gradient(bottom, #5aaadb 0%, #7bbbe2 30%, #aed5ed 100%);
+    background-image: -o-linear-gradient(bottom, #5aaadb 0%, #7bbbe2 30%, #aed5ed 100%);
+    background-image: linear-gradient(bottom, #5aaadb 0%, #7bbbe2 30%, #aed5ed 100%); }
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+  color: #bbb;
+  text-shadow: 0 1px 0 #fff; }
+  .about a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #1e7ad3; }

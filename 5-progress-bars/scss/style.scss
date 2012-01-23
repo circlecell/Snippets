@@ -1,0 +1,98 @@
+@import '../../bourbon/bourbon';
+
+$siteWidth: 640px;
+
+body {
+  background: #fafafa;
+  color: #404040;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+a {
+  color: #1e7ad3;
+  text-decoration: none;
+  
+  &:hover { text-decoration: underline; }
+}
+
+.container {
+  width: $siteWidth;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  padding-top: 50px;
+  @extend .container;
+  
+  div { margin-bottom: 20px; }
+}
+
+.progress {
+  height: 20px;
+  background: #ebebeb;
+  border-radius: 10px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  
+  > span {
+    position: relative;
+    float: left;
+    margin: 0 -1px;
+    min-width: 30px;
+    height: 18px;
+    line-height: 18px;
+    text-align: right;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    $color: #ccc;
+    border-color: darken($color, 5%) darken($color, 10%) darken($color, 18%);
+    @include linear-gradient(bottom, $color 0%, lighten($color, 6%) 30%, lighten($color, 14%) 100%);
+    @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, .2));
+    
+    span {
+      padding: 0 8px;
+      font-size: 11px;
+      font-weight: bold;
+      color: #404040;
+      color: rgba(0, 0, 0, .7);
+      text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+    }
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 1;
+      height: 18px;
+      border-radius: 10px;
+      background: url('../img/progress.png') 0 0 repeat-x;
+    }
+  }
+  
+  $colors: green #85c440, red #db3a27, orange #f2b63c, blue #5aaadb;
+  
+  @each $pair in $colors {
+    .#{nth($pair, 1)} {
+      $color: nth($pair, 2);
+      border-color: darken($color, 5%) darken($color, 10%) darken($color, 18%);
+      @include linear-gradient(bottom, $color 0%, lighten($color, 8%) 30%, lighten($color, 20%) 100%);
+    }
+  }
+}
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+  color: #bbb;
+  text-shadow: 0 1px 0 #fff;
+  
+  a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #1e7ad3;
+  }
+}
