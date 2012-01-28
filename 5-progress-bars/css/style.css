@@ -1,7 +1,7 @@
 body {
   background: #fafafa;
   color: #404040;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Lucida Grande', Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 20px; }
@@ -34,7 +34,7 @@ a {
     margin: 0 -1px;
     min-width: 30px;
     height: 18px;
-    line-height: 18px;
+    line-height: 16px;
     text-align: right;
     border-radius: 10px;
     border-width: 1px;
