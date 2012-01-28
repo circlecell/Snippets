@@ -1,6 +1,6 @@
 # Little Calendar — HML5 & CSS3 Snippet
 
-**Demo**: [demo.webinterfacelab.com/6-calendar](http://demo.webinterfacelab.com/6-little-calendar/)
+**Demo**: [demo.webinterfacelab.com/6-little-calendar](http://demo.webinterfacelab.com/6-little-calendar/)
 
 ![Preview](http://www.webinterfacelab.com/assets/snippets/little-calendar/preview.png)
 
