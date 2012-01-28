@@ -112,39 +112,39 @@ nav {
     nav .badge {
       border-color: #30aae9;
       background-color: #67c1ef;
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #67c1ef), color-stop(100%, #acddf6));
-      background-image: -webkit-linear-gradient(bottom, #67c1ef, #acddf6);
-      background-image: -moz-linear-gradient(bottom, #67c1ef, #acddf6);
-      background-image: -ms-linear-gradient(bottom, #67c1ef, #acddf6);
-      background-image: -o-linear-gradient(bottom, #67c1ef, #acddf6);
-      background-image: linear-gradient(bottom, #67c1ef, #acddf6); }
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #acddf6), color-stop(100%, #67c1ef));
+      background-image: -webkit-linear-gradient(top, #acddf6, #67c1ef);
+      background-image: -moz-linear-gradient(top, #acddf6, #67c1ef);
+      background-image: -ms-linear-gradient(top, #acddf6, #67c1ef);
+      background-image: -o-linear-gradient(top, #acddf6, #67c1ef);
+      background-image: linear-gradient(top, #acddf6, #67c1ef); }
     nav .badge.green {
       border-color: #59ad33;
       background-color: #77cc51;
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #77cc51), color-stop(100%, #a5dd8c));
-      background-image: -webkit-linear-gradient(bottom, #77cc51, #a5dd8c);
-      background-image: -moz-linear-gradient(bottom, #77cc51, #a5dd8c);
-      background-image: -ms-linear-gradient(bottom, #77cc51, #a5dd8c);
-      background-image: -o-linear-gradient(bottom, #77cc51, #a5dd8c);
-      background-image: linear-gradient(bottom, #77cc51, #a5dd8c); }
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a5dd8c), color-stop(100%, #77cc51));
+      background-image: -webkit-linear-gradient(top, #a5dd8c, #77cc51);
+      background-image: -moz-linear-gradient(top, #a5dd8c, #77cc51);
+      background-image: -ms-linear-gradient(top, #a5dd8c, #77cc51);
+      background-image: -o-linear-gradient(top, #a5dd8c, #77cc51);
+      background-image: linear-gradient(top, #a5dd8c, #77cc51); }
     nav .badge.yellow {
       border-color: #f4a306;
       background-color: #faba3e;
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #faba3e), color-stop(100%, #fcd589));
-      background-image: -webkit-linear-gradient(bottom, #faba3e, #fcd589);
-      background-image: -moz-linear-gradient(bottom, #faba3e, #fcd589);
-      background-image: -ms-linear-gradient(bottom, #faba3e, #fcd589);
-      background-image: -o-linear-gradient(bottom, #faba3e, #fcd589);
-      background-image: linear-gradient(bottom, #faba3e, #fcd589); }
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcd589), color-stop(100%, #faba3e));
+      background-image: -webkit-linear-gradient(top, #fcd589, #faba3e);
+      background-image: -moz-linear-gradient(top, #fcd589, #faba3e);
+      background-image: -ms-linear-gradient(top, #fcd589, #faba3e);
+      background-image: -o-linear-gradient(top, #fcd589, #faba3e);
+      background-image: linear-gradient(top, #fcd589, #faba3e); }
     nav .badge.red {
       border-color: #fa5a35;
       background-color: #fa623f;
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fa623f), color-stop(100%, #fc9f8a));
-      background-image: -webkit-linear-gradient(bottom, #fa623f, #fc9f8a);
-      background-image: -moz-linear-gradient(bottom, #fa623f, #fc9f8a);
-      background-image: -ms-linear-gradient(bottom, #fa623f, #fc9f8a);
-      background-image: -o-linear-gradient(bottom, #fa623f, #fc9f8a);
-      background-image: linear-gradient(bottom, #fa623f, #fc9f8a); }
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fc9f8a), color-stop(100%, #fa623f));
+      background-image: -webkit-linear-gradient(top, #fc9f8a, #fa623f);
+      background-image: -moz-linear-gradient(top, #fc9f8a, #fa623f);
+      background-image: -ms-linear-gradient(top, #fc9f8a, #fa623f);
+      background-image: -o-linear-gradient(top, #fc9f8a, #fa623f);
+      background-image: linear-gradient(top, #fc9f8a, #fa623f); }
 
 .about {
   padding: 50px 0;

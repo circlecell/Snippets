@@ -118,7 +118,7 @@ header {
       text-shadow: 0 1px 0 #902a27;
       border-radius: 2px;
       margin-left: 10px;
-      @include linear-gradient(bottom, #e93631, #f65d5f);
+      @include linear-gradient(top, #f65d5f, #e93631, $fallback: #e93631);
       @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 0 rgba(0, 0, 0, .2));
     }
   }

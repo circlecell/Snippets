@@ -85,12 +85,12 @@ nav {
     border-bottom: 3px solid #48a9c0;
     color: #eee;
     background-color: #323637;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #323637), color-stop(100%, #484e4f));
-    background-image: -webkit-linear-gradient(bottom, #323637, #484e4f);
-    background-image: -moz-linear-gradient(bottom, #323637, #484e4f);
-    background-image: -ms-linear-gradient(bottom, #323637, #484e4f);
-    background-image: -o-linear-gradient(bottom, #323637, #484e4f);
-    background-image: linear-gradient(bottom, #323637, #484e4f);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #484e4f), color-stop(100%, #323637));
+    background-image: -webkit-linear-gradient(top, #484e4f, #323637);
+    background-image: -moz-linear-gradient(top, #484e4f, #323637);
+    background-image: -ms-linear-gradient(top, #484e4f, #323637);
+    background-image: -o-linear-gradient(top, #484e4f, #323637);
+    background-image: linear-gradient(top, #484e4f, #323637);
     -webkit-box-shadow: inset 0 -1px 0 #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: inset 0 -1px 0 #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
     -ms-box-shadow: inset 0 -1px 0 #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);

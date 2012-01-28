@@ -103,25 +103,25 @@ nav {
     & {
       $color: #67c1ef;
       border-color: darken($color, 12%);
-      @include linear-gradient(bottom, $color, lighten($color, 15%));
+      @include linear-gradient(top, lighten($color, 15%), $color, $fallback: $color);
     }
     
     &.green {
       $color: #77cc51;
       border-color: darken($color, 12%);
-      @include linear-gradient(bottom, $color, lighten($color, 15%));
+      @include linear-gradient(top, lighten($color, 15%), $color, $fallback: $color);
     }
     
     &.yellow {
       $color: #faba3e;
       border-color: darken($color, 12%);
-      @include linear-gradient(bottom, $color, lighten($color, 15%));
+      @include linear-gradient(top, lighten($color, 15%), $color, $fallback: $color);
     }
     
     &.red {
       $color: #fa623f;
       border-color: darken($color, 2%);
-      @include linear-gradient(bottom, $color, lighten($color, 15%));
+      @include linear-gradient(top, lighten($color, 15%), $color, $fallback: $color);
     }
   }
 }
