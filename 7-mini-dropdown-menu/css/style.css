@@ -1,0 +1,145 @@
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * Licensed under the MIT License
+ */
+body {
+  background: #323a44 url("../img/bg.png") 0 0 repeat;
+  color: #404040;
+  font-family: 'Lucida Grande', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px; }
+
+a {
+  color: #1e7ad3;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.container, .main {
+  width: 130px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.main {
+  padding-top: 50px; }
+
+.dropdown {
+  position: relative;
+  height: 27px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #272c33 #242930 #22272d;
+  border-radius: 3px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  background-color: #363d47;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4a5361), color-stop(100%, #363d47));
+  background-image: -webkit-linear-gradient(top, #4a5361, #363d47);
+  background-image: -moz-linear-gradient(top, #4a5361, #363d47);
+  background-image: -ms-linear-gradient(top, #4a5361, #363d47);
+  background-image: -o-linear-gradient(top, #4a5361, #363d47);
+  background-image: linear-gradient(top, #4a5361, #363d47);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15); }
+  .dropdown a {
+    font-size: 12px;
+    text-shadow: 0 1px 0 #000; }
+    .dropdown a:hover {
+      text-decoration: none; }
+  .dropdown > a {
+    float: left;
+    position: relative;
+    height: 27px;
+    line-height: 26px;
+    padding: 0 12px;
+    color: #ecf0f1;
+    border-radius: 2px 0 0 2px; }
+    .dropdown > a:before {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 11px;
+      vertical-align: -2px;
+      margin-right: 10px;
+      background: url("../img/settings.png") 0 0 no-repeat; }
+    .dropdown > a:hover {
+      background: #3f4753;
+      background: rgba(255, 255, 255, 0.04); }
+    .dropdown > a:active {
+      background: #343b44; }
+  .dropdown div {
+    float: left;
+    height: 27px;
+    width: 26px;
+    background: url("../img/toggle.png") 9px 9px no-repeat;
+    border-left: 1px solid #292e36;
+    border-color: rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.08);
+    -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.08);
+    -ms-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.08);
+    -o-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.08);
+    box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.08); }
+    .dropdown div:hover {
+      -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.04), inset 26px 26px 0 rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.04), inset 26px 26px 0 rgba(0, 0, 0, 0.1);
+      -ms-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.04), inset 26px 26px 0 rgba(0, 0, 0, 0.1);
+      -o-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.04), inset 26px 26px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.04), inset 26px 26px 0 rgba(0, 0, 0, 0.1); }
+      .dropdown div:hover ul {
+        display: block; }
+  .dropdown ul {
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: -1px;
+    right: -1px;
+    padding: 0;
+    background: #272c33;
+    border: 1px solid #20242a;
+    border-radius: 0 0 3px 3px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+    .dropdown ul li {
+      display: block; }
+      .dropdown ul li:last-child a {
+        border-radius: 0 0 3px 3px; }
+    .dropdown ul a {
+      display: block;
+      line-height: 28px;
+      padding: 0 10px 1px;
+      color: #b2b8c4;
+      border-top: 1px solid transparent; }
+      .dropdown ul a:hover {
+        color: #fff;
+        border-color: #78aad5;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
+        background-color: #426ebf;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5e9ace), color-stop(100%, #416cb8));
+        background-image: -webkit-linear-gradient(top, #5e9ace, #416cb8);
+        background-image: -moz-linear-gradient(top, #5e9ace, #416cb8);
+        background-image: -ms-linear-gradient(top, #5e9ace, #416cb8);
+        background-image: -o-linear-gradient(top, #5e9ace, #416cb8);
+        background-image: linear-gradient(top, #5e9ace, #416cb8); }
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+  color: #777;
+  text-shadow: 0 -1px 0 #222222; }
+  .about a {
+    color: #eee; }
+    .about a:hover {
+      text-decoration: none;
+      border-bottom: 1px solid #eee; }

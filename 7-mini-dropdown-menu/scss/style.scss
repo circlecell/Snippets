@@ -1,0 +1,146 @@
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * Licensed under the MIT License
+ */
+
+@import '../../bourbon/bourbon';
+
+$siteWidth: 130px;
+
+body {
+  background: #323a44 url('../img/bg.png') 0 0 repeat;
+  color: #404040;
+  font-family: 'Lucida Grande', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+a {
+  color: #1e7ad3;
+  text-decoration: none;
+  
+  &:hover { text-decoration: underline; }
+}
+
+.container {
+  width: $siteWidth;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  padding-top: 50px;
+  @extend .container;
+}
+
+.dropdown {
+  $color: #363d47;
+  position: relative;
+  height: 27px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: darken($color, 7%) darken($color, 8%) darken($color, 9%);
+  border-radius: 3px;
+  @include inline-block;
+  @include linear-gradient(top, lighten($color, 9%), $color, $fallback: $color);
+  @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 2px rgba(0, 0, 0, .15));
+  
+  a {
+    font-size: 12px;
+    text-shadow: 0 1px 0 #000;
+    
+    &:hover { text-decoration: none; }
+  }
+  
+  > a {
+    float: left;
+    position: relative;
+    height: 27px;
+    line-height: 26px;
+    padding: 0 12px;
+    color: #ecf0f1;
+    border-radius: 2px 0 0 2px;
+    
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 11px;
+      vertical-align: -2px;
+      margin-right: 10px;
+      background: url('../img/settings.png') 0 0 no-repeat;
+    }
+    
+    &:hover {
+      background: lighten($color, 4%);
+      background: rgba(255, 255, 255, .04);
+    }
+    
+    &:active { background: darken($color, 1%); }
+  }
+  
+  div {
+    float: left;
+    height: 27px;
+    width: 26px;
+    background: url('../img/toggle.png') 9px 9px no-repeat;
+    border-left: 1px solid darken($color, 6%);
+    border-color: rgba(0, 0, 0, .4);
+    @include box-shadow(inset 1px 0 0 rgba(255, 255, 255, .08));
+    
+    &:hover {
+      @include box-shadow(inset 1px 0 0 rgba(255, 255, 255, .04), inset 26px 26px 0 rgba(0, 0, 0, .1));
+      ul { display: block; }
+    }
+  }
+  
+  ul {
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: -1px;
+    right: -1px;
+    padding: 0;
+    background: darken($color, 7%);
+    border: 1px solid darken($color, 10%);
+    border-radius: 0 0 3px 3px;
+    @include box-shadow(0 1px 2px rgba(0, 0, 0, .2));
+    
+    li {
+      display: block;
+      &:last-child a { border-radius: 0 0 3px 3px; }
+    }
+    
+    a {
+      display: block;
+      line-height: 28px;
+      padding: 0 10px 1px;
+      color: #b2b8c4;
+      border-top: 1px solid transparent;
+      
+      &:hover {
+        color: #fff;
+        border-color: #78aad5;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, .7);
+        @include linear-gradient(top, #5e9ace, #416cb8, $fallback: #426ebf);
+      }
+    }
+  }
+}
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+  color: #777;
+  text-shadow: 0 -1px 0 #222;
+  
+  a {
+    color: #eee;
+    
+    &:hover {
+      text-decoration: none;
+      border-bottom: 1px solid #eee;
+    }
+  }
+}
