@@ -96,12 +96,12 @@ a {
   a { color: #cce7fa; }
 }
 
-input:-moz-placeholder {
+:-moz-placeholder {
   color: #c9c9c9 !important;
   font-size: 13px;
 }
 
-input::-webkit-input-placeholder {
+::-webkit-input-placeholder {
   color: #ccc;
   font-size: 13px;
 }
