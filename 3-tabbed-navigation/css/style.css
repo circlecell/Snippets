@@ -71,7 +71,7 @@ nav {
         padding: 0 20px;
         color: #fff;
         font-weight: bold;
-        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+        text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
         border-radius: 3px 3px 0 0;
         background-color: #759aaf;
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9cb6c5), color-stop(100%, #759aaf));
@@ -80,11 +80,11 @@ nav {
         background-image: -ms-linear-gradient(top, #9cb6c5, #759aaf);
         background-image: -o-linear-gradient(top, #9cb6c5, #759aaf);
         background-image: linear-gradient(top, #9cb6c5, #759aaf);
-        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 2px rgba(0, 0, 0, 0.03), 0 2px 0 white, 0 0 2px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 2px rgba(0, 0, 0, 0.03), 0 2px 0 white, 0 0 2px rgba(0, 0, 0, 0.2);
-        -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 2px rgba(0, 0, 0, 0.03), 0 2px 0 white, 0 0 2px rgba(0, 0, 0, 0.2);
-        -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 2px rgba(0, 0, 0, 0.03), 0 2px 0 white, 0 0 2px rgba(0, 0, 0, 0.2);
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 2px rgba(0, 0, 0, 0.03), 0 2px 0 white, 0 0 2px rgba(0, 0, 0, 0.2); }
+        -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 -2px 2px rgba(0, 0, 0, 0.03), 0 2px white, 0 0 2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 -2px 2px rgba(0, 0, 0, 0.03), 0 2px white, 0 0 2px rgba(0, 0, 0, 0.2);
+        -ms-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 -2px 2px rgba(0, 0, 0, 0.03), 0 2px white, 0 0 2px rgba(0, 0, 0, 0.2);
+        -o-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 -2px 2px rgba(0, 0, 0, 0.03), 0 2px white, 0 0 2px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 -2px 2px rgba(0, 0, 0, 0.03), 0 2px white, 0 0 2px rgba(0, 0, 0, 0.2); }
         nav > ul > li > a:hover {
           text-decoration: none;
           background-color: #85a6b8;
@@ -98,11 +98,11 @@ nav {
         background: #fff;
         color: #404040;
         text-shadow: none;
-        -webkit-box-shadow: 0 2px 0 white, 0 0 2px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: 0 2px 0 white, 0 0 2px rgba(0, 0, 0, 0.2);
-        -ms-box-shadow: 0 2px 0 white, 0 0 2px rgba(0, 0, 0, 0.2);
-        -o-box-shadow: 0 2px 0 white, 0 0 2px rgba(0, 0, 0, 0.2);
-        box-shadow: 0 2px 0 white, 0 0 2px rgba(0, 0, 0, 0.2); }
+        -webkit-box-shadow: 0 2px white, 0 0 2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px white, 0 0 2px rgba(0, 0, 0, 0.2);
+        -ms-box-shadow: 0 2px white, 0 0 2px rgba(0, 0, 0, 0.2);
+        -o-box-shadow: 0 2px white, 0 0 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px white, 0 0 2px rgba(0, 0, 0, 0.2); }
   nav a.icon {
     position: relative;
     width: 40.8px;
@@ -164,7 +164,7 @@ nav {
   padding: 50px 0;
   text-align: center;
   color: #bbb;
-  text-shadow: 0 1px 0 #fff; }
+  text-shadow: 0 1px #fff; }
   .about a:hover {
     text-decoration: none;
     border-bottom: 1px solid #1e7ad3; }

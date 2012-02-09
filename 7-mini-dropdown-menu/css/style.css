@@ -45,14 +45,14 @@ a {
   background-image: -ms-linear-gradient(top, #4a5361, #363d47);
   background-image: -o-linear-gradient(top, #4a5361, #363d47);
   background-image: linear-gradient(top, #4a5361, #363d47);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
-  -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
-  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15); }
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.15); }
   .dropdown a {
     font-size: 12px;
-    text-shadow: 0 1px 0 #000; }
+    text-shadow: 0 1px #000; }
     .dropdown a:hover {
       text-decoration: none; }
   .dropdown > a {
@@ -83,17 +83,17 @@ a {
     background: url("../img/toggle.png") 9px 9px no-repeat;
     border-left: 1px solid #292e36;
     border-color: rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.08);
-    -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.08);
-    -ms-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.08);
-    -o-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.08);
-    box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.08); }
+    -webkit-box-shadow: inset 1px 0 rgba(255, 255, 255, 0.08);
+    -moz-box-shadow: inset 1px 0 rgba(255, 255, 255, 0.08);
+    -ms-box-shadow: inset 1px 0 rgba(255, 255, 255, 0.08);
+    -o-box-shadow: inset 1px 0 rgba(255, 255, 255, 0.08);
+    box-shadow: inset 1px 0 rgba(255, 255, 255, 0.08); }
     .dropdown div:hover {
-      -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.04), inset 26px 26px 0 rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.04), inset 26px 26px 0 rgba(0, 0, 0, 0.1);
-      -ms-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.04), inset 26px 26px 0 rgba(0, 0, 0, 0.1);
-      -o-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.04), inset 26px 26px 0 rgba(0, 0, 0, 0.1);
-      box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.04), inset 26px 26px 0 rgba(0, 0, 0, 0.1); }
+      -webkit-box-shadow: inset 1px 0 rgba(255, 255, 255, 0.04), inset 26px 26px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: inset 1px 0 rgba(255, 255, 255, 0.04), inset 26px 26px rgba(0, 0, 0, 0.1);
+      -ms-box-shadow: inset 1px 0 rgba(255, 255, 255, 0.04), inset 26px 26px rgba(0, 0, 0, 0.1);
+      -o-box-shadow: inset 1px 0 rgba(255, 255, 255, 0.04), inset 26px 26px rgba(0, 0, 0, 0.1);
+      box-shadow: inset 1px 0 rgba(255, 255, 255, 0.04), inset 26px 26px rgba(0, 0, 0, 0.1); }
       .dropdown div:hover ul {
         display: block; }
   .dropdown ul {
@@ -124,7 +124,7 @@ a {
       .dropdown ul a:hover {
         color: #fff;
         border-color: #78aad5;
-        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
+        text-shadow: 0 1px rgba(0, 0, 0, 0.7);
         background-color: #426ebf;
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5e9ace), color-stop(100%, #416cb8));
         background-image: -webkit-linear-gradient(top, #5e9ace, #416cb8);
@@ -137,7 +137,7 @@ a {
   padding: 50px 0;
   text-align: center;
   color: #777;
-  text-shadow: 0 -1px 0 #222222; }
+  text-shadow: 0 -1px #222222; }
   .about a {
     color: #eee; }
     .about a:hover {

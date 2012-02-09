@@ -63,7 +63,7 @@ nav {
     color: #666;
     height: 26px;
     line-height: 26px;
-    text-shadow: 0 1px 0 #fff;
+    text-shadow: 0 1px #fff;
     background: #fafafa;
     background-color: #fcfcfc;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #f0f0f0));
@@ -72,20 +72,20 @@ nav {
     background-image: -ms-linear-gradient(top, #fcfcfc, #f0f0f0);
     background-image: -o-linear-gradient(top, #fcfcfc, #f0f0f0);
     background-image: linear-gradient(top, #fcfcfc, #f0f0f0);
-    -webkit-box-shadow: inset 1px 1px 0 #fafafa, inset -1px -1px 0 #fafafa;
-    -moz-box-shadow: inset 1px 1px 0 #fafafa, inset -1px -1px 0 #fafafa;
-    -ms-box-shadow: inset 1px 1px 0 #fafafa, inset -1px -1px 0 #fafafa;
-    -o-box-shadow: inset 1px 1px 0 #fafafa, inset -1px -1px 0 #fafafa;
-    box-shadow: inset 1px 1px 0 #fafafa, inset -1px -1px 0 #fafafa; }
+    -webkit-box-shadow: inset 1px 1px #fafafa, inset -1px -1px #fafafa;
+    -moz-box-shadow: inset 1px 1px #fafafa, inset -1px -1px #fafafa;
+    -ms-box-shadow: inset 1px 1px #fafafa, inset -1px -1px #fafafa;
+    -o-box-shadow: inset 1px 1px #fafafa, inset -1px -1px #fafafa;
+    box-shadow: inset 1px 1px #fafafa, inset -1px -1px #fafafa; }
     nav a:hover {
       color: #333;
       z-index: 10;
       text-decoration: none;
-      -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 1px 1px 0 #fafafa, inset -1px -1px 0 #fafafa;
-      -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 1px 1px 0 #fafafa, inset -1px -1px 0 #fafafa;
-      -ms-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 1px 1px 0 #fafafa, inset -1px -1px 0 #fafafa;
-      -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 1px 1px 0 #fafafa, inset -1px -1px 0 #fafafa;
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 1px 1px 0 #fafafa, inset -1px -1px 0 #fafafa; }
+      -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 1px 1px #fafafa, inset -1px -1px #fafafa;
+      -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 1px 1px #fafafa, inset -1px -1px #fafafa;
+      -ms-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 1px 1px #fafafa, inset -1px -1px #fafafa;
+      -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 1px 1px #fafafa, inset -1px -1px #fafafa;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 1px 1px #fafafa, inset -1px -1px #fafafa; }
   nav li.active a, nav a:active {
     color: #333;
     background: #fff;
@@ -104,15 +104,15 @@ nav {
     padding: 0 5px;
     font-family: Arial, sans-serif;
     color: #fff;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.25);
     border-width: 1px;
     border-style: solid;
     border-radius: 10px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.3); }
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), inset 0 1px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), inset 0 1px rgba(255, 255, 255, 0.3);
+    -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), inset 0 1px rgba(255, 255, 255, 0.3);
+    -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), inset 0 1px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), inset 0 1px rgba(255, 255, 255, 0.3); }
     nav .badge {
       border-color: #30aae9;
       background-color: #67c1ef;
@@ -154,7 +154,7 @@ nav {
   padding: 50px 0;
   text-align: center;
   color: #bbb;
-  text-shadow: 0 1px 0 #fff; }
+  text-shadow: 0 1px #fff; }
   .about a:hover {
     text-decoration: none;
     border-bottom: 1px solid #1e7ad3; }

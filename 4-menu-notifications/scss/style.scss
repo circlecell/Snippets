@@ -70,16 +70,16 @@ nav {
     color: #666;
     height: $navHeight;
     line-height: $navHeight;
-    text-shadow: 0 1px 0 #fff;
+    text-shadow: 0 1px #fff;
     background: #fafafa;
     @include linear-gradient(top, #fcfcfc, #f0f0f0);
-    @include box-shadow(inset 1px 1px 0 #fafafa, inset -1px -1px 0 #fafafa);
+    @include box-shadow(inset 1px 1px #fafafa, inset -1px -1px #fafafa);
     
     &:hover {
       color: #333;
       z-index: 10;
       text-decoration: none;
-      @include box-shadow(0 0 3px rgba(0, 0, 0, .3), inset 1px 1px 0 #fafafa, inset -1px -1px 0 #fafafa);
+      @include box-shadow(0 0 3px rgba(0, 0, 0, .3), inset 1px 1px #fafafa, inset -1px -1px #fafafa);
     }
   }
   
@@ -99,11 +99,11 @@ nav {
     padding: 0 5px;
     font-family: Arial, sans-serif;
     color: #fff;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+    text-shadow: 0 1px rgba(0, 0, 0, .25);
     border-width: 1px;
     border-style: solid;
     border-radius: 10px;
-    @include box-shadow(0 1px 1px rgba(0, 0, 0, .08), inset 0 1px 0 rgba(255, 255, 255, .3));
+    @include box-shadow(0 1px 1px rgba(0, 0, 0, .08), inset 0 1px rgba(255, 255, 255, .3));
     
     & {
       $color: #67c1ef;
@@ -135,7 +135,7 @@ nav {
   padding: 50px 0;
   text-align: center;
   color: #bbb;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px #fff;
   
   a:hover {
     text-decoration: none;

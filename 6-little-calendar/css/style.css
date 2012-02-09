@@ -42,16 +42,16 @@ a {
     text-align: center;
     color: #e2e2e2;
     font-weight: bold;
-    text-shadow: 0 -1px 0 black;
+    text-shadow: 0 -1px black;
     background: #333;
     background: rgba(0, 0, 0, 0.35);
     border-top: 1px solid #333;
     border-bottom: 1px solid #313131;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-    -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-    -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04); }
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+    -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+    -ms-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+    -o-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.04); }
     .cal caption a {
       display: block;
       line-height: 32px;
@@ -67,7 +67,7 @@ a {
   .cal th, .cal td {
     width: 30px;
     text-align: center;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+    text-shadow: 0 1px rgba(255, 255, 255, 0.8); }
     .cal th:first-child, .cal td:first-child {
       border-left: 0; }
   .cal th {
@@ -96,11 +96,11 @@ a {
       background-image: -ms-linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
       background-image: -o-linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
       background-image: linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
-      -webkit-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
-      -moz-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
-      -ms-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
-      -o-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
-      box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5); }
+      -webkit-box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+      -moz-box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+      -ms-box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+      -o-box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+      box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5); }
     .cal td a:hover, .cal td.off a {
       background: #f3f3f3; }
     .cal td.off a {
@@ -108,7 +108,7 @@ a {
     .cal td.active a, .cal td a:active {
       margin: -1px;
       color: #f3f3f3;
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+      text-shadow: 0 1px rgba(0, 0, 0, 0.3);
       background: #6dafbf;
       border: 1px solid #598b94;
       -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
@@ -130,7 +130,7 @@ a {
   padding: 50px 0;
   text-align: center;
   color: #777;
-  text-shadow: 0 -1px 0 #222222; }
+  text-shadow: 0 -1px #222222; }
   .about a {
     color: #eee; }
     .about a:hover {

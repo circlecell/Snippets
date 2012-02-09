@@ -57,7 +57,7 @@ a {
     $color: #ccc;
     border-color: darken($color, 5%) darken($color, 10%) darken($color, 18%);
     @include linear-gradient(top, lighten($color, 14%) 0%, lighten($color, 6%) 70%, $color 100%, $fallback: $color);
-    @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, .2));
+    @include box-shadow(inset 0 1px rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, .2));
     
     span {
       padding: 0 8px;
@@ -65,7 +65,7 @@ a {
       font-weight: bold;
       color: #404040;
       color: rgba(0, 0, 0, .7);
-      text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+      text-shadow: 0 1px rgba(255, 255, 255, .4);
     }
     
     &:before {
@@ -94,7 +94,7 @@ a {
   padding: 50px 0;
   text-align: center;
   color: #bbb;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px #fff;
   
   a:hover {
     text-decoration: none;
