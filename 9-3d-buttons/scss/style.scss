@@ -1,0 +1,223 @@
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * Licensed under the MIT License
+ */
+
+@import '../../bourbon/bourbon';
+
+$siteWidth: 640px;
+
+body {
+  background: #fafafa;
+  color: #404040;
+  font-family: 'Lucida Grande', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+a {
+  color: #1e7ad3;
+  text-decoration: none;
+  
+  &:hover { text-decoration: underline; }
+}
+
+.container {
+  width: $siteWidth;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  padding-top: 50px;
+  text-align: center;
+  @extend .container;
+  
+  .button { margin: 0 10px 25px; }
+}
+
+.button {
+  margin: 0 0 5px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 12px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #555555;
+  text-shadow: 0 1px #fff;
+  border-width: 1px 1px 0;
+  border-style: solid;
+  border-color: #cecece #bababa #a8a8a8;
+  border-radius: 3px 3px 2px 2px;
+  outline: none;
+  @include box-sizing(content-box);
+  @include inline-block;
+  @include linear-gradient(top, #f1f1f1 0%, #dfdfdf 70%, #dadada 100%, $fallback: #dfdfdf);
+  @include box-shadow(inset 0 1px #fdfdfd,
+                      inset 0 0 0 1px #eaeaea,
+                      0 1px #a8a8a8,
+                      0 3px #bbb,
+                      0 4px #a8a8a8,
+                      0 5px 2px rgba(0, 0, 0, .25));
+  
+  &:hover, &:active {
+    text-decoration: none;
+    background: #dfdfdf;
+    border-top-color: #c9c9c9;
+  }
+  
+  &:active, &.green:active, &.blue:active, &.yellow:active, &.red:active, &.purple:active, &.grey:active, &.black:active {
+    vertical-align: -5px;
+    margin-bottom: 0;
+    padding: 1px 13px 0;
+    border-width: 0;
+    border-radius: 3px;
+    @include box-shadow(inset 0 0 3px rgba(0, 0, 0, .3), inset 0 1px 1px rgba(0, 0, 0, .4), 0 1px #fff);
+  }
+  
+  &.green {
+    color: #465f25;
+    text-shadow: 0 1px #d9f3b5;
+    border-color: #91ce5e #7ab04b #5e903f;
+    @include linear-gradient(top, #c0eb85 0%, #94d362 70%, #8ed258 100%, $fallback: #94d362);
+    @include box-shadow(inset 0 1px #d9f3b5,
+                        inset 0 0 0 1px #b1e095,
+                        0 1px #5e903f,
+                        0 3px #6da445,
+                        0 4px #5e903f,
+                        0 5px 2px rgba(0, 0, 0, .4));
+    
+    &:hover, &:active {
+      background: #94d362;
+      border-top-color: #82bd53;
+    }
+  }
+  
+  &.blue {
+    color: #236277;
+    text-shadow: 0 1px #c2ecf9;
+    border-color: #6fbad1 #3fa3c0 #3583ab;
+    @include linear-gradient(top, #9be5fa 0%, #61cdf3 70%, #5fbde8 100%, $fallback: #61cdf3);
+    @include box-shadow(inset 0 1px #c5f0fd,
+                        inset 0 0 0 1px #8ad1eb,
+                        0 1px #3583ab,
+                        0 3px #3f9db8,
+                        0 4px #3583ab,
+                        0 5px 2px rgba(0, 0, 0, .4));
+    
+    &:hover, &:active {
+      background: #61cdf3;
+      border-top-color: #3eaac9;
+    }
+  }
+  
+  &.yellow {
+    color: #7e4f27;
+    text-shadow: 0 1px #f2e294;
+    border-color: #efb443 #d9a238 #a57825;
+    @include linear-gradient(top, #ffdd67 0%, #f6ba49 70%, #f4b03e 100%, $fallback: #f6ba49);
+    @include box-shadow(inset 0 1px #ffeca6,
+                        inset 0 0 0 1px #e5c96d,
+                        0 1px #a57825,
+                        0 3px #c08a28,
+                        0 4px #a57825,
+                        0 5px 2px rgba(0, 0, 0, .4));
+    
+    &:hover, &:active {
+      background: #f6ba49;
+      border-top-color: #e5ab3d;
+    }
+  }
+  
+  &.red {
+    color: #702526;
+    text-shadow: 0 1px #ea8f99;
+    border-color: #e1696e #c85252 #a03a38;
+    @include linear-gradient(top, #eb9093 0%, #e46565 70%, #e25755 100%, $fallback: #e46565);
+    @include box-shadow(inset 0 1px #dcaaaa,
+                        inset 0 0 0 1px #df777a,
+                        0 1px #a03a38,
+                        0 3px #be4b49,
+                        0 4px #a03a38,
+                        0 5px 2px rgba(0, 0, 0, .4));
+    
+    &:hover, &:active {
+      background: #e46565;
+      border-top-color: #d0585a;
+    }
+  }
+  
+  &.purple {
+    color: #714667;
+    text-shadow: 0 1px #f2c5e6;
+    border-color: #e391d0 #c27ab3 #8a517d;
+    @include linear-gradient(top, #f1bee3 0%, #e393d3 70%, #df8dce 100%, $fallback: #e393d3);
+    @include box-shadow(inset 0 1px #f5d6ee,
+                        inset 0 0 0 1px #dcaacf,
+                        0 1px #8a517d,
+                        0 3px #a7619a,
+                        0 4px #8a517d,
+                        0 5px 2px rgba(0, 0, 0, .4));
+    
+    &:hover, &:active {
+      background: #e393d3;
+      border-top-color: #c87eb8;
+    }
+  }
+  
+  &.grey {
+    color: #41505b;
+    text-shadow: 0 1px #c2d0db;
+    border-color: #909eab #768791 #50606e;
+    @include linear-gradient(top, #bccbd7 0%, #90aabd 70%, #83a0b4 100%, $fallback: #90aabd);
+    @include box-shadow(inset 0 1px #d0dae2,
+                        inset 0 0 0 1px #99b5ce,
+                        0 1px #50606e,
+                        0 3px #627786,
+                        0 4px #50606e,
+                        0 5px 2px rgba(0, 0, 0, .4));
+    
+    &:hover, &:active {
+      background: #90aabd;
+      border-top-color: #8495a0;
+    }
+  }
+  
+  &.black {
+    color: #f1f1f1;
+    text-shadow: 0 1px #111;
+    border-color: #505050 #414141 #2c2c2c;
+    @include linear-gradient(top, #696969 0%, #4f4f4f 70%, #3c3c3c 100%, $fallback: #4f4f4f);
+    @include box-shadow(inset 0 1px #828282,
+                        inset 0 0 0 1px #555,
+                        0 1px #2c2c2c,
+                        0 3px #444,
+                        0 4px #2c2c2c,
+                        0 5px 2px rgba(0, 0, 0, .4));
+    
+    &:hover, &:active {
+      background: #4f4f4f;
+      border-top-color: #494949;
+    }
+  }
+}
+
+.lt-ie9 {
+  .button {
+    border-width: 1px;
+    padding: 0 12px;
+  }
+}
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+  color: #bbb;
+  text-shadow: 0 1px #fff;
+  
+  a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #1e7ad3;
+  }
+}
