@@ -27,7 +27,7 @@ body {
   font-size: 13px;
   font-weight: normal;
   line-height: 18px;
-  margin-top: $headerHeight;
+  padding-top: $headerHeight;
 }
 
 .container {
@@ -58,6 +58,7 @@ header {
   h1 {
     float: left;
     font-size: 16px;
+    margin: 0;
     
     &, a { color: #eee; }
     
@@ -77,7 +78,11 @@ header {
     border-left: 1px solid rgba(255, 255, 255, .05);
     border-right: 1px solid #111;
     
-    ul { padding: 0; }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    
     li { float: left; }
     
     a {
@@ -130,7 +135,7 @@ header {
 }
 
 .about {
-  padding: 50px 0;
+  margin: 50px 0;
   text-align: center;
   color: #ccc;
   text-shadow: 0 -1px rgba(0, 0, 0, .25);

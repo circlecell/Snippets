@@ -22,7 +22,7 @@ a {
   margin-right: auto; }
 
 .main {
-  padding-top: 50px; }
+  margin-top: 50px; }
 
 .dropdown {
   position: relative;
@@ -102,6 +102,7 @@ a {
     top: 27px;
     left: -1px;
     right: -1px;
+    margin: 0;
     padding: 0;
     background: #272c33;
     border: 1px solid #20242a;
@@ -134,7 +135,7 @@ a {
         background-image: linear-gradient(top, #5e9ace, #416cb8); }
 
 .about {
-  padding: 50px 0;
+  margin: 50px 0;
   text-align: center;
   color: #777;
   text-shadow: 0 -1px #222222; }

@@ -22,12 +22,13 @@ a {
   margin-right: auto; }
 
 header {
-  padding-top: 50px; }
+  margin-top: 50px; }
 
 nav {
   height: 26px;
   text-align: center; }
   nav ul {
+    margin: 0;
     padding: 0;
     border-width: 1px;
     border-style: solid;
@@ -151,7 +152,7 @@ nav {
       background-image: linear-gradient(top, #fc9f8a, #fa623f); }
 
 .about {
-  padding: 50px 0;
+  margin: 50px 0;
   text-align: center;
   color: #bbb;
   text-shadow: 0 1px #fff; }

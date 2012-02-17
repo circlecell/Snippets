@@ -26,9 +26,9 @@ body {
 }
 
 header {
+  padding-top: 100px;
   background: #3d4144 url('../img/bg.png') 0 0 repeat;
   border-bottom: 5px solid #ddd;
-  padding-top: 100px;
 }
 
 nav {
@@ -42,6 +42,7 @@ nav {
   
   ul {
     float: left;
+    margin: 0;
     padding: 0;
     border-left: 1px solid darken($navBackgroundColor, 7%);
     border-left: 1px solid rgba(0, 0, 0, .20);
@@ -88,7 +89,7 @@ nav {
 }
 
 .about {
-  padding: 50px 0;
+  margin: 50px 0;
   text-align: center;
   color: #bbb;
   text-shadow: 0 1px #fff;

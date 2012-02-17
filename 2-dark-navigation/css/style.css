@@ -16,9 +16,9 @@ body {
   margin-right: auto; }
 
 header {
+  padding-top: 100px;
   background: #3d4144 url("../img/bg.png") 0 0 repeat;
-  border-bottom: 5px solid #ddd;
-  padding-top: 100px; }
+  border-bottom: 5px solid #ddd; }
 
 nav {
   height: 36px;
@@ -59,6 +59,7 @@ nav {
     transition-delay: 0; }
   nav ul {
     float: left;
+    margin: 0;
     padding: 0;
     border-left: 1px solid #353939;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -110,7 +111,7 @@ nav {
     border-bottom-color: #c0bb30; }
 
 .about {
-  padding: 50px 0;
+  margin: 50px 0;
   text-align: center;
   color: #bbb;
   text-shadow: 0 1px #fff; }

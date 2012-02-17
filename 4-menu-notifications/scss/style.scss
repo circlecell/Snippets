@@ -31,7 +31,7 @@ a {
 }
 
 header {
-  padding-top: 50px;
+  margin-top: 50px;
   @extend .container;
 }
 
@@ -40,6 +40,7 @@ nav {
   text-align: center;
   
   ul {
+    margin: 0;
     padding: 0;
     border-width: 1px;
     border-style: solid;
@@ -132,7 +133,7 @@ nav {
 }
 
 .about {
-  padding: 50px 0;
+  margin: 50px 0;
   text-align: center;
   color: #bbb;
   text-shadow: 0 1px #fff;

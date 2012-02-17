@@ -30,7 +30,7 @@ a {
 }
 
 .main {
-  padding-top: 50px;
+  margin-top: 50px;
   @extend .container;
 }
 
@@ -101,6 +101,7 @@ a {
     top: 27px;
     left: -1px;
     right: -1px;
+    margin: 0;
     padding: 0;
     background: darken($color, 7%);
     border: 1px solid darken($color, 10%);
@@ -130,7 +131,7 @@ a {
 }
 
 .about {
-  padding: 50px 0;
+  margin: 50px 0;
   text-align: center;
   color: #777;
   text-shadow: 0 -1px #222;

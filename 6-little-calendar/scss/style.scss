@@ -30,7 +30,7 @@ a {
 }
 
 .main {
-  padding-top: 50px;
+  margin-top: 50px;
   @extend .container;
   
   .cal { margin: 0 auto; }
@@ -125,7 +125,7 @@ a {
 }
 
 .about {
-  padding: 50px 0;
+  margin: 50px 0;
   text-align: center;
   color: #777;
   text-shadow: 0 -1px #222;
