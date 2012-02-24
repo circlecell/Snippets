@@ -1,0 +1,145 @@
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * Licensed under the MIT License
+ */
+body {
+  background: #0ca3d2;
+  color: #404040;
+  font-family: 'Lucida Grande', Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px; }
+
+a {
+  color: #1e7ad3;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.container, .main {
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.main {
+  margin-top: 50px; }
+  .main .popover {
+    margin: 0 auto; }
+
+.popover {
+  position: relative;
+  z-index: 10;
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 11px;
+  background-color: #606060;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #606060), color-stop(100%, #4a4a4a));
+  background-image: -webkit-linear-gradient(top, #606060, #4a4a4a);
+  background-image: -moz-linear-gradient(top, #606060, #4a4a4a);
+  background-image: -ms-linear-gradient(top, #606060, #4a4a4a);
+  background-image: -o-linear-gradient(top, #606060, #4a4a4a);
+  background-image: linear-gradient(top, #606060, #4a4a4a);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.2), inset 1px 0 rgba(255, 255, 255, 0.08), inset -1px 0 rgba(255, 255, 255, 0.08), 0 2px 8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.2), inset 1px 0 rgba(255, 255, 255, 0.08), inset -1px 0 rgba(255, 255, 255, 0.08), 0 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.2), inset 1px 0 rgba(255, 255, 255, 0.08), inset -1px 0 rgba(255, 255, 255, 0.08), 0 2px 8px rgba(0, 0, 0, 0.5); }
+  .popover:before, .popover:after, .popover ul:before {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 11;
+    left: 22px;
+    border: 7px outset transparent; }
+  .popover:before {
+    border-bottom: 7px solid #000;
+    top: -14px; }
+  .popover:after {
+    border-bottom: 7px solid #888;
+    top: -13px; }
+  .popover ul:before {
+    z-index: 12;
+    border-bottom: 8px solid #666;
+    top: -12px; }
+  .popover ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(255, 255, 255, 0.1); }
+  .popover li {
+    display: block; }
+    .popover li + li {
+      border-top: 1px solid #eee; }
+    .popover li:first-child a {
+      border-radius: 7px 7px 0 0; }
+    .popover li:last-child a {
+      border-radius: 0 0 7px 7px; }
+  .popover a {
+    position: relative;
+    display: block;
+    line-height: 44px;
+    padding: 0 15px 0 48px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold; }
+    .popover a:hover {
+      text-decoration: none;
+      background: #fff;
+      -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); }
+    .popover a:before, .popover a:after {
+      position: absolute;
+      display: block;
+      content: ''; }
+  .popover a:before, .popover .active a:active:before {
+    height: 20px;
+    width: 20px;
+    top: 12px;
+    left: 14px;
+    border: 0;
+    border-radius: 11px;
+    background: #f7f7f7;
+    -webkit-box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.1); }
+  .popover a:after, .popover .active a:active:after {
+    display: none;
+    width: 11px;
+    height: 9px;
+    top: 18px;
+    left: 19px;
+    background: url("../img/tick.png") center center no-repeat; }
+  .popover .active a:before, .popover a:active:before {
+    top: 11px;
+    left: 13px;
+    border: 1px solid #111;
+    background-color: #555555;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #777777), color-stop(100%, #404040));
+    background-image: -webkit-linear-gradient(top, #777777, #404040);
+    background-image: -moz-linear-gradient(top, #777777, #404040);
+    background-image: -ms-linear-gradient(top, #777777, #404040);
+    background-image: -o-linear-gradient(top, #777777, #404040);
+    background-image: linear-gradient(top, #777777, #404040);
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4); }
+  .popover .active a:after, .popover a:active:after {
+    display: block; }
+
+.about {
+  margin: 50px 0;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px #2a85a1; }
+  .about a {
+    color: #cce7fa; }
+  .about a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #cce7fa; }
