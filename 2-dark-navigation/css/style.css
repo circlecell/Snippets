@@ -33,8 +33,6 @@ nav {
   background-image: linear-gradient(top, #464b4c, #3f4344);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
   -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
-  -ms-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
-  -o-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.06); }
   nav a {
     -webkit-transition-property: background-color, line-height;
@@ -98,8 +96,6 @@ nav {
     background-image: linear-gradient(top, #484e4f, #323637);
     -webkit-box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
-    -o-box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2); }
   nav li.green a, nav li.green a:active {
     border-bottom-color: #56c93d; }
