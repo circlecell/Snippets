@@ -18,7 +18,7 @@ To compile and watch:
 
 * Firefox 4-10
 * Safari 4-5
-* Chrome 13-16
+* Chrome 13-17
 * Opera 10-11
 * Internet Explorer 6-9
 
