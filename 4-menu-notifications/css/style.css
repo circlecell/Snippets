@@ -63,8 +63,7 @@ nav {
     height: 26px;
     line-height: 26px;
     text-shadow: 0 1px #fff;
-    background: #fafafa;
-    background-color: #fcfcfc;
+    background-color: #fafafa;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #f0f0f0));
     background-image: -webkit-linear-gradient(top, #fcfcfc, #f0f0f0);
     background-image: -moz-linear-gradient(top, #fcfcfc, #f0f0f0);

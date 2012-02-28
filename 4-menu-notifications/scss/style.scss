@@ -72,8 +72,7 @@ nav {
     height: $navHeight;
     line-height: $navHeight;
     text-shadow: 0 1px #fff;
-    background: #fafafa;
-    @include linear-gradient(top, #fcfcfc, #f0f0f0);
+    @include linear-gradient(top, #fcfcfc, #f0f0f0, $fallback: #fafafa);
     @include box-shadow(inset 1px 1px #fafafa, inset -1px -1px #fafafa);
     
     &:hover {
