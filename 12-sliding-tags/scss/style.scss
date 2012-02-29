@@ -1,0 +1,148 @@
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * Licensed under the MIT License
+ */
+
+@import '../../bourbon/bourbon';
+
+$siteWidth: 380px;
+
+$tagsHeight: 26px;
+$tagsDefaultColor: #eb6b22;
+$tagsColors: green #65bb34, blue #56a3d5;
+
+body {
+  background: #eee;
+  color: #404040;
+  font-family: 'Lucida Grande', Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+a {
+  color: #1e7ad3;
+  text-decoration: none;
+  
+  &:hover { text-decoration: underline; }
+}
+
+.container {
+  width: $siteWidth;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  margin-top: 50px;
+  @extend .container;
+}
+
+.tags {
+  margin: 0;
+  padding: 0;
+  @include clearfix;
+  
+  li {
+    position: relative;
+    float: left;
+    margin: 0 0 8px 12px;
+    
+    &:active {
+      margin-top: 1px;
+      margin-bottom: 7px;
+    }
+    
+    &:after {
+      content: '';
+      z-index: 3;
+      position: absolute;
+      top: round($tagsHeight / 2 - 3px);
+      right: -2px;
+      width: 5px;
+      height: 6px;
+      opacity: .95;
+      background: $tagsDefaultColor;
+      border-radius: 3px 0 0 3px;
+      @include box-shadow(inset 1px 0 darken($tagsDefaultColor, 20%));
+    }
+  }
+  
+  a, span {
+    display: block;
+    @include box-sizing(border-box);
+  }
+  
+  a {
+    height: $tagsHeight;
+    line-height: $tagsHeight - 3px;
+    padding: 0 9px 0 8px;
+    font-size: 12px;
+    color: #555;
+    text-shadow: 0 1px #fff;
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    border-color: #dadada #d2d2d2 #c5c5c5;
+    border-radius: 3px 0 0 3px;
+    @include linear-gradient(top, #fcfcfc, #f0f0f0, $fallback: #fafafa);
+    @include box-shadow(inset 0 0 0 1px rgba(255, 255, 255, .7), 0 1px 2px rgba(0, 0, 0, .05));
+    
+    &:hover {
+      text-decoration: none;
+
+      span {
+        padding: 0 7px 0 6px;
+        max-width: 40px;
+        @include box-shadow(inset 0 0 0 1px rgba(255, 255, 255, .15), 1px 1px 2px rgba(0, 0, 0, .2));
+      }
+    }
+  }
+  
+  span {
+    position: absolute;
+    top: 1px;
+    left: 100%;
+    z-index: 2;
+    overflow: hidden;
+    max-width: 0;
+    height: $tagsHeight - 2px;
+    line-height: $tagsHeight - 5px;
+    padding: 0 0 0 2px;
+    opacity: .95;
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, .3);
+    border: 1px solid;
+    border-color: darken($tagsDefaultColor, 8%) darken($tagsDefaultColor, 10%) darken($tagsDefaultColor, 12%);
+    border-radius: 0 2px 2px 0;
+    @include linear-gradient(top, lighten($tagsDefaultColor, 5%), darken($tagsDefaultColor, 5%), $fallback: $tagsDefaultColor);
+    @include transition((padding, max-width), .3s, ease-out);
+  }
+}
+
+@each $pair in $tagsColors {
+  .#{nth($pair, 1)} {
+    $color: nth($pair, 2);
+
+    li:after {
+      background: $color;
+      @include box-shadow(inset 1px 0 darken($color, 20%));
+    }
+
+    span {
+      border-color: darken($color, 8%) darken($color, 10%) darken($color, 12%);
+      @include linear-gradient(top, lighten($color, 5%), darken($color, 5%), $fallback: $color);
+    }
+  }
+}
+
+.about {
+  margin: 50px 0;
+  text-align: center;
+  color: #aaa;
+  text-shadow: 0 1px #fff;
+  
+  a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #1e7ad3;
+  }
+}
