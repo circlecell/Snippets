@@ -1,0 +1,178 @@
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * Licensed under the MIT License
+ */
+
+@import '../../bourbon/bourbon';
+
+$siteWidth: 640px;
+$hoverColor: #5a70b0;
+
+html, body { min-height: 100%; }
+
+body {
+  color: #404040;
+  font-family: 'Lucida Grande', Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  background-repeat: no-repeat;
+  @include radial-gradient(center, circle cover, #87a3f5, #697ecc, $fallback: #697ecc);
+}
+
+a {
+  color: #1e7ad3;
+  text-decoration: none;
+  
+  &:hover { text-decoration: underline; }
+}
+
+.main {
+  width: $siteWidth;
+  margin: 0 auto;
+  padding-top: 130px;
+  text-align: center;
+  
+  .user { text-align: left; }
+}
+
+.user {
+  position: relative;
+  height: 32px;
+  padding: 8px 12px 8px 8px;
+  @include inline-block;
+  
+  img {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+  
+  h5 {
+    float: left;
+    margin: 0;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 1px rgba(0, 0, 0, .4);
+    
+    small {
+      display: block;
+      font-size: 9px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, .6);
+      text-shadow: 0 1px rgba(255, 255, 255, .3);
+      *color: #364168; // IE 7
+    }
+  }
+  
+  &:hover ul {
+    visibility: visible;
+    opacity: 1;
+    padding: 4px 0 6px;
+  }
+  
+  ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 100%; left: 0; right: 0;
+    padding: 0;
+    margin: 0;
+    border: 1px solid;
+    border-color: #777 #6c6c6c #666;
+    border-radius: 5px;
+    @include transition((opacity, padding, visibility), .2s, ease-out);
+    @include linear-gradient(top, #eef3fe, #d9e3fa, $fallback: #d9e3fa);
+    @include box-shadow(inset 0 0 0 1px rgba(255, 255, 255, .9), 0 1px 2px rgba(0, 0, 0, .1));
+  }
+  
+  ul:before, ul:after, li:first-child:after { // Arrow
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 15px;
+    border: 7px outset transparent;
+  }
+
+  ul:before { // Arrow border
+    border-top: 7px solid #555;
+    bottom: -14px;
+  }
+  
+  li:first-child:after { // Arrow inner shadow
+    border-top: 7px solid #fff;
+    bottom: -13px;
+  }
+
+  ul:after { // Arrow background
+    border-top: 7px solid #d9e3fa;
+    bottom: -12px;
+  }
+  
+  li {
+    padding: 0 12px;
+    font-size: 11px;
+    color: #838ca2;
+    text-shadow: 0 1px #fff;
+    
+    &.sep {
+      border-top: 1px solid #b4bbce;
+      padding-top: 4px;
+      margin-top: 4px;
+      @include box-shadow(inset 0 1px rgba(255, 255, 255, .6));
+    }
+    
+    a {
+      display: block;
+      position: relative;
+      margin: 0 -13px;
+      padding: 0 20px 0 12px;
+      color: #313a4f;
+      border: 1px solid transparent;
+    
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 0 1px rgba(0, 0, 0, .3);
+        border-color: $hoverColor darken($hoverColor, 8%) darken($hoverColor, 12%);
+        @include linear-gradient(top, lighten($hoverColor, 8%), darken($hoverColor, 5%), $fallback: $hoverColor);
+        
+        &:after { display: block; }
+      }
+      
+      &:after {
+        display: none;
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        margin-top: -4px;
+        border: 4px solid transparent;
+        border-left-color: lighten($hoverColor, 20%);
+        border-left-color: rgba(255, 255, 255, .4);
+      }
+    }
+  }
+}
+
+.about {
+  margin: 50px 0;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, .3);
+  
+  a { color: #fff; }
+  
+  a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+  }
+}
