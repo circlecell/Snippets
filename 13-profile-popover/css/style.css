@@ -52,7 +52,6 @@ a {
     margin-right: 8px; }
   .user h5 {
     float: left;
-    margin: 0;
     line-height: 16px;
     font-size: 12px;
     font-weight: bold;
@@ -77,8 +76,6 @@ a {
     bottom: 100%;
     left: 0;
     right: 0;
-    padding: 0;
-    margin: 0;
     border: 1px solid;
     border-color: #777 #6c6c6c #666;
     border-radius: 5px;

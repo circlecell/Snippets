@@ -57,8 +57,6 @@ nav {
     transition-delay: 0; }
   nav ul {
     float: left;
-    margin: 0;
-    padding: 0;
     border-left: 1px solid #353939;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid #4d5354;

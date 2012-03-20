@@ -58,7 +58,6 @@ header {
   h1 {
     float: left;
     font-size: 16px;
-    margin: 0;
     
     &, a { color: #eee; }
     
@@ -66,7 +65,6 @@ header {
       display: block;
       padding: 0 15px;
       text-decoration: none;
-      font-weight: 200;
       
       &:hover { color: #fff; }
     }
@@ -77,11 +75,6 @@ header {
     border-left: 1px solid lighten($headerBackgroundColor, 10%);
     border-left: 1px solid rgba(255, 255, 255, .05);
     border-right: 1px solid #111;
-    
-    ul {
-      margin: 0;
-      padding: 0;
-    }
     
     li { float: left; }
     

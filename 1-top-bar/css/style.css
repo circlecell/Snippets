@@ -60,15 +60,13 @@ header {
     transition-delay: 0; }
   header h1 {
     float: left;
-    font-size: 16px;
-    margin: 0; }
+    font-size: 16px; }
     header h1, header h1 a {
       color: #eee; }
     header h1 a {
       display: block;
       padding: 0 15px;
-      text-decoration: none;
-      font-weight: 200; }
+      text-decoration: none; }
       header h1 a:hover {
         color: #fff; }
   header nav {
@@ -76,9 +74,6 @@ header {
     border-left: 1px solid #2f4b56;
     border-left: 1px solid rgba(255, 255, 255, 0.05);
     border-right: 1px solid #111; }
-    header nav ul {
-      margin: 0;
-      padding: 0; }
     header nav li {
       float: left; }
     header nav a {

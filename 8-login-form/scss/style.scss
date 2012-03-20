@@ -4,6 +4,7 @@
  */
 
 @import '../../bourbon/bourbon';
+@import '../css/normalize.css';
 
 $siteWidth: 350px;
 
@@ -53,7 +54,7 @@ a {
     font-weight: bold;
     color: #555;
     text-align: center;
-    text-shadow: 0 1px 0 #fff;
+    text-shadow: 0 1px #fff;
     border-bottom: 1px solid #cfcfcf;
     border-radius: 3px 3px 0 0;
     @include linear-gradient(top, #fffffd, #eef2f5, $fallback: #f3f3f3);
@@ -90,7 +91,7 @@ a {
   margin: 20px 0;
   font-size: 11px;
   text-align: center;
-  text-shadow: 0 1px 0 #2a85a1;
+  text-shadow: 0 1px #2a85a1;
   color: #fff;
   
   a { color: #cce7fa; }
@@ -123,7 +124,7 @@ input[type=text], input[type=password] {
   border-color: #c4c4c4 #d1d1d1 #d4d4d4;
   border-radius: 2px;
   outline: 5px solid #eff4f7;
-  -moz-outline-radius: 3px; // Can we get this on WebKit, please?
+  -moz-outline-radius: 3px; // Can we get this on WebKit please?
   @include box-shadow(inset 0 1px 3px rgba(0, 0, 0, .12));
   
   &:focus {
@@ -139,7 +140,7 @@ input[type=submit] {
   font-size: 12px;
   font-weight: bold;
   color: #527881;
-  text-shadow: 0 1px 0 #e3f1f1;
+  text-shadow: 0 1px #e3f1f1;
   border-width: 1px;
   border-style: solid;
   border-color: #b4ccce #b3c0c8 #9eb9c2;

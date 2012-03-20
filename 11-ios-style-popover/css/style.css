@@ -64,8 +64,6 @@ a {
     top: -12px; }
   .popover ul {
     overflow: hidden;
-    margin: 0;
-    padding: 0;
     background: #fff;
     border: 1px solid #000;
     border-radius: 7px;
