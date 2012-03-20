@@ -1,7 +1,8 @@
 # HTML5 & CSS3 Snippets
 
 Browse all snippets at [WebInterfaceLab.com](http://www.webinterfacelab.com).
-Follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab) | [Subscribe via RSS](http://feeds.feedburner.com/WebInterfaceLab)
+
+Follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab) — [Subscribe via RSS](http://feeds.feedburner.com/WebInterfaceLab)
 
 ## License
 
