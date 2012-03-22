@@ -28,7 +28,7 @@ Coded by [Thibaut Courouble](http://github.com/Thibaut).
 
 PSD Source by [Premium Pixels](http://www.premiumpixels.com/freebies/dark-navigation-menu-psd/).
 
-For more snippets visit [WebInterfaceLab.com](http://www.webinterfacelab.com) or follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab).
+For more snippets, visit [WebInterfaceLab.com](http://www.webinterfacelab.com) or follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab).
 
 ## License
 

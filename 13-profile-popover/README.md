@@ -28,7 +28,7 @@ Coded by [Thibaut Courouble](http://github.com/Thibaut).
 
 Original PSD by [Matthew Skiles](http://designmoo.com/4886/profile-tooltip/).
 
-For more snippets visit [WebInterfaceLab.com](http://www.webinterfacelab.com) or follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab).
+For more snippets, visit [WebInterfaceLab.com](http://www.webinterfacelab.com) or follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab).
 
 ## License
 

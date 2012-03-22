@@ -28,7 +28,7 @@ Coded by [Thibaut Courouble](http://github.com/Thibaut).
 
 Inspired by [Thomas Bossée's PSD](http://365psd.com/day/2-213/).
 
-For more snippets visit [WebInterfaceLab.com](http://www.webinterfacelab.com) or follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab).
+For more snippets, visit [WebInterfaceLab.com](http://www.webinterfacelab.com) or follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab).
 
 ## License
 
