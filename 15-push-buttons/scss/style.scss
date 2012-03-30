@@ -1,0 +1,159 @@
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+@import '../../bourbon/bourbon';
+
+/* ========================================================
+   Page
+   ===================================================== */
+
+body {
+  background: #f8f6f6;
+  color: #404040;
+  font-family: 'Lucida Grande', Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+a:hover, a:active { outline: none; }
+
+.column {
+  position: relative;
+  z-index: 1;
+  float: left;
+  width: 25%;
+  padding: 30px 0;
+  text-align: center;
+  white-space: nowrap;
+  
+  .button + .button { margin-left: 20px; }
+}
+
+@media screen and (max-width: 800px) {
+  .column { width: 50%; }
+}
+
+@media screen and (max-width: 400px) {
+  .column { width: 100%; }
+}
+
+/* ========================================================
+   Buttons
+   ===================================================== */
+
+$colors: red #d02e17,
+         blue #3471b8,
+         green #3e952d,
+         cyan #2eabb3,
+         brown #c8a22e,
+         pink #b62b89,
+         purple #6440be,
+         gray #999;
+
+.button {
+  position: relative;
+  display: inline-block;
+  height: 33px;
+  line-height: 33px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, .3);
+  border: 2px solid;
+  border-radius: 7px;
+  @include box-shadow(0 2px 1px rgba(0, 0, 0, .25));
+  
+  &:before, &:after {
+    content: '';
+    position: absolute;
+  }
+               
+  &:before {
+    top: -5px; right: -5px; bottom: -5px; left: -5px;
+    z-index: -1;
+    border-radius: 9px;
+  }
+  
+  &:after {
+    top: 0; right: 0; bottom: 0; left: 0;
+    border-radius: 7px;
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-bottom: 0;
+  }
+}
+
+.button.alt {
+  @include box-shadow(0 1px 3px rgba(0, 0, 0, .25));
+  &:before { display: none; }
+}
+
+@each $pair in $colors {
+  $color: nth($pair, 2);
+  
+  .column.#{nth($pair, 1)} {
+    background: lighten(desaturate(adjust-hue($color, 3deg), 8%), 2%);
+  }
+    
+  .button.#{nth($pair, 1)} {
+    border-color: darken($color, 13%) darken($color, 14%) darken($color, 20%);
+    @include linear-gradient(top,
+                             lighten(adjust-hue($color, 3deg), 8%) 0%,
+                             lighten(adjust-hue($color, 5deg), 5%) 50%,
+                             $color 50%,
+                             darken(saturate(adjust-hue($color, -4deg), 8%), 8%) 100%,
+                             $fallback: $color);
+                             
+    &:before {
+      @include linear-gradient(top,
+                               darken(saturate($color, 3%), 7%),
+                               lighten(saturate($color, 8%), 14%),
+                               $fallback: lighten(saturate($color, 5%), 10%));
+    }
+    
+    &:active {
+      @include linear-gradient(top,
+                               darken(saturate(adjust-hue($color, -5deg), 8%), 10%) 0%,
+                               lighten(adjust-hue($color, 2deg), 3%) 60%,
+                               lighten(adjust-hue($color, 2deg), 5%) 100%,
+                               $fallback: lighten(adjust-hue($color, 2deg), 5%));
+                               
+      &:after { border-color: lighten(adjust-hue($color, 2deg), 5%); }
+    }
+  }
+}
+
+.lt-ie9 .button:before { display: none; }
+
+/* ========================================================
+   About
+   ===================================================== */
+
+.about {
+  clear: both;
+  padding-top: 50px;
+  text-align: center;
+  color: #aaa;
+  text-shadow: 0 1px #fff;
+
+  a {
+    padding: 2px 6px;
+    color: #1e7ad3;
+    text-decoration: none;
+    
+    &:hover {
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 0 1px #145493;
+      background: #1e7ad3;
+      border-radius: 2px;
+    }
+  }
+}
