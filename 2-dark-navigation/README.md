@@ -16,11 +16,7 @@ To compile and watch:
 
 ## Browser Compatibility
 
-* Firefox 4-11
-* Safari 4-5
-* Chrome 13-17
-* Opera 11
-* Internet Explorer 6-9
+Firefox 4+, Safari 4+, Chrome 13+, Opera 11+, Internet Explorer 6+.
 
 ## Credits
 
