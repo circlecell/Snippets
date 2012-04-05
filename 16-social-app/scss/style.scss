@@ -1,0 +1,253 @@
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+@import '../../bourbon/bourbon';
+
+@mixin hide-text() {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+/* ========================================================
+   Page
+   ===================================================== */
+
+$zIndex: 10;
+$siteWidth: 380px;
+
+body {
+  background: #2e5270;
+  color: #404040;
+  font-family: 'Lucida Grande', Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+a {
+  color: #5d79ae;
+  text-decoration: none;
+  
+  &:hover { text-decoration: underline; }
+}
+
+.container {
+  margin: 50px auto;
+  width: $siteWidth;
+}
+
+/* ========================================================
+   Icons
+   ===================================================== */
+
+$icons: ('twitter', 0 0),
+        ('rss', -20px 0),
+        ('facebook', -40px 0),
+        ('dribbble', -60px 0),
+        ('plus', -80px 0);
+
+[class*="icon-"] {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/icons.png');
+  background-repeat: no-repeat;
+  @include hide-text;
+}
+
+@each $pair in $icons {
+  .icon-#{nth($pair, 1)} { background-position: nth($pair, 2); }
+}
+
+/* ========================================================
+   Social App
+   ===================================================== */
+
+$mainColor: #dee5f4;
+$sideColor: #59afd2;
+
+.app {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: $sideColor;
+  border-radius: 3px;
+  @include box-shadow(0 0 8px 1px rgba(0, 0, 0, .5));
+}
+
+.side {
+  float: left;
+  border-radius: 3px 0 0 3px;
+  
+  a {
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 38px;
+    @include hide-text;
+  }
+  
+  i {
+    cursor: pointer;
+    margin: -10px 0 0 -10px;
+    @include position(absolute, 50% 0 0 50%);
+  }
+  
+  .add {
+    background: darken($sideColor, 15%);
+    border-top: 1px solid darken($sideColor, 20%);
+    border-radius: 0 0 0 4px;
+    @include position(absolute, 0 0 0px 0px);
+    @include box-shadow(inset 0 1px rgba(255, 255, 255, .15));
+    
+    &:hover {
+      background: darken($sideColor, 11%);
+      border-color: darken($sideColor, 15%);
+    }
+  }
+}
+
+.tabs {
+  border-bottom: 1px solid lighten($sideColor, 8%);
+  border-bottom: 1px solid rgba(255, 255, 255, .15);
+  
+  a {
+    border-top: 1px solid lighten($sideColor, 8%);
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    border-bottom: 1px solid darken($sideColor, 11%);
+    
+    &:hover { background: lighten($sideColor, 8%); }
+  }
+  
+  li:first-child a {
+    border-top: 0;
+    border-radius: 4px 0 0 0;
+  }
+  
+  .active a, a:active {
+    cursor: default;
+    z-index: 10;
+    background: $mainColor;
+        
+    i { background-image: url('../img/icons_active.png'); }
+  }
+  
+  &:active .active a:not(:active) {
+    background: none;
+    
+    i { background-image: url('../img/icons.png'); }
+  }
+}
+
+.main {
+  position: relative;
+  margin-left: 35px;
+  background: $mainColor;
+  border-left: 1px solid darken($sideColor, 20%);
+  border-radius: 0 3px 3px 0;
+  @include box-shadow(0 0 4px rgba(0, 0, 0, .3));
+}
+
+.item {
+  position: relative;
+  padding: 12px 15px 12px 70px;
+  line-height: 18px;
+  color: #626c80;
+  font-size: 11px; 
+  text-shadow: 0 1px rgba(255, 255, 255, .7);
+  border-top: 1px solid lighten($mainColor, 3%);
+  border-bottom: 1px solid darken($mainColor, 5%);
+  @include linear-gradient(45deg, $mainColor 85%, darken($mainColor, 6%) 100%);
+  
+  &:first-child {
+    border-top: 0;
+    border-radius: 0 4px 0 0;
+  }
+  
+  &:last-child {
+    border-bottom: 0;
+    border-radius: 0 0 4px 0;
+  }
+  
+  footer {
+    margin: 2px 0 0;
+    font-size: 10px;
+  }
+  
+  time { color: darken($mainColor, 20%); }
+  
+  .avatar {
+    display: block;
+    @include position(absolute, 15px 0 0 15px);
+    
+    &:before {
+      content: '';
+      border: 1px solid rgba(0, 0, 0, .3);
+      border-bottom-color: rgba(0, 0, 0, .4);
+      border-radius: 3px;
+      @include position(absolute, 0px 0px 0px 0px);
+      @include box-shadow(inset 0 1px rgba(255, 255, 255, .3));
+    }
+    
+    img {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 3px;
+    }
+  }
+  
+  &:hover {
+    z-index: 2;
+    cursor: pointer;
+    background: darken($mainColor, 4%);
+    border-color: darken($mainColor, 8%);
+    @include box-shadow(inset 0 1px rgba(255, 255, 255, .25),
+                        0 1px darken($mainColor, 1%),
+                        0 -1px $mainColor);
+  }
+  
+  &:active, &.selected {
+    z-index: 3;
+    cursor: auto;
+    background: darken($mainColor, 8%);
+    border-color: darken($mainColor, 25%);
+    @include box-shadow(inset 0 0 6px rgba(0, 0, 0, .3),
+                        0 1px $mainColor,
+                        0 -1px $mainColor);
+  }
+}
+
+.lt-ie8 { // IE 7
+  .side a { vertical-align: top; }
+  .main { margin: 0 35px 0 0; left: 35px; }
+}
+
+.side a, .item {
+  @include transition(background, .15s);
+}
+
+/* ========================================================
+   About
+   ===================================================== */
+
+.about {
+  margin-top: 50px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px #223d54;
+  
+  a { color: #cce7fa; }
+  
+  a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #cce7fa;
+  }
+}
