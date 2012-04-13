@@ -1,3 +1,56 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /*
  * Copyright (c) 2012 Thibaut Courouble
  * http://www.webinterfacelab.com
@@ -11,123 +64,150 @@ body {
   font-family: 'Lucida Grande', Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  line-height: 20px; }
+  line-height: 20px;
+}
 
 a {
   color: #1e7ad3;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 .container, .main {
   width: 640px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 .main {
-  margin-top: 50px; }
-  .main .cal {
-    margin: 0 auto; }
+  margin-top: 50px;
+}
+.main .cal {
+  margin: 0 auto;
+}
 
 .cal {
   display: block;
   width: 216px;
   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
-  .cal a:hover {
-    text-decoration: none; }
-  .cal caption {
-    display: block;
-    line-height: 32px;
-    text-align: center;
-    color: #e2e2e2;
-    font-weight: bold;
-    text-shadow: 0 -1px black;
-    background: #333;
-    background: rgba(0, 0, 0, 0.35);
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #313131;
-    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
-    -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.04); }
-    .cal caption a {
-      display: block;
-      line-height: 32px;
-      padding: 0 10px;
-      color: #e2e2e2;
-      font-size: 15px; }
-      .cal caption a:hover {
-        color: #fff; }
-    .cal caption .prev {
-      float: left; }
-    .cal caption .next {
-      float: right; }
-  .cal th, .cal td {
-    width: 30px;
-    text-align: center;
-    text-shadow: 0 1px rgba(255, 255, 255, 0.8); }
-    .cal th:first-child, .cal td:first-child {
-      border-left: 0; }
-  .cal th {
-    font-size: 8px;
-    text-transform: uppercase;
-    color: #696969;
-    line-height: 20px;
-    background: #f3f3f3;
-    border-left: 1px solid #f3f3f3; }
-  .cal td {
-    font-size: 11px;
-    font-weight: bold;
-    border-top: 1px solid #c2c2c2;
-    border-left: 1px solid #c2c2c2; }
-    .cal td a {
-      clear: both;
-      display: block;
-      position: relative;
-      color: #666;
-      line-height: 28px;
-      width: 30px;
-      background-color: #eaeaea;
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaeaea), color-stop(60%, #e5e5e5), color-stop(100%, #d9d9d9));
-      background-image: -webkit-linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
-      background-image: -moz-linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
-      background-image: -ms-linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
-      background-image: -o-linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
-      background-image: linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
-      -webkit-box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
-      -moz-box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
-      box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5); }
-    .cal td a:hover, .cal td.off a {
-      background: #f3f3f3; }
-    .cal td.off a {
-      color: #b3b3b3; }
-    .cal td.active a, .cal td a:active {
-      margin: -1px;
-      color: #f3f3f3;
-      text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-      background: #6dafbf;
-      border: 1px solid #598b94;
-      -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
-      -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
-      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); }
-    .cal td.active:first-child a, .cal td:first-child a:active {
-      border-left: 0;
-      margin-left: 0; }
-    .cal td.active:last-child a, .cal td:last-child a:active {
-      border-right: 0;
-      margin-right: 0; }
-  .cal tr:last-child td.active a, .cal tr:last-child td a:active {
-    border-bottom: 0;
-    margin-bottom: 0; }
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.cal a:hover {
+  text-decoration: none;
+}
+.cal caption {
+  display: block;
+  line-height: 32px;
+  text-align: center;
+  color: #e2e2e2;
+  font-weight: bold;
+  text-shadow: 0 -1px black;
+  background: #333;
+  background: rgba(0, 0, 0, 0.35);
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #313131;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+  -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+}
+.cal caption a {
+  display: block;
+  line-height: 32px;
+  padding: 0 10px;
+  color: #e2e2e2;
+  font-size: 15px;
+}
+.cal caption a:hover {
+  color: #fff;
+}
+.cal caption .prev {
+  float: left;
+}
+.cal caption .next {
+  float: right;
+}
+.cal th, .cal td {
+  width: 30px;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+}
+.cal th:first-child, .cal td:first-child {
+  border-left: 0;
+}
+.cal th {
+  font-size: 8px;
+  text-transform: uppercase;
+  color: #696969;
+  line-height: 20px;
+  background: #f3f3f3;
+  border-left: 1px solid #f3f3f3;
+}
+.cal td {
+  font-size: 11px;
+  font-weight: bold;
+  border-top: 1px solid #c2c2c2;
+  border-left: 1px solid #c2c2c2;
+}
+.cal td a {
+  clear: both;
+  display: block;
+  position: relative;
+  color: #666;
+  line-height: 28px;
+  width: 30px;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaeaea), color-stop(60%, #e5e5e5), color-stop(100%, #d9d9d9));
+  background-image: -webkit-linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
+  background-image: -moz-linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
+  background-image: -ms-linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
+  background-image: -o-linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
+  background-image: linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
+  -webkit-box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+}
+.cal td a:hover, .cal td.off a {
+  background: #f3f3f3;
+}
+.cal td.off a {
+  color: #b3b3b3;
+}
+.cal td.active a, .cal td a:active {
+  margin: -1px;
+  color: #f3f3f3;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  background: #6dafbf;
+  border: 1px solid #598b94;
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.cal td.active:first-child a, .cal td:first-child a:active {
+  border-left: 0;
+  margin-left: 0;
+}
+.cal td.active:last-child a, .cal td:last-child a:active {
+  border-right: 0;
+  margin-right: 0;
+}
+.cal tr:last-child td.active a, .cal tr:last-child td a:active {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
 
 .about {
   margin: 50px 0;
   text-align: center;
   color: #777;
-  text-shadow: 0 -1px #222222; }
-  .about a {
-    color: #eee; }
-    .about a:hover {
-      text-decoration: none;
-      border-bottom: 1px solid #eee; }
+  text-shadow: 0 -1px #222222;
+}
+.about a {
+  color: #eee;
+}
+.about a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}

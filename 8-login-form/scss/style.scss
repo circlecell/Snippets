@@ -1,3 +1,6 @@
+@import '../../bourbon/bourbon';
+@import '../../css/reset';
+
 /*
  * Copyright (c) 2012 Thibaut Courouble
  * http://www.webinterfacelab.com
@@ -5,8 +8,6 @@
  * Licensed under the MIT License:
  * http://www.opensource.org/licenses/mit-license.php
  */
-
-@import '../../bourbon/bourbon';
 @import '../css/normalize.css';
 
 $siteWidth: 350px;

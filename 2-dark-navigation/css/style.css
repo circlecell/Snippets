@@ -1,3 +1,56 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /*
  * Copyright (c) 2012 Thibaut Courouble
  * http://www.webinterfacelab.com
@@ -11,17 +64,20 @@ body {
   font-family: 'Lucida Grande', Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  line-height: 18px; }
+  line-height: 18px;
+}
 
 .container {
   width: 540px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 header {
   padding-top: 100px;
   background: #3d4144 url("../img/bg.png") 0 0 repeat;
-  border-bottom: 5px solid #ddd; }
+  border-bottom: 5px solid #ddd;
+}
 
 nav {
   height: 36px;
@@ -36,84 +92,98 @@ nav {
   background-image: linear-gradient(top, #464b4c, #3f4344);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
   -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.06); }
-  nav a {
-    -webkit-transition-property: background-color, line-height;
-    -moz-transition-property: background-color, line-height;
-    -ms-transition-property: background-color, line-height;
-    -o-transition-property: background-color, line-height;
-    transition-property: background-color, line-height;
-    -webkit-transition-duration: 0.1s;
-    -moz-transition-duration: 0.1s;
-    -ms-transition-duration: 0.1s;
-    -o-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-    -webkit-transition-timing-function: ease-out;
-    -moz-transition-timing-function: ease-out;
-    -ms-transition-timing-function: ease-out;
-    -o-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    -webkit-transition-delay: 0;
-    -moz-transition-delay: 0;
-    -ms-transition-delay: 0;
-    -o-transition-delay: 0;
-    transition-delay: 0; }
-  nav ul {
-    float: left;
-    border-left: 1px solid #353939;
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-    border-right: 1px solid #4d5354;
-    border-right: 1px solid rgba(255, 255, 255, 0.06); }
-  nav li {
-    float: left; }
-  nav a {
-    display: block;
-    padding: 0 20px;
-    line-height: 36px;
-    color: #ddd;
-    text-shadow: 0 -1px #2e3131;
-    border-left: 1px solid #4d5354;
-    border-left: 1px solid rgba(255, 255, 255, 0.06);
-    border-right: 1px solid #353939;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    cursor: pointer; }
-    nav a:hover {
-      background: #4d5354;
-      background: rgba(255, 255, 255, 0.05); }
-  nav li.active a, nav li.active a:hover, nav a:active {
-    border-left: 0;
-    border-right: 0;
-    padding: 0 21px;
-    line-height: 33px;
-    border-bottom: 3px solid #48a9c0;
-    color: #eee;
-    background-color: #323637;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #484e4f), color-stop(100%, #323637));
-    background-image: -webkit-linear-gradient(top, #484e4f, #323637);
-    background-image: -moz-linear-gradient(top, #484e4f, #323637);
-    background-image: -ms-linear-gradient(top, #484e4f, #323637);
-    background-image: -o-linear-gradient(top, #484e4f, #323637);
-    background-image: linear-gradient(top, #484e4f, #323637);
-    -webkit-box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2); }
-  nav li.green a, nav li.green a:active {
-    border-bottom-color: #56c93d; }
-  nav li.red a, nav li.red a:active {
-    border-bottom-color: #a54e49; }
-  nav li.purple a, nav li.purple a:active {
-    border-bottom-color: #c052b9; }
-  nav li.yellow a, nav li.yellow a:active {
-    border-bottom-color: #c0bb30; }
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+}
+nav a {
+  -webkit-transition-property: background-color, line-height;
+  -moz-transition-property: background-color, line-height;
+  -ms-transition-property: background-color, line-height;
+  -o-transition-property: background-color, line-height;
+  transition-property: background-color, line-height;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+}
+nav ul {
+  float: left;
+  border-left: 1px solid #353939;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid #4d5354;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+nav li {
+  float: left;
+}
+nav a {
+  display: block;
+  padding: 0 20px;
+  line-height: 36px;
+  color: #ddd;
+  text-shadow: 0 -1px #2e3131;
+  border-left: 1px solid #4d5354;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+  border-right: 1px solid #353939;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  cursor: pointer;
+}
+nav a:hover {
+  background: #4d5354;
+  background: rgba(255, 255, 255, 0.05);
+}
+nav li.active a, nav li.active a:hover, nav a:active {
+  border-left: 0;
+  border-right: 0;
+  padding: 0 21px;
+  line-height: 33px;
+  border-bottom: 3px solid #48a9c0;
+  color: #eee;
+  background-color: #323637;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #484e4f), color-stop(100%, #323637));
+  background-image: -webkit-linear-gradient(top, #484e4f, #323637);
+  background-image: -moz-linear-gradient(top, #484e4f, #323637);
+  background-image: -ms-linear-gradient(top, #484e4f, #323637);
+  background-image: -o-linear-gradient(top, #484e4f, #323637);
+  background-image: linear-gradient(top, #484e4f, #323637);
+  -webkit-box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
+}
+nav li.green a, nav li.green a:active {
+  border-bottom-color: #56c93d;
+}
+nav li.red a, nav li.red a:active {
+  border-bottom-color: #a54e49;
+}
+nav li.purple a, nav li.purple a:active {
+  border-bottom-color: #c052b9;
+}
+nav li.yellow a, nav li.yellow a:active {
+  border-bottom-color: #c0bb30;
+}
 
 .about {
   margin: 50px 0;
   text-align: center;
   color: #bbb;
-  text-shadow: 0 1px #fff; }
-  .about a {
-    color: #1e7ad3;
-    text-decoration: none; }
-    .about a:hover {
-      border-bottom: 1px solid #1e7ad3; }
+  text-shadow: 0 1px #fff;
+}
+.about a {
+  color: #1e7ad3;
+  text-decoration: none;
+}
+.about a:hover {
+  border-bottom: 1px solid #1e7ad3;
+}
