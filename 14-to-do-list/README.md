@@ -20,7 +20,7 @@ Firefox 4+, Safari 4+, Chrome 13+, Opera 10+, Internet Explorer 8+.
 
 ## Credits
 
-Coded by [Thibaut Courouble](http://github.com/Thibaut).
+Coded by [Thibaut Courouble](http://thibaut.me).
 
 Original PSD by [Facundo Gonzalez](http://drbl.in/bKOd).
 
@@ -28,9 +28,9 @@ For more snippets, visit [WebInterfaceLab.com](http://www.webinterfacelab.com) o
 
 ## License
 
-Copyright (c) 2012 Thibaut Courouble — [thibaut.me](http://thibaut.me)
+Copyright (c) 2012 Thibaut Courouble
 
-Licensed under the MIT License.
+Licensed under the MIT License
 
 ## More CSS3
 

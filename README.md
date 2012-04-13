@@ -6,9 +6,9 @@ Follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab) — [Subscribe via
 
 ## License
 
-Copyright (c) 2012 Thibaut Courouble — [thibaut.me](http://thibaut.me)
+Copyright (c) 2012 [Thibaut Courouble](http://thibaut.me)
 
-Licensed under the MIT License.
+Licensed under the MIT License
 
 ## More CSS3
 
