@@ -22,7 +22,7 @@ Firefox 4+, Safari 4+, Chrome 13+, Opera 10+, Internet Explorer 7+.
 
 Coded by [Thibaut Courouble](http://thibaut.me).
 
-Original PSD by [Premium Pixels](http://www.premiumpixels.com/freebies/mini-drop-down-menu-psd/).
+Original PSD by [Orman Clark](http://www.premiumpixels.com/freebies/mini-drop-down-menu-psd/).
 
 For more snippets, visit [WebInterfaceLab.com](http://www.webinterfacelab.com) or follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab).
 
