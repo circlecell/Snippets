@@ -9,8 +9,11 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
+/* ========================================================
+   Page
+   ===================================================== */
+
 $siteWidth: 640px;
-$popoverZ: 10;
 
 body {
   background: #0ca3d2;
@@ -40,6 +43,12 @@ a {
   
   .popover { margin: 0 auto; }
 }
+
+/* ========================================================
+   Popover
+   ===================================================== */
+
+$popoverZ: 10;
 
 .popover {
   position: relative;
@@ -154,16 +163,48 @@ a {
   .active a:after, a:active:after { display: block; }
 }
 
+/* ========================================================
+   About
+   ===================================================== */
+
 .about {
-  margin: 50px 0;
+  margin: 80px auto 20px;
+  padding: 15px 20px;
+  width: 300px;
   text-align: center;
-  color: #fff;
-  text-shadow: 0 1px #2a85a1;
+  color: #045773;
+  text-shadow: 0 1px rgba(255, 255, 255, .3);
+  background: rgba(0, 0, 0, .05);
+  border-radius: 3px;
   
-  a { color: #cce7fa; }
-  
-  a:hover {
+  a {
+    padding: 1px 3px;
+    margin: 0 -1px;
+    color: #fff;
     text-decoration: none;
-    border-bottom: 1px solid #cce7fa;
+    text-shadow: 0 -1px rgba(0, 0, 0, .2);
+    border-radius: 2px;
+
+    &:hover {
+      color: #045773;
+      text-shadow: none;
+      background: #fff;
+    }
   }
+}
+
+.links {
+  @include clearfix;
+  
+  a {
+    padding: 6px 0;
+    float: left;
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
 }

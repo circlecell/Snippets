@@ -9,6 +9,10 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
+/* ========================================================
+   Page
+   ===================================================== */
+
 $siteWidth: 540px;
 $headerHeight: 37px;
 
@@ -39,6 +43,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ========================================================
+   Top bar
+   ===================================================== */
 
 header {
   position: fixed;
@@ -131,16 +139,48 @@ header {
   }
 }
 
+/* ========================================================
+   About
+   ===================================================== */
+
 .about {
-  margin: 50px 0;
+  margin: 80px auto;
+  padding: 15px 20px;
+  width: 300px;
   text-align: center;
-  color: #ccc;
-  text-shadow: 0 -1px rgba(0, 0, 0, .25);
+  color: darken($bodyBackgroundColor, 20%);
+  text-shadow: 0 1px rgba(255, 255, 255, .3);
+  background: rgba(0, 0, 0, .05);
+  border-radius: 3px;
   
   a {
-    color: #fff;
+    padding: 1px 3px;
+    margin: 0 -1px;
+    color: #e8f3fc;
     text-decoration: none;
-    
-    &:hover { border-bottom: 1px solid #fff; }
+    text-shadow: 0 -1px rgba(0, 0, 0, .2);
+    border-radius: 2px;
+
+    &:hover {
+      color: darken($bodyBackgroundColor, 20%);
+      text-shadow: none;
+      background: #e8f3fc;
+    }
   }
+}
+
+.links {
+  @include clearfix;
+  
+  a {
+    padding: 6px 0;
+    float: left;
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
 }

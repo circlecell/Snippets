@@ -9,6 +9,10 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
+/* ========================================================
+   Page
+   ===================================================== */
+
 $siteWidth: 640px;
 
 body {
@@ -43,6 +47,10 @@ input {
   font-size: 13px;
   color: #555860;
 }
+
+/* ========================================================
+   Search
+   ===================================================== */
 
 .search {
   position: relative;
@@ -160,20 +168,52 @@ input {
   font-weight: 200;
 }
 
+.lt-ie9 {
+  .search input { line-height: 26px; }
+}
+
+/* ========================================================
+   About
+   ===================================================== */
+
 .about {
-  margin: 230px 0 50px;
+  margin: 240px auto 50px;
+  padding: 15px 20px;
+  width: 300px;
   text-align: center;
-  color: #bbb;
-  font-size: 14px;
-  font-weight: 200;
-  text-shadow: 0 1px #fff;
-  
-  a:hover {
+  color: #777;
+  text-shadow: 0 1px rgba(255, 255, 255, .7);
+  background: rgba(0, 0, 0, .05);
+  border-radius: 3px;
+
+  a {
+    padding: 1px 3px;
+    margin: 0 -1px;
+    color: #1c74c8;
     text-decoration: none;
-    border-bottom: 1px solid #1e7ad3;
+    border-radius: 2px;
+
+    &:hover {
+      color: #fff;
+      text-shadow: 0 1px #0063A6;
+      background: #0090D2;
+    }
   }
 }
 
-.lt-ie9 {
-  .search input { line-height: 26px; }
+.links {
+  @include clearfix;
+  
+  a {
+    padding: 6px 0;
+    float: left;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
 }

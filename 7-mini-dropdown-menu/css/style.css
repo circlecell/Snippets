@@ -58,6 +58,9 @@ table {
  * Licensed under the MIT License:
  * http://www.opensource.org/licenses/mit-license.php
  */
+/* ========================================================
+   Page
+   ===================================================== */
 body {
   background: #323a44 url("../img/bg.png") 0 0 repeat;
   color: #404040;
@@ -85,6 +88,9 @@ a:hover {
   margin-top: 50px;
 }
 
+/* ========================================================
+   Dropdown menu
+   ===================================================== */
 .dropdown {
   position: relative;
   height: 27px;
@@ -200,16 +206,50 @@ a:hover {
   background-image: linear-gradient(top, #5e9ace, #416cb8);
 }
 
+/* ========================================================
+   About
+   ===================================================== */
 .about {
-  margin: 50px 0;
+  margin: 80px auto;
+  padding: 15px 20px;
+  width: 300px;
   text-align: center;
-  color: #777;
-  text-shadow: 0 -1px #222222;
+  color: #aaa;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
 }
 .about a {
-  color: #eee;
+  padding: 1px 3px;
+  margin: 0 -1px;
+  color: #fafafa;
+  text-decoration: none;
+  border-radius: 2px;
 }
 .about a:hover {
-  text-decoration: none;
-  border-bottom: 1px solid #eee;
+  color: #111;
+  text-shadow: none;
+  background: #fafafa;
+}
+
+.links {
+  zoom: 1;
+}
+.links:before, .links:after {
+  content: "";
+  display: table;
+}
+.links:after {
+  clear: both;
+}
+.links a {
+  padding: 6px 0;
+  float: left;
+  width: 50%;
+  font-size: 14px;
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
 }

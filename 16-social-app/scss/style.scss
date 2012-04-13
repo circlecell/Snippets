@@ -240,15 +240,42 @@ $sideColor: #59afd2;
    ===================================================== */
 
 .about {
-  margin-top: 50px;
+  margin: 80px auto 20px;
+  padding: 15px 20px;
+  width: 300px;
   text-align: center;
-  color: #fff;
-  text-shadow: 0 1px #223d54;
+  color: #aaa;
+  text-shadow: 0 -1px rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, .05);
+  border-radius: 3px;
   
-  a { color: #cce7fa; }
-  
-  a:hover {
+  a {
+    padding: 1px 3px;
+    margin: 0 -1px;
+    color: #fafafa;
     text-decoration: none;
-    border-bottom: 1px solid #cce7fa;
+    border-radius: 2px;
+
+    &:hover {
+      color: #111;
+      text-shadow: none;
+      background: #fafafa;
+    }
   }
+}
+
+.links {
+  @include clearfix;
+  
+  a {
+    padding: 6px 0;
+    float: left;
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
 }

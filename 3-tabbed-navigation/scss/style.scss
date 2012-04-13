@@ -9,9 +9,11 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
+/* ========================================================
+   Page
+   ===================================================== */
+
 $siteWidth: 640px;
-$navHeight: 34px;
-$navBackgroundColor: #759aaf;
 
 body {
   background: #ecedef;
@@ -25,7 +27,6 @@ body {
 a {
   color: #1e7ad3;
   text-decoration: none;
-  @include transition((background, color), .1s, ease-out);
   
   &:hover { text-decoration: underline; }
 }
@@ -35,6 +36,13 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ========================================================
+   Header & Navigation
+   ===================================================== */
+
+$navHeight: 34px;
+$navBackgroundColor: #759aaf;
 
 header {
   padding-top: 60px;
@@ -147,14 +155,47 @@ nav {
   }
 }
 
+/* ========================================================
+   About
+   ===================================================== */
+
 .about {
-  margin: 50px 0;
+  margin: 80px auto;
+  padding: 15px 20px;
+  width: 300px;
   text-align: center;
-  color: #bbb;
-  text-shadow: 0 1px #fff;
-  
-  a:hover {
+  color: #777;
+  text-shadow: 0 1px rgba(255, 255, 255, .7);
+  background: rgba(0, 0, 0, .05);
+  border-radius: 3px;
+
+  a {
+    padding: 1px 3px;
+    margin: 0 -1px;
+    color: #1c74c8;
     text-decoration: none;
-    border-bottom: 1px solid #1e7ad3;
+    border-radius: 2px;
+
+    &:hover {
+      color: #fff;
+      text-shadow: 0 1px #0063A6;
+      background: #0090D2;
+    }
   }
+}
+
+.links {
+  @include clearfix;
+  
+  a {
+    padding: 6px 0;
+    float: left;
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
 }

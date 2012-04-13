@@ -58,6 +58,9 @@ table {
  * Licensed under the MIT License:
  * http://www.opensource.org/licenses/mit-license.php
  */
+/* ========================================================
+   Page
+   ===================================================== */
 body {
   background: #10abd7;
   color: #404040;
@@ -74,6 +77,9 @@ body {
   margin-right: auto;
 }
 
+/* ========================================================
+   Top bar
+   ===================================================== */
 header {
   position: fixed;
   top: 0;
@@ -200,16 +206,51 @@ header nav span {
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.2);
 }
 
+/* ========================================================
+   About
+   ===================================================== */
 .about {
-  margin: 50px 0;
+  margin: 80px auto;
+  padding: 15px 20px;
+  width: 300px;
   text-align: center;
-  color: #ccc;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+  color: #095f78;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
 }
 .about a {
-  color: #fff;
+  padding: 1px 3px;
+  margin: 0 -1px;
+  color: #e8f3fc;
   text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
 }
 .about a:hover {
-  border-bottom: 1px solid #fff;
+  color: #095f78;
+  text-shadow: none;
+  background: #e8f3fc;
+}
+
+.links {
+  zoom: 1;
+}
+.links:before, .links:after {
+  content: "";
+  display: table;
+}
+.links:after {
+  clear: both;
+}
+.links a {
+  padding: 6px 0;
+  float: left;
+  width: 50%;
+  font-size: 14px;
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
 }

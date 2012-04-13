@@ -8,8 +8,11 @@
  * Licensed under the MIT License:
  * http://www.opensource.org/licenses/mit-license.php
  */
-@import '../css/normalize.css';
 
+/* ========================================================
+   Page
+   ===================================================== */
+   
 $siteWidth: 350px;
 
 body {
@@ -33,6 +36,10 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ========================================================
+   Login form
+   ===================================================== */
 
 .login {
   position: relative;
@@ -160,20 +167,52 @@ input[type=submit] {
   }
 }
 
+.lt-ie9 {
+  input[type=text], input[type=password] { line-height: 34px; }
+}
+
+/* ========================================================
+   About
+   ===================================================== */
+
 .about {
-  padding: 50px 0;
+  margin: 80px auto 20px;
+  padding: 15px 20px;
+  width: 300px;
   text-align: center;
-  color: #fff;
-  text-shadow: 0 1px #2a85a1;
+  color: #045773;
+  text-shadow: 0 1px rgba(255, 255, 255, .3);
+  background: rgba(0, 0, 0, .05);
+  border-radius: 3px;
   
-  a { color: #cce7fa; }
-  
-  a:hover {
+  a {
+    padding: 1px 3px;
+    margin: 0 -1px;
+    color: #fff;
     text-decoration: none;
-    border-bottom: 1px solid #cce7fa;
+    text-shadow: 0 -1px rgba(0, 0, 0, .2);
+    border-radius: 2px;
+
+    &:hover {
+      color: #045773;
+      text-shadow: none;
+      background: #fff;
+    }
   }
 }
 
-.lt-ie9 {
-  input[type=text], input[type=password] { line-height: 34px; }
+.links {
+  @include clearfix;
+  
+  a {
+    padding: 6px 0;
+    float: left;
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
 }

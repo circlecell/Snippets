@@ -58,6 +58,9 @@ table {
  * Licensed under the MIT License:
  * http://www.opensource.org/licenses/mit-license.php
  */
+/* ========================================================
+   Page
+   ===================================================== */
 body {
   background: #ecedef;
   color: #404040;
@@ -73,6 +76,9 @@ body {
   margin-right: auto;
 }
 
+/* ========================================================
+   Header & Navigation
+   ===================================================== */
 header {
   padding-top: 100px;
   background: #3d4144 url("../img/bg.png") 0 0 repeat;
@@ -174,16 +180,50 @@ nav li.yellow a, nav li.yellow a:active {
   border-bottom-color: #c0bb30;
 }
 
+/* ========================================================
+   About
+   ===================================================== */
 .about {
-  margin: 50px 0;
+  margin: 80px auto;
+  padding: 15px 20px;
+  width: 300px;
   text-align: center;
-  color: #bbb;
-  text-shadow: 0 1px #fff;
+  color: #777;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
 }
 .about a {
-  color: #1e7ad3;
+  padding: 1px 3px;
+  margin: 0 -1px;
+  color: #1c74c8;
   text-decoration: none;
+  border-radius: 2px;
 }
 .about a:hover {
-  border-bottom: 1px solid #1e7ad3;
+  color: #fff;
+  text-shadow: 0 1px #0063A6;
+  background: #0090D2;
+}
+
+.links {
+  zoom: 1;
+}
+.links:before, .links:after {
+  content: "";
+  display: table;
+}
+.links:after {
+  clear: both;
+}
+.links a {
+  padding: 6px 0;
+  float: left;
+  width: 50%;
+  font-size: 14px;
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
 }

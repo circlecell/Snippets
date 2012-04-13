@@ -24,6 +24,10 @@ body {
 
 a:hover, a:active { outline: none; }
 
+.container {
+  @include clearfix;
+}
+
 .column {
   position: relative;
   z-index: 1;
@@ -137,24 +141,42 @@ $colors: red #d02e17,
    ===================================================== */
 
 .about {
-  clear: both;
-  padding-top: 50px;
+  margin: 80px auto;
+  padding: 15px 20px;
+  width: 300px;
   text-align: center;
-  color: #aaa;
-  text-shadow: 0 1px #fff;
+  color: #777;
+  text-shadow: 0 1px rgba(255, 255, 255, .7);
+  background: rgba(0, 0, 0, .05);
+  border-radius: 3px;
 
   a {
-    padding: 2px 6px;
-    color: #1e7ad3;
+    padding: 1px 3px;
+    margin: 0 -1px;
+    color: #1c74c8;
     text-decoration: none;
-    
+    border-radius: 2px;
+
     &:hover {
-      position: relative;
       color: #fff;
-      text-decoration: none;
-      text-shadow: 0 1px #145493;
-      background: #1e7ad3;
-      border-radius: 2px;
+      text-shadow: 0 1px #0063A6;
+      background: #0090D2;
     }
   }
+}
+
+.links {
+  @include clearfix;
+  
+  a {
+    padding: 6px 0;
+    float: left;
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
 }

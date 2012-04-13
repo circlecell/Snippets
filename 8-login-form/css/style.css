@@ -1,4 +1,3 @@
-@import url(../css/normalize.css);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -59,6 +58,9 @@ table {
  * Licensed under the MIT License:
  * http://www.opensource.org/licenses/mit-license.php
  */
+/* ========================================================
+   Page
+   ===================================================== */
 body {
   background: #0ca3d2;
   color: #404040;
@@ -82,6 +84,9 @@ a:hover {
   margin-right: auto;
 }
 
+/* ========================================================
+   Login form
+   ===================================================== */
 .login {
   position: relative;
   margin-top: 100px;
@@ -234,20 +239,55 @@ input[type=submit]:active {
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-.about {
-  padding: 50px 0;
-  text-align: center;
-  color: #fff;
-  text-shadow: 0 1px #2a85a1;
-}
-.about a {
-  color: #cce7fa;
-}
-.about a:hover {
-  text-decoration: none;
-  border-bottom: 1px solid #cce7fa;
-}
-
 .lt-ie9 input[type=text], .lt-ie9 input[type=password] {
   line-height: 34px;
+}
+
+/* ========================================================
+   About
+   ===================================================== */
+.about {
+  margin: 80px auto 20px;
+  padding: 15px 20px;
+  width: 300px;
+  text-align: center;
+  color: #045773;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+.about a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+.about a:hover {
+  color: #045773;
+  text-shadow: none;
+  background: #fff;
+}
+
+.links {
+  zoom: 1;
+}
+.links:before, .links:after {
+  content: "";
+  display: table;
+}
+.links:after {
+  clear: both;
+}
+.links a {
+  padding: 6px 0;
+  float: left;
+  width: 50%;
+  font-size: 14px;
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
 }
