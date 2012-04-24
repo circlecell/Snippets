@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/11-ios-style-popover](http://demo.webinterfacelab.com/11-ios-style-popover/)
 
-[![Preview](http://www.webinterfacelab.com/assets/snippets/ios-style-popover/preview.png)](http://www.webinterfacelab.com/snippets/ios-style-popover)
+[![Preview](http://www.webinterfacelab.com/snippets/ios-style-popover/preview.png)](http://www.webinterfacelab.com/snippets/ios-style-popover)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass), with help from [Bourbon](https://github.com/thoughtbot/bourbon).
 
@@ -34,6 +34,6 @@ Licensed under the MIT License
 
 ## More CSS3
 
-Check out my [HTML5 & CSS3 Web Interfaces](http://www.webinterfacelab.com/web-interface-kits):
+Have a look at my [CSS3 Toolkits](http://www.webinterfacelab.com/css3-web-interface-toolkits):
 
-[![Thumb #1](http://cdn.webinterfacelab.com/assets/elegant/thumb-180-1.png)](http://www.webinterfacelab.com/web-interface-kits/elegant) [![Thumb #2](http://cdn.webinterfacelab.com/assets/simple/thumb-180-1.png)](http://www.webinterfacelab.com/web-interface-kits/simple) [![Thumb #3](http://cdn.webinterfacelab.com/assets/elegant/thumb-180-2.png)](http://www.webinterfacelab.com/web-interface-kits/elegant) [![Thumb #4](http://cdn.webinterfacelab.com/assets/simple/thumb-180-2.png)](http://www.webinterfacelab.com/web-interface-kits/simple)
+[![Thumb #1](http://cdn.webinterfacelab.com/elegant/thumb-180-1.png)](http://www.webinterfacelab.com/css3-web-interface-toolkits/elegant) [![Thumb #2](http://cdn.webinterfacelab.com/simple/thumb-180-1.png)](http://www.webinterfacelab.com/css3-web-interface-toolkits/simple) [![Thumb #3](http://cdn.webinterfacelab.com/elegant/thumb-180-2.png)](http://www.webinterfacelab.com/css3-web-interface-toolkits/elegant) [![Thumb #4](http://cdn.webinterfacelab.com/simple/thumb-180-2.png)](http://www.webinterfacelab.com/css3-web-interface-toolkits/simple)
