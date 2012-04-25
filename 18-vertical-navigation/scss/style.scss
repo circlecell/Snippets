@@ -1,0 +1,204 @@
+@import '../../bourbon/bourbon';
+@import '../../css/reset';
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+@mixin hide-text() {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+/* ========================================================
+   Page
+   ===================================================== */
+
+$siteWidth: 480px;
+
+body {
+  color: #404040;
+  font-family: 'Lucida Grande', Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  background: #30353b url('../img/bg.png') 0 0 repeat;
+}
+
+.container {
+  margin: 80px auto;
+  width: $siteWidth;
+  
+  .vnav { margin: 0 auto; }
+}
+
+/* ========================================================
+   Icons
+   ===================================================== */
+
+$icons: ('friends', 0 0),
+        ('video', -20px 0),
+        ('photo', -40px 0),
+        ('podcast', -60px 0);
+
+[class*="icon-"] {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/icons.png');
+  background-repeat: no-repeat;
+  @include hide-text;
+}
+
+@each $pair in $icons {
+  .icon-#{nth($pair, 1)} { background-position: nth($pair, 2); }
+}
+
+/* ========================================================
+   Vertical navigation
+   ===================================================== */
+
+.vnav {
+  width: 200px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #1d1f22;
+  @include box-shadow(0 1px 2px rgba(0, 0, 0, .4));
+  
+  a {
+    display: block;
+    line-height: 34px;
+    text-decoration: none;
+  }
+  
+  li:last-child {
+    .vnav-item { border-bottom-color: #50575f; }
+    .vnav-subnav { border-bottom-color: #fff; }
+  }
+}
+
+.vnav-item {
+  position: relative;
+  padding: 0 12px 0 37px;
+  color: #fff;
+  font-size: 13px;
+  text-shadow: 0 1px rgba(0, 0, 0, .35);
+  border-top: 1px solid #878e96;
+  border-bottom: 1px solid #333740;
+  @include linear-gradient(top, #707a84, #505968, $fallback: #505968);
+  @include transition(opacity, .15s);
+  
+  &:hover { opacity: .95; }
+  
+  .active &, &:active {
+    opacity: 1;
+    border-top-color: #6ad2ef;
+    border-bottom-color: #1c638f;
+    @include box-shadow(0 1px #bbb, 0 2px #e9ebe8);
+    @include linear-gradient(top, #44c5ec, #259bdb, $fallback: #259bdb);
+    
+    .vnav-counter { background: #2471a9; }
+  }
+  
+  i {
+    position: absolute;
+    top: 7px;
+    left: 9px;
+  }
+}
+
+.vnav-counter {
+  float: right;
+  margin-top: 8px;
+  padding: 0 6px;
+  line-height: 18px;
+  font-size: 11px;
+  background: #464e59;
+  border-radius: 9px;
+  @include box-shadow(inset 0 1px 2px rgba(0, 0, 0, .3),
+                      0 1px rgba(255, 255, 255, .2))
+}
+
+.vnav-subnav {
+  display: none;
+  border-bottom: 1px solid #404348;
+  
+  .active & { display: block; }
+  
+  a {
+    padding: 0 12px 0 16px;
+    font-size: 12px;
+    color: #838a90;
+    border-bottom: 1px solid #eee;
+    
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-right: 8px;
+      border: 4px outset transparent;
+      border-left: 4px solid #bbb;
+    }
+    
+    &:hover { background: #f8f9fb; }
+  }
+  
+  .vnav-counter {
+    color: #999;
+    background: #fcfcfc;
+    @include box-shadow(inset 0 0 0 1px #dcdcdc);
+  }
+  
+  li:last-child a { border-bottom-color: #fff; }
+}
+
+/* ========================================================
+   About
+   ===================================================== */
+
+.about {
+  margin: 80px auto;
+  padding: 15px 20px;
+  width: 300px;
+  text-align: center;
+  color: #aaa;
+  text-shadow: 0 -1px rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, .05);
+  border-radius: 3px;
+  
+  a {
+    padding: 1px 3px;
+    margin: 0 -1px;
+    color: #fafafa;
+    text-decoration: none;
+    border-radius: 2px;
+
+    &:hover {
+      color: #111;
+      text-shadow: none;
+      background: #fafafa;
+    }
+  }
+}
+
+.links {
+  @include clearfix;
+  
+  a {
+    padding: 6px 0;
+    float: left;
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
+}
