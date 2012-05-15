@@ -103,26 +103,11 @@ header {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.8), inset 0 0 1px rgba(255, 255, 255, 0.1);
 }
 header a {
-  -webkit-transition-property: background-color, color;
-  -moz-transition-property: background-color, color;
-  -ms-transition-property: background-color, color;
-  -o-transition-property: background-color, color;
-  transition-property: background-color, color;
-  -webkit-transition-duration: 0.1s;
-  -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
-  -o-transition-duration: 0.1s;
-  transition-duration: 0.1s;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: ease-out;
-  -ms-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-delay: 0;
-  -moz-transition-delay: 0;
-  -ms-transition-delay: 0;
-  -o-transition-delay: 0;
-  transition-delay: 0;
+  -webkit-transition: background-color, color, 0.1s, ease-out;
+  -moz-transition: background-color, color, 0.1s, ease-out;
+  -ms-transition: background-color, color, 0.1s, ease-out;
+  -o-transition: background-color, color, 0.1s, ease-out;
+  transition: background-color, color, 0.1s, ease-out;
 }
 header h1 {
   float: left;

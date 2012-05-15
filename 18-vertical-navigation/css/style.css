@@ -147,26 +147,11 @@ body {
   background-image: -ms-linear-gradient(top, #707a84, #505968);
   background-image: -o-linear-gradient(top, #707a84, #505968);
   background-image: linear-gradient(top, #707a84, #505968);
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -ms-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transition-duration: 0.15s;
-  -moz-transition-duration: 0.15s;
-  -ms-transition-duration: 0.15s;
-  -o-transition-duration: 0.15s;
-  transition-duration: 0.15s;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: ease-out;
-  -ms-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-delay: 0;
-  -moz-transition-delay: 0;
-  -ms-transition-delay: 0;
-  -o-transition-delay: 0;
-  transition-delay: 0;
+  -webkit-transition: opacity, 0.15s;
+  -moz-transition: opacity, 0.15s;
+  -ms-transition: opacity, 0.15s;
+  -o-transition: opacity, 0.15s;
+  transition: opacity, 0.15s;
 }
 .vnav-item:hover {
   opacity: .95;

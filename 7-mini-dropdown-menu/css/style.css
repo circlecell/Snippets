@@ -98,8 +98,6 @@ a:hover {
   border-style: solid;
   border-color: #272c33 #242930 #22272d;
   border-radius: 3px;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
   display: inline-block;
   vertical-align: baseline;
   zoom: 1;

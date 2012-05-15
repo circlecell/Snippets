@@ -100,8 +100,6 @@ nav ul {
   border-style: solid;
   border-color: #d5d5d5 #d2d2d2 #cdcdcd;
   border-radius: 3px;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
   display: inline-block;
   vertical-align: baseline;
   zoom: 1;

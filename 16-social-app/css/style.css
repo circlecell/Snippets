@@ -296,26 +296,11 @@ a:hover {
 }
 
 .side a, .item {
-  -webkit-transition-property: background;
-  -moz-transition-property: background;
-  -ms-transition-property: background;
-  -o-transition-property: background;
-  transition-property: background;
-  -webkit-transition-duration: 0.15s;
-  -moz-transition-duration: 0.15s;
-  -ms-transition-duration: 0.15s;
-  -o-transition-duration: 0.15s;
-  transition-duration: 0.15s;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: ease-out;
-  -ms-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-delay: 0;
-  -moz-transition-delay: 0;
-  -ms-transition-delay: 0;
-  -o-transition-delay: 0;
-  transition-delay: 0;
+  -webkit-transition: background, 0.15s;
+  -moz-transition: background, 0.15s;
+  -ms-transition: background, 0.15s;
+  -o-transition: background, 0.15s;
+  transition: background, 0.15s;
 }
 
 /* ========================================================

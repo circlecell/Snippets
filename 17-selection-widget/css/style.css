@@ -72,7 +72,7 @@ body {
   font-weight: normal;
   line-height: 20px;
   background-repeat: no-repeat;
-  background-color: #dbdede;
+  background-color: false;
   background-image: -webkit-gradient(radial, center center, 0, center center, 460, color-stop(0%, #dbdede), color-stop(100%, #bfbdbe));
   background-image: -webkit-radial-gradient(center, circle cover, #dbdede, #bfbdbe);
   background-image: -moz-radial-gradient(center, circle cover, #dbdede, #bfbdbe);
@@ -93,8 +93,6 @@ body {
 .widget {
   position: relative;
   height: 36px;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
   display: inline-block;
   vertical-align: baseline;
   zoom: 1;
