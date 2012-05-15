@@ -47,7 +47,7 @@ body {
   @include inline-block;
   @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, .2),
                       0 1px rgba(255, 255, 255, .4));
-  
+
   &:before {
     content: '';
     position: absolute;
@@ -58,18 +58,18 @@ body {
     border-radius: 4px;
     @include box-shadow(0 1px 2px rgba(0, 0, 0, .2));
   }
-  
+
   a { text-decoration: none; }
-  
+
   tr:first-child td { border-top: 0; }
   td:first-child { border-left: 0; }
-  
+
   tr:first-child a { border-top: 0; margin-top: 0; }
   tr:last-child a { border-bottom: 0; margin-bottom: 0; }
-  
+
   td:first-child a { border-left: 0; margin-left: 0; }
   td:last-child a { border-right: 0; margin-right: 0; }
-  
+
   tr:last-child td:first-child a { border-radius: 0 0 0 3px; }
   tr:last-child td:last-child a { border-radius: 0 0 3px 0; }
 }
@@ -99,7 +99,7 @@ body {
                       inset 0 1px rgba(0, 0, 0, .1),
                       inset 0 2px rgba(255, 255, 255, .25),
                       0 1px 3px rgba(0, 0, 0, .4));
-  
+
   a {
     line-height: 30px;
     padding: 0 10px;
@@ -107,7 +107,7 @@ body {
     font-size: 20px;
     font-weight: normal;
   }
-  
+
   .prev { float: left; }
   .next { float: right; }
 }
@@ -119,13 +119,13 @@ body {
     border-top: 1px solid #eaeaea;
     border-left: 1px solid #eaeaea;
   }
-  
+
   a {
     display: block;
     position: relative;
     line-height: 28px;
     text-align: center;
-    color: #555;  
+    color: #555;
     background: #fff;
   }
 
@@ -157,7 +157,7 @@ body {
   a {
     color: #f79901;
     overflow: hidden;
-  
+
     &:before {
       content: '';
       position: absolute;
@@ -206,7 +206,7 @@ body {
 
 .links {
   @include clearfix;
-  
+
   a {
     padding: 6px 0;
     float: left;

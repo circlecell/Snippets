@@ -27,7 +27,7 @@ body {
 a {
   color: #1e7ad3;
   text-decoration: none;
-  
+
   &:hover { text-decoration: underline; }
 }
 
@@ -40,7 +40,7 @@ a {
 .main {
   margin-top: 50px;
   @extend .container;
-  
+
   div { margin-bottom: 20px; }
 }
 
@@ -54,7 +54,7 @@ a {
   border-radius: 10px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
-  
+
   > span {
     position: relative;
     float: left;
@@ -70,7 +70,7 @@ a {
     border-color: darken($color, 5%) darken($color, 10%) darken($color, 18%);
     @include linear-gradient(top, lighten($color, 14%) 0%, lighten($color, 6%) 70%, $color 100%, $fallback: $color);
     @include box-shadow(inset 0 1px rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, .2));
-    
+
     span {
       padding: 0 8px;
       font-size: 11px;
@@ -79,7 +79,7 @@ a {
       color: rgba(0, 0, 0, .7);
       text-shadow: 0 1px rgba(255, 255, 255, .4);
     }
-    
+
     &:before {
       content: '';
       position: absolute;
@@ -90,9 +90,9 @@ a {
       background: url('../img/progress.png') 0 0 repeat-x;
     }
   }
-  
+
   $colors: green #85c440, red #db3a27, orange #f2b63c, blue #5aaadb;
-  
+
   @each $pair in $colors {
     .#{nth($pair, 1)} {
       $color: nth($pair, 2);
@@ -133,7 +133,7 @@ a {
 
 .links {
   @include clearfix;
-  
+
   a {
     padding: 6px 0;
     float: left;

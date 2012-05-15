@@ -27,7 +27,7 @@ body {
 a {
   color: #1e7ad3;
   text-decoration: none;
-  
+
   &:hover { text-decoration: underline; }
 }
 
@@ -40,7 +40,7 @@ a {
 .main {
   margin-top: 50px;
   @extend .container;
-  
+
   .popover { margin: 0 auto; }
 }
 
@@ -63,7 +63,7 @@ $popoverZ: 10;
                       inset 1px 0 rgba(255, 255, 255, .08),
                       inset -1px 0 rgba(255, 255, 255, .08),
                       0 2px 8px rgba(0, 0, 0, .5));
-  
+
   &:before, &:after, ul:before {
     display: block;
     content: '';
@@ -84,13 +84,13 @@ $popoverZ: 10;
     border-bottom: 7px solid #888;
     top: -13px;
   }
-  
+
   ul:before {
     z-index: $popoverZ + 2;
     border-bottom: 8px solid #666;
     top: -12px;
   }
-  
+
   ul {
     overflow: hidden;
     background: #fff;
@@ -100,16 +100,16 @@ $popoverZ: 10;
                         0 1px 1px rgba(255, 255, 255, .1),
                         0 1px rgba(255, 255, 255, .1));
   }
-  
+
   li {
     display: block;
-    
+
     + li { border-top: 1px solid #eee; }
-    
+
     &:first-child a { border-radius: 7px 7px 0 0; }
     &:last-child a { border-radius: 0 0 7px 7px; }
   }
-  
+
   a {
     position: relative;
     display: block;
@@ -118,20 +118,20 @@ $popoverZ: 10;
     color: #000;
     font-size: 16px;
     font-weight: bold;
-    
+
     &:hover {
       text-decoration: none;
       background: #fff;
       @include box-shadow(0 0 4px rgba(0, 0, 0, .3));
     }
-    
+
     &:before, &:after {
       position: absolute;
       display: block;
       content: '';
     }
   }
-  
+
   a:before, .active a:active:before {
     height: 20px;
     width: 20px;
@@ -142,7 +142,7 @@ $popoverZ: 10;
     background: #f7f7f7;
     @include box-shadow(inset 0 1px 1px 1px rgba(0, 0, 0, .2), inset 0 5px 5px rgba(0, 0, 0, .1));
   }
-  
+
   a:after, .active a:active:after {
     display: none;
     width: 11px;
@@ -151,7 +151,7 @@ $popoverZ: 10;
     left: 19px;
     background: url('../img/tick.png') center center no-repeat;
   }
-  
+
   .active a:before, a:active:before {
     top: 11px;
     left: 13px;
@@ -159,7 +159,7 @@ $popoverZ: 10;
     @include linear-gradient(top, #777, #404040, $fallback: #555);
     @include box-shadow(inset 0 1px rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, .4));
   }
-  
+
   .active a:after, a:active:after { display: block; }
 }
 
@@ -176,7 +176,7 @@ $popoverZ: 10;
   text-shadow: 0 1px rgba(255, 255, 255, .3);
   background: rgba(0, 0, 0, .05);
   border-radius: 3px;
-  
+
   a {
     padding: 1px 3px;
     margin: 0 -1px;
@@ -195,7 +195,7 @@ $popoverZ: 10;
 
 .links {
   @include clearfix;
-  
+
   a {
     padding: 6px 0;
     float: left;

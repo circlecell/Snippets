@@ -34,7 +34,7 @@ body {
 a {
   color: #5d79ae;
   text-decoration: none;
-  
+
   &:hover { text-decoration: underline; }
 }
 
@@ -86,7 +86,7 @@ $sideColor: #59afd2;
 .side {
   float: left;
   border-radius: 3px 0 0 3px;
-  
+
   a {
     position: relative;
     display: block;
@@ -94,20 +94,20 @@ $sideColor: #59afd2;
     height: 38px;
     @include hide-text;
   }
-  
+
   i {
     cursor: pointer;
     margin: -10px 0 0 -10px;
     @include position(absolute, 50% 0 0 50%);
   }
-  
+
   .add {
     background: darken($sideColor, 15%);
     border-top: 1px solid darken($sideColor, 20%);
     border-radius: 0 0 0 4px;
     @include position(absolute, 0 0 0px 0px);
     @include box-shadow(inset 0 1px rgba(255, 255, 255, .15));
-    
+
     &:hover {
       background: darken($sideColor, 11%);
       border-color: darken($sideColor, 15%);
@@ -118,31 +118,31 @@ $sideColor: #59afd2;
 .tabs {
   border-bottom: 1px solid lighten($sideColor, 8%);
   border-bottom: 1px solid rgba(255, 255, 255, .15);
-  
+
   a {
     border-top: 1px solid lighten($sideColor, 8%);
     border-top: 1px solid rgba(255, 255, 255, .15);
     border-bottom: 1px solid darken($sideColor, 11%);
-    
+
     &:hover { background: lighten($sideColor, 8%); }
   }
-  
+
   li:first-child a {
     border-top: 0;
     border-radius: 4px 0 0 0;
   }
-  
+
   .active a, a:active {
     cursor: default;
     z-index: 10;
     background: $mainColor;
-        
+
     i { background-image: url('../img/icons_active.png'); }
   }
-  
+
   &:active .active a:not(:active) {
     background: none;
-    
+
     i { background-image: url('../img/icons.png'); }
   }
 }
@@ -161,33 +161,33 @@ $sideColor: #59afd2;
   padding: 12px 15px 12px 70px;
   line-height: 18px;
   color: #626c80;
-  font-size: 11px; 
+  font-size: 11px;
   text-shadow: 0 1px rgba(255, 255, 255, .7);
   border-top: 1px solid lighten($mainColor, 3%);
   border-bottom: 1px solid darken($mainColor, 5%);
   @include linear-gradient(45deg, $mainColor 85%, darken($mainColor, 6%) 100%);
-  
+
   &:first-child {
     border-top: 0;
     border-radius: 0 4px 0 0;
   }
-  
+
   &:last-child {
     border-bottom: 0;
     border-radius: 0 0 4px 0;
   }
-  
+
   footer {
     margin: 2px 0 0;
     font-size: 10px;
   }
-  
+
   time { color: darken($mainColor, 20%); }
-  
+
   .avatar {
     display: block;
     @include position(absolute, 15px 0 0 15px);
-    
+
     &:before {
       content: '';
       border: 1px solid rgba(0, 0, 0, .3);
@@ -196,7 +196,7 @@ $sideColor: #59afd2;
       @include position(absolute, 0px 0px 0px 0px);
       @include box-shadow(inset 0 1px rgba(255, 255, 255, .3));
     }
-    
+
     img {
       display: block;
       width: 40px;
@@ -204,7 +204,7 @@ $sideColor: #59afd2;
       border-radius: 3px;
     }
   }
-  
+
   &:hover {
     z-index: 2;
     cursor: pointer;
@@ -214,7 +214,7 @@ $sideColor: #59afd2;
                         0 1px darken($mainColor, 1%),
                         0 -1px $mainColor);
   }
-  
+
   &:active, &.selected {
     z-index: 3;
     cursor: auto;
@@ -248,7 +248,7 @@ $sideColor: #59afd2;
   text-shadow: 0 -1px rgba(0, 0, 0, .2);
   background: rgba(0, 0, 0, .05);
   border-radius: 3px;
-  
+
   a {
     padding: 1px 3px;
     margin: 0 -1px;
@@ -266,7 +266,7 @@ $sideColor: #59afd2;
 
 .links {
   @include clearfix;
-  
+
   a {
     padding: 6px 0;
     float: left;

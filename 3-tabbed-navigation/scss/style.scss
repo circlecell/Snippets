@@ -27,7 +27,7 @@ body {
 a {
   color: #1e7ad3;
   text-decoration: none;
-  
+
   &:hover { text-decoration: underline; }
 }
 
@@ -55,10 +55,10 @@ nav {
   height: $navHeight;
   border-bottom: 5px solid #fff;
   @include box-shadow(inset 0 -2px 1px rgba(0, 0, 0, .03));
-  
+
   > ul {
     @extend .container;
-    
+
     > li {
       float: left;
       margin-right: 3px;
@@ -80,7 +80,7 @@ nav {
           @include linear-gradient(top, lighten($navBackgroundColor, 18%), lighten($navBackgroundColor, 5%), $fallback: lighten($navBackgroundColor, 5%));
         }
       }
-      
+
       &.active > a, & > a:active, &.dropdown:hover > a {
         background: #fff;
         color: #404040;
@@ -89,7 +89,7 @@ nav {
       }
     }
   }
-  
+
   a.icon {
     $width: $navHeight * 1.2;
     position: relative;
@@ -111,16 +111,16 @@ nav {
 
     &.home span { background-image: url('../img/home.png'); }
   }
-  
+
   .active a.icon, a.icon:active { span { background-position: 0 -16px; } }
 }
 
 .dropdown {
   position: relative;
   border-bottom: 5px solid #fff;
-  
+
   &:hover ul { display: block; }
-  
+
   ul {
     display: none;
     position: absolute;
@@ -133,17 +133,17 @@ nav {
     border-top: 0;
     border-radius: 0 0 3px 3px;
     @include box-shadow(0 0 1px rgba(0, 0, 0, .04));
-    
+
     &.large { min-width: 200px; }
   }
-  
+
   li {
     display: block;
     margin: 0 18px;
     overflow: visible;
-    
+
     + li { border-top: 1px solid #eee; }
-    
+
     a {
       display: block;
       color: #555;
@@ -186,7 +186,7 @@ nav {
 
 .links {
   @include clearfix;
-  
+
   a {
     padding: 6px 0;
     float: left;

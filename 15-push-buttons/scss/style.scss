@@ -36,7 +36,7 @@ a:hover, a:active { outline: none; }
   padding: 30px 0;
   text-align: center;
   white-space: nowrap;
-  
+
   .button + .button { margin-left: 20px; }
 }
 
@@ -74,18 +74,18 @@ $colors: red #d02e17,
   border: 2px solid;
   border-radius: 7px;
   @include box-shadow(0 2px 1px rgba(0, 0, 0, .25));
-  
+
   &:before, &:after {
     content: '';
     position: absolute;
   }
-               
+
   &:before {
     top: -5px; right: -5px; bottom: -5px; left: -5px;
     z-index: -1;
     border-radius: 9px;
   }
-  
+
   &:after {
     top: 0; right: 0; bottom: 0; left: 0;
     border-radius: 7px;
@@ -101,11 +101,11 @@ $colors: red #d02e17,
 
 @each $pair in $colors {
   $color: nth($pair, 2);
-  
+
   .column.#{nth($pair, 1)} {
     background: lighten(desaturate(adjust-hue($color, 3deg), 8%), 2%);
   }
-    
+
   .button.#{nth($pair, 1)} {
     border-color: darken($color, 13%) darken($color, 14%) darken($color, 20%);
     @include linear-gradient(top,
@@ -114,21 +114,21 @@ $colors: red #d02e17,
                              $color 50%,
                              darken(saturate(adjust-hue($color, -4deg), 8%), 8%) 100%,
                              $fallback: $color);
-                             
+
     &:before {
       @include linear-gradient(top,
                                darken(saturate($color, 3%), 7%),
                                lighten(saturate($color, 8%), 14%),
                                $fallback: lighten(saturate($color, 5%), 10%));
     }
-    
+
     &:active {
       @include linear-gradient(top,
                                darken(saturate(adjust-hue($color, -5deg), 8%), 10%) 0%,
                                lighten(adjust-hue($color, 2deg), 3%) 60%,
                                lighten(adjust-hue($color, 2deg), 5%) 100%,
                                $fallback: lighten(adjust-hue($color, 2deg), 5%));
-                               
+
       &:after { border-color: lighten(adjust-hue($color, 2deg), 5%); }
     }
   }
@@ -167,7 +167,7 @@ $colors: red #d02e17,
 
 .links {
   @include clearfix;
-  
+
   a {
     padding: 6px 0;
     float: left;
