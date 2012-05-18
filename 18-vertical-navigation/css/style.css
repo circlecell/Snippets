@@ -149,11 +149,11 @@ body {
   background-image: -ms-linear-gradient(top, #707a84, #505968);
   background-image: -o-linear-gradient(top, #707a84, #505968);
   background-image: linear-gradient(top, #707a84, #505968);
-  -webkit-transition: opacity, 0.15s;
-  -moz-transition: opacity, 0.15s;
-  -ms-transition: opacity, 0.15s;
-  -o-transition: opacity, 0.15s;
-  transition: opacity, 0.15s;
+  -webkit-transition: opacity 0.15s;
+  -moz-transition: opacity 0.15s;
+  -ms-transition: opacity 0.15s;
+  -o-transition: opacity 0.15s;
+  transition: opacity 0.15s;
 }
 .vnav-item:hover {
   opacity: .95;

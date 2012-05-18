@@ -94,7 +94,8 @@ $hoverColor: #5a70b0;
     border: 1px solid;
     border-color: #777 #6c6c6c #666;
     border-radius: 5px;
-    @include transition((opacity, padding, visibility), .2s, ease-out);
+    @include transition-property(opacity, padding, visibility);
+    @include transition(.2s ease-out);
     @include linear-gradient(top, #eef3fe, #d9e3fa, $fallback: #d9e3fa);
     @include box-shadow(inset 0 0 0 1px rgba(255, 255, 255, .9), 0 1px 2px rgba(0, 0, 0, .1));
   }

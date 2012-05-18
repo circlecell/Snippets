@@ -226,7 +226,7 @@ $sideColor: #59afd2;
 }
 
 .side a, .item {
-  @include transition(background, .15s);
+  @include transition(background .15s);
 }
 
 /* ========================================================

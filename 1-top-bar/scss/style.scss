@@ -65,7 +65,10 @@ header {
                                 darken($headerBackgroundColor, 1%) 100%);
   @include box-shadow(0 0 3px rgba(0, 0, 0, .8), inset 0 0 1px rgba(255, 255, 255, .1));
 
-  a { @include transition((background-color, color), .1s, ease-out); }
+  a {
+    @include transition-property(background-color, color);
+    @include transition(.1s ease-out);
+  }
 
   h1 {
     float: left;

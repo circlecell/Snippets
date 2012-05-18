@@ -85,7 +85,7 @@ $icons: ('friends', 0 0),
   border-top: 1px solid #878e96;
   border-bottom: 1px solid #333740;
   @include linear-gradient(top, #707a84, #505968, $fallback: #505968);
-  @include transition(opacity, .15s);
+  @include transition(opacity .15s);
 
   &:hover { opacity: .95; }
 

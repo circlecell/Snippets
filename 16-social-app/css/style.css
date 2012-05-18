@@ -300,11 +300,11 @@ a:hover {
 }
 
 .side a, .item {
-  -webkit-transition: background, 0.15s;
-  -moz-transition: background, 0.15s;
-  -ms-transition: background, 0.15s;
-  -o-transition: background, 0.15s;
-  transition: background, 0.15s;
+  -webkit-transition: background 0.15s;
+  -moz-transition: background 0.15s;
+  -ms-transition: background 0.15s;
+  -o-transition: background 0.15s;
+  transition: background 0.15s;
 }
 
 /* ========================================================

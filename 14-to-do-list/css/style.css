@@ -217,11 +217,11 @@ a:hover {
   position: absolute;
   top: 9px;
   left: 9px;
-  -webkit-transition: box-shadow, 0.2s;
-  -moz-transition: box-shadow, 0.2s;
-  -ms-transition: box-shadow, 0.2s;
-  -o-transition: box-shadow, 0.2s;
-  transition: box-shadow, 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  -ms-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
   -webkit-box-shadow: 0 1px 1px #dfecf4;
   -moz-box-shadow: 0 1px 1px #dfecf4;
   box-shadow: 0 1px 1px #dfecf4;

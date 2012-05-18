@@ -125,7 +125,8 @@ $tagsColors: green #65bb34, blue #56a3d5;
     border-color: darken($tagsDefaultColor, 8%) darken($tagsDefaultColor, 10%) darken($tagsDefaultColor, 12%);
     border-radius: 0 2px 2px 0;
     @include linear-gradient(top, lighten($tagsDefaultColor, 5%), darken($tagsDefaultColor, 5%), $fallback: $tagsDefaultColor);
-    @include transition((padding, max-width), .3s, ease-out);
+    @include transition-property(padding, max-width);
+    @include transition(.3s ease-out);
   }
 }
 

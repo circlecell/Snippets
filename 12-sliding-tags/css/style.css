@@ -186,11 +186,16 @@ a:hover {
   background-image: -ms-linear-gradient(top, #ed7b39, #df5e14);
   background-image: -o-linear-gradient(top, #ed7b39, #df5e14);
   background-image: linear-gradient(top, #ed7b39, #df5e14);
-  -webkit-transition: padding, max-width, 0.3s, ease-out;
-  -moz-transition: padding, max-width, 0.3s, ease-out;
-  -ms-transition: padding, max-width, 0.3s, ease-out;
-  -o-transition: padding, max-width, 0.3s, ease-out;
-  transition: padding, max-width, 0.3s, ease-out;
+  -webkit-transition-property: padding, max-width;
+  -moz-transition-property: padding, max-width;
+  -ms-transition-property: padding, max-width;
+  -o-transition-property: padding, max-width;
+  transition-property: padding, max-width;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .green li:after {
