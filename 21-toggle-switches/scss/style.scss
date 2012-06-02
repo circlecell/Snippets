@@ -77,7 +77,8 @@ $labelWidth: 58px;
     @include transition-property(color, text-shadow);
   }
 
-  &:checked + .switch-label-on ~ .switch-selection { left: 50%; }
+  // { left: 50%; } doesn't transition in WebKit
+  &:checked + .switch-label-on ~ .switch-selection { left: $labelWidth + 2px; }
 }
 
 .switch-selection {

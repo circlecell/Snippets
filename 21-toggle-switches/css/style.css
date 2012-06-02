@@ -141,7 +141,7 @@ body {
   transition-property: color, text-shadow;
 }
 .switch-input:checked + .switch-label-on ~ .switch-selection {
-  left: 50%;
+  left: 60px;
 }
 
 .switch-selection {
