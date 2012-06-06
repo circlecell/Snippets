@@ -66,6 +66,13 @@ $labelWidth: 58px;
 .switch-label-off { padding-left: 2px; }
 .switch-label-on { padding-right: 2px; }
 
+/*
+ * Note: using adjacent or general sibling selectors combined with
+ *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
+ *       See this article for more info and a potential fix:
+ *       http://css-tricks.com/webkit-sibling-bug/
+ */
+
 .switch-input {
   display: none;
 
@@ -77,8 +84,9 @@ $labelWidth: 58px;
     @include transition-property(color, text-shadow);
   }
 
-  // { left: 50%; } doesn't transition in WebKit
-  &:checked + .switch-label-on ~ .switch-selection { left: $labelWidth + 2px; }
+  &:checked + .switch-label-on ~ .switch-selection {
+    left: $labelWidth + 2px; /* Note: left: 50%; doesn't transition in WebKit */
+  }
 }
 
 .switch-selection {

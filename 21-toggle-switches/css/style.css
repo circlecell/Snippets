@@ -122,6 +122,12 @@ body {
   padding-right: 2px;
 }
 
+/*
+ * Note: using adjacent or general sibling selectors combined with
+ *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
+ *       See this article for more info and a potential fix:
+ *       http://css-tricks.com/webkit-sibling-bug/
+ */
 .switch-input {
   display: none;
 }
@@ -142,6 +148,7 @@ body {
 }
 .switch-input:checked + .switch-label-on ~ .switch-selection {
   left: 60px;
+  /* Note: left: 50%; doesn't transition in WebKit */
 }
 
 .switch-selection {
