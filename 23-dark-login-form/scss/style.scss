@@ -1,0 +1,242 @@
+@import '../../bourbon/bourbon';
+@import '../../css/reset';
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* ========================================================
+   Page
+   ===================================================== */
+
+$siteWidth: 400px;
+$baseFontSize: 14px;
+
+.bg { background: #373737 url('../img/bg.png') 0 0 repeat; }
+
+body {
+  line-height: 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: $baseFontSize;
+  font-weight: 300;
+  color: #404040;
+  @extend .bg;
+}
+
+a {
+  color: #00a1d2;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; }
+}
+
+/* ========================================================
+   Login form
+   ===================================================== */
+
+$inputHeight: 40px;
+$labelWidth: 100px;
+
+.login {
+  position: relative;
+  margin: 80px auto;
+  width: $siteWidth;
+  padding-right: 32px;
+  color: #a8a7a8;
+  text-shadow: 1px 1px 0 rgba(#000, .8);
+
+  p { margin: 0 0 10px; }
+}
+
+input, button, label {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: $baseFontSize + 1px;
+  font-weight: 300;
+  @include box-sizing(border-box);
+}
+
+input[type=text], input[type=password] {
+  padding: 0 10px;
+  width: 300px;
+  height: $inputHeight;
+  color: #bbb;
+  text-shadow: 1px 1px 1px #000;
+  background: rgba(#000, .16);
+  border: 0;
+  border-radius: 5px;
+  @include box-shadow(inset 0 1px 4px rgba(#000, .3),
+                      0 1px rgba(#fff, .06));
+
+  &:focus {
+    color: #fff;
+    background: rgba(#000, .10);
+    outline: 0;
+  }
+}
+
+label {
+  float: left;
+  width: $labelWidth;
+  line-height: $inputHeight;
+  padding-right: 10px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+.forgot-password {
+  padding-left: $labelWidth;
+  font-size: $baseFontSize - 1px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.login-submit {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 32px;
+  @include box-shadow(0 0 4px rgba(#000, .35));
+  @extend .bg;
+
+  &:before, &:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    @extend .bg;
+  }
+
+  &:before {
+    top: 28px;
+    left: -4px;
+    width: 4px;
+    height: 10px;
+    @include box-shadow(inset 0 1px rgba(#fff, .06));
+  }
+
+  &:after {
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    width: 36px;
+  }
+}
+
+.login-button {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  padding: 0 0 48px; /* Fix wrong positioning in Firefox 9 & older (bug 450418) */
+  cursor: pointer;
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: none;
+  border: 0;
+  border-radius: 24px;
+  @include box-shadow(inset 0 1px 1px rgba(#000, .2),
+                      0 1px rgba(#fff, .1));
+
+  /* Must use another pseudo element for the gradient background because Webkit */
+  /* clips the background incorrectly inside elements with a border-radius.     */
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 5px; left: 5px; right: 5px; bottom: 5px;
+    border-radius: 24px;
+    @include linear-gradient(top, #00a2d3, #0d7796);
+    @include box-shadow(inset 0 0 0 1px #00a2d3,
+                        0 0 0 5px rgba(#000, .16));
+  }
+
+  &:active:before { @include linear-gradient(top, #0591ba, #00a2d3); }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 25px;
+    height: 19px;
+    background: url('../img/arrow.png') 0 0 no-repeat;
+
+  }
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.lt-ie9 {
+  input[type=text], input[type=password] {
+    line-height: $inputHeight;
+    background: #282828;
+  }
+
+  .login-submit {
+    position: absolute;
+    top: 12px;
+    right: -28px;
+    padding: 4px;
+
+    &:before, &:after { display: none; }
+  }
+
+  .login-button { line-height: 48px; }
+
+  .about { background: #313131; }
+}
+
+/* ========================================================
+   About
+   ===================================================== */
+
+.about {
+  margin: 80px auto;
+  padding: 15px 20px;
+  width: 300px;
+  text-align: center;
+  color: #aaa;
+  text-shadow: 0 -1px rgba(#000, .18);
+  background: rgba(#000, .1);
+  border-radius: 3px;
+
+  a {
+    padding: 1px 3px;
+    margin: 0 -1px;
+    color: #fafafa;
+    text-decoration: none;
+    border-radius: 2px;
+
+    &:hover {
+      color: #111;
+      text-shadow: none;
+      background: #fafafa;
+    }
+  }
+}
+
+.links {
+  @include clearfix;
+
+  a {
+    padding: 6px 0;
+    float: left;
+    width: 50%;
+  }
+}
+
+.author {
+  margin-top: 15px;
+  font-size: $baseFontSize - 1px;
+}
