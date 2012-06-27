@@ -1,4 +1,4 @@
-# Sliding Tags — HML5 & CSS3 Snippet
+# Sliding Tags — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/12-sliding-tags](http://demo.webinterfacelab.com/12-sliding-tags/)
 

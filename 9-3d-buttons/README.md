@@ -1,4 +1,4 @@
-# Multi-colored Progress Bars — HML5 & CSS3 Snippet
+# Multi-colored Progress Bars — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/9-3d-buttons](http://demo.webinterfacelab.com/9-3d-buttons/)
 

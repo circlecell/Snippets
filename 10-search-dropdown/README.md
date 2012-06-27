@@ -1,4 +1,4 @@
-# Search Dropdown — HML5 & CSS3 Snippet
+# Search Dropdown — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/10-search-dropdown](http://demo.webinterfacelab.com/10-search-dropdown/)
 

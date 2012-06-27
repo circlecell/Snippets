@@ -1,4 +1,4 @@
-# Animated Profile Popover — HML5 & CSS3 Snippet
+# Animated Profile Popover — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/13-profile-popover](http://demo.webinterfacelab.com/13-profile-popover/)
 

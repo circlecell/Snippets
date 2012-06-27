@@ -1,4 +1,4 @@
-# Tabbed Navigation — HML5 & CSS3 Snippet
+# Tabbed Navigation — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/3-tabbed-navigation](http://demo.webinterfacelab.com/3-tabbed-navigation/)
 

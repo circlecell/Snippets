@@ -1,4 +1,4 @@
-# iOS Style Popover — HML5 & CSS3 Snippet
+# iOS Style Popover — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/11-ios-style-popover](http://demo.webinterfacelab.com/11-ios-style-popover/)
 

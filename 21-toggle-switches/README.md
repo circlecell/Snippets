@@ -1,4 +1,4 @@
-# Toggle Switches — HML5 & CSS3 Snippet
+# Toggle Switches — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/21-toggle-switches](http://demo.webinterfacelab.com/21-toggle-switches/)
 

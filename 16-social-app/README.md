@@ -1,4 +1,4 @@
-# Mini Social App — HML5 & CSS3 Snippet
+# Mini Social App — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/16-social-app](http://demo.webinterfacelab.com/16-social-app/)
 

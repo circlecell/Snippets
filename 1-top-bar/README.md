@@ -1,4 +1,4 @@
-# Top Bar — HML5 & CSS3 Snippet
+# Top Bar — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/1-top-bar](http://demo.webinterfacelab.com/1-top-bar/)
 

@@ -1,4 +1,4 @@
-# Menu with Notification Badges — HML5 & CSS3 Snippet
+# Menu with Notification Badges — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/4-menu-notifications](http://demo.webinterfacelab.com/4-menu-notifications/)
 

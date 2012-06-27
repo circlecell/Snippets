@@ -1,4 +1,4 @@
-# Animated Progress Bar — HML5 & CSS3 Snippet
+# Animated Progress Bar — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/22-progress-bar-anim](http://demo.webinterfacelab.com/22-progress-bar-anim/)
 

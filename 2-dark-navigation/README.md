@@ -1,4 +1,4 @@
-# Dark Navigation — HML5 & CSS3 Snippet
+# Dark Navigation — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/2-dark-navigation](http://demo.webinterfacelab.com/2-dark-navigation/)
 

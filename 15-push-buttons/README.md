@@ -1,4 +1,4 @@
-# Multi-colored Push Buttons — HML5 & CSS3 Snippet
+# Multi-colored Push Buttons — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/15-push-buttons](http://demo.webinterfacelab.com/15-push-buttons/)
 

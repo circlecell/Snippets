@@ -1,4 +1,4 @@
-# Login Form — HML5 & CSS3 Snippet
+# Login Form — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/8-login-form](http://demo.webinterfacelab.com/8-login-form/)
 

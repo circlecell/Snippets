@@ -1,4 +1,4 @@
-# Selection Widget — HML5 & CSS3 Snippet
+# Selection Widget — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/17-selection-widget](http://demo.webinterfacelab.com/17-selection-widget/)
 

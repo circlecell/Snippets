@@ -1,4 +1,4 @@
-# Mini Calendar / Date Picker — HML5 & CSS3 Snippet
+# Mini Calendar / Date Picker — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/19-date-picker](http://demo.webinterfacelab.com/19-date-picker/)
 

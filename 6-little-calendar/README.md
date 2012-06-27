@@ -1,4 +1,4 @@
-# Little Calendar — HML5 & CSS3 Snippet
+# Little Calendar — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/6-little-calendar](http://demo.webinterfacelab.com/6-little-calendar/)
 

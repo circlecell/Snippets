@@ -1,4 +1,4 @@
-# Graphite Navigation — HML5 & CSS3 Snippet
+# Graphite Navigation — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/20-graphite-navigation](http://demo.webinterfacelab.com/20-graphite-navigation/)
 

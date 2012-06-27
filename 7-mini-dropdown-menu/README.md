@@ -1,4 +1,4 @@
-# Mini Dropdown Menu — HML5 & CSS3 Snippet
+# Mini Dropdown Menu — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/7-mini-dropdown-menu](http://demo.webinterfacelab.com/7-mini-dropdown-menu/)
 

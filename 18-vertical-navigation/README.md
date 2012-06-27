@@ -1,4 +1,4 @@
-# Vertical Navigation Menu — HML5 & CSS3 Snippet
+# Vertical Navigation Menu — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/18-vertical-navigation](http://demo.webinterfacelab.com/18-vertical-navigation/)
 

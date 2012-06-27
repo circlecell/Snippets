@@ -1,4 +1,4 @@
-# Simple To-do List — HML5 & CSS3 Snippet
+# Simple To-do List — CSS3 Snippet
 
 **Demo**: [demo.webinterfacelab.com/14-to-do-list](http://demo.webinterfacelab.com/14-to-do-list/)
 
