@@ -31,7 +31,7 @@ $headerBackgroundColor: #1d2e35;
 body {
   background: $bodyBackgroundColor;
   color: #404040;
-  font-family: 'Lucida Grande', Arial, sans-serif;
+  font-family: 'Lucida Grande', Verdana, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 18px;
@@ -159,7 +159,7 @@ header {
   a {
     padding: 1px 3px;
     margin: 0 -1px;
-    color: #e8f3fc;
+    color: #fff;
     text-decoration: none;
     text-shadow: 0 -1px rgba(0, 0, 0, .2);
     border-radius: 2px;
@@ -167,7 +167,7 @@ header {
     &:hover {
       color: darken($bodyBackgroundColor, 20%);
       text-shadow: none;
-      background: #e8f3fc;
+      background: #fff;
     }
   }
 }

@@ -64,7 +64,7 @@ table {
 body {
   background: #0ca3d2;
   color: #404040;
-  font-family: 'Lucida Grande', Arial, sans-serif;
+  font-family: 'Lucida Grande', Verdana, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 20px;
@@ -177,7 +177,7 @@ a:hover {
 }
 
 input {
-  font-family: 'Lucida Grande', Arial, sans-serif;
+  font-family: 'Lucida Grande', Verdana, sans-serif;
   font-size: 14px;
 }
 
