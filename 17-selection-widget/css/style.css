@@ -115,7 +115,6 @@ body {
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
-  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
 }
 .widget ul {
@@ -133,7 +132,6 @@ body {
   background-image: -o-linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
   background-image: linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
 }
 .widget ul::before {
@@ -161,7 +159,6 @@ body {
   background: #adadad;
   border-radius: 10px;
   -webkit-box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.5), inset 0 5px 5px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.6);
-  -moz-box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.5), inset 0 5px 5px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.5), inset 0 5px 5px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.6);
 }
 .widget a:hover {
@@ -180,7 +177,6 @@ body {
   background-image: -o-linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
   background-image: linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 1px 1px rgba(255, 255, 255, 0.6);
-  -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 1px 1px rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 1px 1px rgba(255, 255, 255, 0.6);
 }
 

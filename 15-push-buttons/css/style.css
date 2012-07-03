@@ -124,7 +124,6 @@ a:hover, a:active {
   border: 2px solid;
   border-radius: 7px;
   -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
 }
 .button:before, .button:after {
@@ -151,7 +150,6 @@ a:hover, a:active {
 
 .button.alt {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 .button.alt:before {

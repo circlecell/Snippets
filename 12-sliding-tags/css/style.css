@@ -122,7 +122,6 @@ a:hover {
   background: #eb6b22;
   border-radius: 3px 0 0 3px;
   -webkit-box-shadow: inset 1px 0 #99400e;
-  -moz-box-shadow: inset 1px 0 #99400e;
   box-shadow: inset 1px 0 #99400e;
 }
 .tags a, .tags span {
@@ -150,7 +149,6 @@ a:hover {
   background-image: -o-linear-gradient(top, #fcfcfc, #f0f0f0);
   background-image: linear-gradient(top, #fcfcfc, #f0f0f0);
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 .tags a:hover {
@@ -160,7 +158,6 @@ a:hover {
   padding: 0 7px 0 6px;
   max-width: 40px;
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), 1px 1px 2px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), 1px 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .tags span {
@@ -201,7 +198,6 @@ a:hover {
 .green li:after {
   background: #65bb34;
   -webkit-box-shadow: inset 1px 0 #3a6b1e;
-  -moz-box-shadow: inset 1px 0 #3a6b1e;
   box-shadow: inset 1px 0 #3a6b1e;
 }
 .green span {
@@ -218,7 +214,6 @@ a:hover {
 .blue li:after {
   background: #56a3d5;
   -webkit-box-shadow: inset 1px 0 #276f9e;
-  -moz-box-shadow: inset 1px 0 #276f9e;
   box-shadow: inset 1px 0 #276f9e;
 }
 .blue span {

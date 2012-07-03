@@ -119,7 +119,6 @@ body {
   background: #fff;
   border: 1px solid #1d1f22;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 .vnav a {
@@ -163,7 +162,6 @@ body {
   border-top-color: #6ad2ef;
   border-bottom-color: #1c638f;
   -webkit-box-shadow: 0 1px #bbbbbb, 0 2px #e9ebe8;
-  -moz-box-shadow: 0 1px #bbbbbb, 0 2px #e9ebe8;
   box-shadow: 0 1px #bbbbbb, 0 2px #e9ebe8;
   background-color: #259bdb;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #44c5ec), color-stop(100%, #259bdb));
@@ -191,7 +189,6 @@ body {
   background: #464e59;
   border-radius: 9px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.2);
-  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.2);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.2);
 }
 
@@ -224,7 +221,6 @@ body {
   color: #999;
   background: #fcfcfc;
   -webkit-box-shadow: inset 0 0 0 1px #dcdcdc;
-  -moz-box-shadow: inset 0 0 0 1px #dcdcdc;
   box-shadow: inset 0 0 0 1px #dcdcdc;
 }
 .vnav-subnav li:last-child a {

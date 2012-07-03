@@ -167,7 +167,6 @@ a:hover {
   background-image: -o-linear-gradient(top, #eef3fe, #d9e3fa);
   background-image: linear-gradient(top, #eef3fe, #d9e3fa);
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9), 0 1px 2px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9), 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9), 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .user ul:before, .user ul:after, .user li:first-child:after {
@@ -202,7 +201,6 @@ a:hover {
   padding-top: 4px;
   margin-top: 4px;
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.6);
-  -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.6);
 }
 .user li a {

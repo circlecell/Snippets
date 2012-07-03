@@ -98,7 +98,6 @@ a:hover {
   display: block;
   width: 216px;
   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 .cal a:hover {
@@ -116,7 +115,6 @@ a:hover {
   border-top: 1px solid #333;
   border-bottom: 1px solid #313131;
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
-  -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
 }
 .cal caption a {
@@ -172,7 +170,6 @@ a:hover {
   background-image: -o-linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
   background-image: linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
   -webkit-box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
-  -moz-box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
   box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
 }
 .cal td a:hover, .cal td.off a {
@@ -188,7 +185,6 @@ a:hover {
   background: #6dafbf;
   border: 1px solid #598b94;
   -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
 }
 .cal td.active:first-child a, .cal td:first-child a:active {

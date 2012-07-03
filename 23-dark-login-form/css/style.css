@@ -115,7 +115,6 @@ input[type=text], input[type=password] {
   border: 0;
   border-radius: 5px;
   -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
-  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
 }
 input[type=text]:focus, input[type=password]:focus {
@@ -150,7 +149,6 @@ label {
   padding: 8px;
   border-radius: 32px;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
 }
 .login-submit:before, .login-submit:after {
@@ -164,7 +162,6 @@ label {
   width: 4px;
   height: 10px;
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
-  -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
 }
 .login-submit:after {
@@ -189,7 +186,6 @@ label {
   border: 0;
   border-radius: 24px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
   /* Must use another pseudo element for the gradient background because Webkit */
   /* clips the background incorrectly inside elements with a border-radius.     */
@@ -210,7 +206,6 @@ label {
   background-image: -o-linear-gradient(top, #00a2d3, #0d7796);
   background-image: linear-gradient(top, #00a2d3, #0d7796);
   -webkit-box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
   box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
 }
 .login-button:active:before {
