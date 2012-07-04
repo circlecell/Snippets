@@ -1,0 +1,246 @@
+@import '../../bourbon/bourbon';
+@import '../../css/reset';
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+$white: #fff;
+$black: #000;
+
+/* ========================================================
+   Page
+   ===================================================== */
+
+html, body { min-height: 100%; }
+
+body {
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #404040;
+  @include radial-gradient(bottom, circle cover, #6b6e8c 0%, #212649 100%, $fallback: #47496d);
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* =============================================================================
+   Icons
+   ========================================================================== */
+
+$sprite: url('../img/sprite.png');
+
+[class*="icon-"] {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: $sprite;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  @include hide-text;
+}
+
+.icon-psd-40 { background-position: 0 0; }
+.icon-ai-24 { background-position: -40px 0; }
+.icon-close { background-position: -40px -24px; }
+
+/* ========================================================
+   Widget
+   ===================================================== */
+
+.widget {
+  margin: 80px auto;
+  width: 280px;
+  overflow: hidden;
+  background: #fafafa;
+  border-radius: 4px;
+  @include box-shadow(0 0 4px rgba($black, .4));
+}
+
+.widget-heading {
+  position: relative;
+  z-index: 2;
+  padding: 8px;
+  height: 24px;
+  border-radius: 4px 4px 0 0;
+  @include linear-gradient(top, #eee, #d8d8d8);
+  @include box-shadow(inset 0 21px rgba($white, .22));
+}
+
+.widget-title {
+  float: left;
+  line-height: 24px;
+  padding: 0 6px;
+  color: #666;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 1px rgba($white, .3);
+}
+
+.widget-close {
+  float: right;
+  margin: 0 1px 0 10px;
+  padding: 3px 3px 3px 4px;
+  border: 1px solid rgba($black, .12);
+  border-radius: 2px;
+  @include box-shadow(inset 0 1px rgba($white, .3));
+
+  &:hover {
+    border-color: rgba($black, .18);
+    @include box-shadow(0 0 1px rgba($black, .15));
+  }
+
+  &:active {
+    background-color: rgba($black, .02);
+    @include box-shadow(inset 0 0 2px rgba($black, .2));
+  }
+}
+
+.widget-toolbar {
+  position: relative;
+  height: 18px;
+  line-height: 18px;
+  padding: 6px 0;
+  @include linear-gradient(top, #878787, #5c5c5c, $fallback: #5c5c5c);
+  @include box-shadow(inset 0 1px rgba($black, .25),
+                      inset 0 2px rgba($white, .2),
+                      0 0 2px rgba($black, .5));
+
+  > li {
+    float: left;
+
+    > a {
+      display: block;
+      padding: 0 12px;
+      font-size: 11px;
+      color: $white;
+      text-shadow: 0 1px rgba($black, .5);
+    }
+
+    + li {
+      border-left: 1px solid rgba($black, .15);
+      @include box-shadow(inset 1px 0 rgba($white, .1));
+    }
+  }
+}
+
+.download {
+  line-height: 21px;
+  padding: 3px 15px;
+  color: #999;
+  text-shadow: 0 1px $white;
+  @include linear-gradient(top, $white, #fafafa);
+
+  + .download { border-top: 1px solid #ececec; }
+  &:last-child { border-radius: 0 0 4px 4px; }
+}
+
+.download-name {
+  margin: 2px 0;
+  font-weight: normal;
+}
+
+.download-icon {
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 0 12px 0 0;
+}
+
+.download-info {
+  line-height: 16px;
+  font-size: 11px;
+}
+
+.download-active {
+  padding: 8px 12px;
+
+  .download-name {
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .download-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.download-progress {
+  clear: left;
+  margin: 12px 10px 4px;
+  height: 8px;
+  padding: 3px;
+  background: #ebebeb;
+  border-radius: 7px;
+  @include box-shadow(inset 0 2px 3px rgba($black, .2),
+                      0 1px $white);
+}
+
+.download-progress-bar {
+  height: 100%;
+  border: 1px solid;
+  border-color: #6eb626 #62a21f #5a9122;
+  border-radius: 4px;
+  @include box-sizing(border-box);
+  @include linear-gradient(top, #73c822, #67aa24);
+  @include box-shadow(inset 0 1px rgba($white, .15));
+}
+
+.lt-ie9 {
+  .widget-close { border: 1px solid #c4c4c4; }
+  .widget-close:hover { background: #d8d8d8; }
+  .widget-toolbar { border-top-color: #484848; }
+}
+
+/* ========================================================
+   About
+   ===================================================== */
+
+.about {
+  margin: 80px auto;
+  padding: 15px 20px;
+  width: 300px;
+  text-align: center;
+  color: #aaa;
+  text-shadow: 0 -1px rgba($black, .18);
+  background: rgba($black, .1);
+  border-radius: 3px;
+
+  a {
+    padding: 1px 3px;
+    margin: 0 -1px;
+    color: #fafafa;
+    text-decoration: none;
+    border-radius: 2px;
+
+    &:hover {
+      color: #111;
+      text-shadow: none;
+      background: #fafafa;
+    }
+  }
+}
+
+.links {
+  @include clearfix;
+
+  a {
+    padding: 6px 0;
+    float: left;
+    width: 50%;
+  }
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
+}
