@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+.hide-text, [class*="icon-"], .window-titlebar-button {
+  background-color: transparent;
+  border: 0;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+}
+
+/* ========================================================
+   Page
+   ===================================================== */
+body {
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #404040;
+  background: black url("../img/bg.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+/* =============================================================================
+   Icons
+   ========================================================================== */
+[class*="icon-"] {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icons.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.icon-cloud {
+  background-position: 0 0;
+}
+
+.icon-settings {
+  background-position: -40px 0;
+}
+
+/* ========================================================
+   Window
+   ===================================================== */
+.window {
+  margin: 80px auto;
+  width: 300px;
+  background: rgba(48, 48, 48, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 7px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), 0 0 15px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.window-titlebar {
+  height: 25px;
+  margin: 0 0 5px;
+  padding: 0 7px;
+  border-radius: 7px 7px 0 0;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(64%, rgba(255, 255, 255, 0.03)), color-stop(65%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.03) 64%, rgba(255, 255, 255, 0) 65%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.03) 64%, rgba(255, 255, 255, 0) 65%);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.03) 64%, rgba(255, 255, 255, 0) 65%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.03) 64%, rgba(255, 255, 255, 0) 65%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.03) 64%, rgba(255, 255, 255, 0) 65%);
+}
+
+.window-titlebar-button {
+  position: relative;
+  float: left;
+  margin: 9px 4px 0 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: rgba(17, 17, 17, 0.9);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, color-stop(0%, rgba(255, 255, 255, 0.17)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-radial-gradient(bottom, circle cover, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0));
+  background-image: -moz-radial-gradient(bottom, circle cover, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0));
+  background-image: -ms-radial-gradient(bottom, circle cover, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0));
+  background-image: -o-radial-gradient(bottom, circle cover, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0));
+  background-image: radial-gradient(bottom, circle cover, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0));
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.7), 0 1px rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.7), 0 1px rgba(255, 255, 255, 0.15);
+}
+.window-titlebar-button:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 2px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 1px white, 0 0 3px rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 1px white, 0 0 3px rgba(255, 255, 255, 0.18);
+}
+
+.window-toolbar {
+  padding: 0 7px;
+  height: 45px;
+  border-bottom: 1px solid #151515;
+  -webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.window-toolbar-button {
+  float: left;
+  padding: 0 10px 5px;
+}
+.window-toolbar-button.active {
+  -webkit-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.1);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+}
+.window-toolbar-button:active > a {
+  -webkit-filter: brightness(-10%);
+}
+
+.window-body {
+  margin: 6px;
+  color: #303030;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+  background: #ababab;
+  background-clip: content-box;
+  border: 1px solid #151515;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+/* ========================================================
+   Switch
+   ===================================================== */
+.switch-container {
+  display: block;
+  padding: 5px 5px 5px 10px;
+  line-height: 23px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.switch-container + .switch-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.switch {
+  position: relative;
+  float: right;
+  line-height: 21px;
+  width: 74px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.45) rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  background-color: #4b4b4b;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4b4b4b), color-stop(50%, #494949), color-stop(51%, #505050), color-stop(100%, #5b5b5b));
+  background-image: -webkit-linear-gradient(top, #4b4b4b 0%, #494949 50%, #505050 51%, #5b5b5b 100%);
+  background-image: -moz-linear-gradient(top, #4b4b4b 0%, #494949 50%, #505050 51%, #5b5b5b 100%);
+  background-image: -ms-linear-gradient(top, #4b4b4b 0%, #494949 50%, #505050 51%, #5b5b5b 100%);
+  background-image: -o-linear-gradient(top, #4b4b4b 0%, #494949 50%, #505050 51%, #5b5b5b 100%);
+  background-image: linear-gradient(top, #4b4b4b 0%, #494949 50%, #505050 51%, #5b5b5b 100%);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.switch-label {
+  float: left;
+  width: 37px;
+  font-size: 12px;
+  color: #fafafa;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.switch-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 35px;
+  border-radius: 3px;
+  background-color: #c8c8c8;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d2d2d2), color-stop(100%, #888888));
+  background-image: -webkit-linear-gradient(top, #d2d2d2, #888888);
+  background-image: -moz-linear-gradient(top, #d2d2d2, #888888);
+  background-image: -ms-linear-gradient(top, #d2d2d2, #888888);
+  background-image: -o-linear-gradient(top, #d2d2d2, #888888);
+  background-image: linear-gradient(top, #d2d2d2, #888888);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 0 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 0 1px 1px rgba(0, 0, 0, 0.5);
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -ms-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+.switch-input {
+  display: none;
+}
+.switch-input:checked + .switch {
+  background-color: #a92488;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a92488), color-stop(50%, #a52485), color-stop(51%, #bb0096), color-stop(100%, #c331a0));
+  background-image: -webkit-linear-gradient(top, #a92488 0%, #a52485 50%, #bb0096 51%, #c331a0 100%);
+  background-image: -moz-linear-gradient(top, #a92488 0%, #a52485 50%, #bb0096 51%, #c331a0 100%);
+  background-image: -ms-linear-gradient(top, #a92488 0%, #a52485 50%, #bb0096 51%, #c331a0 100%);
+  background-image: -o-linear-gradient(top, #a92488 0%, #a52485 50%, #bb0096 51%, #c331a0 100%);
+  background-image: linear-gradient(top, #a92488 0%, #a52485 50%, #bb0096 51%, #c331a0 100%);
+}
+.switch-input:checked + .switch .switch-handle {
+  left: 39px;
+}
+
+/* ========================================================
+   About
+   ===================================================== */
+.about {
+  margin: 80px auto;
+  padding: 15px 20px;
+  width: 300px;
+  text-align: center;
+  color: #ddd;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+.about a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.about a:hover {
+  color: #111;
+  text-shadow: none;
+  background: white;
+}
+
+.links {
+  zoom: 1;
+}
+.links:before, .links:after {
+  content: "";
+  display: table;
+}
+.links:after {
+  clear: both;
+}
+.links a {
+  padding: 6px 0;
+  float: left;
+  width: 50%;
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
+}
