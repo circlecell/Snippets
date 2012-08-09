@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Chunky Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+  <form class="calc">
+    <p class="calc-display">
+      <input type="text" name="res" id="res" value="4815.1623" class="calc-display-input" onfocus="this.blur()">
+    </p>
+    <p class="calc-row">
+      <button type="button" class="calc-button calc-button-gray" onclick="s('Just....')">mrc</button>
+      <button type="button" class="calc-button calc-button-gray" onclick="s('....do..')">m-</button>
+      <button type="button" class="calc-button calc-button-gray" onclick="s('......it')">m+</button>
+      <button type="button" class="calc-button calc-button-red calc-button-big" onclick="a('/')">÷</button>
+    </p>
+    <p class="calc-row">
+      <button type="button" class="calc-button" onclick="a('7')">7</button>
+      <button type="button" class="calc-button" onclick="a('8')">8</button>
+      <button type="button" class="calc-button" onclick="a('9')">9</button>
+      <button type="button" class="calc-button calc-button-red calc-button-big" onclick="a('*')">x</button>
+    </p>
+    <p class="calc-row">
+      <button type="button" class="calc-button" onclick="a('4')">4</button>
+      <button type="button" class="calc-button" onclick="a('5')">5</button>
+      <button type="button" class="calc-button" onclick="a('6')">6</button>
+      <button type="button" class="calc-button calc-button-red calc-button-big" onclick="a('-')">-</button>
+    </p>
+    <p class="calc-row">
+      <button type="button" class="calc-button" onclick="a('1')">1</button>
+      <button type="button" class="calc-button" onclick="a('2')">2</button>
+      <button type="button" class="calc-button" onclick="a('3')">3</button>
+      <button type="button" class="calc-button calc-button-red calc-button-big" onclick="a('+')">+</button>
+    </p>
+    <p class="calc-row">
+      <button type="button" class="calc-button" onclick="a('0')">0</button>
+      <button type="button" class="calc-button" onclick="a('.')">.</button>
+      <button type="button" class="calc-button" onclick="s('')">C</button>
+      <button type="button" class="calc-button calc-button-yellow calc-button-big" onclick="e()">=</button>
+    </p>
+  </form>
+
+  <section class="about">
+    <p class="links">
+      <a href="http://www.webinterfacelab.com/snippets/chunky-calculator" target="_parent">View Article</a>
+      <a href="http://www.webinterfacelab.com/snippets/chunky-calculator.zip" target="_parent">Download Snippet</a>
+    </p>
+    <p class="author">
+      &copy; 2012 <a href="http://thibaut.me" target="_blank">Thibaut Courouble</a> &ndash;
+      <a href="http://www.webinterfacelab.com/mit-license" target="_blank" rel="nofollow">MIT License</a><br>
+       Original PSD by <a href="http://www.premiumpixels.com/freebies/chunky-calculator-psd/" target="_blank" rel="nofollow">Zack Smith</a>
+    </p>
+  </section>
+
+  <script>
+    function s(v) { document.getElementById('res').value = v }
+    function a(v) { document.getElementById('res').value += v }
+    function e() { try { s(eval(document.getElementById('res').value)) } catch(e) { s('Error') } }
+  </script>
+</body>
+</html>
