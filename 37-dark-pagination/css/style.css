@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* ========================================================
+   Page
+   ===================================================== */
+body {
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #404040;
+  background: #222327;
+}
+
+.container {
+  margin: 80px auto;
+  width: 400px;
+  text-align: center;
+}
+.container .pagination {
+  margin: 15px 0;
+}
+
+/* ========================================================
+   Pagination
+   ===================================================== */
+.pagination {
+  padding: 8px;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: #070809 #0d0e0f #131517;
+  border-color: rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.65) rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.12)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0));
+  -webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 1px rgba(255, 255, 255, 0.05);
+}
+.pagination > a, .pagination > span {
+  float: left;
+  margin-left: 5px;
+  padding: 0 6px;
+  min-width: 17px;
+  line-height: 27px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #d4d4d4;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.pagination :first-child {
+  margin-left: 0;
+}
+.pagination > a {
+  text-shadow: 0 1px black;
+  border-color: rgba(0, 0, 0, 0.9);
+  background-clip: padding-box;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.04)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04), inset 0 1px rgba(255, 255, 255, 0.04), inset 0 -1px rgba(0, 0, 0, 0.15), 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04), inset 0 1px rgba(255, 255, 255, 0.04), inset 0 -1px rgba(0, 0, 0, 0.15), 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+.pagination > a:hover {
+  background-color: #333;
+  background-color: rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+}
+.pagination > span, .pagination > a:active {
+  color: #eee;
+  text-shadow: 0 -1px black;
+  background: #1c1c1c;
+  background: rgba(255, 255, 255, 0.01);
+  border-color: black rgba(0, 0, 0, 0.65) rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 0 2px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 0 2px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+}
+.pagination .prev, .pagination .next {
+  font-family: Noteworthy, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.pagination-blue {
+  background-color: rgba(0, 5, 50, 0.1);
+}
+.pagination-blue > a {
+  background-color: rgba(170, 170, 255, 0.01);
+}
+.pagination-blue > a.hover {
+  background-color: rgba(120, 130, 255, 0.08);
+}
+
+/* ========================================================
+   About
+   ===================================================== */
+.about {
+  margin: 80px auto;
+  padding: 15px 20px;
+  width: 300px;
+  text-align: center;
+  color: #bbb;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+.about a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.about a:hover {
+  color: #111;
+  text-shadow: none;
+  background: white;
+}
+
+.links {
+  zoom: 1;
+}
+.links:before, .links:after {
+  content: "";
+  display: table;
+}
+.links:after {
+  clear: both;
+}
+.links a {
+  padding: 6px 0;
+  float: left;
+  width: 50%;
+}
+
+.author {
+  margin-top: 15px;
+  font-size: 11px;
+}
