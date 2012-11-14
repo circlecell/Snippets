@@ -1,0 +1,78 @@
+@mixin box-sizing($val) {
+  -webkit-box-sizing: $val;
+     -moz-box-sizing: $val;
+          box-sizing: $val;
+}
+
+@mixin user-select($val...) {
+  -webkit-user-select: $val;
+     -moz-user-select: $val;
+      -ms-user-select: $val;
+          user-select: $val;
+}
+
+@mixin box-shadow($shadows...) {
+  -webkit-box-shadow: $shadows;
+          box-shadow: $shadows;
+}
+
+@mixin linear-gradient($gradient...) {
+  background-image: -webkit-linear-gradient($gradient);
+  background-image:    -moz-linear-gradient($gradient);
+  background-image:      -o-linear-gradient($gradient);
+  background-image:         linear-gradient($gradient);
+}
+
+@mixin radial-gradient($gradient...) {
+  background-image: -webkit-radial-gradient($gradient);
+  background-image:    -moz-radial-gradient($gradient);
+  background-image:      -o-radial-gradient($gradient);
+  background-image:         radial-gradient($gradient);
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+
+@mixin transition-property($properties...) {
+  -webkit-transition-property: $properties;
+     -moz-transition-property: $properties;
+       -o-transition-property: $properties;
+          transition-property: $properties;
+}
+
+@mixin transform($transform...) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+       -o-transform: $transform;
+          transform: $transform;
+}
+
+@mixin clearfix {
+  zoom: 1;
+
+  &:before, &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after { clear: both; }
+}
+
+@mixin inline-block {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+}
+
+@mixin hide-text() {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}

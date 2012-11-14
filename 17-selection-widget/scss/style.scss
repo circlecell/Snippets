@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -23,6 +22,7 @@ body {
   font-size: 13px;
   font-weight: normal;
   line-height: 20px;
+  background: #dbdede;
   background-repeat: no-repeat;
   @include radial-gradient(center, circle cover, #dbdede, #bfbdbe);
 }
@@ -44,12 +44,15 @@ body {
 
   &:before {
     content: '';
+    position: absolute;
+    top: -6px;
+    bottom: -6px;
+    left: -6px;
+    right: -6px;
     border-radius: 25px;
-    @include position(absolute, -6px -6px -6px -6px);
     @include linear-gradient(top, rgba(0, 0, 0, .05) 0%,
                                   rgba(255, 255, 255, .05) 20%,
-                                  rgba(255, 255, 255, .6),
-                                  $fallback: transparent);
+                                  rgba(255, 255, 255, .6));
     @include box-shadow(inset 0 1px 2px rgba(0, 0, 0, .3),
                         0 1px rgba(255, 255, 255, .8));
   }
@@ -58,17 +61,21 @@ body {
     position: relative;
     padding: 0 14px;
     overflow: hidden;
+    background: #eee;
     border: 1px solid;
     border-color: #a1a1a1 #909090 #808080;
     border-radius: 20px;
-    @include linear-gradient(top, #eee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%, $fallback: #eee);
+    @include linear-gradient(top, #eee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
     @include box-shadow(0 1px 2px rgba(0, 0, 0, .35));
 
     &::before {
       content: '';
+      position: absolute;
+      top: -48px;
+      right: 0;
+      left: 0;
       height: 110px;
       border-radius: 55px;
-      @include position(absolute, -48px 0px 0 0px);
 
       // Won't work in WebKit until this bug is fixed: https://bugs.webkit.org/show_bug.cgi?id=72619
       background-image: -moz-linear-gradient(top , rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 100%);
@@ -100,9 +107,10 @@ body {
   .active a, a:active {
     height: 18px;
     width: 18px;
+    background: #508fee;
     border: 1px solid #1f2128;
     border-color: rgba(0, 0, 0, .7);
-    @include linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%, $fallback: #508fee);
+    @include linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
     @include box-shadow(inset 0 0 0 1px rgba(255, 255, 255, .12),
                         0 1px 1px rgba(255, 255, 255, .6));
   }

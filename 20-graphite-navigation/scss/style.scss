@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -36,9 +35,10 @@ body {
 
 .nav-item {
   padding: 3px;
+  background: rgba(0, 0, 0, .01);
   border-radius: 4px;
   @include inline-block;
-  @include linear-gradient(top, rgba(0, 0, 0, .01), rgba(255, 255, 255, .12), $fallback: transparent);
+  @include linear-gradient(top, rgba(0, 0, 0, .01), rgba(255, 255, 255, .12));
   @include box-shadow(inset 0 1px 2px rgba(0, 0, 0, .3), inset 0 -1px rgba(255, 255, 255, .15));
 }
 
@@ -50,21 +50,24 @@ body {
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+  background: #7e929b;
   border: 1px solid;
   border-color: #c2ccd1 #9cacb2 #91a2aa;
   border-color: #c2ccd1 rgba(255, 255, 255, .1) #91a2aa;
   border-radius: 3px;
-  @include linear-gradient(top, #b9c6cc 0%, #8ea1aa 50%, #768b94 51%, #7c9099 75%, #7e929b 100%, $fallback: #7e929b);
+  @include linear-gradient(top, #b9c6cc 0%, #8ea1aa 50%, #768b94 51%, #7c9099 75%, #7e929b 100%);
 
   &:hover {
+    background: #a8bdc7;
     border-color: #e3eaed #d3dee3 #cedadf;
-    @include linear-gradient(top, #cfdae0 0%, #b5c7cf 50%, #a6bac5 51%, #aec1ca 100%, $fallback: #a8bdc7);
+    @include linear-gradient(top, #cfdae0 0%, #b5c7cf 50%, #a6bac5 51%, #aec1ca 100%);
   }
 
   &:active {
     border: 0;
     padding: 1px;
-    @include linear-gradient(top, #5f7681 0%, #8c9da5 45%, #9dabb1 100%, $fallback: #8c9da5);
+    background: #8c9da5;
+    @include linear-gradient(top, #5f7681 0%, #8c9da5 45%, #9dabb1 100%);
   }
 }
 

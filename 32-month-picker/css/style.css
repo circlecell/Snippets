@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -71,11 +67,9 @@ body {
   font-weight: normal;
   line-height: 20px;
   color: #404040;
-  background-color: #282537;
-  background-image: -webkit-gradient(radial, center center, 0, center center, 460, color-stop(0%, #3c3b52), color-stop(80%, #252233));
+  background: #282537;
   background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
   background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
-  background-image: -ms-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
   background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
   background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
 }
@@ -119,11 +113,10 @@ body {
   text-shadow: 0 1px 1px black;
 }
 .month-picker-label, .month-picker-label:before {
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  -ms-transition: all 0.15s ease-out;
-  -o-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
 }
 .month-picker-label:before {
   content: '';
@@ -141,11 +134,9 @@ body {
 }
 input:checked + .month-picker-label {
   color: white;
-  background-color: #302e42;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #302e42), color-stop(100%, #29253b));
+  background: #302e42;
   background-image: -webkit-linear-gradient(top, #302e42, #29253b);
   background-image: -moz-linear-gradient(top, #302e42, #29253b);
-  background-image: -ms-linear-gradient(top, #302e42, #29253b);
   background-image: -o-linear-gradient(top, #302e42, #29253b);
   background-image: linear-gradient(top, #302e42, #29253b);
 }
@@ -193,7 +184,7 @@ input:checked + .month-picker-label:before {
   zoom: 1;
 }
 .links:before, .links:after {
-  content: "";
+  content: '';
   display: table;
 }
 .links:after {

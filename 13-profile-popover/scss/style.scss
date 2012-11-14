@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -23,8 +22,9 @@ body {
   font-size: 13px;
   font-weight: normal;
   line-height: 20px;
+  background: #697ecc;
   background-repeat: no-repeat;
-  @include radial-gradient(center, circle cover, #87a3f5, #697ecc, $fallback: #697ecc);
+  @include radial-gradient(center, circle cover, #87a3f5, #697ecc);
 }
 
 a {
@@ -91,12 +91,13 @@ $hoverColor: #5a70b0;
     opacity: 0;
     position: absolute;
     bottom: 100%; left: 0; right: 0;
+    background: #d9e3fa;
     border: 1px solid;
     border-color: #777 #6c6c6c #666;
     border-radius: 5px;
-    @include transition-property(opacity, padding, visibility);
     @include transition(.2s ease-out);
-    @include linear-gradient(top, #eef3fe, #d9e3fa, $fallback: #d9e3fa);
+    @include transition-property(opacity, padding, visibility);
+    @include linear-gradient(top, #eef3fe, #d9e3fa);
     @include box-shadow(inset 0 0 0 1px rgba(255, 255, 255, .9), 0 1px 2px rgba(0, 0, 0, .1));
   }
 
@@ -150,8 +151,9 @@ $hoverColor: #5a70b0;
         color: #fff;
         text-decoration: none;
         text-shadow: 0 1px rgba(0, 0, 0, .3);
+        background: $hoverColor;
         border-color: $hoverColor darken($hoverColor, 8%) darken($hoverColor, 12%);
-        @include linear-gradient(top, lighten($hoverColor, 8%), darken($hoverColor, 5%), $fallback: $hoverColor);
+        @include linear-gradient(top, lighten($hoverColor, 8%), darken($hoverColor, 5%));
 
         &:after { display: block; }
       }

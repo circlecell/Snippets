@@ -4,15 +4,15 @@
 
 [![Preview](http://www.webinterfacelab.com/snippets/dark-pagination/preview.png)](http://www.webinterfacelab.com/snippets/dark-pagination)
 
-This snippet is implemented with [Sass](https://github.com/nex3/sass), with help from [Bourbon](https://github.com/thoughtbot/bourbon).
+This snippet is implemented with [Sass](https://github.com/nex3/sass).
 
 To compile:
 
-`sass --update scss:css -r ../bourbon/lib/bourbon.rb`
+`sass --update scss:css`
 
 To compile and watch:
 
-`sass --watch scss:css -r ../bourbon/lib/bourbon.rb`
+`sass --watch scss:css`
 
 ## Browser Compatibility
 

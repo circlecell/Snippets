@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -24,7 +23,8 @@ body {
   font-weight: normal;
   line-height: 20px;
   color: #404040;
-  @include radial-gradient(center, circle cover, #9b729a, #5e2c61, $fallback: #744575);
+  background: #744575;
+  @include radial-gradient(center, circle cover, #9b729a, #5e2c61);
 }
 
 /* ========================================================
@@ -41,6 +41,7 @@ body {
   font-size: 11px;
   color: rgba(#ccc, .9);
   text-shadow: 0 -1px $black;
+  background-color: rgba(#111, .48);
   /* Don't let the background bleed underneath our semi-transparent (rgba) border. */
   background-clip: padding-box;
   border: 1px solid;
@@ -54,8 +55,7 @@ body {
                            rgba(#f2f2f2, .3)  0%,
                            rgba(#ddd, .01)   50%,
                            rgba($black, .12) 50%,
-                           rgba($black, .3)  100%,
-                           $fallback: rgba(#111, .48));
+                           rgba($black, .3)  100%);
   @include box-shadow(inset 0 0 1px rgba($white, .5),
                       0 1px 2px rgba($black, .3));
 
@@ -96,12 +96,11 @@ body {
   width: 10px;
   height: 10px;
   padding: 4px;
-  color: transparent;
-  font: 0/0 a;
-  text-shadow: none;
+  background: #222;
   border: 1px solid rgba($black, .4);
   border-radius: 10px;
-  @include linear-gradient(top, #383838, #111, $fallback: #222);
+  @include hide-text;
+  @include linear-gradient(top, #383838, #111);
   @include box-shadow(inset 0 1px rgba($white, .15));
 
   &:before {
@@ -116,14 +115,14 @@ body {
 .notif-white {
   color: rgba(#333, .9);
   text-shadow: 0 1px rgba($white, .2);
+  background-color: rgba($white, .3);
   border-color: rgba(#444, .6) rgba(#444, .7) rgba(#444, .8);
   /* rgba(#fff, .4) 0%, rgba(#fff, .33) 50%, rgba(#eaeaea, .3) 50%, rgba(#eaeaea, .35) 100% */
   @include linear-gradient(top,
                            rgba($white, .15)  0%,
                            rgba($white, .05) 50%,
                            rgba(#666, .1)    50%,
-                           rgba(#777, .05)   100%,
-                           $fallback: rgba($white, .3));
+                           rgba(#777, .05)  100%);
   @include box-shadow(inset 0 0 1px rgba($white, .7),
                       0 1px 2px rgba($black, .2));
 

@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -43,10 +42,11 @@ body {
   overflow: hidden;
   height: 28px;
   width: 150px;
+  background: #f2f2f2;
   border: 1px solid;
   border-color: white #f7f7f7 #f5f5f5;
   border-radius: 3px;
-  @include linear-gradient(top, transparent, rgba(black, .06), $fallback: #f2f2f2);
+  @include linear-gradient(top, transparent, rgba(black, .06));
   @include box-shadow(0 1px 1px rgba(black, .08));
 
   &:before, &:after {
@@ -122,8 +122,9 @@ body {
 @-moz-document url-prefix() { .dropdown-select { padding-left: 6px; } }
 
 .dropdown-dark {
+  background: #444;
   border-color: #111 #0a0a0a black;
-  @include linear-gradient(top, transparent, rgba(black, .4), $fallback: #444);
+  @include linear-gradient(top, transparent, rgba(black, .4));
   @include box-shadow(inset 0 1px rgba(white, .1), 0 1px 1px rgba(black, .2));
 
   &:before { border-bottom-color: #aaa; }

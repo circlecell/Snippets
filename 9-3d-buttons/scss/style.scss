@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -58,6 +57,7 @@ a {
   font-weight: bold;
   color: #555555;
   text-shadow: 0 1px #fff;
+  background: #dfdfdf;
   border-width: 1px 1px 0;
   border-style: solid;
   border-color: #cecece #bababa #a8a8a8;
@@ -65,7 +65,7 @@ a {
   outline: none;
   @include box-sizing(content-box);
   @include inline-block;
-  @include linear-gradient(top, #f1f1f1 0%, #dfdfdf 70%, #dadada 100%, $fallback: #dfdfdf);
+  @include linear-gradient(top, #f1f1f1 0%, #dfdfdf 70%, #dadada 100%);
   @include box-shadow(inset 0 1px #fdfdfd,
                       inset 0 0 0 1px #eaeaea,
                       0 1px #a8a8a8,
@@ -91,8 +91,9 @@ a {
   &.green {
     color: #465f25;
     text-shadow: 0 1px #d9f3b5;
+    background: #94d362;
     border-color: #91ce5e #7ab04b #5e903f;
-    @include linear-gradient(top, #c0eb85 0%, #94d362 70%, #8ed258 100%, $fallback: #94d362);
+    @include linear-gradient(top, #c0eb85 0%, #94d362 70%, #8ed258 100%);
     @include box-shadow(inset 0 1px #d9f3b5,
                         inset 0 0 0 1px #b1e095,
                         0 1px #5e903f,
@@ -109,8 +110,9 @@ a {
   &.blue {
     color: #236277;
     text-shadow: 0 1px #c2ecf9;
+    background: #61cdf3;
     border-color: #6fbad1 #3fa3c0 #3583ab;
-    @include linear-gradient(top, #9be5fa 0%, #61cdf3 70%, #5fbde8 100%, $fallback: #61cdf3);
+    @include linear-gradient(top, #9be5fa 0%, #61cdf3 70%, #5fbde8 100%);
     @include box-shadow(inset 0 1px #c5f0fd,
                         inset 0 0 0 1px #8ad1eb,
                         0 1px #3583ab,
@@ -127,8 +129,9 @@ a {
   &.yellow {
     color: #7e4f27;
     text-shadow: 0 1px #f2e294;
+    background: #f6ba49;
     border-color: #efb443 #d9a238 #a57825;
-    @include linear-gradient(top, #ffdd67 0%, #f6ba49 70%, #f4b03e 100%, $fallback: #f6ba49);
+    @include linear-gradient(top, #ffdd67 0%, #f6ba49 70%, #f4b03e 100%);
     @include box-shadow(inset 0 1px #ffeca6,
                         inset 0 0 0 1px #e5c96d,
                         0 1px #a57825,
@@ -145,8 +148,9 @@ a {
   &.red {
     color: #702526;
     text-shadow: 0 1px #ea8f99;
+    background: #e46565;
     border-color: #e1696e #c85252 #a03a38;
-    @include linear-gradient(top, #eb9093 0%, #e46565 70%, #e25755 100%, $fallback: #e46565);
+    @include linear-gradient(top, #eb9093 0%, #e46565 70%, #e25755 100%);
     @include box-shadow(inset 0 1px #dcaaaa,
                         inset 0 0 0 1px #df777a,
                         0 1px #a03a38,
@@ -163,8 +167,9 @@ a {
   &.purple {
     color: #714667;
     text-shadow: 0 1px #f2c5e6;
+    background: #e393d3;
     border-color: #e391d0 #c27ab3 #8a517d;
-    @include linear-gradient(top, #f1bee3 0%, #e393d3 70%, #df8dce 100%, $fallback: #e393d3);
+    @include linear-gradient(top, #f1bee3 0%, #e393d3 70%, #df8dce 100%);
     @include box-shadow(inset 0 1px #f5d6ee,
                         inset 0 0 0 1px #dcaacf,
                         0 1px #8a517d,
@@ -181,8 +186,9 @@ a {
   &.grey {
     color: #41505b;
     text-shadow: 0 1px #c2d0db;
+    background: #90aabd;
     border-color: #909eab #768791 #50606e;
-    @include linear-gradient(top, #bccbd7 0%, #90aabd 70%, #83a0b4 100%, $fallback: #90aabd);
+    @include linear-gradient(top, #bccbd7 0%, #90aabd 70%, #83a0b4 100%);
     @include box-shadow(inset 0 1px #d0dae2,
                         inset 0 0 0 1px #99b5ce,
                         0 1px #50606e,
@@ -199,8 +205,9 @@ a {
   &.black {
     color: #f1f1f1;
     text-shadow: 0 1px #111;
+    background: #4f4f4f;
     border-color: #505050 #414141 #2c2c2c;
-    @include linear-gradient(top, #696969 0%, #4f4f4f 70%, #3c3c3c 100%, $fallback: #4f4f4f);
+    @include linear-gradient(top, #696969 0%, #4f4f4f 70%, #3c3c3c 100%);
     @include box-shadow(inset 0 1px #828282,
                         inset 0 0 0 1px #555,
                         0 1px #2c2c2c,

@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -43,6 +42,7 @@ body {
   margin: 50px auto;
   padding: 15px;
   width: 177px;
+  background: #3d4543;
   border: 1px solid #222;
   border-radius: 4px;
   @include linear-gradient(top, #3d4543, #2f2a2f);
@@ -67,6 +67,7 @@ body {
   color: #444;
   height: 35px;
   text-align: right;
+  background: #bccd95;
   background-clip: padding-box; /* Don't let the background bleed outside the border */
   border: 1px solid #222;
   border-radius: 2px;
@@ -90,6 +91,7 @@ body {
   text-align: center;
   text-shadow: 0 1px rgba($black, .4);
   text-decoration: none;
+  background: #313131;
   background-clip: padding-box !important; /* !important because FF overrides the value on :active */
   border: 0; /* IE 8 fix */
   border: 1px solid rgba($black, .8);
@@ -111,17 +113,23 @@ body {
 }
 
 .calc-button-gray {
+  background: #6f6f6f;
   @include linear-gradient(top, #6f6f6f, #515151);
+
   &:active { background: #555; }
 }
 
 .calc-button-red {
-  @include linear-gradient(top, #ff7286, #ff4561, $fallback: #ff4561);
+  background: #ff4561;
+  @include linear-gradient(top, #ff7286, #ff4561);
+
   &:active { background: #ff4561; }
 }
 
 .calc-button-yellow {
-  @include linear-gradient(top, #ffb935, #ffa70c, $fallback: #ffa70c);
+  background: #ffa70c;
+  @include linear-gradient(top, #ffb935, #ffa70c);
+
   &:active { background: #ffa70c; }
 }
 

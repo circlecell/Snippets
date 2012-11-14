@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,11 +70,8 @@ body {
   margin: 0 auto;
   padding: 90px 0;
   width: 400px;
-  background-color: false;
-  background-image: -webkit-gradient(radial, center center, 0, center center, 460, color-stop(0%, rgba(255, 255, 255, 0.1)), color-stop(100%, transparent));
   background-image: -webkit-radial-gradient(center, cover, rgba(255, 255, 255, 0.1), transparent);
   background-image: -moz-radial-gradient(center, cover, rgba(255, 255, 255, 0.1), transparent);
-  background-image: -ms-radial-gradient(center, cover, rgba(255, 255, 255, 0.1), transparent);
   background-image: -o-radial-gradient(center, cover, rgba(255, 255, 255, 0.1), transparent);
   background-image: radial-gradient(center, cover, rgba(255, 255, 255, 0.1), transparent);
 }
@@ -136,14 +129,8 @@ body {
   text-shadow: 0 1px rgba(255, 255, 255, 0.25);
   -webkit-transition: 0.15s ease-out;
   -moz-transition: 0.15s ease-out;
-  -ms-transition: 0.15s ease-out;
   -o-transition: 0.15s ease-out;
   transition: 0.15s ease-out;
-  -webkit-transition-property: color, text-shadow;
-  -moz-transition-property: color, text-shadow;
-  -ms-transition-property: color, text-shadow;
-  -o-transition-property: color, text-shadow;
-  transition-property: color, text-shadow;
 }
 .switch-input:checked + .switch-label-on ~ .switch-selection {
   left: 60px;
@@ -158,37 +145,30 @@ body {
   display: block;
   width: 58px;
   height: 22px;
+  background: #65bd63;
   border-radius: 3px;
-  background-color: #65bd63;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9dd993), color-stop(100%, #65bd63));
   background-image: -webkit-linear-gradient(top, #9dd993, #65bd63);
   background-image: -moz-linear-gradient(top, #9dd993, #65bd63);
-  background-image: -ms-linear-gradient(top, #9dd993, #65bd63);
   background-image: -o-linear-gradient(top, #9dd993, #65bd63);
   background-image: linear-gradient(top, #9dd993, #65bd63);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
   -webkit-transition: left 0.15s ease-out;
   -moz-transition: left 0.15s ease-out;
-  -ms-transition: left 0.15s ease-out;
   -o-transition: left 0.15s ease-out;
   transition: left 0.15s ease-out;
 }
 .switch-blue .switch-selection {
-  background-color: #3aa2d0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4fc9ee), color-stop(100%, #3aa2d0));
+  background: #3aa2d0;
   background-image: -webkit-linear-gradient(top, #4fc9ee, #3aa2d0);
   background-image: -moz-linear-gradient(top, #4fc9ee, #3aa2d0);
-  background-image: -ms-linear-gradient(top, #4fc9ee, #3aa2d0);
   background-image: -o-linear-gradient(top, #4fc9ee, #3aa2d0);
   background-image: linear-gradient(top, #4fc9ee, #3aa2d0);
 }
 .switch-yellow .switch-selection {
-  background-color: #c4bb61;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0dd94), color-stop(100%, #c4bb61));
+  background: #c4bb61;
   background-image: -webkit-linear-gradient(top, #e0dd94, #c4bb61);
   background-image: -moz-linear-gradient(top, #e0dd94, #c4bb61);
-  background-image: -ms-linear-gradient(top, #e0dd94, #c4bb61);
   background-image: -o-linear-gradient(top, #e0dd94, #c4bb61);
   background-image: linear-gradient(top, #e0dd94, #c4bb61);
 }
@@ -223,7 +203,7 @@ body {
   zoom: 1;
 }
 .links:before, .links:after {
-  content: "";
+  content: '';
   display: table;
 }
 .links:after {

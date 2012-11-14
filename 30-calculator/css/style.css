@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -95,13 +91,11 @@ body {
   margin: 50px auto;
   padding: 15px;
   width: 177px;
+  background: #3d4543;
   border: 1px solid #222;
   border-radius: 4px;
-  background-color: #3d4543;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d4543), color-stop(100%, #2f2a2f));
   background-image: -webkit-linear-gradient(top, #3d4543, #2f2a2f);
   background-image: -moz-linear-gradient(top, #3d4543, #2f2a2f);
-  background-image: -ms-linear-gradient(top, #3d4543, #2f2a2f);
   background-image: -o-linear-gradient(top, #3d4543, #2f2a2f);
   background-image: linear-gradient(top, #3d4543, #2f2a2f);
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 4px rgba(0, 0, 0, 0.5);
@@ -125,15 +119,13 @@ body {
   color: #444;
   height: 35px;
   text-align: right;
+  background: #bccd95;
   background-clip: padding-box;
   /* Don't let the background bleed outside the border */
   border: 1px solid #222;
   border-radius: 2px;
-  background-color: #bccd95;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bccd95), color-stop(100%, #e0f5b1));
   background-image: -webkit-linear-gradient(top, #bccd95, #e0f5b1);
   background-image: -moz-linear-gradient(top, #bccd95, #e0f5b1);
-  background-image: -ms-linear-gradient(top, #bccd95, #e0f5b1);
   background-image: -o-linear-gradient(top, #bccd95, #e0f5b1);
   background-image: linear-gradient(top, #bccd95, #e0f5b1);
   -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.12);
@@ -145,7 +137,7 @@ body {
   zoom: 1;
 }
 .calc-row:before, .calc-row:after {
-  content: "";
+  content: '';
   display: table;
 }
 .calc-row:after {
@@ -162,6 +154,7 @@ body {
   text-align: center;
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   text-decoration: none;
+  background: #313131;
   background-clip: padding-box !important;
   /* !important because FF overrides the value on :active */
   border: 0;
@@ -169,11 +162,8 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 3px;
   cursor: pointer;
-  background-color: #313131;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #313131), color-stop(100%, #1c1c1c));
   background-image: -webkit-linear-gradient(top, #313131, #1c1c1c);
   background-image: -moz-linear-gradient(top, #313131, #1c1c1c);
-  background-image: -ms-linear-gradient(top, #313131, #1c1c1c);
   background-image: -o-linear-gradient(top, #313131, #1c1c1c);
   background-image: linear-gradient(top, #313131, #1c1c1c);
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 1px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.08);
@@ -189,11 +179,9 @@ body {
 }
 
 .calc-button-gray {
-  background-color: #6f6f6f;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6f6f6f), color-stop(100%, #515151));
+  background: #6f6f6f;
   background-image: -webkit-linear-gradient(top, #6f6f6f, #515151);
   background-image: -moz-linear-gradient(top, #6f6f6f, #515151);
-  background-image: -ms-linear-gradient(top, #6f6f6f, #515151);
   background-image: -o-linear-gradient(top, #6f6f6f, #515151);
   background-image: linear-gradient(top, #6f6f6f, #515151);
 }
@@ -202,11 +190,9 @@ body {
 }
 
 .calc-button-red {
-  background-color: #ff4561;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff7286), color-stop(100%, #ff4561));
+  background: #ff4561;
   background-image: -webkit-linear-gradient(top, #ff7286, #ff4561);
   background-image: -moz-linear-gradient(top, #ff7286, #ff4561);
-  background-image: -ms-linear-gradient(top, #ff7286, #ff4561);
   background-image: -o-linear-gradient(top, #ff7286, #ff4561);
   background-image: linear-gradient(top, #ff7286, #ff4561);
 }
@@ -215,11 +201,9 @@ body {
 }
 
 .calc-button-yellow {
-  background-color: #ffa70c;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffb935), color-stop(100%, #ffa70c));
+  background: #ffa70c;
   background-image: -webkit-linear-gradient(top, #ffb935, #ffa70c);
   background-image: -moz-linear-gradient(top, #ffb935, #ffa70c);
-  background-image: -ms-linear-gradient(top, #ffb935, #ffa70c);
   background-image: -o-linear-gradient(top, #ffb935, #ffa70c);
   background-image: linear-gradient(top, #ffb935, #ffa70c);
 }
@@ -271,7 +255,7 @@ body {
   zoom: 1;
 }
 .links:before, .links:after {
-  content: "";
+  content: '';
   display: table;
 }
 .links:after {

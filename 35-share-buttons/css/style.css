@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -115,15 +111,13 @@ body {
   letter-spacing: -1px;
   color: #555;
   text-shadow: 0 1px white;
+  background: #e6eff5;
   border-width: 1px 1px 0;
   border-style: solid;
   border-color: #c5c5c5 #bbb;
   border-radius: 8px 8px 0 0;
-  background-color: #e6eff5;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.03)), color-stop(40%, transparent));
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.03) 0%, transparent 40%);
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.03) 0%, transparent 40%);
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.03) 0%, transparent 40%);
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.03) 0%, transparent 40%);
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.03) 0%, transparent 40%);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.18), 0 2px rgba(0, 0, 0, 0.07);
@@ -179,11 +173,9 @@ body {
 }
 
 .share-btn-tweet {
-  background-color: #83cfe8;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #83cfe8), color-stop(100%, #6ebbd4));
+  background: #83cfe8;
   background-image: -webkit-linear-gradient(top, #83cfe8, #6ebbd4);
   background-image: -moz-linear-gradient(top, #83cfe8, #6ebbd4);
-  background-image: -ms-linear-gradient(top, #83cfe8, #6ebbd4);
   background-image: -o-linear-gradient(top, #83cfe8, #6ebbd4);
   background-image: linear-gradient(top, #83cfe8, #6ebbd4);
   -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.16), inset 0 -1px rgba(0, 0, 0, 0.15);
@@ -205,11 +197,9 @@ body {
 }
 
 .share-btn-like {
-  background-color: #6480bd;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6480bd), color-stop(100%, #3c5894));
+  background: #6480bd;
   background-image: -webkit-linear-gradient(top, #6480bd, #3c5894);
   background-image: -moz-linear-gradient(top, #6480bd, #3c5894);
-  background-image: -ms-linear-gradient(top, #6480bd, #3c5894);
   background-image: -o-linear-gradient(top, #6480bd, #3c5894);
   background-image: linear-gradient(top, #6480bd, #3c5894);
   -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.2);
@@ -220,11 +210,9 @@ body {
 }
 
 .share-btn-plus {
-  background-color: #626262;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #626262), color-stop(100%, #404040));
+  background: #626262;
   background-image: -webkit-linear-gradient(top, #626262, #404040);
   background-image: -moz-linear-gradient(top, #626262, #404040);
-  background-image: -ms-linear-gradient(top, #626262, #404040);
   background-image: -o-linear-gradient(top, #626262, #404040);
   background-image: linear-gradient(top, #626262, #404040);
   -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
@@ -264,7 +252,7 @@ body {
   zoom: 1;
 }
 .links:before, .links:after {
-  content: "";
+  content: '';
   display: table;
 }
 .links:after {

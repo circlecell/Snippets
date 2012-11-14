@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -81,7 +80,6 @@ $labelWidth: 58px;
     color: rgba(0, 0, 0, .65);
     text-shadow: 0 1px rgba(255, 255, 255, .25);
     @include transition(.15s ease-out);
-    @include transition-property(color, text-shadow);
   }
 
   &:checked + .switch-label-on ~ .switch-selection {
@@ -97,14 +95,22 @@ $labelWidth: 58px;
   display: block;
   width: $labelWidth;
   height: 22px;
+  background: #65bd63;
   border-radius: 3px;
-  @include linear-gradient(top, #9dd993, #65bd63, $fallback: #65bd63);
+  @include linear-gradient(top, #9dd993, #65bd63);
   @include box-shadow(inset 0 1px rgba(255, 255, 255, .5),
                       0 0 2px rgba(0, 0, 0, .2));
   @include transition(left .15s ease-out);
 
-  .switch-blue & { @include linear-gradient(top, #4fc9ee, #3aa2d0, $fallback: #3aa2d0); }
-  .switch-yellow & { @include linear-gradient(top, #e0dd94, #c4bb61, $fallback: #c4bb61); }
+  .switch-blue & {
+    background: #3aa2d0;
+    @include linear-gradient(top, #4fc9ee, #3aa2d0);
+  }
+
+  .switch-yellow & {
+    background: #c4bb61;
+    @include linear-gradient(top, #e0dd94, #c4bb61);
+  }
 }
 
 /* ========================================================

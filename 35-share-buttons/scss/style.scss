@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -70,11 +69,12 @@ body {
   letter-spacing: -1px;
   color: #555;
   text-shadow: 0 1px $white;
+  background: #e6eff5;
   border-width: 1px 1px 0;
   border-style: solid;
   border-color: #c5c5c5 #bbb;
   border-radius: 8px 8px 0 0;
-  @include linear-gradient(top, rgba($black, .03) 0%, transparent 40%, $fallback: #e6eff5);
+  @include linear-gradient(top, rgba($black, .03) 0%, transparent 40%);
   @include box-shadow(inset 0 1px rgba($white, .5), 0 1px rgba($black, .18), 0 2px rgba($black, .07));
 
   &:before, &:after {
@@ -130,6 +130,7 @@ body {
 }
 
 .share-btn-tweet {
+  background: #83cfe8;
   @include linear-gradient(top, #83cfe8, #6ebbd4);
   @include box-shadow(inset 0 -6px rgba($black, .16), inset 0 -1px rgba($black, .15));
 
@@ -143,6 +144,7 @@ body {
 }
 
 .share-btn-like {
+  background: #6480bd;
   @include linear-gradient(top, #6480bd, #3c5894);
   @include box-shadow(inset 0 -6px rgba($black, .15), inset 0 -1px rgba($black, .2));
 
@@ -150,6 +152,7 @@ body {
 }
 
 .share-btn-plus {
+  background: #626262;
   @include linear-gradient(top, #626262, #404040);
   @include box-shadow(inset 0 -6px rgba($black, .08), inset 0 -1px rgba($black, .3));
 

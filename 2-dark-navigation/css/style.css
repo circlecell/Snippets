@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -87,29 +83,25 @@ header {
 
 nav {
   height: 36px;
+  background: #464b4c;
   border-top: 1px solid #353939;
   border-bottom: 1px solid #2e3131;
-  background-color: #464b4c;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #464b4c), color-stop(100%, #3f4344));
   background-image: -webkit-linear-gradient(top, #464b4c, #3f4344);
   background-image: -moz-linear-gradient(top, #464b4c, #3f4344);
-  background-image: -ms-linear-gradient(top, #464b4c, #3f4344);
   background-image: -o-linear-gradient(top, #464b4c, #3f4344);
   background-image: linear-gradient(top, #464b4c, #3f4344);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
 }
 nav a {
-  -webkit-transition-property: background-color, line-height;
-  -moz-transition-property: background-color, line-height;
-  -ms-transition-property: background-color, line-height;
-  -o-transition-property: background-color, line-height;
-  transition-property: background-color, line-height;
   -webkit-transition: 0.1s ease-out;
   -moz-transition: 0.1s ease-out;
-  -ms-transition: 0.1s ease-out;
   -o-transition: 0.1s ease-out;
   transition: 0.1s ease-out;
+  -webkit-transition-property: background-color, line-height;
+  -moz-transition-property: background-color, line-height;
+  -o-transition-property: background-color, line-height;
+  transition-property: background-color, line-height;
 }
 nav ul {
   float: left;
@@ -143,13 +135,11 @@ nav li.active a, nav li.active a:hover, nav a:active {
   border-right: 0;
   padding: 0 21px;
   line-height: 33px;
-  border-bottom: 3px solid #48a9c0;
   color: #eee;
-  background-color: #323637;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #484e4f), color-stop(100%, #323637));
+  background: #323637;
+  border-bottom: 3px solid #48a9c0;
   background-image: -webkit-linear-gradient(top, #484e4f, #323637);
   background-image: -moz-linear-gradient(top, #484e4f, #323637);
-  background-image: -ms-linear-gradient(top, #484e4f, #323637);
   background-image: -o-linear-gradient(top, #484e4f, #323637);
   background-image: linear-gradient(top, #484e4f, #323637);
   -webkit-box-shadow: inset 0 -1px #151717, inset 0 -1px 8px rgba(0, 0, 0, 0.2);
@@ -198,7 +188,7 @@ nav li.yellow a, nav li.yellow a:active {
   zoom: 1;
 }
 .links:before, .links:after {
-  content: "";
+  content: '';
   display: table;
 }
 .links:after {

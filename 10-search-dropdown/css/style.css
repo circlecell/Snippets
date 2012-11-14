@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -133,15 +129,13 @@ input {
   left: 0;
   right: 0;
   z-index: 10;
+  background: #fdfdfd;
   border-width: 1px;
   border-style: solid;
   border-color: #cbcfe2 #c8cee7 #c4c7d7;
   border-radius: 3px;
-  background-color: #fdfdfd;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #eceef4));
   background-image: -webkit-linear-gradient(top, #fdfdfd, #eceef4);
   background-image: -moz-linear-gradient(top, #fdfdfd, #eceef4);
-  background-image: -ms-linear-gradient(top, #fdfdfd, #eceef4);
   background-image: -o-linear-gradient(top, #fdfdfd, #eceef4);
   background-image: linear-gradient(top, #fdfdfd, #eceef4);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -205,12 +199,10 @@ input {
   text-decoration: none;
   color: #fff;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  background: #338cdf;
   border-color: #2380dd #2179d5 #1a60aa;
-  background-color: #338cdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #59aaf4), color-stop(100%, #338cdf));
   background-image: -webkit-linear-gradient(top, #59aaf4, #338cdf);
   background-image: -moz-linear-gradient(top, #59aaf4, #338cdf);
-  background-image: -ms-linear-gradient(top, #59aaf4, #338cdf);
   background-image: -o-linear-gradient(top, #59aaf4, #338cdf);
   background-image: linear-gradient(top, #59aaf4, #338cdf);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
@@ -261,7 +253,7 @@ input {
   zoom: 1;
 }
 .links:before, .links:after {
-  content: "";
+  content: '';
   display: table;
 }
 .links:after {

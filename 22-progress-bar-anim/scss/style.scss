@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -69,7 +68,7 @@ body {
     bottom: 45%;
     z-index: 3;
     border-radius: 4px;
-    @include linear-gradient(top, rgba(255, 255, 255, .3), rgba(255, 255, 255, .05), $fallback: transparent);
+    @include linear-gradient(top, rgba(255, 255, 255, .3), rgba(255, 255, 255, .05));
   }
 }
 

@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -71,12 +67,10 @@ body {
   font-size: 13px;
   font-weight: normal;
   line-height: 20px;
+  background: #697ecc;
   background-repeat: no-repeat;
-  background-color: #697ecc;
-  background-image: -webkit-gradient(radial, center center, 0, center center, 460, color-stop(0%, #87a3f5), color-stop(100%, #697ecc));
   background-image: -webkit-radial-gradient(center, circle cover, #87a3f5, #697ecc);
   background-image: -moz-radial-gradient(center, circle cover, #87a3f5, #697ecc);
-  background-image: -ms-radial-gradient(center, circle cover, #87a3f5, #697ecc);
   background-image: -o-radial-gradient(center, circle cover, #87a3f5, #697ecc);
   background-image: radial-gradient(center, circle cover, #87a3f5, #697ecc);
 }
@@ -146,24 +140,20 @@ a:hover {
   bottom: 100%;
   left: 0;
   right: 0;
+  background: #d9e3fa;
   border: 1px solid;
   border-color: #777 #6c6c6c #666;
   border-radius: 5px;
-  -webkit-transition-property: opacity, padding, visibility;
-  -moz-transition-property: opacity, padding, visibility;
-  -ms-transition-property: opacity, padding, visibility;
-  -o-transition-property: opacity, padding, visibility;
-  transition-property: opacity, padding, visibility;
   -webkit-transition: 0.2s ease-out;
   -moz-transition: 0.2s ease-out;
-  -ms-transition: 0.2s ease-out;
   -o-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
-  background-color: #d9e3fa;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eef3fe), color-stop(100%, #d9e3fa));
+  -webkit-transition-property: opacity, padding, visibility;
+  -moz-transition-property: opacity, padding, visibility;
+  -o-transition-property: opacity, padding, visibility;
+  transition-property: opacity, padding, visibility;
   background-image: -webkit-linear-gradient(top, #eef3fe, #d9e3fa);
   background-image: -moz-linear-gradient(top, #eef3fe, #d9e3fa);
-  background-image: -ms-linear-gradient(top, #eef3fe, #d9e3fa);
   background-image: -o-linear-gradient(top, #eef3fe, #d9e3fa);
   background-image: linear-gradient(top, #eef3fe, #d9e3fa);
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9), 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -215,12 +205,10 @@ a:hover {
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  background: #5a70b0;
   border-color: #5a70b0 #495d98 #42558a;
-  background-color: #5a70b0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7688bd), color-stop(100%, #4e64a3));
   background-image: -webkit-linear-gradient(top, #7688bd, #4e64a3);
   background-image: -moz-linear-gradient(top, #7688bd, #4e64a3);
-  background-image: -ms-linear-gradient(top, #7688bd, #4e64a3);
   background-image: -o-linear-gradient(top, #7688bd, #4e64a3);
   background-image: linear-gradient(top, #7688bd, #4e64a3);
 }
@@ -272,7 +260,7 @@ a:hover {
   zoom: 1;
 }
 .links:before, .links:after {
-  content: "";
+  content: '';
   display: table;
 }
 .links:after {

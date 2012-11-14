@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -82,19 +81,21 @@ $icons: ('friends', 0 0),
   color: #fff;
   font-size: 13px;
   text-shadow: 0 1px rgba(0, 0, 0, .35);
+  background: #505968;
   border-top: 1px solid #878e96;
   border-bottom: 1px solid #333740;
-  @include linear-gradient(top, #707a84, #505968, $fallback: #505968);
+  @include linear-gradient(top, #707a84, #505968);
   @include transition(opacity .15s);
 
   &:hover { opacity: .95; }
 
   .active &, &:active {
     opacity: 1;
+    background: #259bdb;
     border-top-color: #6ad2ef;
     border-bottom-color: #1c638f;
     @include box-shadow(0 1px #bbb, 0 2px #e9ebe8);
-    @include linear-gradient(top, #44c5ec, #259bdb, $fallback: #259bdb);
+    @include linear-gradient(top, #44c5ec, #259bdb);
 
     .vnav-counter { background: #2471a9; }
   }

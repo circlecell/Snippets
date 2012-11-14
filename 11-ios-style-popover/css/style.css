@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -99,13 +95,11 @@ a:hover {
   z-index: 10;
   width: 200px;
   padding: 5px;
+  background: #606060;
   border: 1px solid #000;
   border-radius: 11px;
-  background-color: #606060;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #606060), color-stop(100%, #4a4a4a));
   background-image: -webkit-linear-gradient(top, #606060, #4a4a4a);
   background-image: -moz-linear-gradient(top, #606060, #4a4a4a);
-  background-image: -ms-linear-gradient(top, #606060, #4a4a4a);
   background-image: -o-linear-gradient(top, #606060, #4a4a4a);
   background-image: linear-gradient(top, #606060, #4a4a4a);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.2), inset 1px 0 rgba(255, 255, 255, 0.08), inset -1px 0 rgba(255, 255, 255, 0.08), 0 2px 8px rgba(0, 0, 0, 0.5);
@@ -196,12 +190,10 @@ a:hover {
 .popover .active a:before, .popover a:active:before {
   top: 11px;
   left: 13px;
+  background: #555;
   border: 1px solid #111;
-  background-color: #555555;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #777777), color-stop(100%, #404040));
   background-image: -webkit-linear-gradient(top, #777777, #404040);
   background-image: -moz-linear-gradient(top, #777777, #404040);
-  background-image: -ms-linear-gradient(top, #777777, #404040);
   background-image: -o-linear-gradient(top, #777777, #404040);
   background-image: linear-gradient(top, #777777, #404040);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
@@ -242,7 +234,7 @@ a:hover {
   zoom: 1;
 }
 .links:before, .links:after {
-  content: "";
+  content: '';
   display: table;
 }
 .links:after {

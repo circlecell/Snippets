@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -71,12 +67,10 @@ body {
   font-size: 13px;
   font-weight: normal;
   line-height: 20px;
+  background: #dbdede;
   background-repeat: no-repeat;
-  background-color: false;
-  background-image: -webkit-gradient(radial, center center, 0, center center, 460, color-stop(0%, #dbdede), color-stop(100%, #bfbdbe));
   background-image: -webkit-radial-gradient(center, circle cover, #dbdede, #bfbdbe);
   background-image: -moz-radial-gradient(center, circle cover, #dbdede, #bfbdbe);
-  background-image: -ms-radial-gradient(center, circle cover, #dbdede, #bfbdbe);
   background-image: -o-radial-gradient(center, circle cover, #dbdede, #bfbdbe);
   background-image: radial-gradient(center, circle cover, #dbdede, #bfbdbe);
 }
@@ -101,17 +95,14 @@ body {
 }
 .widget:before {
   content: '';
-  border-radius: 25px;
   position: absolute;
   top: -6px;
-  right: -6px;
   bottom: -6px;
   left: -6px;
-  background-color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.05)), color-stop(20%, rgba(255, 255, 255, 0.05)), color-stop(100%, rgba(255, 255, 255, 0.6)));
+  right: -6px;
+  border-radius: 25px;
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
@@ -121,14 +112,12 @@ body {
   position: relative;
   padding: 0 14px;
   overflow: hidden;
+  background: #eee;
   border: 1px solid;
   border-color: #a1a1a1 #909090 #808080;
   border-radius: 20px;
-  background-color: #eeeeee;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(40%, #ececec), color-stop(70%, #cecece), color-stop(100%, #a8a8a8));
   background-image: -webkit-linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
   background-image: -moz-linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
-  background-image: -ms-linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
   background-image: -o-linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
   background-image: linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
@@ -136,12 +125,12 @@ body {
 }
 .widget ul::before {
   content: '';
-  height: 110px;
-  border-radius: 55px;
   position: absolute;
   top: -48px;
-  right: 0px;
-  left: 0px;
+  right: 0;
+  left: 0;
+  height: 110px;
+  border-radius: 55px;
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 100%);
   -moz-transform: scaleY(0.2);
 }
@@ -167,13 +156,11 @@ body {
 .widget .active a, .widget a:active {
   height: 18px;
   width: 18px;
+  background: #508fee;
   border: 1px solid #1f2128;
   border-color: rgba(0, 0, 0, 0.7);
-  background-color: #508fee;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #83bcff), color-stop(40%, #508fee), color-stop(100%, #1644c2));
   background-image: -webkit-linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
   background-image: -moz-linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
-  background-image: -ms-linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
   background-image: -o-linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
   background-image: linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 1px 1px rgba(255, 255, 255, 0.6);
@@ -210,7 +197,7 @@ body {
   zoom: 1;
 }
 .links:before, .links:after {
-  content: "";
+  content: '';
   display: table;
 }
 .links:after {

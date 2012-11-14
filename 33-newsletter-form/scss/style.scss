@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -29,7 +28,8 @@ body {
   font-weight: normal;
   line-height: 20px;
   color: #404040;
-  @include radial-gradient(center, circle cover, #ddd, #a7a7a7 80%, $fallback: #ccc);
+  background: #ccc;
+  @include radial-gradient(center, circle cover, #ddd, #a7a7a7 80%);
 }
 
 /* ========================================================
@@ -67,6 +67,7 @@ body {
   position: relative;
   margin: 20px -20px -20px;
   padding: 15px;
+  background: #fafafa;
   border-top: 1px solid #ccc;
   border-radius: 0 0 6px 6px;
   @include linear-gradient(top, #fafafa 0%, #eaeaea 50%, #e1e1e1 51%, #f2f2f2 100%);
@@ -100,11 +101,12 @@ body {
   width: 60px;
   color: transparent;
   font: 0/0 a;
+  background: #60e160;
   border: 1px solid;
   border-color: #4c9d50 #4c9d50 #4c9d50 #55af5a;
   border-radius: 0 20px 20px 0;
   cursor: pointer;
-  @include linear-gradient(top, #84f087, #4cd94a, $fallback: #60e160);
+  @include linear-gradient(top, #84f087, #4cd94a);
   @include box-shadow(inset 0 1px rgba($white, .4));
 
   &:active {

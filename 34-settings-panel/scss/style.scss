@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -24,7 +23,8 @@ body {
   font-weight: normal;
   line-height: 20px;
   color: #404040;
-  @include radial-gradient(center, circle cover, #a1acbb, #93a0b0 70%, $fallback: #93a0b0);
+  background: #93a0b0;
+  @include radial-gradient(center, circle cover, #a1acbb, #93a0b0 70%);
 }
 
 /* ========================================================
@@ -34,6 +34,7 @@ body {
 .settings {
   margin: 80px auto;
   width: 300px;
+  background: #fafafa;
   border-radius: 5px;
   @include linear-gradient(top, #fafafa, #e1e1e1);
   @include box-shadow(0 2px 2px rgba($black, .15), 0 0 0 1px rgba($black, .1));
@@ -41,9 +42,10 @@ body {
 
 .settings-header {
   padding: 10px;
+  background: #b5b5b5;
   border-bottom: 1px solid #949494;
   border-radius: 5px 5px 0 0;
-  @include linear-gradient(top, #dadada, #b1b1b1, $fallback: #b5b5b5);
+  @include linear-gradient(top, #dadada, #b1b1b1);
   @include box-shadow(inset 0 1px rgba($white, .15));
 
   > h2 {
@@ -61,11 +63,12 @@ body {
     height: 23px;
     color: transparent;
     font: 0/0 a;
+    background: #ddd;
     background-clip: padding-box;
     border: 1px solid;
     border-color: #aaa #9c9c9c #888;
     border-radius: 13px;
-    @include linear-gradient(top, #fafafa, #c1c1c1, $fallback: #ddd);
+    @include linear-gradient(top, #fafafa, #c1c1c1);
     @include box-shadow(inset 0 1px 1px rgba($white, .9));
     @extend %icon;
 
@@ -96,7 +99,7 @@ body {
     color: #888;
     text-align: center;
     text-transform: uppercase;
-    @include linear-gradient(top, rgba($black, 0), rgba($black, .03), $fallback: transparent);
+    @include linear-gradient(top, rgba($black, 0), rgba($black, .03));
   }
 
   > label {
@@ -136,6 +139,7 @@ body {
   margin: 5px 0 0 20px;
   padding: 1px;
   width: 52px;
+  background: #b5b5b5;
   background-clip: padding-box;
   border: 1px solid;
   border-color: rgba($black, .45) rgba($black, .4) rgba($black, .28);
@@ -143,10 +147,11 @@ body {
   @include box-sizing(border-box);
   @include linear-gradient(top, #b5b5b5, #d5d5d5);
   @include box-shadow(inset 0 1px 1px rgba($black, .12), 0 1px rgba($white, .4));
-  @include transition(all .15s ease-out);
+  @include transition(.15s ease-out);
 
   input:checked + & {
     padding-left: 19px;
+    background: #417ece;
     background-clip: border-box;
     border-color: #1f559f #3672b8 #498cd3;
     @include linear-gradient(top, #417ece, #62a4ee);
@@ -159,6 +164,7 @@ body {
   padding: 1px;
   width: 26px;
   height: 12px;
+  background: #fbfbfb;
   border-radius: 8px;
   @include linear-gradient(top, #fbfbfb, #d9d9d9);
   @include box-shadow(inset 0 0 0 1px rgba($white, .2), 0 0 0 1px rgba($black, .3), 0 1px rgba($black, .1));
@@ -172,12 +178,14 @@ body {
 
   &:before {
     float: left;
+    background: #dfdfdf;
     border-right: 1px solid rgba($black, .2);
     @include linear-gradient(left, #dfdfdf, #c4c4c4);
   }
 
   &:after {
     float: right;
+    background: #dfdfdf;
     border-left: 1px solid rgba($black, .2);
     @include linear-gradient(right, #dfdfdf, #c4c4c4);
   }

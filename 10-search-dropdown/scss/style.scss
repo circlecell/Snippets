@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -83,6 +82,7 @@ input {
     position: absolute;
     top: 35px; left: 0; right: 0;
     z-index: 10;
+    background: #fdfdfd;
     border-width: 1px;
     border-style: solid;
     border-color: #cbcfe2 #c8cee7 #c4c7d7;
@@ -151,8 +151,9 @@ input {
         text-decoration: none;
         color: #fff;
         text-shadow: 0 -1px rgba(0, 0, 0, .3);
+        background: #338cdf;
         border-color: #2380dd #2179d5 #1a60aa;
-        @include linear-gradient(top, #59aaf4, #338cdf, $fallback: #338cdf);
+        @include linear-gradient(top, #59aaf4, #338cdf);
         @include box-shadow(inset 0 1px rgba(255, 255, 255, .2), 0 1px rgba(0, 0, 0, .08));
       }
     }
@@ -168,9 +169,7 @@ input {
   font-weight: 200;
 }
 
-.lt-ie9 {
-  .search input { line-height: 26px; }
-}
+.lt-ie9 .search input { line-height: 26px; }
 
 /* ========================================================
    About

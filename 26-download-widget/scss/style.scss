@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -24,7 +23,8 @@ body {
   font-weight: normal;
   line-height: 20px;
   color: #404040;
-  @include radial-gradient(bottom, circle cover, #6b6e8c 0%, #212649 100%, $fallback: #47496d);
+  background: #47496d;
+  @include radial-gradient(bottom, circle cover, #6b6e8c, #212649);
 }
 
 a { text-decoration: none; }
@@ -68,6 +68,7 @@ $sprite: url('../img/sprite.png');
   z-index: 2;
   padding: 8px;
   height: 24px;
+  background: #eee;
   border-radius: 4px 4px 0 0;
   @include linear-gradient(top, #eee, #d8d8d8);
   @include box-shadow(inset 0 21px rgba($white, .22));
@@ -108,7 +109,8 @@ $sprite: url('../img/sprite.png');
   height: 18px;
   line-height: 18px;
   padding: 6px 0;
-  @include linear-gradient(top, #878787, #5c5c5c, $fallback: #5c5c5c);
+  background: #5c5c5c;
+  @include linear-gradient(top, #878787, #5c5c5c);
   @include box-shadow(inset 0 1px rgba($black, .25),
                       inset 0 2px rgba($white, .2),
                       0 0 2px rgba($black, .5));
@@ -136,6 +138,7 @@ $sprite: url('../img/sprite.png');
   padding: 3px 15px;
   color: #999;
   text-shadow: 0 1px $white;
+  background: $white;
   @include linear-gradient(top, $white, #fafafa);
 
   + .download { border-top: 1px solid #ececec; }
@@ -187,6 +190,7 @@ $sprite: url('../img/sprite.png');
 
 .download-progress-bar {
   height: 100%;
+  background: #73c822;
   border: 1px solid;
   border-color: #6eb626 #62a21f #5a9122;
   border-radius: 4px;

@@ -1,5 +1,4 @@
-@import '../../bourbon/bourbon';
-@import '../../css/reset';
+@import '../../shared/mixins', '../../shared/reset';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -115,11 +114,14 @@ $icons: ('check', 0 0),
 
   &:before {
     content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 35px;
     width: 3px;
     z-index: 2;
     border: 1px solid #f2e3df;
     border-width: 0 1px;
-    @include position(absolute, 0px 0 0px 35px);
   }
 
   li {
@@ -133,18 +135,23 @@ $icons: ('check', 0 0),
 
   .toggle {
     display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
     width: 35px;
-    @include position(absolute, 0px 0 0px 0px);
     @include hide-text;
 
     &:before {
       content: '';
+      position: absolute;
+      top: 9px;
+      left: 9px;
       width: 15px;
       height: 15px;
       background: #faf9f9;
       border: 1px solid #6bb3ca;
       border-radius: 2px;
-      @include position(absolute, 9px 0 0 9px);
       @include transition(box-shadow .2s);
       @include box-shadow(0 1px 1px #dfecf4);
     }
