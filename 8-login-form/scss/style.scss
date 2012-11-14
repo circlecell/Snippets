@@ -164,6 +164,7 @@ input[type=submit] {
 
   &:active {
     background: #cde5ef;
+    border-color: #9eb9c2 #b3c0c8 #b4ccce;
     @include box-shadow(inset 0 0 3px rgba(0, 0, 0, .2));
   }
 }
