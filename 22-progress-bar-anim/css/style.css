@@ -162,12 +162,12 @@ body {
   margin: 0 5px 20px;
   padding: 3px 8px;
   color: #aaa;
-  text-shadow: 0 1px #000;
+  text-shadow: 0 1px black;
   cursor: pointer;
   border-radius: 3px;
 }
 .radio:checked + .label {
-  color: #fff;
+  color: white;
   background: rgba(0, 0, 0, 0.25);
 }
 

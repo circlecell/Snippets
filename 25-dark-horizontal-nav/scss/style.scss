@@ -8,9 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$white: #fff;
-$black: #000;
-
 /* ========================================================
    Page
    ===================================================== */
@@ -47,20 +44,20 @@ body {
     margin: 0 0 4px;
     height: 44px;
     color: #ccc;
-    text-shadow: 0 1px rgba($black, .9);
-    background-color: rgba($black, .05);
+    text-shadow: 0 1px rgba(black, .9);
+    background-color: rgba(black, .05);
     border: 1px solid #232428;
     border-bottom-color: #1f2326;
-    @include linear-gradient(top, rgba($white, .08), rgba($white, 0));
-    @include box-shadow(inset 0 0 0 1px rgba($white, .05),
+    @include linear-gradient(top, rgba(white, .08), rgba(white, 0));
+    @include box-shadow(inset 0 0 0 1px rgba(white, .05),
                         0 2px #262a2e,
                         0 3px #1f2326,
-                        0 4px 3px rgba($black, .2));
+                        0 4px 3px rgba(black, .2));
   }
 
   > li:hover {
     color: #b0d157;
-    text-shadow: 0 1px $black, 0 0 20px rgba($white, .5);
+    text-shadow: 0 1px black, 0 0 20px rgba(white, .5);
   }
 
   > li.active,
@@ -70,16 +67,16 @@ body {
     margin: 4px 0 0;
     height: 43px;
     color: #aaa;
-    text-shadow: 0 1px $black;
-    background-color: rgba($white, .03);
+    text-shadow: 0 1px black;
+    background-color: rgba(white, .03);
     border-color: #212425;
     border-width: 1px 0;
-    @include linear-gradient(top, rgba($black, .2) 0%, rgba($black, 0) 100%);
-    @include box-shadow(inset 0 1px rgba($white, .05),
-                        inset 0 -1px 1px rgba($black, .15),
-                        1px 0 rgba($black, .05),
-                        -1px 0 rgba($black, .05),
-                        0 1px rgba($white, .05));
+    @include linear-gradient(top, rgba(black, .2) 0%, rgba(black, 0) 100%);
+    @include box-shadow(inset 0 1px rgba(white, .05),
+                        inset 0 -1px 1px rgba(black, .15),
+                        1px 0 rgba(black, .05),
+                        -1px 0 rgba(black, .05),
+                        0 1px rgba(white, .05));
 
   }
 
@@ -153,8 +150,8 @@ $sprite: url('../img/icons.png');
   width: 300px;
   text-align: center;
   color: #aaa;
-  text-shadow: 0 -1px rgba($black, .18);
-  background: rgba($black, .1);
+  text-shadow: 0 -1px rgba(black, .18);
+  background: rgba(black, .1);
   border-radius: 3px;
 
   a {

@@ -59,9 +59,9 @@ $icons: ('friends', 0 0),
 .vnav {
   width: 200px;
   overflow: hidden;
-  background: #fff;
+  background: white;
   border: 1px solid #1d1f22;
-  @include box-shadow(0 1px 2px rgba(0, 0, 0, .4));
+  @include box-shadow(0 1px 2px rgba(black, .4));
 
   a {
     display: block;
@@ -71,16 +71,16 @@ $icons: ('friends', 0 0),
 
   li:last-child {
     .vnav-item { border-bottom-color: #50575f; }
-    .vnav-subnav { border-bottom-color: #fff; }
+    .vnav-subnav { border-bottom-color: white; }
   }
 }
 
 .vnav-item {
   position: relative;
   padding: 0 12px 0 37px;
-  color: #fff;
+  color: white;
   font-size: 13px;
-  text-shadow: 0 1px rgba(0, 0, 0, .35);
+  text-shadow: 0 1px rgba(black, .35);
   background: #505968;
   border-top: 1px solid #878e96;
   border-bottom: 1px solid #333740;
@@ -115,8 +115,8 @@ $icons: ('friends', 0 0),
   font-size: 11px;
   background: #464e59;
   border-radius: 9px;
-  @include box-shadow(inset 0 1px 2px rgba(0, 0, 0, .3),
-                      0 1px rgba(255, 255, 255, .2))
+  @include box-shadow(inset 0 1px 2px rgba(black, .3),
+                      0 1px rgba(white, .2))
 }
 
 .vnav-subnav {
@@ -150,7 +150,7 @@ $icons: ('friends', 0 0),
     @include box-shadow(inset 0 0 0 1px #dcdcdc);
   }
 
-  li:last-child a { border-bottom-color: #fff; }
+  li:last-child a { border-bottom-color: white; }
 }
 
 /* ========================================================
@@ -163,8 +163,8 @@ $icons: ('friends', 0 0),
   width: 300px;
   text-align: center;
   color: #aaa;
-  text-shadow: 0 -1px rgba(0, 0, 0, .2);
-  background: rgba(0, 0, 0, .05);
+  text-shadow: 0 -1px rgba(black, .2);
+  background: rgba(black, .05);
   border-radius: 3px;
 
   a {

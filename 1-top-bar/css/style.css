@@ -118,7 +118,7 @@ header h1 a {
   text-decoration: none;
 }
 header h1 a:hover {
-  color: #fff;
+  color: white;
 }
 header nav {
   float: right;
@@ -171,7 +171,7 @@ header nav span {
   padding: 0 5px;
   line-height: 16px;
   font-size: 11px;
-  color: #fff;
+  color: white;
   text-shadow: 0 1px #902a27;
   background: #e93631;
   border-radius: 2px;
@@ -199,7 +199,7 @@ header nav span {
 .about a {
   padding: 1px 3px;
   margin: 0 -1px;
-  color: #fff;
+  color: white;
   text-decoration: none;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
@@ -207,7 +207,7 @@ header nav span {
 .about a:hover {
   color: #095f78;
   text-shadow: none;
-  background: #fff;
+  background: white;
 }
 
 .links {

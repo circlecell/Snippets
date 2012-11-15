@@ -8,9 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$white: #fff;
-$black: #000;
-
 /* ========================================================
    Page
    ===================================================== */
@@ -39,20 +36,20 @@ $lineColor: #efcfad;
   padding: 29px 20px 20px 45px;
   line-height: 30px;
   color: #6a5f49;
-  text-shadow: 0 1px 1px $white;
+  text-shadow: 0 1px 1px white;
   background-color: $backgroundColor;
   $lines: top, transparent 0%, transparent 29px, rgba($lineColor, .7) 29px, rgba($lineColor, .7) 30px;
-  $glow: center, cover, rgba($white, .7) 0%, rgba($white, .1) 90%;
+  $glow: center, cover, rgba(white, .7) 0%, rgba(white, .1) 90%;
   background-image: -webkit-radial-gradient($glow), -webkit-repeating-linear-gradient($lines);
   background-image:    -moz-radial-gradient($glow),    -moz-repeating-linear-gradient($lines);
   background-image:      -o-radial-gradient($glow),      -o-repeating-linear-gradient($lines);
   border: 1px solid $borderColor; /* IE 8 */
   border-color: rgba($borderColor, .9);
   @include box-sizing(border-box);
-  @include box-shadow(inset 0 1px rgba($white, .5),
+  @include box-shadow(inset 0 1px rgba(white, .5),
                       inset 0 0 5px desaturate(darken($backgroundColor, 20%), 10%),
-                      0 0 1px rgba($black, .1),
-                      0 2px rgba($black, .02));
+                      0 0 1px rgba(black, .1),
+                      0 2px rgba(black, .02));
 
   &:before, &:after {
     content: '';
@@ -126,8 +123,8 @@ $lineColor: #efcfad;
   width: 300px;
   text-align: center;
   color: #777;
-  text-shadow: 0 1px rgba($white, .5);
-  background: rgba($black, .05);
+  text-shadow: 0 1px rgba(white, .5);
+  background: rgba(black, .05);
   border-radius: 3px;
 
   a {
@@ -138,7 +135,7 @@ $lineColor: #efcfad;
     border-radius: 2px;
 
     &:hover {
-      color: $white;
+      color: white;
       text-shadow: 0 1px #0063A6;
       background: #0090D2;
     }

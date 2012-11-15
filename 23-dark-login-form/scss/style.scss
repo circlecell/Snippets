@@ -46,7 +46,7 @@ $labelWidth: 100px;
   width: $siteWidth;
   padding-right: 32px;
   color: #a8a7a8;
-  text-shadow: 1px 1px 0 rgba(#000, .8);
+  text-shadow: 1px 1px 0 rgba(black, .8);
 
   p { margin: 0 0 10px; }
 }
@@ -63,16 +63,16 @@ input[type=text], input[type=password] {
   width: 300px;
   height: $inputHeight;
   color: #bbb;
-  text-shadow: 1px 1px 1px #000;
-  background: rgba(#000, .16);
+  text-shadow: 1px 1px 1px black;
+  background: rgba(black, .16);
   border: 0;
   border-radius: 5px;
-  @include box-shadow(inset 0 1px 4px rgba(#000, .3),
-                      0 1px rgba(#fff, .06));
+  @include box-shadow(inset 0 1px 4px rgba(black, .3),
+                      0 1px rgba(white, .06));
 
   &:focus {
-    color: #fff;
-    background: rgba(#000, .10);
+    color: white;
+    background: rgba(black, .10);
     outline: 0;
   }
 }
@@ -102,7 +102,7 @@ label {
   height: 48px;
   padding: 8px;
   border-radius: 32px;
-  @include box-shadow(0 0 4px rgba(#000, .35));
+  @include box-shadow(0 0 4px rgba(black, .35));
   @extend .bg;
 
   &:before, &:after {
@@ -117,7 +117,7 @@ label {
     left: -4px;
     width: 4px;
     height: 10px;
-    @include box-shadow(inset 0 1px rgba(#fff, .06));
+    @include box-shadow(inset 0 1px rgba(white, .06));
   }
 
   &:after {
@@ -141,8 +141,8 @@ label {
   background: none;
   border: 0;
   border-radius: 24px;
-  @include box-shadow(inset 0 1px 1px rgba(#000, .2),
-                      0 1px rgba(#fff, .1));
+  @include box-shadow(inset 0 1px 1px rgba(black, .2),
+                      0 1px rgba(white, .1));
 
   /* Must use another pseudo element for the gradient background because Webkit */
   /* clips the background incorrectly inside elements with a border-radius.     */
@@ -155,7 +155,7 @@ label {
     border-radius: 24px;
     @include linear-gradient(top, #00a2d3, #0d7796);
     @include box-shadow(inset 0 0 0 1px #00a2d3,
-                        0 0 0 5px rgba(#000, .16));
+                        0 0 0 5px rgba(black, .16));
   }
 
   &:active:before {
@@ -210,8 +210,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   width: 300px;
   text-align: center;
   color: #aaa;
-  text-shadow: 0 -1px rgba(#000, .18);
-  background: rgba(#000, .1);
+  text-shadow: 0 -1px rgba(black, .18);
+  background: rgba(black, .1);
   border-radius: 3px;
 
   a {

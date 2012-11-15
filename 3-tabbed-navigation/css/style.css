@@ -93,7 +93,7 @@ header {
 
 nav {
   height: 34px;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid white;
   -webkit-box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
   box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
 }
@@ -106,7 +106,7 @@ nav > ul > li > a {
   height: 34px;
   line-height: 34px;
   padding: 0 20px;
-  color: #fff;
+  color: white;
   font-weight: bold;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
   background: #759aaf;
@@ -127,7 +127,7 @@ nav > ul > li > a:hover {
   background-image: linear-gradient(top, #afc5d1, #85a6b8);
 }
 nav > ul > li.active > a, nav > ul > li > a:active, nav > ul > li.dropdown:hover > a {
-  background: #fff;
+  background: white;
   color: #404040;
   text-shadow: none;
   -webkit-box-shadow: 0 2px white, 0 0 2px rgba(0, 0, 0, 0.2);
@@ -159,7 +159,7 @@ nav .active a.icon span, nav a.icon:active span {
 
 .dropdown {
   position: relative;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid white;
 }
 .dropdown:hover ul {
   display: block;
@@ -171,7 +171,7 @@ nav .active a.icon span, nav a.icon:active span {
   left: -1px;
   min-width: 160px;
   padding: 0 0 5px;
-  background: #fff;
+  background: white;
   border: 1px solid #dadada;
   border-top: 0;
   border-radius: 0 0 3px 3px;
@@ -220,7 +220,7 @@ nav .active a.icon span, nav a.icon:active span {
   border-radius: 2px;
 }
 .about a:hover {
-  color: #fff;
+  color: white;
   text-shadow: 0 1px #0063A6;
   background: #0090D2;
 }

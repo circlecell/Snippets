@@ -70,18 +70,18 @@ $icons: ('check', 0 0),
   width: 260px;
   margin: 0 auto;
   padding: 12px 0;
-  background: #fff;
+  background: white;
   border: 1px solid;
   border-color: #dfdcdc #d9d6d6 #ccc;
   border-radius: 2px;
-  @include box-shadow(0 1px 2px rgba(0, 0, 0, .1));
+  @include box-shadow(0 1px 2px rgba(black, .1));
 
   &:before, &:after {
     content: '';
     position: absolute;
     z-index: -1;
     height: 4px; // required to apply border-radius
-    background: #fff;
+    background: white;
     border: 1px solid #ccc;
     border-radius: 2px;
   }
@@ -90,7 +90,7 @@ $icons: ('check', 0 0),
     left: 0;
     right: 0;
     bottom: -3px;
-    @include box-shadow(0 1px 2px rgba(0, 0, 0, .1));
+    @include box-shadow(0 1px 2px rgba(black, .1));
   }
 
   &:before {
@@ -98,7 +98,7 @@ $icons: ('check', 0 0),
     right: 2px;
     bottom: -5px;
     border-color: #c4c4c4;
-    @include box-shadow(0 1px 2px rgba(0, 0, 0, .15));
+    @include box-shadow(0 1px 2px rgba(black, .15));
   }
 
   .lt-ie9 & {
@@ -162,7 +162,7 @@ $icons: ('check', 0 0),
   .done .toggle:before, .toggle:active:before {
     border-color: #c0c0c0 #ccc #d8d8d8;
     background: #fdfcfc url('../img/sprite.png') 2px 2px no-repeat;
-    @include box-shadow(inset 0 1px rgba(0, 0, 0, .05), inset 0 5px 5px rgba(0, 0, 0, .05));
+    @include box-shadow(inset 0 1px rgba(black, .05), inset 0 5px 5px rgba(black, .05));
   }
 }
 
@@ -200,7 +200,7 @@ $icons: ('check', 0 0),
 
   a {
     padding: 0 8px;
-    text-shadow: 0 1px #fff;
+    text-shadow: 0 1px white;
     background: #f1f0f0;
     border-radius: 3px;
 
@@ -226,8 +226,8 @@ $icons: ('check', 0 0),
   width: 300px;
   text-align: center;
   color: #777;
-  text-shadow: 0 1px rgba(255, 255, 255, .7);
-  background: rgba(0, 0, 0, .05);
+  text-shadow: 0 1px rgba(white, .7);
+  background: rgba(black, .05);
   border-radius: 3px;
 
   a {
@@ -238,7 +238,7 @@ $icons: ('check', 0 0),
     border-radius: 2px;
 
     &:hover {
-      color: #fff;
+      color: white;
       text-shadow: 0 1px #0063A6;
       background: #0090D2;
     }

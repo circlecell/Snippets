@@ -8,9 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$white: #fff;
-$black: #000;
-
 /* ========================================================
    Page
    ===================================================== */
@@ -60,7 +57,7 @@ $sprite: url('../img/sprite.png');
   overflow: hidden;
   background: #fafafa;
   border-radius: 4px;
-  @include box-shadow(0 0 4px rgba($black, .4));
+  @include box-shadow(0 0 4px rgba(black, .4));
 }
 
 .widget-heading {
@@ -71,7 +68,7 @@ $sprite: url('../img/sprite.png');
   background: #eee;
   border-radius: 4px 4px 0 0;
   @include linear-gradient(top, #eee, #d8d8d8);
-  @include box-shadow(inset 0 21px rgba($white, .22));
+  @include box-shadow(inset 0 21px rgba(white, .22));
 }
 
 .widget-title {
@@ -82,25 +79,25 @@ $sprite: url('../img/sprite.png');
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 0 1px rgba($white, .3);
+  text-shadow: 0 1px rgba(white, .3);
 }
 
 .widget-close {
   float: right;
   margin: 0 1px 0 10px;
   padding: 3px 3px 3px 4px;
-  border: 1px solid rgba($black, .12);
+  border: 1px solid rgba(black, .12);
   border-radius: 2px;
-  @include box-shadow(inset 0 1px rgba($white, .3));
+  @include box-shadow(inset 0 1px rgba(white, .3));
 
   &:hover {
-    border-color: rgba($black, .18);
-    @include box-shadow(0 0 1px rgba($black, .15));
+    border-color: rgba(black, .18);
+    @include box-shadow(0 0 1px rgba(black, .15));
   }
 
   &:active {
-    background-color: rgba($black, .02);
-    @include box-shadow(inset 0 0 2px rgba($black, .2));
+    background-color: rgba(black, .02);
+    @include box-shadow(inset 0 0 2px rgba(black, .2));
   }
 }
 
@@ -111,9 +108,9 @@ $sprite: url('../img/sprite.png');
   padding: 6px 0;
   background: #5c5c5c;
   @include linear-gradient(top, #878787, #5c5c5c);
-  @include box-shadow(inset 0 1px rgba($black, .25),
-                      inset 0 2px rgba($white, .2),
-                      0 0 2px rgba($black, .5));
+  @include box-shadow(inset 0 1px rgba(black, .25),
+                      inset 0 2px rgba(white, .2),
+                      0 0 2px rgba(black, .5));
 
   > li {
     float: left;
@@ -122,13 +119,13 @@ $sprite: url('../img/sprite.png');
       display: block;
       padding: 0 12px;
       font-size: 11px;
-      color: $white;
-      text-shadow: 0 1px rgba($black, .5);
+      color: white;
+      text-shadow: 0 1px rgba(black, .5);
     }
 
     + li {
-      border-left: 1px solid rgba($black, .15);
-      @include box-shadow(inset 1px 0 rgba($white, .1));
+      border-left: 1px solid rgba(black, .15);
+      @include box-shadow(inset 1px 0 rgba(white, .1));
     }
   }
 }
@@ -137,9 +134,9 @@ $sprite: url('../img/sprite.png');
   line-height: 21px;
   padding: 3px 15px;
   color: #999;
-  text-shadow: 0 1px $white;
-  background: $white;
-  @include linear-gradient(top, $white, #fafafa);
+  text-shadow: 0 1px white;
+  background: white;
+  @include linear-gradient(top, white, #fafafa);
 
   + .download { border-top: 1px solid #ececec; }
   &:last-child { border-radius: 0 0 4px 4px; }
@@ -184,8 +181,8 @@ $sprite: url('../img/sprite.png');
   padding: 3px;
   background: #ebebeb;
   border-radius: 7px;
-  @include box-shadow(inset 0 2px 3px rgba($black, .2),
-                      0 1px $white);
+  @include box-shadow(inset 0 2px 3px rgba(black, .2),
+                      0 1px white);
 }
 
 .download-progress-bar {
@@ -196,7 +193,7 @@ $sprite: url('../img/sprite.png');
   border-radius: 4px;
   @include box-sizing(border-box);
   @include linear-gradient(top, #73c822, #67aa24);
-  @include box-shadow(inset 0 1px rgba($white, .15));
+  @include box-shadow(inset 0 1px rgba(white, .15));
 }
 
 .lt-ie9 {
@@ -215,8 +212,8 @@ $sprite: url('../img/sprite.png');
   width: 300px;
   text-align: center;
   color: #aaa;
-  text-shadow: 0 -1px rgba($black, .18);
-  background: rgba($black, .1);
+  text-shadow: 0 -1px rgba(black, .18);
+  background: rgba(black, .1);
   border-radius: 3px;
 
   a {

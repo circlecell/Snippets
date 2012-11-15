@@ -178,7 +178,7 @@ input {
   padding: 6px 40px 6px 10px;
   color: #808394;
   font-weight: 500;
-  text-shadow: 0 1px #fff;
+  text-shadow: 0 1px white;
   border: 1px solid transparent;
   border-radius: 3px;
 }
@@ -197,7 +197,7 @@ input {
 }
 .search .results a:hover {
   text-decoration: none;
-  color: #fff;
+  color: white;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
   background: #338cdf;
   border-color: #2380dd #2179d5 #1a60aa;
@@ -244,7 +244,7 @@ input {
   border-radius: 2px;
 }
 .about a:hover {
-  color: #fff;
+  color: white;
   text-shadow: 0 1px #0063A6;
   background: #0090D2;
 }

@@ -121,7 +121,7 @@ a:hover {
   font-size: 15px;
 }
 .cal caption a:hover {
-  color: #fff;
+  color: white;
 }
 .cal caption .prev {
   float: left;

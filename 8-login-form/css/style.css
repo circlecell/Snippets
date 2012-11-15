@@ -87,7 +87,7 @@ a:hover {
   position: relative;
   margin-top: 100px;
   padding: 20px 20px 20px;
-  background: #fff;
+  background: white;
   border-radius: 3px;
   -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -110,14 +110,14 @@ a:hover {
   font-weight: bold;
   color: #555;
   text-align: center;
-  text-shadow: 0 1px #fff;
+  text-shadow: 0 1px white;
   background: #f3f3f3;
   border-bottom: 1px solid #cfcfcf;
   border-radius: 3px 3px 0 0;
-  background-image: -webkit-linear-gradient(top, #fffffd, #eef2f5);
-  background-image: -moz-linear-gradient(top, #fffffd, #eef2f5);
-  background-image: -o-linear-gradient(top, #fffffd, #eef2f5);
-  background-image: linear-gradient(top, #fffffd, #eef2f5);
+  background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: linear-gradient(top, whiteffd, #eef2f5);
   -webkit-box-shadow: 0 1px whitesmoke;
   box-shadow: 0 1px whitesmoke;
 }
@@ -154,7 +154,7 @@ a:hover {
   font-size: 11px;
   text-align: center;
   text-shadow: 0 1px #2a85a1;
-  color: #fff;
+  color: white;
 }
 .login-help a {
   color: #cce7fa;
@@ -181,7 +181,7 @@ input[type=text], input[type=password] {
   width: 200px;
   height: 34px;
   color: #404040;
-  background: #fff;
+  background: white;
   border-width: 1px;
   border-style: solid;
   border-color: #c4c4c4 #d1d1d1 #d4d4d4;
@@ -247,7 +247,7 @@ input[type=submit]:active {
 .about a {
   padding: 1px 3px;
   margin: 0 -1px;
-  color: #fff;
+  color: white;
   text-decoration: none;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
@@ -255,7 +255,7 @@ input[type=submit]:active {
 .about a:hover {
   color: #045773;
   text-shadow: none;
-  background: #fff;
+  background: white;
 }
 
 .links {

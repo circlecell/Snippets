@@ -167,7 +167,7 @@ body {
   text-shadow: 0 1px rgba(255, 255, 255, 0.2);
   background-color: rgba(255, 255, 255, 0.3);
   border-color: rgba(68, 68, 68, 0.6) rgba(68, 68, 68, 0.7) rgba(68, 68, 68, 0.8);
-  /* rgba(#fff, .4) 0%, rgba(#fff, .33) 50%, rgba(#eaeaea, .3) 50%, rgba(#eaeaea, .35) 100% */
+  /* rgba(white, .4) 0%, rgba(white, .33) 50%, rgba(#eaeaea, .3) 50%, rgba(#eaeaea, .35) 100% */
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(102, 102, 102, 0.1) 50%, rgba(119, 119, 119, 0.05) 100%);
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(102, 102, 102, 0.1) 50%, rgba(119, 119, 119, 0.05) 100%);
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(102, 102, 102, 0.1) 50%, rgba(119, 119, 119, 0.05) 100%);

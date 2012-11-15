@@ -116,7 +116,7 @@ a:hover {
   line-height: 16px;
   font-size: 12px;
   font-weight: bold;
-  color: #fff;
+  color: white;
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
 }
 .user h5 small {
@@ -173,7 +173,7 @@ a:hover {
   bottom: -14px;
 }
 .user li:first-child:after {
-  border-top: 7px solid #fff;
+  border-top: 7px solid white;
   bottom: -13px;
 }
 .user ul:after {
@@ -184,7 +184,7 @@ a:hover {
   padding: 0 12px;
   font-size: 11px;
   color: #838ca2;
-  text-shadow: 0 1px #fff;
+  text-shadow: 0 1px white;
 }
 .user li.sep {
   border-top: 1px solid #b4bbce;
@@ -202,7 +202,7 @@ a:hover {
   border: 1px solid transparent;
 }
 .user li a:hover {
-  color: #fff;
+  color: white;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   background: #5a70b0;
@@ -245,7 +245,7 @@ a:hover {
 .about a {
   padding: 1px 3px;
   margin: 0 -1px;
-  color: #fff;
+  color: white;
   text-decoration: none;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
@@ -253,7 +253,7 @@ a:hover {
 .about a:hover {
   color: #045773;
   text-shadow: none;
-  background: #fff;
+  background: white;
 }
 
 .links {

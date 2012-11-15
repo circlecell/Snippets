@@ -110,7 +110,7 @@ body {
 .vnav {
   width: 200px;
   overflow: hidden;
-  background: #fff;
+  background: white;
   border: 1px solid #1d1f22;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
@@ -124,13 +124,13 @@ body {
   border-bottom-color: #50575f;
 }
 .vnav li:last-child .vnav-subnav {
-  border-bottom-color: #fff;
+  border-bottom-color: white;
 }
 
 .vnav-item {
   position: relative;
   padding: 0 12px 0 37px;
-  color: #fff;
+  color: white;
   font-size: 13px;
   text-shadow: 0 1px rgba(0, 0, 0, 0.35);
   background: #505968;
@@ -213,7 +213,7 @@ body {
   box-shadow: inset 0 0 0 1px gainsboro;
 }
 .vnav-subnav li:last-child a {
-  border-bottom-color: #fff;
+  border-bottom-color: white;
 }
 
 /* ========================================================

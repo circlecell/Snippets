@@ -96,7 +96,7 @@ a:hover {
   width: 200px;
   padding: 5px;
   background: #606060;
-  border: 1px solid #000;
+  border: 1px solid black;
   border-radius: 11px;
   background-image: -webkit-linear-gradient(top, #606060, #4a4a4a);
   background-image: -moz-linear-gradient(top, #606060, #4a4a4a);
@@ -116,7 +116,7 @@ a:hover {
   border: 7px outset transparent;
 }
 .popover:before {
-  border-bottom: 7px solid #000;
+  border-bottom: 7px solid black;
   top: -14px;
 }
 .popover:after {
@@ -130,8 +130,8 @@ a:hover {
 }
 .popover ul {
   overflow: hidden;
-  background: #fff;
-  border: 1px solid #000;
+  background: white;
+  border: 1px solid black;
   border-radius: 7px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(255, 255, 255, 0.1);
@@ -153,13 +153,13 @@ a:hover {
   display: block;
   line-height: 44px;
   padding: 0 15px 0 48px;
-  color: #000;
+  color: black;
   font-size: 16px;
   font-weight: bold;
 }
 .popover a:hover {
   text-decoration: none;
-  background: #fff;
+  background: white;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
@@ -219,7 +219,7 @@ a:hover {
 .about a {
   padding: 1px 3px;
   margin: 0 -1px;
-  color: #fff;
+  color: white;
   text-decoration: none;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
@@ -227,7 +227,7 @@ a:hover {
 .about a:hover {
   color: #045773;
   text-shadow: none;
-  background: #fff;
+  background: white;
 }
 
 .links {

@@ -50,7 +50,7 @@ a {
 .cal {
   display: block;
   width: 216px;
-  @include box-shadow(1px 1px 3px rgba(0, 0, 0, .4));
+  @include box-shadow(1px 1px 3px rgba(black, .4));
 
   a:hover { text-decoration: none; }
 
@@ -60,12 +60,12 @@ a {
     text-align: center;
     color: #e2e2e2;
     font-weight: bold;
-    text-shadow: 0 -1px #000;
+    text-shadow: 0 -1px black;
     background: #333;
-    background: rgba(0, 0, 0, .35);
+    background: rgba(black, .35);
     border-top: 1px solid #333;
     border-bottom: 1px solid #313131;
-    @include box-shadow(inset 0 1px rgba(255, 255, 255, .04));
+    @include box-shadow(inset 0 1px rgba(white, .04));
 
     a {
       display: block;
@@ -74,7 +74,7 @@ a {
       color: #e2e2e2;
       font-size: 15px;
 
-      &:hover { color: #fff; }
+      &:hover { color: white; }
     }
 
     .prev { float: left; }
@@ -84,7 +84,7 @@ a {
   th, td {
     width: 30px;
     text-align: center;
-    text-shadow: 0 1px rgba(255, 255, 255, .8);
+    text-shadow: 0 1px rgba(white, .8);
 
     &:first-child { border-left: 0; }
   }
@@ -112,7 +112,7 @@ a {
       line-height: 28px;
       width: 30px;
       @include linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
-      @include box-shadow(inset 1px 1px rgba(255, 255, 255, .5));
+      @include box-shadow(inset 1px 1px rgba(white, .5));
     }
 
     a:hover, &.off a { background: #f3f3f3; }
@@ -122,10 +122,10 @@ a {
     &.active a, a:active {
       margin: -1px;
       color: #f3f3f3;
-      text-shadow: 0 1px rgba(0, 0, 0, .3);
+      text-shadow: 0 1px rgba(black, .3);
       background: #6dafbf;
       border: 1px solid #598b94;
-      @include box-shadow(inset 0 0 10px rgba(0, 0, 0, .05));
+      @include box-shadow(inset 0 0 10px rgba(black, .05));
     }
 
     &.active:first-child a, &:first-child a:active { border-left: 0; margin-left: 0; }
@@ -145,8 +145,8 @@ a {
   width: 300px;
   text-align: center;
   color: #aaa;
-  text-shadow: 0 -1px rgba(0, 0, 0, .2);
-  background: rgba(0, 0, 0, .05);
+  text-shadow: 0 -1px rgba(black, .2);
+  background: rgba(black, .05);
   border-radius: 3px;
 
   a {

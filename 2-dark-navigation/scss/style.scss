@@ -48,7 +48,7 @@ nav {
   border-top: 1px solid darken($navBackgroundColor, 7%);
   border-bottom: 1px solid darken($navBackgroundColor, 10%);
   @include linear-gradient(top, $navBackgroundColor, darken($navBackgroundColor, 3%));
-  @include box-shadow(inset 0 1px rgba(255, 255, 255, .06));
+  @include box-shadow(inset 0 1px rgba(white, .06));
 
   a {
     @include transition(.1s ease-out);
@@ -58,9 +58,9 @@ nav {
   ul {
     float: left;
     border-left: 1px solid darken($navBackgroundColor, 7%);
-    border-left: 1px solid rgba(0, 0, 0, .20);
+    border-left: 1px solid rgba(black, .20);
     border-right: 1px solid lighten($navBackgroundColor, 3%);
-    border-right: 1px solid rgba(255, 255, 255, .06);
+    border-right: 1px solid rgba(white, .06);
   }
 
   li { float: left; }
@@ -72,15 +72,15 @@ nav {
     color: #ddd;
     text-shadow: 0 -1px darken($navBackgroundColor, 10%);
     border-left: 1px solid lighten($navBackgroundColor, 3%);
-    border-left: 1px solid rgba(255, 255, 255, .06);
+    border-left: 1px solid rgba(white, .06);
     border-right: 1px solid darken($navBackgroundColor, 7%);
-    border-right: 1px solid rgba(0, 0, 0, .20);
+    border-right: 1px solid rgba(black, .20);
     text-decoration: none;
     cursor: pointer;
 
     &:hover {
       background: lighten($navBackgroundColor, 3%);
-      background: rgba(255, 255, 255, .05);
+      background: rgba(white, .05);
     }
   }
 
@@ -93,7 +93,7 @@ nav {
     background: darken($navBackgroundColor, 8%);
     border-bottom: 3px solid #48a9c0;
     @include linear-gradient(top, lighten($navBackgroundColor, 1%), darken($navBackgroundColor, 8%));
-    @include box-shadow(inset 0 -1px darken($navBackgroundColor, 20%), inset 0 -1px 8px rgba(0, 0, 0, .2));
+    @include box-shadow(inset 0 -1px darken($navBackgroundColor, 20%), inset 0 -1px 8px rgba(black, .2));
   }
 
   li.green a, li.green a:active { border-bottom-color: #56c93d; }
@@ -112,8 +112,8 @@ nav {
   width: 300px;
   text-align: center;
   color: #777;
-  text-shadow: 0 1px rgba(255, 255, 255, .7);
-  background: rgba(0, 0, 0, .05);
+  text-shadow: 0 1px rgba(white, .7);
+  background: rgba(black, .05);
   border-radius: 3px;
 
   a {
@@ -124,7 +124,7 @@ nav {
     border-radius: 2px;
 
     &:hover {
-      color: #fff;
+      color: white;
       text-shadow: 0 1px #0063A6;
       background: #0090D2;
     }

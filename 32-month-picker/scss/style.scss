@@ -8,9 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$white: #fff;
-$black: #000;
-
 /* ========================================================
    Page
    ===================================================== */
@@ -40,11 +37,11 @@ body {
 .month-picker-fieldset {
   display: inline-block;
   padding: 0 7px;
-  background: rgba($black, .4);
+  background: rgba(black, .4);
   border-radius: 5px;
-  @include box-shadow(inset 0 0 0 1px rgba($black, .7),
-                      inset 0 2px 2px rgba($black, .3),
-                      0 1px rgba($white, .1));
+  @include box-shadow(inset 0 0 0 1px rgba(black, .7),
+                      inset 0 2px 2px rgba(black, .3),
+                      0 1px rgba(white, .1));
 
   > input { display: none; }
 }
@@ -64,7 +61,7 @@ body {
   font-weight: 200;
   color: #8d8ba6;
   text-transform: uppercase;
-  text-shadow: 0 1px 1px $black;
+  text-shadow: 0 1px 1px black;
 
   &, &:before { @include transition(.15s ease-out); }
 
@@ -79,11 +76,11 @@ body {
     border-color: #e4e0fb #b6b1d1 #b6b1d1;
     border-radius: 6px;
     opacity: 0;
-    @include box-shadow(0 0 1px rgba($black, .2));
+    @include box-shadow(0 0 1px rgba(black, .2));
   }
 
   input:checked + & {
-    color: $white;
+    color: white;
     background: #302e42;
     @include linear-gradient(top, #302e42, #29253b);
 
@@ -95,9 +92,9 @@ body {
   width: 25px;
   font-size: 16px;
   font-weight: bold;
-  color: rgba($black, .7);
+  color: rgba(black, .7);
   text-align: center;
-  text-shadow: 0 1px rgba($white, .1);
+  text-shadow: 0 1px rgba(white, .1);
   text-decoration: none;
 }
 
@@ -111,21 +108,21 @@ body {
   width: 300px;
   text-align: center;
   color: #bbb;
-  text-shadow: 0 -1px rgba($black, .35);
-  background: rgba($black, .2);
+  text-shadow: 0 -1px rgba(black, .35);
+  background: rgba(black, .2);
   border-radius: 3px;
 
   a {
     padding: 1px 3px;
     margin: 0 -1px;
-    color: $white;
+    color: white;
     text-decoration: none;
     border-radius: 2px;
 
     &:hover {
       color: #111;
       text-shadow: none;
-      background: $white;
+      background: white;
     }
   }
 }

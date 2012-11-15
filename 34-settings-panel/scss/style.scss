@@ -8,9 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$white: #fff;
-$black: #000;
-
 /* ========================================================
    Page
    ===================================================== */
@@ -37,7 +34,7 @@ body {
   background: #fafafa;
   border-radius: 5px;
   @include linear-gradient(top, #fafafa, #e1e1e1);
-  @include box-shadow(0 2px 2px rgba($black, .15), 0 0 0 1px rgba($black, .1));
+  @include box-shadow(0 2px 2px rgba(black, .15), 0 0 0 1px rgba(black, .1));
 }
 
 .settings-header {
@@ -46,14 +43,14 @@ body {
   border-bottom: 1px solid #949494;
   border-radius: 5px 5px 0 0;
   @include linear-gradient(top, #dadada, #b1b1b1);
-  @include box-shadow(inset 0 1px rgba($white, .15));
+  @include box-shadow(inset 0 1px rgba(white, .15));
 
   > h2 {
     line-height: 25px;
     font-size: 15px;
     color: #505050;
     text-align: center;
-    text-shadow: 0 1px rgba($white, .4);
+    text-shadow: 0 1px rgba(white, .4);
   }
 
   > a {
@@ -69,7 +66,7 @@ body {
     border-color: #aaa #9c9c9c #888;
     border-radius: 13px;
     @include linear-gradient(top, #fafafa, #c1c1c1);
-    @include box-shadow(inset 0 1px 1px rgba($white, .9));
+    @include box-shadow(inset 0 1px 1px rgba(white, .9));
     @extend %icon;
 
     &:before {
@@ -83,7 +80,7 @@ body {
     &:active {
       background: #ccc;
       border-color: #888 #9c9c9c #9c9c9c;
-      @include box-shadow(inset 0 1px 2px rgba($black, .2));
+      @include box-shadow(inset 0 1px 2px rgba(black, .2));
     }
   }
 
@@ -91,7 +88,7 @@ body {
 }
 
 .settings-form {
-  text-shadow: 0 1px rgba($white, .5);
+  text-shadow: 0 1px rgba(white, .5);
 
   > h3 {
     line-height: 25px;
@@ -99,7 +96,7 @@ body {
     color: #888;
     text-align: center;
     text-transform: uppercase;
-    @include linear-gradient(top, rgba($black, 0), rgba($black, .03));
+    @include linear-gradient(top, rgba(black, 0), rgba(black, .03));
   }
 
   > label {
@@ -111,7 +108,7 @@ body {
     color: #8c8c8c;
     cursor: pointer;
     border-top: 1px solid #d5d5d5;
-    @include box-shadow(inset 0 1px rgba($white, .5));
+    @include box-shadow(inset 0 1px rgba(white, .5));
     @extend %icon;
 
     &:before {
@@ -142,11 +139,11 @@ body {
   background: #b5b5b5;
   background-clip: padding-box;
   border: 1px solid;
-  border-color: rgba($black, .45) rgba($black, .4) rgba($black, .28);
+  border-color: rgba(black, .45) rgba(black, .4) rgba(black, .28);
   border-radius: 10px;
   @include box-sizing(border-box);
   @include linear-gradient(top, #b5b5b5, #d5d5d5);
-  @include box-shadow(inset 0 1px 1px rgba($black, .12), 0 1px rgba($white, .4));
+  @include box-shadow(inset 0 1px 1px rgba(black, .12), 0 1px rgba(white, .4));
   @include transition(.15s ease-out);
 
   input:checked + & {
@@ -167,7 +164,7 @@ body {
   background: #fbfbfb;
   border-radius: 8px;
   @include linear-gradient(top, #fbfbfb, #d9d9d9);
-  @include box-shadow(inset 0 0 0 1px rgba($white, .2), 0 0 0 1px rgba($black, .3), 0 1px rgba($black, .1));
+  @include box-shadow(inset 0 0 0 1px rgba(white, .2), 0 0 0 1px rgba(black, .3), 0 1px rgba(black, .1));
 
   &:before, &:after {
     content: '';
@@ -179,14 +176,14 @@ body {
   &:before {
     float: left;
     background: #dfdfdf;
-    border-right: 1px solid rgba($black, .2);
+    border-right: 1px solid rgba(black, .2);
     @include linear-gradient(left, #dfdfdf, #c4c4c4);
   }
 
   &:after {
     float: right;
     background: #dfdfdf;
-    border-left: 1px solid rgba($black, .2);
+    border-left: 1px solid rgba(black, .2);
     @include linear-gradient(right, #dfdfdf, #c4c4c4);
   }
 }
@@ -212,14 +209,14 @@ body {
   width: 300px;
   text-align: center;
   color: #ddd;
-  text-shadow: 0 1px rgba($black, .2);
-  background: rgba($black, .05);
+  text-shadow: 0 1px rgba(black, .2);
+  background: rgba(black, .05);
   border-radius: 3px;
 
   a {
     padding: 1px 3px;
     margin: 0 -1px;
-    color: $white;
+    color: white;
     text-decoration: none;
     border-radius: 2px;
 

@@ -127,7 +127,7 @@ a:hover {
   width: 260px;
   margin: 0 auto;
   padding: 12px 0;
-  background: #fff;
+  background: white;
   border: 1px solid;
   border-color: #dfdcdc #d9d6d6 #ccc;
   border-radius: 2px;
@@ -139,7 +139,7 @@ a:hover {
   position: absolute;
   z-index: -1;
   height: 4px;
-  background: #fff;
+  background: white;
   border: 1px solid #ccc;
   border-radius: 2px;
 }
@@ -267,7 +267,7 @@ a:hover {
 }
 .todo-pagination a {
   padding: 0 8px;
-  text-shadow: 0 1px #fff;
+  text-shadow: 0 1px white;
   background: #f1f0f0;
   border-radius: 3px;
 }
@@ -301,7 +301,7 @@ a:hover {
   border-radius: 2px;
 }
 .about a:hover {
-  color: #fff;
+  color: white;
   text-shadow: 0 1px #0063A6;
   background: #0090D2;
 }

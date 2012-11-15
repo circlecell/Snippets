@@ -99,7 +99,7 @@ a:hover {
   font-size: 11px;
   font-weight: bold;
   color: #555555;
-  text-shadow: 0 1px #fff;
+  text-shadow: 0 1px white;
   background: #dfdfdf;
   border-width: 1px 1px 0;
   border-style: solid;
@@ -274,7 +274,7 @@ a:hover {
   border-radius: 2px;
 }
 .about a:hover {
-  color: #fff;
+  color: white;
   text-shadow: 0 1px #0063A6;
   background: #0090D2;
 }

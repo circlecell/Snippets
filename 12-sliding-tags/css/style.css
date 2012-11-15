@@ -132,7 +132,7 @@ a:hover {
   padding: 0 9px 0 8px;
   font-size: 12px;
   color: #555;
-  text-shadow: 0 1px #fff;
+  text-shadow: 0 1px white;
   background: #fafafa;
   border-width: 1px 0 1px 1px;
   border-style: solid;
@@ -165,7 +165,7 @@ a:hover {
   line-height: 21px;
   padding: 0 0 0 2px;
   opacity: .95;
-  color: #fff;
+  color: white;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
   background: #eb6b22;
   border: 1px solid;
@@ -234,7 +234,7 @@ a:hover {
   border-radius: 2px;
 }
 .about a:hover {
-  color: #fff;
+  color: white;
   text-shadow: 0 1px #0063A6;
   background: #0090D2;
 }

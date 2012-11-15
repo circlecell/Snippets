@@ -55,14 +55,14 @@ $popoverZ: 10;
   width: 200px;
   padding: 5px;
   background: #606060;
-  border: 1px solid #000;
+  border: 1px solid black;
   border-radius: 11px;
   @include linear-gradient(top, #606060, #4a4a4a);
-  @include box-shadow(inset 0 1px rgba(255, 255, 255, .1),
-                      inset 0 1px 1px rgba(255, 255, 255, .2),
-                      inset 1px 0 rgba(255, 255, 255, .08),
-                      inset -1px 0 rgba(255, 255, 255, .08),
-                      0 2px 8px rgba(0, 0, 0, .5));
+  @include box-shadow(inset 0 1px rgba(white, .1),
+                      inset 0 1px 1px rgba(white, .2),
+                      inset 1px 0 rgba(white, .08),
+                      inset -1px 0 rgba(white, .08),
+                      0 2px 8px rgba(black, .5));
 
   &:before, &:after, ul:before {
     display: block;
@@ -76,7 +76,7 @@ $popoverZ: 10;
   }
 
   &:before {
-    border-bottom: 7px solid #000;
+    border-bottom: 7px solid black;
     top: -14px;
   }
 
@@ -93,12 +93,12 @@ $popoverZ: 10;
 
   ul {
     overflow: hidden;
-    background: #fff;
-    border: 1px solid #000;
+    background: white;
+    border: 1px solid black;
     border-radius: 7px;
-    @include box-shadow(inset 0 1px 2px rgba(0, 0, 0, .4),
-                        0 1px 1px rgba(255, 255, 255, .1),
-                        0 1px rgba(255, 255, 255, .1));
+    @include box-shadow(inset 0 1px 2px rgba(black, .4),
+                        0 1px 1px rgba(white, .1),
+                        0 1px rgba(white, .1));
   }
 
   li {
@@ -115,14 +115,14 @@ $popoverZ: 10;
     display: block;
     line-height: 44px;
     padding: 0 15px 0 48px;
-    color: #000;
+    color: black;
     font-size: 16px;
     font-weight: bold;
 
     &:hover {
       text-decoration: none;
-      background: #fff;
-      @include box-shadow(0 0 4px rgba(0, 0, 0, .3));
+      background: white;
+      @include box-shadow(0 0 4px rgba(black, .3));
     }
 
     &:before, &:after {
@@ -140,7 +140,7 @@ $popoverZ: 10;
     border: 0;
     border-radius: 11px;
     background: #f7f7f7;
-    @include box-shadow(inset 0 1px 1px 1px rgba(0, 0, 0, .2), inset 0 5px 5px rgba(0, 0, 0, .1));
+    @include box-shadow(inset 0 1px 1px 1px rgba(black, .2), inset 0 5px 5px rgba(black, .1));
   }
 
   a:after, .active a:active:after {
@@ -158,7 +158,7 @@ $popoverZ: 10;
     background: #555;
     border: 1px solid #111;
     @include linear-gradient(top, #777, #404040);
-    @include box-shadow(inset 0 1px rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, .4));
+    @include box-shadow(inset 0 1px rgba(white, .3), 0 1px 2px rgba(black, .4));
   }
 
   .active a:after, a:active:after { display: block; }
@@ -174,22 +174,22 @@ $popoverZ: 10;
   width: 300px;
   text-align: center;
   color: #045773;
-  text-shadow: 0 1px rgba(255, 255, 255, .3);
-  background: rgba(0, 0, 0, .05);
+  text-shadow: 0 1px rgba(white, .3);
+  background: rgba(black, .05);
   border-radius: 3px;
 
   a {
     padding: 1px 3px;
     margin: 0 -1px;
-    color: #fff;
+    color: white;
     text-decoration: none;
-    text-shadow: 0 -1px rgba(0, 0, 0, .2);
+    text-shadow: 0 -1px rgba(black, .2);
     border-radius: 2px;
 
     &:hover {
       color: #045773;
       text-shadow: none;
-      background: #fff;
+      background: white;
     }
   }
 }

@@ -8,9 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$white: #fff;
-$black: #000;
-
 input, button { @include box-sizing(border-box); }
 ::-moz-focus-inner { padding: 0; border: 0 }
 
@@ -46,8 +43,8 @@ body {
   border: 1px solid #222;
   border-radius: 4px;
   @include linear-gradient(top, #3d4543, #2f2a2f);
-  @include box-shadow(inset 0 0 0 1px rgba($white, .1),
-                      0 0 4px rgba($black, .5));
+  @include box-shadow(inset 0 0 0 1px rgba(white, .1),
+                      0 0 4px rgba(black, .5));
 }
 
 .calc-display {
@@ -55,8 +52,8 @@ body {
   padding: 3px;
   background: #222;
   border-radius: 3px;
-  @include box-shadow(inset 0 0 0 1px rgba($black, .1),
-                      0 0 0 1px rgba($white, .08));
+  @include box-shadow(inset 0 0 0 1px rgba(black, .1),
+                      0 0 0 1px rgba(white, .08));
 }
 
 .calc-display-input {
@@ -72,8 +69,8 @@ body {
   border: 1px solid #222;
   border-radius: 2px;
   @include linear-gradient(top, #bccd95, #e0f5b1);
-  @include box-shadow(inset 0 2px 3px rgba($black, .5),
-                      0 0 0 1px rgba($white, .12));
+  @include box-shadow(inset 0 2px 3px rgba(black, .5),
+                      0 0 0 1px rgba(white, .12));
 }
 
 .calc-row {
@@ -87,28 +84,28 @@ body {
   margin: 0 0 0 7px;
   width: 39px;
   font: 14px/23px UbuntuMono, monospace;
-  color: $white;
+  color: white;
   text-align: center;
-  text-shadow: 0 1px rgba($black, .4);
+  text-shadow: 0 1px rgba(black, .4);
   text-decoration: none;
   background: #313131;
   background-clip: padding-box !important; /* !important because FF overrides the value on :active */
   border: 0; /* IE 8 fix */
-  border: 1px solid rgba($black, .8);
+  border: 1px solid rgba(black, .8);
   border-radius: 3px;
   cursor: pointer;
   @include linear-gradient(top, #313131, #1c1c1c);
-  @include box-shadow(inset 0 0 0 1px rgba($white, .08),
-                      0 1px rgba($black, .3),
-                      0 0 0 1px rgba($white, .08));
+  @include box-shadow(inset 0 0 0 1px rgba(white, .08),
+                      0 1px rgba(black, .3),
+                      0 0 0 1px rgba(white, .08));
 
   &:first-child { margin-left: 0; }
 
   &:active {
     background: #282828;
-    @include box-shadow(inset 0 1px 2px rgba($black, .6),
-                        0 1px rgba($black, .1),
-                        0 0 0 1px rgba($white, .05));
+    @include box-shadow(inset 0 1px 2px rgba(black, .6),
+                        0 1px rgba(black, .1),
+                        0 0 0 1px rgba(white, .05));
   }
 }
 
@@ -149,8 +146,8 @@ body {
   width: 300px;
   text-align: center;
   color: #777;
-  text-shadow: 0 1px rgba($white, .5);
-  background: rgba($black, .05);
+  text-shadow: 0 1px rgba(white, .5);
+  background: rgba(black, .05);
   border-radius: 3px;
 
   a {
@@ -161,7 +158,7 @@ body {
     border-radius: 2px;
 
     &:hover {
-      color: $white;
+      color: white;
       text-shadow: 0 1px #0063A6;
       background: #0090D2;
     }

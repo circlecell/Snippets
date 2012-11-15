@@ -47,13 +47,13 @@ header {
   padding-top: 60px;
   background: #404040 url('../img/bg.png') 0 0 repeat;
   border-bottom: 1px solid #dadada;
-  @include box-shadow(0 0 1px rgba(0, 0, 0, .04));
+  @include box-shadow(0 0 1px rgba(black, .04));
 }
 
 nav {
   height: $navHeight;
-  border-bottom: 5px solid #fff;
-  @include box-shadow(inset 0 -2px 1px rgba(0, 0, 0, .03));
+  border-bottom: 5px solid white;
+  @include box-shadow(inset 0 -2px 1px rgba(black, .03));
 
   > ul {
     @extend .container;
@@ -67,13 +67,13 @@ nav {
         height: $navHeight;
         line-height: $navHeight;
         padding: 0 20px;
-        color: #fff;
+        color: white;
         font-weight: bold;
-        text-shadow: 0 -1px rgba(0, 0, 0, .3);
+        text-shadow: 0 -1px rgba(black, .3);
         background: $navBackgroundColor;
         border-radius: 3px 3px 0 0;
         @include linear-gradient(top, lighten($navBackgroundColor, 12%), $navBackgroundColor);
-        @include box-shadow(inset 0 1px rgba(255, 255, 255, .3), inset 0 -2px 2px rgba(0, 0, 0, .03), 0 2px #fff, 0 0 2px rgba(0, 0, 0, .2));
+        @include box-shadow(inset 0 1px rgba(white, .3), inset 0 -2px 2px rgba(black, .03), 0 2px white, 0 0 2px rgba(black, .2));
 
         &:hover {
           text-decoration: none;
@@ -83,10 +83,10 @@ nav {
       }
 
       &.active > a, & > a:active, &.dropdown:hover > a {
-        background: #fff;
+        background: white;
         color: #404040;
         text-shadow: none;
-        @include box-shadow(0 2px #fff, 0 0 2px rgba(0, 0, 0, .2));
+        @include box-shadow(0 2px white, 0 0 2px rgba(black, .2));
       }
     }
   }
@@ -118,7 +118,7 @@ nav {
 
 .dropdown {
   position: relative;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid white;
 
   &:hover ul { display: block; }
 
@@ -129,11 +129,11 @@ nav {
     left: -1px;
     min-width: 160px;
     padding: 0 0 5px;
-    background: #fff;
+    background: white;
     border: 1px solid #dadada;
     border-top: 0;
     border-radius: 0 0 3px 3px;
-    @include box-shadow(0 0 1px rgba(0, 0, 0, .04));
+    @include box-shadow(0 0 1px rgba(black, .04));
 
     &.large { min-width: 200px; }
   }
@@ -166,8 +166,8 @@ nav {
   width: 300px;
   text-align: center;
   color: #777;
-  text-shadow: 0 1px rgba(255, 255, 255, .7);
-  background: rgba(0, 0, 0, .05);
+  text-shadow: 0 1px rgba(white, .7);
+  background: rgba(black, .05);
   border-radius: 3px;
 
   a {
@@ -178,7 +178,7 @@ nav {
     border-radius: 2px;
 
     &:hover {
-      color: #fff;
+      color: white;
       text-shadow: 0 1px #0063A6;
       background: #0090D2;
     }

@@ -8,9 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$white: #fff;
-$black: #000;
-
 /* ========================================================
    Page
    ===================================================== */
@@ -40,7 +37,7 @@ body {
   line-height: 18px;
   font-size: 11px;
   color: rgba(#ccc, .9);
-  text-shadow: 0 -1px $black;
+  text-shadow: 0 -1px black;
   background-color: rgba(#111, .48);
   /* Don't let the background bleed underneath our semi-transparent (rgba) border. */
   background-clip: padding-box;
@@ -54,10 +51,10 @@ body {
   @include linear-gradient(top,
                            rgba(#f2f2f2, .3)  0%,
                            rgba(#ddd, .01)   50%,
-                           rgba($black, .12) 50%,
-                           rgba($black, .3)  100%);
-  @include box-shadow(inset 0 0 1px rgba($white, .5),
-                      0 1px 2px rgba($black, .3));
+                           rgba(black, .12) 50%,
+                           rgba(black, .3)  100%);
+  @include box-shadow(inset 0 0 1px rgba(white, .5),
+                      0 1px 2px rgba(black, .3));
 
   p { margin: 0; }
 
@@ -73,10 +70,10 @@ body {
     margin: -6px 14px -6px -6px;
     width: 74px;
     height: 74px;
-    background: rgba($black, .1) url('../img/dribbble.png') center no-repeat;
+    background: rgba(black, .1) url('../img/dribbble.png') center no-repeat;
     border-right: 1px solid rgba(#111, .4);
     border-radius: 5px 0 0 5px;
-    @include box-shadow(1px 0 rgba($white, .05));
+    @include box-shadow(1px 0 rgba(white, .05));
   }
 }
 
@@ -85,7 +82,7 @@ body {
   line-height: 22px;
   font-size: 13px;
   font-weight: bold;
-  color: rgba($white, .95);
+  color: rgba(white, .95);
 }
 
 .notif-close {
@@ -97,11 +94,11 @@ body {
   height: 10px;
   padding: 4px;
   background: #222;
-  border: 1px solid rgba($black, .4);
+  border: 1px solid rgba(black, .4);
   border-radius: 10px;
   @include hide-text;
   @include linear-gradient(top, #383838, #111);
-  @include box-shadow(inset 0 1px rgba($white, .15));
+  @include box-shadow(inset 0 1px rgba(white, .15));
 
   &:before {
     content: '';
@@ -114,25 +111,25 @@ body {
 
 .notif-white {
   color: rgba(#333, .9);
-  text-shadow: 0 1px rgba($white, .2);
-  background-color: rgba($white, .3);
+  text-shadow: 0 1px rgba(white, .2);
+  background-color: rgba(white, .3);
   border-color: rgba(#444, .6) rgba(#444, .7) rgba(#444, .8);
-  /* rgba(#fff, .4) 0%, rgba(#fff, .33) 50%, rgba(#eaeaea, .3) 50%, rgba(#eaeaea, .35) 100% */
+  /* rgba(white, .4) 0%, rgba(white, .33) 50%, rgba(#eaeaea, .3) 50%, rgba(#eaeaea, .35) 100% */
   @include linear-gradient(top,
-                           rgba($white, .15)  0%,
-                           rgba($white, .05) 50%,
+                           rgba(white, .15)  0%,
+                           rgba(white, .05) 50%,
                            rgba(#666, .1)    50%,
                            rgba(#777, .05)  100%);
-  @include box-shadow(inset 0 0 1px rgba($white, .7),
-                      0 1px 2px rgba($black, .2));
+  @include box-shadow(inset 0 0 1px rgba(white, .7),
+                      0 1px 2px rgba(black, .2));
 
   &:before {
-    background-color: rgba($white, .1);
+    background-color: rgba(white, .1);
     border-right-color: rgba(#333, .3);
-    @include box-shadow(1px 0 rgba($white, .15));
+    @include box-shadow(1px 0 rgba(white, .15));
   }
 
-  .notif-title { color: rgba($black, .8); }
+  .notif-title { color: rgba(black, .8); }
 
   a { color: rgba(#282828, .9); }
 }
@@ -147,21 +144,21 @@ body {
   width: 300px;
   text-align: center;
   color: #ddd;
-  text-shadow: 0 -1px rgba($black, .35);
-  background: rgba($black, .2);
+  text-shadow: 0 -1px rgba(black, .35);
+  background: rgba(black, .2);
   border-radius: 3px;
 
   a {
     padding: 1px 3px;
     margin: 0 -1px;
-    color: $white;
+    color: white;
     text-decoration: none;
     border-radius: 2px;
 
     &:hover {
       color: #111;
       text-shadow: none;
-      background: $white;
+      background: white;
     }
   }
 }

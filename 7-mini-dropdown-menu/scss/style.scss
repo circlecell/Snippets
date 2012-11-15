@@ -56,11 +56,11 @@ a {
   border-radius: 3px;
   @include inline-block;
   @include linear-gradient(top, lighten($color, 9%), $color);
-  @include box-shadow(inset 0 1px rgba(255, 255, 255, .1), 0 1px 2px rgba(0, 0, 0, .15));
+  @include box-shadow(inset 0 1px rgba(white, .1), 0 1px 2px rgba(black, .15));
 
   a {
     font-size: 12px;
-    text-shadow: 0 1px #000;
+    text-shadow: 0 1px black;
 
     &:hover { text-decoration: none; }
   }
@@ -86,7 +86,7 @@ a {
 
     &:hover {
       background: lighten($color, 4%);
-      background: rgba(255, 255, 255, .04);
+      background: rgba(white, .04);
     }
 
     &:active { background: darken($color, 1%); }
@@ -98,11 +98,11 @@ a {
     width: 26px;
     background: url('../img/toggle.png') 9px 9px no-repeat;
     border-left: 1px solid darken($color, 6%);
-    border-color: rgba(0, 0, 0, .4);
-    @include box-shadow(inset 1px 0 rgba(255, 255, 255, .08));
+    border-color: rgba(black, .4);
+    @include box-shadow(inset 1px 0 rgba(white, .08));
 
     &:hover {
-      @include box-shadow(inset 1px 0 rgba(255, 255, 255, .04), inset 26px 26px rgba(0, 0, 0, .1));
+      @include box-shadow(inset 1px 0 rgba(white, .04), inset 26px 26px rgba(black, .1));
       ul { display: block; }
     }
   }
@@ -116,7 +116,7 @@ a {
     background: darken($color, 7%);
     border: 1px solid darken($color, 10%);
     border-radius: 0 0 3px 3px;
-    @include box-shadow(0 1px 2px rgba(0, 0, 0, .2));
+    @include box-shadow(0 1px 2px rgba(black, .2));
 
     li {
       display: block;
@@ -131,10 +131,10 @@ a {
       border-top: 1px solid transparent;
 
       &:hover {
-        color: #fff;
+        color: white;
         background: #426ebf;
         border-color: #78aad5;
-        text-shadow: 0 1px rgba(0, 0, 0, .7);
+        text-shadow: 0 1px rgba(black, .7);
         @include linear-gradient(top, #5e9ace, #416cb8);
       }
     }
@@ -151,8 +151,8 @@ a {
   width: 300px;
   text-align: center;
   color: #aaa;
-  text-shadow: 0 -1px rgba(0, 0, 0, .2);
-  background: rgba(0, 0, 0, .05);
+  text-shadow: 0 -1px rgba(black, .2);
+  background: rgba(black, .05);
   border-radius: 3px;
 
   a {

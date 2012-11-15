@@ -114,7 +114,7 @@ a:hover, a:active {
   line-height: 33px;
   padding: 0 15px;
   font-size: 15px;
-  color: #fff;
+  color: white;
   text-decoration: none;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
   border: 2px solid;
@@ -417,7 +417,7 @@ a:hover, a:active {
   border-radius: 2px;
 }
 .about a:hover {
-  color: #fff;
+  color: white;
   text-shadow: 0 1px #0063A6;
   background: #0090D2;
 }

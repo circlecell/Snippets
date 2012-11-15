@@ -126,7 +126,7 @@ nav a {
   font-size: 11px;
   font-weight: bold;
   color: #666;
-  text-shadow: 0 1px #fff;
+  text-shadow: 0 1px white;
   background: #fafafa;
   background-image: -webkit-linear-gradient(top, #fcfcfc, #f0f0f0);
   background-image: -moz-linear-gradient(top, #fcfcfc, #f0f0f0);
@@ -144,7 +144,7 @@ nav a:hover {
 }
 nav li.active a, nav a:active {
   color: #333;
-  background: #fff;
+  background: white;
   -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
 }
@@ -157,7 +157,7 @@ nav .badge {
   height: 16px;
   padding: 0 5px;
   font-family: Arial, sans-serif;
-  color: #fff;
+  color: white;
   text-shadow: 0 1px rgba(0, 0, 0, 0.25);
   border-width: 1px;
   border-style: solid;
@@ -219,7 +219,7 @@ nav .badge.red {
   border-radius: 2px;
 }
 .about a:hover {
-  color: #fff;
+  color: white;
   text-shadow: 0 1px #0063A6;
   background: #0090D2;
 }
