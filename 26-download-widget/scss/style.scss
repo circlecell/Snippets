@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -11,10 +13,8 @@
 html, body { min-height: 100%; }
 
 body {
-  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
-  font-size: 12px;
+  font: 12px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
   color: #404040;
   background: #47496d;
   @include radial-gradient(bottom, circle cover, #6b6e8c, #212649);
@@ -63,9 +63,9 @@ $sprite: url('../img/sprite.png');
   float: left;
   line-height: 24px;
   padding: 0 6px;
-  color: #666;
   font-size: 13px;
   font-weight: bold;
+  color: #666;
   text-transform: uppercase;
   text-shadow: 0 1px rgba(white, .3);
 }
@@ -152,8 +152,8 @@ $sprite: url('../img/sprite.png');
 
   .download-name {
     margin: 0;
-    color: #333;
     font-weight: bold;
+    color: #333;
   }
 
   .download-icon {
@@ -188,44 +188,4 @@ $sprite: url('../img/sprite.png');
   .widget-close { border: 1px solid #c4c4c4; }
   .widget-close:hover { background: #d8d8d8; }
   .widget-toolbar { border-top-color: #484848; }
-}
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #aaa;
-  text-shadow: 0 -1px rgba(black, .18);
-  background: rgba(black, .1);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #fafafa;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: #111;
-      text-shadow: none;
-      background: #fafafa;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
 }

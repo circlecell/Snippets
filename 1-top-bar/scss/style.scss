@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -24,19 +26,16 @@ $headerBackgroundColor: #1d2e35;
 // $headerBackgroundColor: #242735;
 
 body {
-  background: $bodyBackgroundColor;
-  color: #404040;
-  font-family: 'Lucida Grande', Verdana, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 18px;
   padding-top: $headerHeight;
+  font: 13px/18px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-weight: normal;
+  color: #404040;
+  background: $bodyBackgroundColor;
 }
 
 .container {
   width: $siteWidth;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 header {
@@ -44,7 +43,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10000;
+  z-index: 2;
   height: $headerHeight;
   line-height: $headerHeight;
   color: #ddd;
@@ -55,22 +54,21 @@ header {
                                 lighten($headerBackgroundColor, 3%) 50%,
                                 $headerBackgroundColor 50%,
                                 darken($headerBackgroundColor, 1%) 100%);
-  @include box-shadow(0 0 3px rgba(black, .8), inset 0 0 1px rgba(white, .1));
+  @include box-shadow(inset 0 0 1px rgba(white, .1), 0 0 3px rgba(black, .8));
 
   a {
     @include transition(.1s ease-out);
-    @include transition-property(background-color, color);
+    @include transition-property(background, color);
   }
 
   h1 {
     float: left;
-    font-size: 16px;
-
-    &, a { color: #eee; }
 
     a {
       display: block;
       padding: 0 15px;
+      font-size: 16px;
+      color: #eee;
       text-decoration: none;
 
       &:hover { color: white; }
@@ -89,15 +87,15 @@ header {
       display: block;
       padding: 0 15px;
       color: #d0d9de;
+      text-decoration: none;
       border-left: 1px solid #191919;
       border-right: 1px solid lighten($headerBackgroundColor, 10%);
       border-right: 1px solid rgba(white, .05);
-      text-decoration: none;
       cursor: pointer;
 
       &:hover {
         background: lighten($headerBackgroundColor, 10%);
-        background: rgba(white, .05);
+        background: rgba(white, .1);
       }
 
       &.icon {
@@ -112,9 +110,9 @@ header {
     }
 
     li.active a, a:active {
+      padding-right: 16px;
       background-color: darken($headerBackgroundColor, 1%);
       border-right: 0;
-      padding-right: 16px;
       @include box-shadow(inset 0 0 3px rgba(black, 0.7));
     }
 
@@ -133,46 +131,4 @@ header {
       @include box-shadow(inset 0 1px rgba(white, .2), 0 1px rgba(black, .2));
     }
   }
-}
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: darken($bodyBackgroundColor, 20%);
-  text-shadow: 0 1px rgba(white, .3);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: white;
-    text-decoration: none;
-    text-shadow: 0 -1px rgba(black, .2);
-    border-radius: 2px;
-
-    &:hover {
-      color: darken($bodyBackgroundColor, 20%);
-      text-shadow: none;
-      background: white;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
 }

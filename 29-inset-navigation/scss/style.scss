@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -9,10 +11,8 @@
  */
 
 body {
-  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
-  font-size: 12px;
+  font: 12px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
   color: #404040;
   background: #d8e5f2;
 }
@@ -28,17 +28,17 @@ body {
 }
 
 .side-nav-button, .side-nav:active .active {
-  position: relative;
   display: block;
+  position: relative;
   height: 36px;
   line-height: 36px;
   margin-bottom: 10px;
   padding: 0 14px;
-  color: #597490;
   font-size: 13px;
   font-weight: bold;
-  text-shadow: 0 1px rgba(white, .8);
+  color: #597490;
   text-decoration: none;
+  text-shadow: 0 1px rgba(white, .8);
   background: #d8e6f4;
   background-clip: padding-box;
   border: 1px solid;
@@ -98,45 +98,4 @@ body {
   }
 
   &:last-child { margin-bottom: 0; }
-}
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #777;
-  text-shadow: 0 1px rgba(white, .5);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #1468c8;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: white;
-      text-shadow: 0 1px #0063A6;
-      background: #0090D2;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
 }

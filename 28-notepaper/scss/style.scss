@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -9,59 +11,59 @@
  */
 
 body {
-  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
-  font-size: 12px;
+  font: 12px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
   color: #404040;
   background: #dce1e1;
 }
 
-$backgroundColor: #f2f6c1;
-$borderColor: #c3baaa;
-$lineColor: #efcfad;
+$noteBackgroundColor: #f2f6c1;
+$noteBorderColor: #c3baaa;
+$noteLineColor: #efcfad;
 
 .notepaper {
   position: relative;
   margin: 80px auto;
-  width: 280px;
   padding: 29px 20px 20px 45px;
+  width: 280px;
   line-height: 30px;
   color: #6a5f49;
   text-shadow: 0 1px 1px white;
-  background-color: $backgroundColor;
-  $lines: top, transparent 0%, transparent 29px, rgba($lineColor, .7) 29px, rgba($lineColor, .7) 30px;
-  $glow: center, cover, rgba(white, .7) 0%, rgba(white, .1) 90%;
-  background-image: -webkit-radial-gradient($glow), -webkit-repeating-linear-gradient($lines);
-  background-image:    -moz-radial-gradient($glow),    -moz-repeating-linear-gradient($lines);
-  background-image:      -o-radial-gradient($glow),      -o-repeating-linear-gradient($lines);
-  border: 1px solid $borderColor; /* IE 8 */
-  border-color: rgba($borderColor, .9);
+  background-color: $noteBackgroundColor;
+  $noteLines: top, transparent 0%, transparent 29px, rgba($noteLineColor, .7) 29px, rgba($noteLineColor, .7) 30px;
+  $noteGlow: center, cover, rgba(white, .7) 0%, rgba(white, .1) 90%;
+  background-image: -webkit-radial-gradient($noteGlow), -webkit-repeating-linear-gradient($noteLines);
+  background-image:    -moz-radial-gradient($noteGlow),    -moz-repeating-linear-gradient($noteLines);
+  background-image:      -o-radial-gradient($noteGlow),      -o-repeating-linear-gradient($noteLines);
+  border: 1px solid $noteBorderColor;
+  border-color: rgba($noteBorderColor, .9);
   @include box-sizing(border-box);
   @include box-shadow(inset 0 1px rgba(white, .5),
-                      inset 0 0 5px desaturate(darken($backgroundColor, 20%), 10%),
+                      inset 0 0 5px desaturate(darken($noteBackgroundColor, 20%), 10%),
                       0 0 1px rgba(black, .1),
                       0 2px rgba(black, .02));
 
   &:before, &:after {
     content: '';
     position: absolute;
-    top: 0; bottom: 0;
+    top: 0;
+    bottom: 0;
   }
 
   &:before {
     left: 28px;
     width: 2px;
-    border: solid $lineColor; /* IE 8 */
-    border-color: rgba($lineColor, .9);
+    border: solid $noteLineColor;
+    border-color: rgba($noteLineColor, .9);
     border-width: 0 1px;
   }
 
   &:after {
     z-index: -1;
-    left: 0; right: 0;
-    background: rgba($backgroundColor, .9);
-    border: 1px solid rgba(darken($borderColor, 12%), .7);
+    left: 0;
+    right: 0;
+    background: rgba($noteBackgroundColor, .9);
+    border: 1px solid rgba(darken($noteBorderColor, 12%), .7);
     @include transform(rotate(2deg));
   }
 }
@@ -75,10 +77,10 @@ $lineColor: #efcfad;
   &:before, &:after {
     display: inline-block;
     vertical-align: top;
+    height: 30px;
+    line-height: 48px;
     font-size: 50px;
     opacity: .2;
-    line-height: 48px;
-    height: 30px;
   }
 
   &:before {
@@ -99,49 +101,8 @@ $lineColor: #efcfad;
   padding-right: 10px;
   text-align: right;
   font-size: 13px;
-  color: #84775c;
   font-style: italic;
+  color: #84775c;
 }
 
-.lt-ie8 .notepaper { padding: 15px 25px; } /* IE 6 & 7 */
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #777;
-  text-shadow: 0 1px rgba(white, .5);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #1468c8;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: white;
-      text-shadow: 0 1px #0063A6;
-      background: #0090D2;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
-}
+.lt-ie8 .notepaper { padding: 15px 25px; }

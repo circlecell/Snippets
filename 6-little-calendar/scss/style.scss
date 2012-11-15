@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -8,33 +10,16 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$siteWidth: 640px;
-
 body {
-  background: #444 url('../img/bg.png') 0 0 repeat;
-  color: #404040;
-  font-family: 'Lucida Grande', Verdana, sans-serif;
-  font-size: 13px;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
-}
-
-a {
-  color: #1e7ad3;
-  text-decoration: none;
-
-  &:hover { text-decoration: underline; }
+  color: #404040;
+  background: #444 url('../img/bg.png') 0 0 repeat;
 }
 
 .container {
-  width: $siteWidth;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main {
-  margin-top: 50px;
-  @extend .container;
+  margin: 50px auto;
+  width: 640px;
 
   .cal { margin: 0 auto; }
 }
@@ -44,14 +29,14 @@ a {
   width: 216px;
   @include box-shadow(1px 1px 3px rgba(black, .4));
 
-  a:hover { text-decoration: none; }
+  a { text-decoration: none; }
 
   caption {
     display: block;
     line-height: 32px;
-    text-align: center;
-    color: #e2e2e2;
     font-weight: bold;
+    color: #e2e2e2;
+    text-align: center;
     text-shadow: 0 -1px black;
     background: #333;
     background: rgba(black, .35);
@@ -63,8 +48,8 @@ a {
       display: block;
       line-height: 32px;
       padding: 0 10px;
-      color: #e2e2e2;
       font-size: 15px;
+      color: #e2e2e2;
 
       &:hover { color: white; }
     }
@@ -82,10 +67,10 @@ a {
   }
 
   th {
-    font-size: 8px;
-    text-transform: uppercase;
-    color: #696969;
     line-height: 20px;
+    font-size: 8px;
+    color: #696969;
+    text-transform: uppercase;
     background: #f3f3f3;
     border-left: 1px solid #f3f3f3;
   }
@@ -100,9 +85,9 @@ a {
       clear: both;
       display: block;
       position: relative;
-      color: #666;
-      line-height: 28px;
       width: 30px;
+      line-height: 28px;
+      color: #666;
       @include linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
       @include box-shadow(inset 1px 1px rgba(white, .5));
     }
@@ -125,45 +110,4 @@ a {
   }
 
   tr:last-child { td.active a, td a:active { border-bottom: 0; margin-bottom: 0; } }
-}
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #aaa;
-  text-shadow: 0 -1px rgba(black, .2);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #fafafa;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: #111;
-      text-shadow: none;
-      background: #fafafa;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
 }

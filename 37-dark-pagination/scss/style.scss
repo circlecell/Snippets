@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -9,10 +11,8 @@
  */
 
 body {
-  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
-  font-size: 13px;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
   color: #404040;
   background: #222327;
 }
@@ -55,6 +55,7 @@ body {
   :first-child { margin-left: 0; }
 
   > a {
+    text-decoration: none;
     text-shadow: 0 1px black;
     background-clip: padding-box;
     border-color: rgba(black, .9);
@@ -68,7 +69,6 @@ body {
     &:hover {
       background-color: #333;
       background-color: rgba(white, .05);
-      text-decoration: none;
     }
   }
 
@@ -93,44 +93,4 @@ body {
   background-color: rgba(0, 5, 50, .1);
   > a { background-color: rgba(170, 170, 255, .01); }
   > a.hover { background-color: rgba(120, 130, 255, .08); }
-}
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #bbb;
-  text-shadow: 0 -1px rgba(black, .35);
-  background: rgba(black, .15);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: white;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: #111;
-      text-shadow: none;
-      background: white;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
 }

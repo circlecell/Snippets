@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -8,24 +10,19 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$siteWidth: 640px;
-
 html, body { min-height: 100%; }
 
 body {
-  color: #404040;
-  font-family: 'Lucida Grande', Verdana, sans-serif;
-  font-size: 13px;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
+  color: #404040;
   background: #dbdede;
-  background-repeat: no-repeat;
   @include radial-gradient(center, circle cover, #dbdede, #bfbdbe);
 }
 
 .container {
-  width: $siteWidth;
   margin: 80px auto;
+  width: 640px;
   text-align: center;
 }
 
@@ -43,7 +40,9 @@ body {
   &:before {
     content: '';
     position: absolute;
-    right: 4px; bottom: 3px; left: 4px;
+    bottom: 3px;
+    left: 4px;
+    right: 4px;
     height: 6px;
     background: #d9d9d9;
     border: 1px solid #909090;
@@ -82,8 +81,8 @@ body {
   width: 100%;
   padding-bottom: 1px;
   line-height: 32px;
-  text-align: center;
   color: white;
+  text-align: center;
   text-shadow: 0 -1px rgba(black, .3);
   background: #629c2e;
   border-radius: 3px 3px 0 0;
@@ -96,9 +95,9 @@ body {
   a {
     line-height: 30px;
     padding: 0 10px;
-    color: white;
     font-size: 20px;
     font-weight: normal;
+    color: white;
   }
 
   .prev { float: left; }
@@ -117,96 +116,50 @@ body {
     display: block;
     position: relative;
     line-height: 28px;
-    text-align: center;
     color: #555;
+    text-align: center;
     background: white;
   }
 
   a:hover { background: #fafafa; }
 }
 
-.cal-off {
-  a {
-    color: #ccc;
-    font-weight: normal;
-  }
+.cal-off a {
+  color: #ccc;
+  font-weight: normal;
 }
 
-.cal-today {
-  a {
-    color: black;
-    background: #f5f5f5;
-    @include linear-gradient(top, #f5f5f5 0%, white 70%);
-  }
+.cal-today a {
+  color: black;
+  background: #f5f5f5;
+  @include linear-gradient(top, #f5f5f5 0%, white 70%);
 }
 
 .cal-selected a, .cal-body a:active {
   margin: -1px;
   color: #b2494d;
-  background: white5f6;
+  background: #fff5f6;
   border: 1px solid #e7d4d4;
 }
 
-.cal-check {
-  a {
-    color: #f79901;
-    overflow: hidden;
+.cal-check a {
+  color: #f79901;
+  overflow: hidden;
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: -6px; right: -6px;
-      width: 12px;
-      height: 12px;
-      background: #ffb83b;
-      @include linear-gradient(top, #ffb83b, #ff6c00);
-      @include transform(rotate(-45deg));
-    }
+  &:before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 12px;
+    height: 12px;
+    background: #ffb83b;
+    @include linear-gradient(top, #ffb83b, #ff6c00);
+    @include transform(rotate(-45deg));
   }
 }
 
 .lt-ie8 {
   .cal-table { *border-collapse: collapse; }
   .cal-body a { zoom: 1; }
-}
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #777;
-  text-shadow: 0 1px rgba(white, .6);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #1468c8;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: white;
-      text-shadow: 0 1px #0063A6;
-      background: #0090D2;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
 }

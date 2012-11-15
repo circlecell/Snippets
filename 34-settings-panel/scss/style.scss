@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -11,10 +13,8 @@
 html, body { min-height: 100%; }
 
 body {
-  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
-  font-size: 13px;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
   color: #404040;
   background: #93a0b0;
   @include radial-gradient(center, circle cover, #a1acbb, #93a0b0 70%);
@@ -50,13 +50,12 @@ body {
     float: left;
     width: 23px;
     height: 23px;
-    color: transparent;
-    font: 0/0 a;
     background: #ddd;
     background-clip: padding-box;
     border: 1px solid;
     border-color: #aaa #9c9c9c #888;
     border-radius: 13px;
+    @include hide-text;
     @include linear-gradient(top, #fafafa, #c1c1c1);
     @include box-shadow(inset 0 1px 1px rgba(white, .9));
     @extend %icon;
@@ -88,18 +87,18 @@ body {
     color: #888;
     text-align: center;
     text-transform: uppercase;
-    @include linear-gradient(top, rgba(black, 0), rgba(black, .03));
+    @include linear-gradient(top, rgba(black, 0), rgba(black, .05));
   }
 
   > label {
-    position: relative;
     display: block;
-    line-height: 16px;
+    position: relative;
     padding: 8px 12px 8px 52px;
+    line-height: 16px;
     font-size: 11px;
     color: #8c8c8c;
-    cursor: pointer;
     border-top: 1px solid #d5d5d5;
+    cursor: pointer;
     @include box-shadow(inset 0 1px rgba(white, .5));
     @extend %icon;
 
@@ -190,43 +189,3 @@ body {
 .icon-gps:before { background-position: -28px 0; }
 .icon-close:before { background-position: 0 -28px; }
 .icon-prev:before { background-position: -12px -28px; }
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #ddd;
-  text-shadow: 0 1px rgba(black, .2);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: white;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: #333;
-      text-shadow: none;
-      background: #fafafa;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
-}

@@ -47,6 +47,56 @@ table {
   border-spacing: 0;
 }
 
+.about {
+  margin: 80px auto;
+  padding: 8px;
+  width: 240px;
+  font: 10px/18px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #777;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  background: #eee;
+  background: rgba(250, 250, 250, 0.8);
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+}
+.about a {
+  color: #333;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.about a:hover {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.about-links {
+  height: 30px;
+}
+.about-links > a {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-author {
+  margin-top: 5px;
+}
+.about-author > a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+}
+
 /*
  * Copyright (c) 2012 Thibaut Courouble
  * http://www.webinterfacelab.com
@@ -54,17 +104,12 @@ table {
  * Licensed under the MIT License:
  * http://www.opensource.org/licenses/mit-license.php
  */
-/* ========================================================
-   Page
-   ===================================================== */
 .bg, body, .login-submit, .login-submit:before, .login-submit:after {
   background: #373737 url("../img/bg.png") 0 0 repeat;
 }
 
 body {
-  line-height: 20px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #404040;
 }
@@ -77,9 +122,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ========================================================
-   Login form
-   ===================================================== */
 .login {
   position: relative;
   margin: 80px auto;
@@ -125,8 +167,8 @@ label {
   line-height: 40px;
   padding-right: 10px;
   font-weight: 100;
-  letter-spacing: 1px;
   text-align: right;
+  letter-spacing: 1px;
 }
 
 .forgot-password {
@@ -162,8 +204,8 @@ label {
 }
 .login-submit:after {
   top: -4px;
-  right: -4px;
   bottom: -4px;
+  right: -4px;
   width: 36px;
 }
 
@@ -174,13 +216,13 @@ label {
   height: 48px;
   padding: 0 0 48px;
   /* Fix wrong positioning in Firefox 9 & older (bug 450418) */
-  cursor: pointer;
   text-indent: 120%;
   white-space: nowrap;
   overflow: hidden;
   background: none;
   border: 0;
   border-radius: 24px;
+  cursor: pointer;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
   /* Must use another pseudo element for the gradient background because Webkit */
@@ -190,9 +232,9 @@ label {
   content: '';
   position: absolute;
   top: 5px;
+  bottom: 5px;
   left: 5px;
   right: 5px;
-  bottom: 5px;
   background: #00a2d3;
   border-radius: 24px;
   background-image: -webkit-linear-gradient(top, #00a2d3, #0d7796);
@@ -219,7 +261,7 @@ label {
   background: url("../img/arrow.png") 0 0 no-repeat;
 }
 
-button::-moz-focus-inner, input::-moz-focus-inner {
+::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -242,51 +284,4 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .lt-ie9 .about {
   background: #313131;
-}
-
-/* ========================================================
-   About
-   ===================================================== */
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #aaa;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.18);
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
-}
-.about a {
-  padding: 1px 3px;
-  margin: 0 -1px;
-  color: #fafafa;
-  text-decoration: none;
-  border-radius: 2px;
-}
-.about a:hover {
-  color: #111;
-  text-shadow: none;
-  background: #fafafa;
-}
-
-.links {
-  zoom: 1;
-}
-.links:before, .links:after {
-  content: '';
-  display: table;
-}
-.links:after {
-  clear: both;
-}
-.links a {
-  padding: 6px 0;
-  float: left;
-  width: 50%;
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 13px;
 }

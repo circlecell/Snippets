@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -8,16 +10,21 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-body {
-  background: #f8f6f6;
-  color: #404040;
-  font-family: 'Lucida Grande', Verdana, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 20px;
-}
+$colors: red #d02e17,
+         blue #3471b8,
+         green #3e952d,
+         cyan #2eabb3,
+         brown #c8a22e,
+         pink #b62b89,
+         purple #6440be,
+         gray #999;
 
-a:hover, a:active { outline: none; }
+body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-weight: normal;
+  color: #404040;
+  background: #f8f6f6;
+}
 
 .container {
   @include clearfix;
@@ -43,18 +50,9 @@ a:hover, a:active { outline: none; }
   .column { width: 100%; }
 }
 
-$colors: red #d02e17,
-         blue #3471b8,
-         green #3e952d,
-         cyan #2eabb3,
-         brown #c8a22e,
-         pink #b62b89,
-         purple #6440be,
-         gray #999;
-
 .button {
-  position: relative;
   display: inline-block;
+  position: relative;
   height: 33px;
   line-height: 33px;
   padding: 0 15px;
@@ -64,6 +62,7 @@ $colors: red #d02e17,
   text-shadow: 0 -1px rgba(black, .3);
   border: 2px solid;
   border-radius: 7px;
+  outline: 0;
   @include box-shadow(0 2px 1px rgba(black, .25));
 
   &:before, &:after {
@@ -72,16 +71,22 @@ $colors: red #d02e17,
   }
 
   &:before {
-    top: -5px; right: -5px; bottom: -5px; left: -5px;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
     z-index: -1;
     border-radius: 9px;
   }
 
   &:after {
-    top: 0; right: 0; bottom: 0; left: 0;
-    border-radius: 7px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     border: 2px solid rgba(white, .1);
     border-bottom: 0;
+    border-radius: 7px;
   }
 }
 
@@ -126,44 +131,3 @@ $colors: red #d02e17,
 }
 
 .lt-ie9 .button:before { display: none; }
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #777;
-  text-shadow: 0 1px rgba(white, .7);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #1c74c8;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: white;
-      text-shadow: 0 1px #0063A6;
-      background: #0090D2;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
-}

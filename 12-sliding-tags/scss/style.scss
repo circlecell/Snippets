@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -8,38 +10,21 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$siteWidth: 380px;
-
-body {
-  background: #eee;
-  color: #404040;
-  font-family: 'Lucida Grande', Verdana, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 20px;
-}
-
-a {
-  color: #1e7ad3;
-  text-decoration: none;
-
-  &:hover { text-decoration: underline; }
-}
-
-.container {
-  width: $siteWidth;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main {
-  margin-top: 50px;
-  @extend .container;
-}
-
 $tagsHeight: 26px;
 $tagsDefaultColor: #eb6b22;
 $tagsColors: green #65bb34, blue #56a3d5;
+
+body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-weight: normal;
+  color: #404040;
+  background: #eee;
+}
+
+.container {
+  margin: 50px auto;
+  width: 380px;
+}
 
 .tags {
   @include clearfix;
@@ -56,7 +41,7 @@ $tagsColors: green #65bb34, blue #56a3d5;
 
     &:after {
       content: '';
-      z-index: 3;
+      z-index: 2;
       position: absolute;
       top: round($tagsHeight / 2 - 3px);
       right: -2px;
@@ -80,6 +65,7 @@ $tagsColors: green #65bb34, blue #56a3d5;
     padding: 0 9px 0 8px;
     font-size: 12px;
     color: #555;
+    text-decoration: none;
     text-shadow: 0 1px white;
     background: #fafafa;
     border-width: 1px 0 1px 1px;
@@ -89,14 +75,10 @@ $tagsColors: green #65bb34, blue #56a3d5;
     @include linear-gradient(top, #fcfcfc, #f0f0f0);
     @include box-shadow(inset 0 0 0 1px rgba(white, .7), 0 1px 2px rgba(black, .05));
 
-    &:hover {
-      text-decoration: none;
-
-      span {
-        padding: 0 7px 0 6px;
-        max-width: 40px;
-        @include box-shadow(inset 0 0 0 1px rgba(white, .15), 1px 1px 2px rgba(black, .2));
-      }
+    &:hover span {
+      padding: 0 7px 0 6px;
+      max-width: 40px;
+      @include box-shadow(inset 0 0 0 1px rgba(white, .15), 1px 1px 2px rgba(black, .2));
     }
   }
 
@@ -110,13 +92,13 @@ $tagsColors: green #65bb34, blue #56a3d5;
     height: $tagsHeight - 2px;
     line-height: $tagsHeight - 5px;
     padding: 0 0 0 2px;
-    opacity: .95;
     color: white;
     text-shadow: 0 -1px rgba(black, .3);
     background: $tagsDefaultColor;
     border: 1px solid;
     border-color: darken($tagsDefaultColor, 8%) darken($tagsDefaultColor, 10%) darken($tagsDefaultColor, 12%);
     border-radius: 0 2px 2px 0;
+    opacity: .95;
     @include linear-gradient(top, lighten($tagsDefaultColor, 5%), darken($tagsDefaultColor, 5%));
     @include transition(.3s ease-out);
     @include transition-property(padding, max-width);
@@ -138,45 +120,4 @@ $tagsColors: green #65bb34, blue #56a3d5;
       @include linear-gradient(top, lighten($color, 5%), darken($color, 5%));
     }
   }
-}
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #777;
-  text-shadow: 0 1px rgba(white, .7);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #1c74c8;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: white;
-      text-shadow: 0 1px #0063A6;
-      background: #0090D2;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
 }

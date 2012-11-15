@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -8,30 +10,15 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
+$switchLabelWidth: 37px;
+
 body {
-  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
-  font-size: 13px;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
   color: #404040;
   background: black url('../img/bg.jpg') 0 0 no-repeat;
   background-size: cover;
 }
-
-$sprite: url('../img/icons.png');
-
-[class*="icon-"] {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-image: $sprite;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  @include hide-text;
-}
-
-.icon-cloud { background-position: 0 0; }
-.icon-settings { background-position: -40px 0; }
 
 .window {
   margin: 80px auto;
@@ -44,9 +31,9 @@ $sprite: url('../img/icons.png');
 }
 
 .window-titlebar {
-  height: 25px;
   margin: 0 0 5px;
   padding: 0 7px;
+  height: 25px;
   border-radius: 7px 7px 0 0;
   @include linear-gradient(top, rgba(white, .3) 0%, // Safari 5.0 doesn't support pixel values
                                 rgba(white, .03) 64%,
@@ -72,7 +59,8 @@ $sprite: url('../img/icons.png');
   &:before {
     content: '';
     position: absolute;
-    top: 3px; left: 6px;
+    top: 3px;
+    left: 6px;
     width: 2px;
     height: 1px;
     background: rgba(white, .7);
@@ -111,8 +99,6 @@ $sprite: url('../img/icons.png');
   @include box-shadow(0 0 2px rgba(black, .4));
 }
 
-$labelWidth: 37px;
-
 .switch-container {
   display: block;
   padding: 5px 5px 5px 10px;
@@ -130,7 +116,7 @@ $labelWidth: 37px;
   position: relative;
   float: right;
   line-height: 21px;
-  width: $labelWidth * 2;
+  width: $switchLabelWidth * 2;
   overflow: hidden;
   background: #4b4b4b;
   border: 1px solid;
@@ -146,7 +132,7 @@ $labelWidth: 37px;
 
 .switch-label {
   float: left;
-  width: $labelWidth;
+  width: $switchLabelWidth;
   font-size: 12px;
   color: #fafafa;
   text-shadow: 0 -1px rgba(black, .8);
@@ -156,8 +142,10 @@ $labelWidth: 37px;
 
 .switch-handle {
   position: absolute;
-  top: 0; bottom: 0; left: 0;
-  width: $labelWidth - 2px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: $switchLabelWidth - 2px;
   background: #c8c8c8;
   border-radius: 3px;
   @include linear-gradient(top, #d2d2d2, #888);
@@ -176,46 +164,21 @@ $labelWidth: 37px;
                                   #bb0096 51%,
                                   #c331a0 100%);
 
-    .switch-handle { left: $labelWidth + 2px; }
+    .switch-handle { left: $switchLabelWidth + 2px; }
   }
 }
 
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #ddd;
-  text-shadow: 0 -1px rgba(black, .35);
-  background: rgba(black, .3);
-  border-radius: 3px;
+$sprite: url('../img/icons.png');
 
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: white;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: #111;
-      text-shadow: none;
-      background: white;
-    }
-  }
+[class*="icon-"] {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: $sprite;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  @include hide-text;
 }
 
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
-}
+.icon-cloud { background-position: 0 0; }
+.icon-settings { background-position: -40px 0; }

@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -9,24 +11,20 @@
  */
 
 $siteWidth: 540px;
+$navHeight: 36px;
+$navBackgroundColor: #464b4c;
 
 body {
-  background: #ecedef;
-  color: #404040;
-  font-family: 'Lucida Grande', Verdana, sans-serif;
-  font-size: 13px;
+  font: 13px/18px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 18px;
+  color: #404040;
+  background: #ecedef;
 }
 
 .container {
+  margin: 0 auto;
   width: $siteWidth;
-  margin-left: auto;
-  margin-right: auto;
 }
-
-$navHeight: 36px;
-$navBackgroundColor: #464b4c;
 
 header {
   padding-top: 100px;
@@ -62,12 +60,12 @@ nav {
     padding: 0 20px;
     line-height: $navHeight;
     color: #ddd;
+    text-decoration: none;
     text-shadow: 0 -1px darken($navBackgroundColor, 10%);
     border-left: 1px solid lighten($navBackgroundColor, 3%);
     border-left: 1px solid rgba(white, .06);
     border-right: 1px solid darken($navBackgroundColor, 7%);
     border-right: 1px solid rgba(black, .20);
-    text-decoration: none;
     cursor: pointer;
 
     &:hover {
@@ -77,12 +75,12 @@ nav {
   }
 
   li.active a, li.active a:hover, a:active {
-    border-left: 0;
-    border-right: 0;
     padding: 0 21px;
     line-height: $navHeight - 3px;
     color: #eee;
     background: darken($navBackgroundColor, 8%);
+    border-left: 0;
+    border-right: 0;
     border-bottom: 3px solid #48a9c0;
     @include linear-gradient(top, lighten($navBackgroundColor, 1%), darken($navBackgroundColor, 8%));
     @include box-shadow(inset 0 -1px darken($navBackgroundColor, 20%), inset 0 -1px 8px rgba(black, .2));
@@ -92,45 +90,4 @@ nav {
   li.red a, li.red a:active { border-bottom-color: #a54e49; }
   li.purple a, li.purple a:active { border-bottom-color: #c052b9; }
   li.yellow a, li.yellow a:active { border-bottom-color: #c0bb30; }
-}
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #777;
-  text-shadow: 0 1px rgba(white, .7);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #1c74c8;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: white;
-      text-shadow: 0 1px #0063A6;
-      background: #0090D2;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
 }

@@ -1,8 +1,8 @@
 .about {
   margin: 80px auto;
   padding: 8px;
-  width: 260px;
-  font: 11px/18px 'Lucida Grande', Verdana, sans-serif;
+  width: 240px;
+  font: 10px/18px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #777;
   text-align: center;
   text-shadow: 0 1px rgba(white, .25);
@@ -18,7 +18,10 @@
     border-radius: 2px;
     @include transition(.1s);
 
-    &:hover { background: rgba(white, .7); }
+    &:hover {
+      text-decoration: none;
+      background: rgba(white, .7);
+    }
   }
 }
 
@@ -34,7 +37,7 @@
 }
 
 .about-author {
-  margin-top: 8px;
+  margin-top: 5px;
 
   > a {
     padding: 1px 3px;

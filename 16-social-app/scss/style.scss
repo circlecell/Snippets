@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -8,16 +10,14 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$zIndex: 10;
-$siteWidth: 380px;
+$mainColor: #dee5f4;
+$sideColor: #59afd2;
 
 body {
-  background: #2e5270;
-  color: #404040;
-  font-family: 'Lucida Grande', Verdana, sans-serif;
-  font-size: 13px;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
+  color: #404040;
+  background: #2e5270;
 }
 
 a {
@@ -29,35 +29,13 @@ a {
 
 .container {
   margin: 50px auto;
-  width: $siteWidth;
+  width: 640px;
 }
-
-$icons: ('twitter', 0 0),
-        ('rss', -20px 0),
-        ('facebook', -40px 0),
-        ('dribbble', -60px 0),
-        ('plus', -80px 0);
-
-[class*="icon-"] {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url('../img/icons.png');
-  background-repeat: no-repeat;
-  @include hide-text;
-}
-
-@each $pair in $icons {
-  .icon-#{nth($pair, 1)} { background-position: nth($pair, 2); }
-}
-
-$mainColor: #dee5f4;
-$sideColor: #59afd2;
 
 .app {
   position: relative;
-  width: 320px;
   margin: 0 auto;
+  width: 320px;
   overflow: hidden;
   background: $sideColor;
   border-radius: 3px;
@@ -69,11 +47,12 @@ $sideColor: #59afd2;
   border-radius: 3px 0 0 3px;
 
   a {
-    position: relative;
     display: block;
+    position: relative;
     width: 36px;
     height: 38px;
     @include hide-text;
+    @include transition(background .15s);
   }
 
   i {
@@ -81,7 +60,6 @@ $sideColor: #59afd2;
     top: 50%;
     left: 50%;
     margin: -10px 0 0 -10px;
-    cursor: pointer;
   }
 
   .add {
@@ -118,9 +96,9 @@ $sideColor: #59afd2;
   }
 
   .active a, a:active {
-    cursor: default;
-    z-index: 10;
+    z-index: 2;
     background: $mainColor;
+    cursor: default;
 
     i { background-image: url('../img/icons_active.png'); }
   }
@@ -145,13 +123,14 @@ $sideColor: #59afd2;
   position: relative;
   padding: 12px 15px 12px 70px;
   line-height: 18px;
-  color: #626c80;
   font-size: 11px;
+  color: #626c80;
   text-shadow: 0 1px rgba(white, .7);
   background: $mainColor;
   border-top: 1px solid lighten($mainColor, 3%);
   border-bottom: 1px solid darken($mainColor, 5%);
   @include linear-gradient(bottom left, $mainColor 85%, darken($mainColor, 6%) 100%);
+  @include transition(background .15s);
 
   &:first-child {
     border-top: 0;
@@ -177,12 +156,12 @@ $sideColor: #59afd2;
     left: 15px;
 
     &:before {
+      content: '';
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
-      content: '';
       border: 1px solid rgba(black, .3);
       border-bottom-color: rgba(black, .4);
       border-radius: 3px;
@@ -199,9 +178,9 @@ $sideColor: #59afd2;
 
   &:hover {
     z-index: 2;
-    cursor: pointer;
     background: darken($mainColor, 4%);
     border-color: darken($mainColor, 8%);
+    cursor: pointer;
     @include box-shadow(inset 0 1px rgba(white, .25),
                         0 1px darken($mainColor, 1%),
                         0 -1px $mainColor);
@@ -209,59 +188,35 @@ $sideColor: #59afd2;
 
   &:active, &.selected {
     z-index: 3;
-    cursor: auto;
     background: darken($mainColor, 8%);
     border-color: darken($mainColor, 25%);
+    cursor: auto;
     @include box-shadow(inset 0 0 6px rgba(black, .3),
                         0 1px $mainColor,
                         0 -1px $mainColor);
   }
 }
 
-.lt-ie8 { // IE 7
+.lt-ie8 {
   .side a { vertical-align: top; }
   .main { margin: 0 35px 0 0; left: 35px; }
 }
 
-.side a, .item { @include transition(background .15s); }
+$icons: ('twitter', 0 0),
+        ('rss', -20px 0),
+        ('facebook', -40px 0),
+        ('dribbble', -60px 0),
+        ('plus', -80px 0);
 
-.about {
-  margin: 80px auto 20px;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #aaa;
-  text-shadow: 0 -1px rgba(black, .2);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #fafafa;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: #111;
-      text-shadow: none;
-      background: #fafafa;
-    }
-  }
+[class*="icon-"] {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/icons.png');
+  background-repeat: no-repeat;
+  @include hide-text;
 }
 
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
+@each $pair in $icons {
+  .icon-#{nth($pair, 1)} { background-position: nth($pair, 2); }
 }

@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -8,20 +10,16 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$siteWidth: 480px;
-
 body {
-  color: #404040;
-  font-family: 'Lucida Grande', Verdana, sans-serif;
-  font-size: 13px;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
+  color: #404040;
   background: #5a6571 url('../img/bg.png') 0 0 repeat;
 }
 
 .container {
   margin: 100px auto;
-  width: $siteWidth;
+  width: 640px;
   text-align: center;
 }
 
@@ -56,50 +54,9 @@ body {
   }
 
   &:active {
-    border: 0;
     padding: 1px;
     background: #8c9da5;
+    border: 0;
     @include linear-gradient(top, #5f7681 0%, #8c9da5 45%, #9dabb1 100%);
   }
-}
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #aaa;
-  text-shadow: 0 -1px rgba(black, .2);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #fafafa;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: #111;
-      text-shadow: none;
-      background: #fafafa;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
 }

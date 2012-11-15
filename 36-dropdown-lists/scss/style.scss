@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -9,10 +11,8 @@
  */
 
 body {
-  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
-  font-size: 13px;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
   color: #404040;
   background: #93cedf;
 }
@@ -29,8 +29,8 @@ body {
 }
 
 .dropdown {
-  position: relative;
   display: inline-block;
+  position: relative;
   overflow: hidden;
   height: 28px;
   width: 150px;
@@ -69,10 +69,10 @@ body {
 .dropdown-select {
   position: relative;
   width: 130%;
-  height: 28px;
-  line-height: 14px;
   margin: 0;
   padding: 6px 8px 6px 10px;
+  height: 28px;
+  line-height: 14px;
   font-size: 12px;
   color: #62717a;
   text-shadow: 0 1px white;
@@ -135,45 +135,4 @@ body {
       text-shadow: 0 1px rgba(black, .4);
     }
   }
-}
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #777;
-  text-shadow: 0 1px rgba(white, .5);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #1468c8;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: white;
-      text-shadow: 0 1px #0063A6;
-      background: #0090D2;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
 }

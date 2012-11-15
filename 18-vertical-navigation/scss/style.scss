@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -8,40 +10,18 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-$siteWidth: 480px;
-
 body {
-  color: #404040;
-  font-family: 'Lucida Grande', Verdana, sans-serif;
-  font-size: 13px;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
+  color: #404040;
   background: #30353b url('../img/bg.png') 0 0 repeat;
 }
 
 .container {
   margin: 80px auto;
-  width: $siteWidth;
+  width: 640px;
 
   .vnav { margin: 0 auto; }
-}
-
-$icons: ('friends', 0 0),
-        ('video', -20px 0),
-        ('photo', -40px 0),
-        ('podcast', -60px 0);
-
-[class*="icon-"] {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url('../img/icons.png');
-  background-repeat: no-repeat;
-  @include hide-text;
-}
-
-@each $pair in $icons {
-  .icon-#{nth($pair, 1)} { background-position: nth($pair, 2); }
 }
 
 .vnav {
@@ -66,8 +46,8 @@ $icons: ('friends', 0 0),
 .vnav-item {
   position: relative;
   padding: 0 12px 0 37px;
-  color: white;
   font-size: 13px;
+  color: white;
   text-shadow: 0 1px rgba(black, .35);
   background: #505968;
   border-top: 1px solid #878e96;
@@ -141,43 +121,20 @@ $icons: ('friends', 0 0),
   li:last-child a { border-bottom-color: white; }
 }
 
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #aaa;
-  text-shadow: 0 -1px rgba(black, .2);
-  background: rgba(black, .05);
-  border-radius: 3px;
+$icons: ('friends', 0 0),
+        ('video', -20px 0),
+        ('photo', -40px 0),
+        ('podcast', -60px 0);
 
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #fafafa;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: #111;
-      text-shadow: none;
-      background: #fafafa;
-    }
-  }
+[class*="icon-"] {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/icons.png');
+  background-repeat: no-repeat;
+  @include hide-text;
 }
 
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
+@each $pair in $icons {
+  .icon-#{nth($pair, 1)} { background-position: nth($pair, 2); }
 }

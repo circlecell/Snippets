@@ -1,4 +1,6 @@
-@import '../../shared/mixins', '../../shared/reset';
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
 
 /*
  * Copyright (c) 2012 Thibaut Courouble
@@ -9,31 +11,18 @@
  */
 
 $siteWidth: 680px;
+$navHeight: 34px;
+$navBackgroundColor: #759aaf;
 
 body {
-  background: #ecedef;
-  color: #404040;
-  font-family: 'Lucida Grande', Verdana, sans-serif;
-  font-size: 13px;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-weight: normal;
-  line-height: 20px;
-}
-
-a {
-  color: #1e7ad3;
-  text-decoration: none;
-
-  &:hover { text-decoration: underline; }
+  color: #404040;
+  background: #ecedef;
 }
 
 .container {
-  width: $siteWidth;
-  margin-left: auto;
-  margin-right: auto;
 }
-
-$navHeight: 34px;
-$navBackgroundColor: #759aaf;
 
 header {
   padding-top: 60px;
@@ -47,65 +36,70 @@ nav {
   border-bottom: 5px solid white;
   @include box-shadow(inset 0 -2px 1px rgba(black, .03));
 
-  > ul {
-    @extend .container;
+}
 
-    > li {
-      float: left;
-      margin-right: 3px;
+.nav {
+  margin: 0 auto;
+  width: $siteWidth;
 
-      > a {
-        display: block;
-        height: $navHeight;
-        line-height: $navHeight;
-        padding: 0 20px;
-        color: white;
-        font-weight: bold;
-        text-shadow: 0 -1px rgba(black, .3);
-        background: $navBackgroundColor;
-        border-radius: 3px 3px 0 0;
-        @include linear-gradient(top, lighten($navBackgroundColor, 12%), $navBackgroundColor);
-        @include box-shadow(inset 0 1px rgba(white, .3), inset 0 -2px 2px rgba(black, .03), 0 2px white, 0 0 2px rgba(black, .2));
+  a {
+    display: block;
+    text-decoration: none;
+  }
 
-        &:hover {
-          text-decoration: none;
-          background: lighten($navBackgroundColor, 5%);
-          @include linear-gradient(top, lighten($navBackgroundColor, 18%), lighten($navBackgroundColor, 5%));
-        }
-      }
+  > li {
+    float: left;
+    margin-right: 3px;
+  }
 
-      &.active > a, & > a:active, &.dropdown:hover > a {
-        background: white;
-        color: #404040;
-        text-shadow: none;
-        @include box-shadow(0 2px white, 0 0 2px rgba(black, .2));
-      }
+  > li > a {
+    height: $navHeight;
+    line-height: $navHeight;
+    padding: 0 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(black, .3);
+    background: $navBackgroundColor;
+    border-radius: 3px 3px 0 0;
+    @include linear-gradient(top, lighten($navBackgroundColor, 12%), $navBackgroundColor);
+    @include box-shadow(inset 0 1px rgba(white, .3), inset 0 -2px 2px rgba(black, .03), 0 2px white, 0 0 2px rgba(black, .2));
+
+    &:hover {
+      text-decoration: none;
+      background: lighten($navBackgroundColor, 5%);
+      @include linear-gradient(top, lighten($navBackgroundColor, 18%), lighten($navBackgroundColor, 5%));
     }
   }
 
+  > li.active > a, > li > a:active, > .dropdown:hover > a {
+    background: white;
+    color: #404040;
+    text-shadow: none;
+    @include box-shadow(0 2px white, 0 0 2px rgba(black, .2));
+  }
+
   a.icon {
-    $width: $navHeight * 1.2;
     position: relative;
-    width: $width;
+    width: $navHeight * 1.2;
     padding: 0;
 
-    span {
+    > span {
       display: block;
-      text-indent: -1000px;
-      overflow: hidden;
       position: absolute;
       top: round(($navHeight - 16px) / 2);
-      left: round(($width - 16px) / 2);
+      left: round(($navHeight * 1.2 - 16px) / 2);
       height: 16px;
       width: 16px;
       background-repeat: no-repeat;
       background-position: 0 0;
+      @include hide-text;
     }
 
-    &.home span { background-image: url('../img/home.png'); }
+    &.home > span { background-image: url('../img/home.png'); }
   }
 
-  .active a.icon, a.icon:active { span { background-position: 0 -16px; } }
+  .active a.icon, a.icon:active { > span { background-position: 0 -16px; } }
 }
 
 .dropdown {
@@ -138,53 +132,11 @@ nav {
     + li { border-top: 1px solid #eee; }
 
     a {
-      display: block;
       color: #555;
       padding: 8px 18px;
       margin: 0 -18px;
 
-      &:hover { color: #222; }
+      &:hover { color: black; }
     }
   }
-}
-
-.about {
-  margin: 80px auto;
-  padding: 15px 20px;
-  width: 300px;
-  text-align: center;
-  color: #777;
-  text-shadow: 0 1px rgba(white, .7);
-  background: rgba(black, .05);
-  border-radius: 3px;
-
-  a {
-    padding: 1px 3px;
-    margin: 0 -1px;
-    color: #1c74c8;
-    text-decoration: none;
-    border-radius: 2px;
-
-    &:hover {
-      color: white;
-      text-shadow: 0 1px #0063A6;
-      background: #0090D2;
-    }
-  }
-}
-
-.links {
-  @include clearfix;
-
-  a {
-    padding: 6px 0;
-    float: left;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.author {
-  margin-top: 15px;
-  font-size: 11px;
 }
