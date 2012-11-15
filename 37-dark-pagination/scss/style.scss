@@ -8,10 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-/* ========================================================
-   Page
-   ===================================================== */
-
 body {
   font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-size: 13px;
@@ -28,10 +24,6 @@ body {
 
   .pagination { margin: 15px 0; }
 }
-
-/* ========================================================
-   Pagination
-   ===================================================== */
 
 .pagination {
   padding: 8px;
@@ -102,10 +94,6 @@ body {
   > a { background-color: rgba(170, 170, 255, .01); }
   > a.hover { background-color: rgba(120, 130, 255, .08); }
 }
-
-/* ========================================================
-   About
-   ===================================================== */
 
 .about {
   margin: 80px auto;

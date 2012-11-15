@@ -13,10 +13,6 @@ input { @include box-sizing(border-box); }
 input:-moz-placeholder { color: #999; }
 input::-webkit-input-placeholder { color: #999; }
 
-/* ========================================================
-   Page
-   ===================================================== */
-
 html, body { min-height: 100%; }
 
 body {
@@ -28,10 +24,6 @@ body {
   background: #ccc;
   @include radial-gradient(center, circle cover, #ddd, #a7a7a7 80%);
 }
-
-/* ========================================================
-   Newsletter Form
-   ===================================================== */
 
 .subscribe {
   margin: 80px auto;
@@ -122,10 +114,6 @@ body {
 }
 
 .lt-ie9 .subscribe-input { line-height: 33px; }
-
-/* ========================================================
-   About
-   ===================================================== */
 
 .about {
   margin: 80px auto;

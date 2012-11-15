@@ -8,10 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-/* ========================================================
-   Page
-   ===================================================== */
-
 $siteWidth: 540px;
 
 body {
@@ -28,10 +24,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* ========================================================
-   Header & Navigation
-   ===================================================== */
 
 $navHeight: 36px;
 $navBackgroundColor: #464b4c;
@@ -101,10 +93,6 @@ nav {
   li.purple a, li.purple a:active { border-bottom-color: #c052b9; }
   li.yellow a, li.yellow a:active { border-bottom-color: #c0bb30; }
 }
-
-/* ========================================================
-   About
-   ===================================================== */
 
 .about {
   margin: 80px auto;

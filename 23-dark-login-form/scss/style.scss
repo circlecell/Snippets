@@ -8,10 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-/* ========================================================
-   Page
-   ===================================================== */
-
 $siteWidth: 400px;
 $baseFontSize: 14px;
 
@@ -32,10 +28,6 @@ a {
 
   &:hover { text-decoration: underline; }
 }
-
-/* ========================================================
-   Login form
-   ===================================================== */
 
 $inputHeight: 40px;
 $labelWidth: 100px;
@@ -199,10 +191,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
   .about { background: #313131; }
 }
-
-/* ========================================================
-   About
-   ===================================================== */
 
 .about {
   margin: 80px auto;

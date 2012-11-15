@@ -8,10 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-/* ========================================================
-   Page
-   ===================================================== */
-
 body {
   font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-size: 13px;
@@ -21,10 +17,6 @@ body {
   background: black url('../img/bg.jpg') 0 0 no-repeat;
   background-size: cover;
 }
-
-/* ========================================================
-   Icons
-   ===================================================== */
 
 $sprite: url('../img/icons.png');
 
@@ -40,10 +32,6 @@ $sprite: url('../img/icons.png');
 
 .icon-cloud { background-position: 0 0; }
 .icon-settings { background-position: -40px 0; }
-
-/* ========================================================
-   Window
-   ===================================================== */
 
 .window {
   margin: 80px auto;
@@ -123,10 +111,6 @@ $sprite: url('../img/icons.png');
   @include box-shadow(0 0 2px rgba(black, .4));
 }
 
-/* ========================================================
-   Switch
-   ===================================================== */
-
 $labelWidth: 37px;
 
 .switch-container {
@@ -195,10 +179,6 @@ $labelWidth: 37px;
     .switch-handle { left: $labelWidth + 2px; }
   }
 }
-
-/* ========================================================
-   About
-   ===================================================== */
 
 .about {
   margin: 80px auto;

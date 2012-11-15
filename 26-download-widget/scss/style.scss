@@ -8,10 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-/* ========================================================
-   Page
-   ===================================================== */
-
 html, body { min-height: 100%; }
 
 body {
@@ -26,10 +22,6 @@ body {
 
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
-
-/* ========================================================
-   Icons
-   ===================================================== */
 
 $sprite: url('../img/sprite.png');
 
@@ -46,10 +38,6 @@ $sprite: url('../img/sprite.png');
 .icon-psd-40 { background-position: 0 0; }
 .icon-ai-24 { background-position: -40px 0; }
 .icon-close { background-position: -40px -24px; }
-
-/* ========================================================
-   Widget
-   ===================================================== */
 
 .widget {
   margin: 80px auto;
@@ -201,10 +189,6 @@ $sprite: url('../img/sprite.png');
   .widget-close:hover { background: #d8d8d8; }
   .widget-toolbar { border-top-color: #484848; }
 }
-
-/* ========================================================
-   About
-   ===================================================== */
 
 .about {
   margin: 80px auto;

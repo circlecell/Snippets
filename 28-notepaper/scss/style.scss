@@ -8,10 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-/* ========================================================
-   Page
-   ===================================================== */
-
 body {
   font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
   font-size: 12px;
@@ -20,10 +16,6 @@ body {
   color: #404040;
   background: #dce1e1;
 }
-
-/* ========================================================
-   Notepaper
-   ===================================================== */
 
 $backgroundColor: #f2f6c1;
 $borderColor: #c3baaa;
@@ -112,10 +104,6 @@ $lineColor: #efcfad;
 }
 
 .lt-ie8 .notepaper { padding: 15px 25px; } /* IE 6 & 7 */
-
-/* ========================================================
-   About
-   ===================================================== */
 
 .about {
   margin: 80px auto;

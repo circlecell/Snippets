@@ -8,10 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-/* ========================================================
-   Page
-   ===================================================== */
-
 $siteWidth: 400px;
 
 body {
@@ -29,10 +25,6 @@ body {
   width: $siteWidth;
   @include radial-gradient(center, cover, rgba(white, .1), transparent);
 }
-
-/* ========================================================
-   Switches
-   ===================================================== */
 
 $labelWidth: 58px;
 
@@ -112,10 +104,6 @@ $labelWidth: 58px;
     @include linear-gradient(top, #e0dd94, #c4bb61);
   }
 }
-
-/* ========================================================
-   About
-   ===================================================== */
 
 .about {
   margin: 0 auto 80px;

@@ -8,10 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-/* ========================================================
-   Page
-   ===================================================== */
-
 $siteWidth: 350px;
 
 body {
@@ -35,10 +31,6 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* ========================================================
-   Login form
-   ===================================================== */
 
 .login {
   position: relative;
@@ -172,10 +164,6 @@ input[type=submit] {
 .lt-ie9 {
   input[type=text], input[type=password] { line-height: 34px; }
 }
-
-/* ========================================================
-   About
-   ===================================================== */
 
 .about {
   margin: 80px auto 20px;

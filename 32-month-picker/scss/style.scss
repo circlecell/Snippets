@@ -8,10 +8,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-/* ========================================================
-   Page
-   ===================================================== */
-
 html, body { min-height: 100%; }
 
 body {
@@ -23,10 +19,6 @@ body {
   background: #282537;
   @include radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
 }
-
-/* ========================================================
-   Month Picker
-   ===================================================== */
 
 .month-picker {
   margin: 100px auto;
@@ -97,10 +89,6 @@ body {
   text-shadow: 0 1px rgba(white, .1);
   text-decoration: none;
 }
-
-/* ========================================================
-   About
-   ===================================================== */
 
 .about {
   margin: 80px auto;
