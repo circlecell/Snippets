@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/16-social-app](http://demo.webinterfacelab.com/16-social-app/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/mini-social-app/preview.png)](http://www.webinterfacelab.com/snippets/mini-social-app)
+[![Preview](http://cdn.webinterfacelab.com/snippets/mini-social-app/preview-580.png)](http://www.webinterfacelab.com/snippets/mini-social-app)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

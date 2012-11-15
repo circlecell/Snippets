@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/8-login-form](http://demo.webinterfacelab.com/8-login-form/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/login-form/preview.png)](http://www.webinterfacelab.com/snippets/login-form)
+[![Preview](http://cdn.webinterfacelab.com/snippets/login-form/preview-580.png)](http://www.webinterfacelab.com/snippets/login-form)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

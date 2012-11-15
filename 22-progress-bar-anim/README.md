@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/22-progress-bar-anim](http://demo.webinterfacelab.com/22-progress-bar-anim/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/animated-progress-bar/preview.png)](http://www.webinterfacelab.com/snippets/animated-progress-bar)
+[![Preview](http://cdn.webinterfacelab.com/snippets/animated-progress-bar/preview-580.png)](http://www.webinterfacelab.com/snippets/animated-progress-bar)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

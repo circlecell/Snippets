@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/13-profile-popover](http://demo.webinterfacelab.com/13-profile-popover/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/animated-profile-popover/preview.png)](http://www.webinterfacelab.com/snippets/animated-profile-popover)
+[![Preview](http://cdn.webinterfacelab.com/snippets/animated-profile-popover/preview-580.png)](http://www.webinterfacelab.com/snippets/animated-profile-popover)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

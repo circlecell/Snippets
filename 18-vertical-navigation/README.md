@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/18-vertical-navigation](http://demo.webinterfacelab.com/18-vertical-navigation/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/vertical-navigation-menu/preview.png)](http://www.webinterfacelab.com/snippets/vertical-navigation-menu)
+[![Preview](http://cdn.webinterfacelab.com/snippets/vertical-navigation-menu/preview-580.png)](http://www.webinterfacelab.com/snippets/vertical-navigation-menu)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

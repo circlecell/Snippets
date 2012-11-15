@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/12-sliding-tags](http://demo.webinterfacelab.com/12-sliding-tags/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/sliding-tags/preview.png)](http://www.webinterfacelab.com/snippets/sliding-tags)
+[![Preview](http://cdn.webinterfacelab.com/snippets/sliding-tags/preview-580.png)](http://www.webinterfacelab.com/snippets/sliding-tags)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

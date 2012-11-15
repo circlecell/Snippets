@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/31-growl-notifications](http://demo.webinterfacelab.com/31-growl-notifications/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/growl-notifications/preview.png)](http://www.webinterfacelab.com/snippets/growl-notifications)
+[![Preview](http://cdn.webinterfacelab.com/snippets/growl-notifications/preview-580.png)](http://www.webinterfacelab.com/snippets/growl-notifications)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/19-date-picker](http://demo.webinterfacelab.com/19-date-picker/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/mini-calendar-date-picker/preview.png)](http://www.webinterfacelab.com/snippets/mini-calendar-date-picker)
+[![Preview](http://cdn.webinterfacelab.com/snippets/mini-calendar-date-picker/preview-580.png)](http://www.webinterfacelab.com/snippets/mini-calendar-date-picker)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

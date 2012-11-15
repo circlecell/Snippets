@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/10-search-dropdown](http://demo.webinterfacelab.com/10-search-dropdown/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/search-dropdown/preview.png)](http://www.webinterfacelab.com/snippets/search-dropdown)
+[![Preview](http://cdn.webinterfacelab.com/snippets/search-dropdown/preview-580.png)](http://www.webinterfacelab.com/snippets/search-dropdown)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

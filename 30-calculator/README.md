@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/30-chunky-calculator](http://demo.webinterfacelab.com/30-chunky-calculator/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/chunky-calculator/preview.png)](http://www.webinterfacelab.com/snippets/chunky-calculator)
+[![Preview](http://cdn.webinterfacelab.com/snippets/chunky-calculator/preview-580.png)](http://www.webinterfacelab.com/snippets/chunky-calculator)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

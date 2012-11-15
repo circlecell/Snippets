@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/23-dark-login-form](http://demo.webinterfacelab.com/23-dark-login-form/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/dark-login-form/preview.png)](http://www.webinterfacelab.com/snippets/dark-login-form)
+[![Preview](http://cdn.webinterfacelab.com/snippets/dark-login-form/preview-580.png)](http://www.webinterfacelab.com/snippets/dark-login-form)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/34-settings-panel](http://demo.webinterfacelab.com/34-settings-panel/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/settings-panel/preview.png)](http://www.webinterfacelab.com/snippets/settings-panel)
+[![Preview](http://cdn.webinterfacelab.com/snippets/settings-panel/preview-580.png)](http://www.webinterfacelab.com/snippets/settings-panel)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

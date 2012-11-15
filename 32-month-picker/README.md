@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/32-month-picker](http://demo.webinterfacelab.com/32-month-picker/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/month-picker/preview.png)](http://www.webinterfacelab.com/snippets/month-picker)
+[![Preview](http://cdn.webinterfacelab.com/snippets/month-picker/preview-580.png)](http://www.webinterfacelab.com/snippets/month-picker)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

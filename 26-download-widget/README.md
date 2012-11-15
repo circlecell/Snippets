@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/26-download-widget](http://demo.webinterfacelab.com/26-download-widget/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/file-download-widget/preview.png)](http://www.webinterfacelab.com/snippets/file-download-widget)
+[![Preview](http://cdn.webinterfacelab.com/snippets/file-download-widget/preview-580.png)](http://www.webinterfacelab.com/snippets/file-download-widget)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

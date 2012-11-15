@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/29-inset-navigation](http://demo.webinterfacelab.com/29-inset-navigation/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/inset-side-navigation/preview.png)](http://www.webinterfacelab.com/snippets/inset-side-navigation)
+[![Preview](http://cdn.webinterfacelab.com/snippets/inset-side-navigation/preview-580.png)](http://www.webinterfacelab.com/snippets/inset-side-navigation)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

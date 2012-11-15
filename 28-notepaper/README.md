@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/28-notepaper](http://demo.webinterfacelab.com/28-notepaper/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/notepaper-blockquote/preview.png)](http://www.webinterfacelab.com/snippets/notepaper-blockquote)
+[![Preview](http://cdn.webinterfacelab.com/snippets/notepaper-blockquote/preview-580.png)](http://www.webinterfacelab.com/snippets/notepaper-blockquote)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

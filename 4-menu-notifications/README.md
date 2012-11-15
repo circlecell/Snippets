@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/4-menu-notifications](http://demo.webinterfacelab.com/4-menu-notifications/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/menu-with-notification-badges/preview.png)](http://www.webinterfacelab.com/snippets/menu-with-notification-badges)
+[![Preview](http://cdn.webinterfacelab.com/snippets/menu-with-notification-badges/preview-580.png)](http://www.webinterfacelab.com/snippets/menu-with-notification-badges)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/5-progress-bars](http://demo.webinterfacelab.com/5-progress-bars/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/multi-colored-progress-bars/preview.png)](http://www.webinterfacelab.com/snippets/multi-colored-progress-bars)
+[![Preview](http://cdn.webinterfacelab.com/snippets/multi-colored-progress-bars/preview-580.png)](http://www.webinterfacelab.com/snippets/multi-colored-progress-bars)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

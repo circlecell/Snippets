@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/7-mini-dropdown-menu](http://demo.webinterfacelab.com/7-mini-dropdown-menu/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/mini-dropdown-menu/preview.png)](http://www.webinterfacelab.com/snippets/mini-dropdown-menu)
+[![Preview](http://cdn.webinterfacelab.com/snippets/mini-dropdown-menu/preview-580.png)](http://www.webinterfacelab.com/snippets/mini-dropdown-menu)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

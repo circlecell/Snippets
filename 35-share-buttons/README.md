@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/35-share-buttons](http://demo.webinterfacelab.com/35-share-buttons/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/share-buttons/preview.png)](http://www.webinterfacelab.com/snippets/share-buttons)
+[![Preview](http://cdn.webinterfacelab.com/snippets/share-buttons/preview-580.png)](http://www.webinterfacelab.com/snippets/share-buttons)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

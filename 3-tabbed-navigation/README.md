@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/3-tabbed-navigation](http://demo.webinterfacelab.com/3-tabbed-navigation/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/tabbed-navigation/preview.png)](http://www.webinterfacelab.com/snippets/tabbed-navigation)
+[![Preview](http://cdn.webinterfacelab.com/snippets/tabbed-navigation/preview-580.png)](http://www.webinterfacelab.com/snippets/tabbed-navigation)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

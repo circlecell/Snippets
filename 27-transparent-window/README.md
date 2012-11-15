@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/27-transparent-window](http://demo.webinterfacelab.com/27-transparent-window/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/os-x-style-transparent-window/preview.png)](http://www.webinterfacelab.com/snippets/os-x-style-transparent-window)
+[![Preview](http://cdn.webinterfacelab.com/snippets/os-x-style-transparent-window/preview-580.png)](http://www.webinterfacelab.com/snippets/os-x-style-transparent-window)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

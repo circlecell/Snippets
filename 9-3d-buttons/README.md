@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/9-3d-buttons](http://demo.webinterfacelab.com/9-3d-buttons/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/3d-buttons/preview.png)](http://www.webinterfacelab.com/snippets/3d-buttons)
+[![Preview](http://cdn.webinterfacelab.com/snippets/3d-buttons/preview-580.png)](http://www.webinterfacelab.com/snippets/3d-buttons)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/25-dark-horizontal-nav](http://demo.webinterfacelab.com/25-dark-horizontal-nav/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/dark-horizontal-navigation/preview.png)](http://www.webinterfacelab.com/snippets/dark-horizontal-navigation)
+[![Preview](http://cdn.webinterfacelab.com/snippets/dark-horizontal-navigation/preview-580.png)](http://www.webinterfacelab.com/snippets/dark-horizontal-navigation)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

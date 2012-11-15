@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/21-toggle-switches](http://demo.webinterfacelab.com/21-toggle-switches/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/toggle-switches/preview.png)](http://www.webinterfacelab.com/snippets/toggle-switches)
+[![Preview](http://cdn.webinterfacelab.com/snippets/toggle-switches/preview-580.png)](http://www.webinterfacelab.com/snippets/toggle-switches)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 

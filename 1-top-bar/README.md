@@ -2,7 +2,7 @@
 
 **Demo**: [demo.webinterfacelab.com/1-top-bar](http://demo.webinterfacelab.com/1-top-bar/)
 
-[![Preview](http://www.webinterfacelab.com/snippets/top-bar/preview.png)](http://www.webinterfacelab.com/snippets/top-bar)
+[![Preview](http://cdn.webinterfacelab.com/snippets/top-bar/preview-580.png)](http://www.webinterfacelab.com/snippets/top-bar)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 
