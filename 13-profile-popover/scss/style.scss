@@ -16,7 +16,6 @@ html, body { min-height: 100%; }
 
 body {
   font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
-  font-weight: normal;
   color: #404040;
   background: #697ecc;
   @include radial-gradient(center, circle cover, #87a3f5, #697ecc);

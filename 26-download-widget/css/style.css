@@ -110,7 +110,6 @@ html, body {
 
 body {
   font: 12px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
-  font-weight: normal;
   color: #404040;
   background: #47496d;
   background-image: -webkit-radial-gradient(bottom, circle cover, #6b6e8c, #212649);

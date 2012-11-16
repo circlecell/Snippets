@@ -17,7 +17,6 @@ $labelWidth: 100px;
 
 body {
   font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
   color: #404040;
   @extend .bg;
 }
@@ -34,6 +33,7 @@ a {
   margin: 80px auto;
   width: 400px;
   padding-right: 32px;
+  font-weight: 300;
   color: #a8a7a8;
   text-shadow: 1px 1px 0 rgba(black, .8);
 

@@ -110,7 +110,6 @@ table {
 
 body {
   font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
   color: #404040;
 }
 
@@ -127,6 +126,7 @@ a:hover {
   margin: 80px auto;
   width: 400px;
   padding-right: 32px;
+  font-weight: 300;
   color: #a8a7a8;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
 }
