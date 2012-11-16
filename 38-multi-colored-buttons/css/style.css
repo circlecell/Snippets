@@ -1,0 +1,249 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.about {
+  margin: 80px auto;
+  padding: 8px;
+  width: 240px;
+  font: 10px/18px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #bbb;
+  text-align: center;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  background: #333;
+  background: rgba(34, 34, 34, 0.75);
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.4);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+.about a {
+  color: #eee;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.about a:hover {
+  text-decoration: none;
+  background: #555;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.about-links {
+  height: 30px;
+}
+.about-links a {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-author {
+  margin-top: 5px;
+}
+.about-author a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+}
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #dbe2f2;
+  background-image: -webkit-radial-gradient(center, cover, #eaeef7, #d6def0 80%);
+  background-image: -moz-radial-gradient(center, cover, #eaeef7, #d6def0 80%);
+  background-image: -o-radial-gradient(center, cover, #eaeef7, #d6def0 80%);
+  background-image: radial-gradient(center, cover, #eaeef7, #d6def0 80%);
+}
+
+.container {
+  margin: 50px auto;
+  width: 720px;
+  text-align: center;
+}
+.container .button {
+  margin: 10px;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 0 15px 0 15px;
+  line-height: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+  background: #576dce;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: #374fbb #344cb3 #2b3e94;
+  border-radius: 2px;
+  -webkit-font-smoothing: antialiased;
+  background-image: -webkit-linear-gradient(top, #92a0df 0%, #576dce 50%, #3f58c7 80%, #576dce 100%);
+  background-image: -moz-linear-gradient(top, #92a0df 0%, #576dce 50%, #3f58c7 80%, #576dce 100%);
+  background-image: -o-linear-gradient(top, #92a0df 0%, #576dce 50%, #3f58c7 80%, #576dce 100%);
+  background-image: linear-gradient(to bottom, #92a0df 0%, #576dce 50%, #3f58c7 80%, #576dce 100%);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.button:hover, .button.hover {
+  background-color: #5f74d0;
+  border-color: #2d429c #2d429c #253680;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 5px #576dce;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 5px #576dce;
+}
+.button:active, .button.active {
+  border-color: #253680 #2b3e94 #3147a8;
+  background: #475fc9;
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
+}
+.button:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  right: 12px;
+  width: 17px;
+  height: 17px;
+  background: #374fbb;
+  border-radius: 9px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px rgba(255, 255, 255, 0.2);
+}
+.button:after {
+  content: '>';
+  float: right;
+  position: relative;
+  margin-left: 15px;
+  font: bold 18px/33px "Comic Sans MS";
+  /* I tried everything but couldn't get the vertical alignment to be
+     consistent in IE, so this is a hack targeting IE8-9-10. */
+  line-height: 31px\0;
+  color: #6377d1;
+  text-shadow: 0 -1px #8696dc, 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.button-green {
+  background: #75a940;
+  border-color: #5b8432 #567d2f #425f24;
+  background-image: -webkit-linear-gradient(top, #9bc86e 0%, #75a940 50%, #669338 80%, #75a940 100%);
+  background-image: -moz-linear-gradient(top, #9bc86e 0%, #75a940 50%, #669338 80%, #75a940 100%);
+  background-image: -o-linear-gradient(top, #9bc86e 0%, #75a940 50%, #669338 80%, #75a940 100%);
+  background-image: linear-gradient(to bottom, #9bc86e 0%, #75a940 50%, #669338 80%, #75a940 100%);
+}
+.button-green:hover, .button-green.hover {
+  background-color: #7ab043;
+  border-color: #476627 #476627 #354d1d;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 5px #75a940;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 5px #75a940;
+}
+.button-green:active, .button-green.active {
+  border-color: #354d1d #425f24 #4f722b;
+  background: #6b9a3a;
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
+}
+.button-green:before {
+  background: #5b8432;
+}
+.button-green:after {
+  color: #7db444;
+  text-shadow: 0 -1px #94c462, 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.button-red {
+  background: #cf3e38;
+  border-color: #ab2e29 #a32c27 #82231f;
+  background-image: -webkit-linear-gradient(top, #de7a76 0%, #cf3e38 50%, #bb332d 80%, #cf3e38 100%);
+  background-image: -moz-linear-gradient(top, #de7a76 0%, #cf3e38 50%, #bb332d 80%, #cf3e38 100%);
+  background-image: -o-linear-gradient(top, #de7a76 0%, #cf3e38 50%, #bb332d 80%, #cf3e38 100%);
+  background-image: linear-gradient(to bottom, #de7a76 0%, #cf3e38 50%, #bb332d 80%, #cf3e38 100%);
+}
+.button-red:hover, .button-red.hover {
+  background-color: #d14640;
+  border-color: #8a2521 #8a2521 #6d1e1a;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 5px #cf3e38;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 5px #cf3e38;
+}
+.button-red:active, .button-red.active {
+  border-color: #6d1e1a #82231f #962924;
+  background: #c3352f;
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
+}
+.button-red:before {
+  background: #ab2e29;
+}
+.button-red:after {
+  color: #d24a44;
+  text-shadow: 0 -1px #db6e69, 0 1px 1px rgba(0, 0, 0, 0.3);
+}

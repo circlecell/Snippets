@@ -1,0 +1,134 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+$defaultColor: #576dce;
+$colors: green #75a940, red #cf3e38;
+
+html, body { min-height: 100%; }
+
+body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #dbe2f2;
+  @include radial-gradient(center, cover, #eaeef7, #d6def0 80%);
+}
+
+.container {
+  margin: 50px auto;
+  width: 720px;
+  text-align: center;
+
+  .button { margin: 10px; }
+}
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 0 15px 0 15px;
+  line-height: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(black, .5);
+  background: $defaultColor;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: darken($defaultColor, 10%) darken($defaultColor, 12%) darken($defaultColor, 20%);
+  border-radius: 2px;
+  -webkit-font-smoothing: antialiased;
+  @include linear-gradient(top, lighten($defaultColor, 15%) 0%,
+                                $defaultColor 50%,
+                                darken($defaultColor, 6%) 80%,
+                                $defaultColor 100%);
+  @include box-shadow(inset 0 1px rgba(white, .2),
+                      inset 0 0 0 1px rgba(white, .1),
+                      0 1px 2px rgba(black, .2));
+
+  &:hover, &.hover {
+    background-color: lighten($defaultColor, 2%);
+    border-color: darken($defaultColor, 18%) darken($defaultColor, 18%) darken($defaultColor, 25%);
+    @include box-shadow(inset 0 1px rgba(white, .2),
+                        inset 0 0 0 1px rgba(white, .1),
+                        0 1px 5px rgba($defaultColor, 1));
+  }
+
+  &:active, &.active {
+    border-color: darken($defaultColor, 25%) darken($defaultColor, 20%) darken($defaultColor, 15%) ;
+    background: darken($defaultColor, 4%);
+    @include box-shadow(inset 0 1px 4px rgba(black, .3), 0 1px rgba(white, .8));
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    width: 17px;
+    height: 17px;
+    background: darken($defaultColor, 10%);
+    border-radius: 9px;
+    @include box-shadow(inset 0 1px 2px rgba(black, .4), 0 1px rgba(white, .2));
+  }
+
+  &:after {
+    content: '>';
+    float: right;
+    position: relative;
+    margin-left: 15px;
+    font: bold 18px/33px 'Comic Sans MS';
+    /* I tried everything but couldn't get the vertical alignment to be
+       consistent in IE, so this is a hack targeting IE8-9-10. */
+    line-height: 31px\0;
+    color: lighten($defaultColor, 3%);
+    text-shadow: 0 -1px lighten($defaultColor, 12%), 0 1px 1px rgba(black, .3);
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+@each $pair in $colors {
+  .button-#{nth($pair, 1)} {
+    $color: nth($pair, 2);
+
+    background: $color;
+    border-color: darken($color, 10%) darken($color, 12%) darken($color, 20%);
+    @include linear-gradient(top,
+                             lighten($color, 15%) 0%,
+                             $color 50%,
+                             darken($color, 6%) 80%,
+                             $color 100%);
+
+    &:hover, &.hover {
+      background-color: lighten($color, 2%);
+      border-color: darken($color, 18%) darken($color, 18%) darken($color, 25%);
+      @include box-shadow(inset 0 1px rgba(white, .2),
+                          inset 0 0 0 1px rgba(white, .1),
+                          0 1px 5px rgba($color, 1));
+    }
+
+    &:active, &.active {
+      border-color: darken($color, 25%) darken($color, 20%) darken($color, 15%) ;
+      background: darken($color, 4%);
+      @include box-shadow(inset 0 1px 4px rgba(black, .3), 0 1px rgba(white, .8));
+    }
+
+    &:before { background: darken($color, 10%); }
+
+    &:after {
+      color: lighten($color, 3%);
+      text-shadow: 0 -1px lighten($color, 12%), 0 1px 1px rgba(black, .3);
+    }
+  }
+}
