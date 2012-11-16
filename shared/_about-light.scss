@@ -20,6 +20,7 @@
 
     &:hover {
       text-decoration: none;
+      background: #fafafa;
       background: rgba(white, .7);
     }
   }
@@ -28,7 +29,7 @@
 .about-links {
   height: 30px;
 
-  > a {
+  a {
     float: left;
     width: 50%;
     line-height: 30px;
@@ -39,7 +40,7 @@
 .about-author {
   margin-top: 5px;
 
-  > a {
+  a {
     padding: 1px 3px;
     margin: 0 -1px;
   }

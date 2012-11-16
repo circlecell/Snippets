@@ -76,13 +76,14 @@ table {
 }
 .about a:hover {
   text-decoration: none;
+  background: #555;
   background: rgba(255, 255, 255, 0.15);
 }
 
 .about-links {
   height: 30px;
 }
-.about-links > a {
+.about-links a {
   float: left;
   width: 50%;
   line-height: 30px;
@@ -92,7 +93,7 @@ table {
 .about-author {
   margin-top: 5px;
 }
-.about-author > a {
+.about-author a {
   padding: 1px 3px;
   margin: 0 -1px;
 }
