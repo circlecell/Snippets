@@ -63,7 +63,7 @@ table {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
 .about a {
   color: #eee;
@@ -201,21 +201,21 @@ body {
   background-image: -webkit-linear-gradient(top, #e74a29 0%, #e6451b 50%, #d02e17 50%, #b3150b 100%);
   background-image: -moz-linear-gradient(top, #e74a29 0%, #e6451b 50%, #d02e17 50%, #b3150b 100%);
   background-image: -o-linear-gradient(top, #e74a29 0%, #e6451b 50%, #d02e17 50%, #b3150b 100%);
-  background-image: linear-gradient(top, #e74a29 0%, #e6451b 50%, #d02e17 50%, #b3150b 100%);
+  background-image: linear-gradient(to bottom, #e74a29 0%, #e6451b 50%, #d02e17 50%, #b3150b 100%);
 }
 .button.red:before {
   background: #ee442c;
   background-image: -webkit-linear-gradient(top, #b32511, #f3533c);
   background-image: -moz-linear-gradient(top, #b32511, #f3533c);
   background-image: -o-linear-gradient(top, #b32511, #f3533c);
-  background-image: linear-gradient(top, #b32511, #f3533c);
+  background-image: linear-gradient(to bottom, #b32511, #f3533c);
 }
 .button.red:active {
   background: #e63b1b;
   background-image: -webkit-linear-gradient(top, #a9110b 0%, #de3819 60%, #e63b1b 100%);
   background-image: -moz-linear-gradient(top, #a9110b 0%, #de3819 60%, #e63b1b 100%);
   background-image: -o-linear-gradient(top, #a9110b 0%, #de3819 60%, #e63b1b 100%);
-  background-image: linear-gradient(top, #a9110b 0%, #de3819 60%, #e63b1b 100%);
+  background-image: linear-gradient(to bottom, #a9110b 0%, #de3819 60%, #e63b1b 100%);
 }
 .button.red:active:after {
   border-color: #e63b1b;
@@ -231,21 +231,21 @@ body {
   background-image: -webkit-linear-gradient(top, #497fcc 0%, #3d72c8 50%, #3471b8 50%, #2365a0 100%);
   background-image: -moz-linear-gradient(top, #497fcc 0%, #3d72c8 50%, #3471b8 50%, #2365a0 100%);
   background-image: -o-linear-gradient(top, #497fcc 0%, #3d72c8 50%, #3471b8 50%, #2365a0 100%);
-  background-image: linear-gradient(top, #497fcc 0%, #3d72c8 50%, #3471b8 50%, #2365a0 100%);
+  background-image: linear-gradient(to bottom, #497fcc 0%, #3d72c8 50%, #3471b8 50%, #2365a0 100%);
 }
 .button.blue:before {
   background: #4c8ad3;
   background-image: -webkit-linear-gradient(top, #29609f, #5995da);
   background-image: -moz-linear-gradient(top, #29609f, #5995da);
   background-image: -o-linear-gradient(top, #29609f, #5995da);
-  background-image: linear-gradient(top, #29609f, #5995da);
+  background-image: linear-gradient(to bottom, #29609f, #5995da);
 }
 .button.blue:active {
   background: #3d79c8;
   background-image: -webkit-linear-gradient(top, #216298 0%, #3774c4 60%, #3d79c8 100%);
   background-image: -moz-linear-gradient(top, #216298 0%, #3774c4 60%, #3d79c8 100%);
   background-image: -o-linear-gradient(top, #216298 0%, #3774c4 60%, #3d79c8 100%);
-  background-image: linear-gradient(top, #216298 0%, #3774c4 60%, #3d79c8 100%);
+  background-image: linear-gradient(to bottom, #216298 0%, #3774c4 60%, #3d79c8 100%);
 }
 .button.blue:active:after {
   border-color: #3d79c8;
@@ -261,21 +261,21 @@ body {
   background-image: -webkit-linear-gradient(top, #45b436 0%, #3ca933 50%, #3e952d 50%, #337c1d 100%);
   background-image: -moz-linear-gradient(top, #45b436 0%, #3ca933 50%, #3e952d 50%, #337c1d 100%);
   background-image: -o-linear-gradient(top, #45b436 0%, #3ca933 50%, #3e952d 50%, #337c1d 100%);
-  background-image: linear-gradient(top, #45b436 0%, #3ca933 50%, #3e952d 50%, #337c1d 100%);
+  background-image: linear-gradient(to bottom, #45b436 0%, #3ca933 50%, #3e952d 50%, #337c1d 100%);
 }
 .button.green:before {
   background: #4ac233;
   background-image: -webkit-linear-gradient(top, #317c22, #52d039);
   background-image: -moz-linear-gradient(top, #317c22, #52d039);
   background-image: -o-linear-gradient(top, #317c22, #52d039);
-  background-image: linear-gradient(top, #317c22, #52d039);
+  background-image: linear-gradient(to bottom, #317c22, #52d039);
 }
 .button.green:active {
   background: #42a933;
   background-image: -webkit-linear-gradient(top, #31741b 0%, #3fa131 60%, #42a933 100%);
   background-image: -moz-linear-gradient(top, #31741b 0%, #3fa131 60%, #42a933 100%);
   background-image: -o-linear-gradient(top, #31741b 0%, #3fa131 60%, #42a933 100%);
-  background-image: linear-gradient(top, #31741b 0%, #3fa131 60%, #42a933 100%);
+  background-image: linear-gradient(to bottom, #31741b 0%, #3fa131 60%, #42a933 100%);
 }
 .button.green:active:after {
   border-color: #42a933;
@@ -291,21 +291,21 @@ body {
   background-image: -webkit-linear-gradient(top, #3dbdcd 0%, #33b2c7 50%, #2eabb3 50%, #1e9a99 100%);
   background-image: -moz-linear-gradient(top, #3dbdcd 0%, #33b2c7 50%, #2eabb3 50%, #1e9a99 100%);
   background-image: -o-linear-gradient(top, #3dbdcd 0%, #33b2c7 50%, #2eabb3 50%, #1e9a99 100%);
-  background-image: linear-gradient(top, #3dbdcd 0%, #33b2c7 50%, #2eabb3 50%, #1e9a99 100%);
+  background-image: linear-gradient(to bottom, #3dbdcd 0%, #33b2c7 50%, #2eabb3 50%, #1e9a99 100%);
 }
 .button.cyan:before {
   background: #3fccd5;
   background-image: -webkit-linear-gradient(top, #249299, #4dd3dc);
   background-image: -moz-linear-gradient(top, #249299, #4dd3dc);
   background-image: -o-linear-gradient(top, #249299, #4dd3dc);
-  background-image: linear-gradient(top, #249299, #4dd3dc);
+  background-image: linear-gradient(to bottom, #249299, #4dd3dc);
 }
 .button.cyan:active {
   background: #33b9c7;
   background-image: -webkit-linear-gradient(top, #1d918f 0%, #31b2bf 60%, #33b9c7 100%);
   background-image: -moz-linear-gradient(top, #1d918f 0%, #31b2bf 60%, #33b9c7 100%);
   background-image: -o-linear-gradient(top, #1d918f 0%, #31b2bf 60%, #33b9c7 100%);
-  background-image: linear-gradient(top, #1d918f 0%, #31b2bf 60%, #33b9c7 100%);
+  background-image: linear-gradient(to bottom, #1d918f 0%, #31b2bf 60%, #33b9c7 100%);
 }
 .button.cyan:active:after {
   border-color: #33b9c7;
@@ -321,21 +321,21 @@ body {
   background-image: -webkit-linear-gradient(top, #d5ba4a 0%, #d2ba3d 50%, #c8a22e 50%, #af821e 100%);
   background-image: -moz-linear-gradient(top, #d5ba4a 0%, #d2ba3d 50%, #c8a22e 50%, #af821e 100%);
   background-image: -o-linear-gradient(top, #d5ba4a 0%, #d2ba3d 50%, #c8a22e 50%, #af821e 100%);
-  background-image: linear-gradient(top, #d5ba4a 0%, #d2ba3d 50%, #c8a22e 50%, #af821e 100%);
+  background-image: linear-gradient(to bottom, #d5ba4a 0%, #d2ba3d 50%, #c8a22e 50%, #af821e 100%);
 }
 .button.brown:before {
   background: #dcb94d;
   background-image: -webkit-linear-gradient(top, #ae8c24, #e3c15b);
   background-image: -moz-linear-gradient(top, #ae8c24, #e3c15b);
   background-image: -o-linear-gradient(top, #ae8c24, #e3c15b);
-  background-image: linear-gradient(top, #ae8c24, #e3c15b);
+  background-image: linear-gradient(to bottom, #ae8c24, #e3c15b);
 }
 .button.brown:active {
   background: #d2b33d;
   background-image: -webkit-linear-gradient(top, #a6791d 0%, #d0af35 60%, #d2b33d 100%);
   background-image: -moz-linear-gradient(top, #a6791d 0%, #d0af35 60%, #d2b33d 100%);
   background-image: -o-linear-gradient(top, #a6791d 0%, #d0af35 60%, #d2b33d 100%);
-  background-image: linear-gradient(top, #a6791d 0%, #d0af35 60%, #d2b33d 100%);
+  background-image: linear-gradient(to bottom, #a6791d 0%, #d0af35 60%, #d2b33d 100%);
 }
 .button.brown:active:after {
   border-color: #d2b33d;
@@ -351,21 +351,21 @@ body {
   background-image: -webkit-linear-gradient(top, #d03998 0%, #cb308c 50%, #b62b89 50%, #9c1c7b 100%);
   background-image: -moz-linear-gradient(top, #d03998 0%, #cb308c 50%, #b62b89 50%, #9c1c7b 100%);
   background-image: -o-linear-gradient(top, #d03998 0%, #cb308c 50%, #b62b89 50%, #9c1c7b 100%);
-  background-image: linear-gradient(top, #d03998 0%, #cb308c 50%, #b62b89 50%, #9c1c7b 100%);
+  background-image: linear-gradient(to bottom, #d03998 0%, #cb308c 50%, #b62b89 50%, #9c1c7b 100%);
 }
 .button.pink:before {
   background: #d83ca6;
   background-image: -webkit-linear-gradient(top, #9c2174, #df4aae);
   background-image: -moz-linear-gradient(top, #9c2174, #df4aae);
   background-image: -o-linear-gradient(top, #9c2174, #df4aae);
-  background-image: linear-gradient(top, #9c2174, #df4aae);
+  background-image: linear-gradient(to bottom, #9c2174, #df4aae);
 }
 .button.pink:active {
   background: #cb3093;
   background-image: -webkit-linear-gradient(top, #941a77 0%, #c22e8d 60%, #cb3093 100%);
   background-image: -moz-linear-gradient(top, #941a77 0%, #c22e8d 60%, #cb3093 100%);
   background-image: -o-linear-gradient(top, #941a77 0%, #c22e8d 60%, #cb3093 100%);
-  background-image: linear-gradient(top, #941a77 0%, #c22e8d 60%, #cb3093 100%);
+  background-image: linear-gradient(to bottom, #941a77 0%, #c22e8d 60%, #cb3093 100%);
 }
 .button.pink:active:after {
   border-color: #cb3093;
@@ -381,21 +381,21 @@ body {
   background-image: -webkit-linear-gradient(top, #825ec9 0%, #7d53c5 50%, #6440be 50%, #482da8 100%);
   background-image: -moz-linear-gradient(top, #825ec9 0%, #7d53c5 50%, #6440be 50%, #482da8 100%);
   background-image: -o-linear-gradient(top, #825ec9 0%, #7d53c5 50%, #6440be 50%, #482da8 100%);
-  background-image: linear-gradient(top, #825ec9 0%, #7d53c5 50%, #6440be 50%, #482da8 100%);
+  background-image: linear-gradient(to bottom, #825ec9 0%, #7d53c5 50%, #6440be 50%, #482da8 100%);
 }
 .button.purple:before {
   background: #8161d0;
   background-image: -webkit-linear-gradient(top, #5534a7, #8c6ed8);
   background-image: -moz-linear-gradient(top, #5534a7, #8c6ed8);
   background-image: -o-linear-gradient(top, #5534a7, #8c6ed8);
-  background-image: linear-gradient(top, #5534a7, #8c6ed8);
+  background-image: linear-gradient(to bottom, #5534a7, #8c6ed8);
 }
 .button.purple:active {
   background: #7753c5;
   background-image: -webkit-linear-gradient(top, #432ba0 0%, #714bc2 60%, #7753c5 100%);
   background-image: -moz-linear-gradient(top, #432ba0 0%, #714bc2 60%, #7753c5 100%);
   background-image: -o-linear-gradient(top, #432ba0 0%, #714bc2 60%, #7753c5 100%);
-  background-image: linear-gradient(top, #432ba0 0%, #714bc2 60%, #7753c5 100%);
+  background-image: linear-gradient(to bottom, #432ba0 0%, #714bc2 60%, #7753c5 100%);
 }
 .button.purple:active:after {
   border-color: #7753c5;
@@ -411,21 +411,21 @@ body {
   background-image: -webkit-linear-gradient(top, #adadad 0%, #a6a6a6 50%, #999999 50%, #8e7b7c 100%);
   background-image: -moz-linear-gradient(top, #adadad 0%, #a6a6a6 50%, #999999 50%, #8e7b7c 100%);
   background-image: -o-linear-gradient(top, #adadad 0%, #a6a6a6 50%, #999999 50%, #8e7b7c 100%);
-  background-image: linear-gradient(top, #adadad 0%, #a6a6a6 50%, #999999 50%, #8e7b7c 100%);
+  background-image: linear-gradient(to bottom, #adadad 0%, #a6a6a6 50%, #999999 50%, #8e7b7c 100%);
 }
 .button.gray:before {
   background: #b6afaf;
   background-image: -webkit-linear-gradient(top, #8b8484, #c2b7b7);
   background-image: -moz-linear-gradient(top, #8b8484, #c2b7b7);
   background-image: -o-linear-gradient(top, #8b8484, #c2b7b7);
-  background-image: linear-gradient(top, #8b8484, #c2b7b7);
+  background-image: linear-gradient(to bottom, #8b8484, #c2b7b7);
 }
 .button.gray:active {
   background: #a6a6a6;
   background-image: -webkit-linear-gradient(top, #8a7577 0%, #a1a1a1 60%, #a6a6a6 100%);
   background-image: -moz-linear-gradient(top, #8a7577 0%, #a1a1a1 60%, #a6a6a6 100%);
   background-image: -o-linear-gradient(top, #8a7577 0%, #a1a1a1 60%, #a6a6a6 100%);
-  background-image: linear-gradient(top, #8a7577 0%, #a1a1a1 60%, #a6a6a6 100%);
+  background-image: linear-gradient(to bottom, #8a7577 0%, #a1a1a1 60%, #a6a6a6 100%);
 }
 .button.gray:active:after {
   border-color: #a6a6a6;

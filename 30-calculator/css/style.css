@@ -63,7 +63,7 @@ table {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
 .about a {
   color: #eee;
@@ -139,7 +139,7 @@ body {
   background-image: -webkit-linear-gradient(top, #3d4543, #2f2a2f);
   background-image: -moz-linear-gradient(top, #3d4543, #2f2a2f);
   background-image: -o-linear-gradient(top, #3d4543, #2f2a2f);
-  background-image: linear-gradient(top, #3d4543, #2f2a2f);
+  background-image: linear-gradient(to bottom, #3d4543, #2f2a2f);
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 4px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 4px rgba(0, 0, 0, 0.5);
 }
@@ -169,7 +169,7 @@ body {
   background-image: -webkit-linear-gradient(top, #bccd95, #e0f5b1);
   background-image: -moz-linear-gradient(top, #bccd95, #e0f5b1);
   background-image: -o-linear-gradient(top, #bccd95, #e0f5b1);
-  background-image: linear-gradient(top, #bccd95, #e0f5b1);
+  background-image: linear-gradient(to bottom, #bccd95, #e0f5b1);
   -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.12);
   box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.12);
 }
@@ -207,7 +207,7 @@ body {
   background-image: -webkit-linear-gradient(top, #313131, #1c1c1c);
   background-image: -moz-linear-gradient(top, #313131, #1c1c1c);
   background-image: -o-linear-gradient(top, #313131, #1c1c1c);
-  background-image: linear-gradient(top, #313131, #1c1c1c);
+  background-image: linear-gradient(to bottom, #313131, #1c1c1c);
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 1px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.08);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 1px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
@@ -225,7 +225,7 @@ body {
   background-image: -webkit-linear-gradient(top, #6f6f6f, #515151);
   background-image: -moz-linear-gradient(top, #6f6f6f, #515151);
   background-image: -o-linear-gradient(top, #6f6f6f, #515151);
-  background-image: linear-gradient(top, #6f6f6f, #515151);
+  background-image: linear-gradient(to bottom, #6f6f6f, #515151);
 }
 .calc-button-gray:active {
   background: #555;
@@ -236,7 +236,7 @@ body {
   background-image: -webkit-linear-gradient(top, #ff7286, #ff4561);
   background-image: -moz-linear-gradient(top, #ff7286, #ff4561);
   background-image: -o-linear-gradient(top, #ff7286, #ff4561);
-  background-image: linear-gradient(top, #ff7286, #ff4561);
+  background-image: linear-gradient(to bottom, #ff7286, #ff4561);
 }
 .calc-button-red:active {
   background: #ff4561;
@@ -247,7 +247,7 @@ body {
   background-image: -webkit-linear-gradient(top, #ffb935, #ffa70c);
   background-image: -moz-linear-gradient(top, #ffb935, #ffa70c);
   background-image: -o-linear-gradient(top, #ffb935, #ffa70c);
-  background-image: linear-gradient(top, #ffb935, #ffa70c);
+  background-image: linear-gradient(to bottom, #ffb935, #ffa70c);
 }
 .calc-button-yellow:active {
   background: #ffa70c;

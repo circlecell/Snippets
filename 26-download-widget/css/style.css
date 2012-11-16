@@ -63,7 +63,7 @@ table {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
 }
 .about a {
   color: #333;
@@ -171,7 +171,7 @@ a:hover {
   background-image: -webkit-linear-gradient(top, #eeeeee, #d8d8d8);
   background-image: -moz-linear-gradient(top, #eeeeee, #d8d8d8);
   background-image: -o-linear-gradient(top, #eeeeee, #d8d8d8);
-  background-image: linear-gradient(top, #eeeeee, #d8d8d8);
+  background-image: linear-gradient(to bottom, #eeeeee, #d8d8d8);
   -webkit-box-shadow: inset 0 21px rgba(255, 255, 255, 0.22);
   box-shadow: inset 0 21px rgba(255, 255, 255, 0.22);
 }
@@ -216,7 +216,7 @@ a:hover {
   background-image: -webkit-linear-gradient(top, #878787, #5c5c5c);
   background-image: -moz-linear-gradient(top, #878787, #5c5c5c);
   background-image: -o-linear-gradient(top, #878787, #5c5c5c);
-  background-image: linear-gradient(top, #878787, #5c5c5c);
+  background-image: linear-gradient(to bottom, #878787, #5c5c5c);
   -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.25), inset 0 2px rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.25), inset 0 2px rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.5);
 }
@@ -245,7 +245,7 @@ a:hover {
   background-image: -webkit-linear-gradient(top, white, #fafafa);
   background-image: -moz-linear-gradient(top, white, #fafafa);
   background-image: -o-linear-gradient(top, white, #fafafa);
-  background-image: linear-gradient(top, white, #fafafa);
+  background-image: linear-gradient(to bottom, white, #fafafa);
 }
 .download + .download {
   border-top: 1px solid #ececec;
@@ -307,7 +307,7 @@ a:hover {
   background-image: -webkit-linear-gradient(top, #73c822, #67aa24);
   background-image: -moz-linear-gradient(top, #73c822, #67aa24);
   background-image: -o-linear-gradient(top, #73c822, #67aa24);
-  background-image: linear-gradient(top, #73c822, #67aa24);
+  background-image: linear-gradient(to bottom, #73c822, #67aa24);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.15);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.15);
 }

@@ -63,7 +63,7 @@ table {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
 .about a {
   color: #eee;
@@ -161,7 +161,7 @@ nav a {
   background-image: -webkit-linear-gradient(top, #fcfcfc, #f0f0f0);
   background-image: -moz-linear-gradient(top, #fcfcfc, #f0f0f0);
   background-image: -o-linear-gradient(top, #fcfcfc, #f0f0f0);
-  background-image: linear-gradient(top, #fcfcfc, #f0f0f0);
+  background-image: linear-gradient(to bottom, #fcfcfc, #f0f0f0);
   -webkit-box-shadow: inset 0 0 0 1px #fafafa;
   box-shadow: inset 0 0 0 1px #fafafa;
 }
@@ -199,7 +199,7 @@ nav .badge {
   background-image: -webkit-linear-gradient(top, #acddf6, #67c1ef);
   background-image: -moz-linear-gradient(top, #acddf6, #67c1ef);
   background-image: -o-linear-gradient(top, #acddf6, #67c1ef);
-  background-image: linear-gradient(top, #acddf6, #67c1ef);
+  background-image: linear-gradient(to bottom, #acddf6, #67c1ef);
 }
 nav .badge.green {
   background: #77cc51;
@@ -207,7 +207,7 @@ nav .badge.green {
   background-image: -webkit-linear-gradient(top, #a5dd8c, #77cc51);
   background-image: -moz-linear-gradient(top, #a5dd8c, #77cc51);
   background-image: -o-linear-gradient(top, #a5dd8c, #77cc51);
-  background-image: linear-gradient(top, #a5dd8c, #77cc51);
+  background-image: linear-gradient(to bottom, #a5dd8c, #77cc51);
 }
 nav .badge.yellow {
   background: #faba3e;
@@ -215,7 +215,7 @@ nav .badge.yellow {
   background-image: -webkit-linear-gradient(top, #fcd589, #faba3e);
   background-image: -moz-linear-gradient(top, #fcd589, #faba3e);
   background-image: -o-linear-gradient(top, #fcd589, #faba3e);
-  background-image: linear-gradient(top, #fcd589, #faba3e);
+  background-image: linear-gradient(to bottom, #fcd589, #faba3e);
 }
 nav .badge.red {
   background: #fa623f;
@@ -223,5 +223,5 @@ nav .badge.red {
   background-image: -webkit-linear-gradient(top, #fc9f8a, #fa623f);
   background-image: -moz-linear-gradient(top, #fc9f8a, #fa623f);
   background-image: -o-linear-gradient(top, #fc9f8a, #fa623f);
-  background-image: linear-gradient(top, #fc9f8a, #fa623f);
+  background-image: linear-gradient(to bottom, #fc9f8a, #fa623f);
 }

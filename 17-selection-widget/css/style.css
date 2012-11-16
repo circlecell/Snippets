@@ -63,7 +63,7 @@ table {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
 .about a {
   color: #eee;
@@ -145,7 +145,7 @@ body {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
 }
@@ -160,7 +160,7 @@ body {
   background-image: -webkit-linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
   background-image: -moz-linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
   background-image: -o-linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
-  background-image: linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
+  background-image: linear-gradient(to bottom, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
 }
@@ -204,7 +204,7 @@ body {
   background-image: -webkit-linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
   background-image: -moz-linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
   background-image: -o-linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
-  background-image: linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
+  background-image: linear-gradient(to bottom, #83bcff 0%, #508fee 40%, #1644c2 100%);
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 1px 1px rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 1px 1px rgba(255, 255, 255, 0.6);
 }

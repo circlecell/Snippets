@@ -63,7 +63,7 @@ table {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
 .about a {
   color: #eee;
@@ -147,7 +147,7 @@ body {
   background-image: -webkit-linear-gradient(top, #f1f1f1 0%, #dfdfdf 70%, #dadada 100%);
   background-image: -moz-linear-gradient(top, #f1f1f1 0%, #dfdfdf 70%, #dadada 100%);
   background-image: -o-linear-gradient(top, #f1f1f1 0%, #dfdfdf 70%, #dadada 100%);
-  background-image: linear-gradient(top, #f1f1f1 0%, #dfdfdf 70%, #dadada 100%);
+  background-image: linear-gradient(to bottom, #f1f1f1 0%, #dfdfdf 70%, #dadada 100%);
   -webkit-box-shadow: inset 0 1px #fdfdfd, inset 0 0 0 1px #eaeaea, 0 1px #a8a8a8, 0 3px #bbbbbb, 0 4px #a8a8a8, 0 5px 2px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 1px #fdfdfd, inset 0 0 0 1px #eaeaea, 0 1px #a8a8a8, 0 3px #bbbbbb, 0 4px #a8a8a8, 0 5px 2px rgba(0, 0, 0, 0.25);
 }
@@ -172,7 +172,7 @@ body {
   background-image: -webkit-linear-gradient(top, #c0eb85 0%, #94d362 70%, #8ed258 100%);
   background-image: -moz-linear-gradient(top, #c0eb85 0%, #94d362 70%, #8ed258 100%);
   background-image: -o-linear-gradient(top, #c0eb85 0%, #94d362 70%, #8ed258 100%);
-  background-image: linear-gradient(top, #c0eb85 0%, #94d362 70%, #8ed258 100%);
+  background-image: linear-gradient(to bottom, #c0eb85 0%, #94d362 70%, #8ed258 100%);
   -webkit-box-shadow: inset 0 1px #d9f3b5, inset 0 0 0 1px #b1e095, 0 1px #5e903f, 0 3px #6da445, 0 4px #5e903f, 0 5px 2px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 1px #d9f3b5, inset 0 0 0 1px #b1e095, 0 1px #5e903f, 0 3px #6da445, 0 4px #5e903f, 0 5px 2px rgba(0, 0, 0, 0.4);
 }
@@ -188,7 +188,7 @@ body {
   background-image: -webkit-linear-gradient(top, #9be5fa 0%, #61cdf3 70%, #5fbde8 100%);
   background-image: -moz-linear-gradient(top, #9be5fa 0%, #61cdf3 70%, #5fbde8 100%);
   background-image: -o-linear-gradient(top, #9be5fa 0%, #61cdf3 70%, #5fbde8 100%);
-  background-image: linear-gradient(top, #9be5fa 0%, #61cdf3 70%, #5fbde8 100%);
+  background-image: linear-gradient(to bottom, #9be5fa 0%, #61cdf3 70%, #5fbde8 100%);
   -webkit-box-shadow: inset 0 1px #c5f0fd, inset 0 0 0 1px #8ad1eb, 0 1px #3583ab, 0 3px #3f9db8, 0 4px #3583ab, 0 5px 2px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 1px #c5f0fd, inset 0 0 0 1px #8ad1eb, 0 1px #3583ab, 0 3px #3f9db8, 0 4px #3583ab, 0 5px 2px rgba(0, 0, 0, 0.4);
 }
@@ -204,7 +204,7 @@ body {
   background-image: -webkit-linear-gradient(top, #ffdd67 0%, #f6ba49 70%, #f4b03e 100%);
   background-image: -moz-linear-gradient(top, #ffdd67 0%, #f6ba49 70%, #f4b03e 100%);
   background-image: -o-linear-gradient(top, #ffdd67 0%, #f6ba49 70%, #f4b03e 100%);
-  background-image: linear-gradient(top, #ffdd67 0%, #f6ba49 70%, #f4b03e 100%);
+  background-image: linear-gradient(to bottom, #ffdd67 0%, #f6ba49 70%, #f4b03e 100%);
   -webkit-box-shadow: inset 0 1px #ffeca6, inset 0 0 0 1px #e5c96d, 0 1px #a57825, 0 3px #c08a28, 0 4px #a57825, 0 5px 2px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 1px #ffeca6, inset 0 0 0 1px #e5c96d, 0 1px #a57825, 0 3px #c08a28, 0 4px #a57825, 0 5px 2px rgba(0, 0, 0, 0.4);
 }
@@ -220,7 +220,7 @@ body {
   background-image: -webkit-linear-gradient(top, #eb9093 0%, #e46565 70%, #e25755 100%);
   background-image: -moz-linear-gradient(top, #eb9093 0%, #e46565 70%, #e25755 100%);
   background-image: -o-linear-gradient(top, #eb9093 0%, #e46565 70%, #e25755 100%);
-  background-image: linear-gradient(top, #eb9093 0%, #e46565 70%, #e25755 100%);
+  background-image: linear-gradient(to bottom, #eb9093 0%, #e46565 70%, #e25755 100%);
   -webkit-box-shadow: inset 0 1px #dcaaaa, inset 0 0 0 1px #df777a, 0 1px #a03a38, 0 3px #be4b49, 0 4px #a03a38, 0 5px 2px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 1px #dcaaaa, inset 0 0 0 1px #df777a, 0 1px #a03a38, 0 3px #be4b49, 0 4px #a03a38, 0 5px 2px rgba(0, 0, 0, 0.4);
 }
@@ -236,7 +236,7 @@ body {
   background-image: -webkit-linear-gradient(top, #f1bee3 0%, #e393d3 70%, #df8dce 100%);
   background-image: -moz-linear-gradient(top, #f1bee3 0%, #e393d3 70%, #df8dce 100%);
   background-image: -o-linear-gradient(top, #f1bee3 0%, #e393d3 70%, #df8dce 100%);
-  background-image: linear-gradient(top, #f1bee3 0%, #e393d3 70%, #df8dce 100%);
+  background-image: linear-gradient(to bottom, #f1bee3 0%, #e393d3 70%, #df8dce 100%);
   -webkit-box-shadow: inset 0 1px #f5d6ee, inset 0 0 0 1px #dcaacf, 0 1px #8a517d, 0 3px #a7619a, 0 4px #8a517d, 0 5px 2px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 1px #f5d6ee, inset 0 0 0 1px #dcaacf, 0 1px #8a517d, 0 3px #a7619a, 0 4px #8a517d, 0 5px 2px rgba(0, 0, 0, 0.4);
 }
@@ -252,7 +252,7 @@ body {
   background-image: -webkit-linear-gradient(top, #bccbd7 0%, #90aabd 70%, #83a0b4 100%);
   background-image: -moz-linear-gradient(top, #bccbd7 0%, #90aabd 70%, #83a0b4 100%);
   background-image: -o-linear-gradient(top, #bccbd7 0%, #90aabd 70%, #83a0b4 100%);
-  background-image: linear-gradient(top, #bccbd7 0%, #90aabd 70%, #83a0b4 100%);
+  background-image: linear-gradient(to bottom, #bccbd7 0%, #90aabd 70%, #83a0b4 100%);
   -webkit-box-shadow: inset 0 1px #d0dae2, inset 0 0 0 1px #99b5ce, 0 1px #50606e, 0 3px #627786, 0 4px #50606e, 0 5px 2px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 1px #d0dae2, inset 0 0 0 1px #99b5ce, 0 1px #50606e, 0 3px #627786, 0 4px #50606e, 0 5px 2px rgba(0, 0, 0, 0.4);
 }
@@ -268,7 +268,7 @@ body {
   background-image: -webkit-linear-gradient(top, dimgrey 0%, #4f4f4f 70%, #3c3c3c 100%);
   background-image: -moz-linear-gradient(top, dimgrey 0%, #4f4f4f 70%, #3c3c3c 100%);
   background-image: -o-linear-gradient(top, dimgrey 0%, #4f4f4f 70%, #3c3c3c 100%);
-  background-image: linear-gradient(top, dimgrey 0%, #4f4f4f 70%, #3c3c3c 100%);
+  background-image: linear-gradient(to bottom, dimgrey 0%, #4f4f4f 70%, #3c3c3c 100%);
   -webkit-box-shadow: inset 0 1px #828282, inset 0 0 0 1px #555555, 0 1px #2c2c2c, 0 3px #444444, 0 4px #2c2c2c, 0 5px 2px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 1px #828282, inset 0 0 0 1px #555555, 0 1px #2c2c2c, 0 3px #444444, 0 4px #2c2c2c, 0 5px 2px rgba(0, 0, 0, 0.4);
 }

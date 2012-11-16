@@ -63,7 +63,7 @@ table {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
 .about a {
   color: #eee;
@@ -130,7 +130,7 @@ body {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.03) 64%, rgba(255, 255, 255, 0) 65%);
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.03) 64%, rgba(255, 255, 255, 0) 65%);
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.03) 64%, rgba(255, 255, 255, 0) 65%);
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.03) 64%, rgba(255, 255, 255, 0) 65%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.03) 64%, rgba(255, 255, 255, 0) 65%);
 }
 
 .window-titlebar-button {
@@ -180,7 +180,7 @@ body {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
   -webkit-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.25);
 }
@@ -229,7 +229,7 @@ body {
   background-image: -webkit-linear-gradient(top, #4b4b4b 0%, #494949 50%, #505050 51%, #5b5b5b 100%);
   background-image: -moz-linear-gradient(top, #4b4b4b 0%, #494949 50%, #505050 51%, #5b5b5b 100%);
   background-image: -o-linear-gradient(top, #4b4b4b 0%, #494949 50%, #505050 51%, #5b5b5b 100%);
-  background-image: linear-gradient(top, #4b4b4b 0%, #494949 50%, #505050 51%, #5b5b5b 100%);
+  background-image: linear-gradient(to bottom, #4b4b4b 0%, #494949 50%, #505050 51%, #5b5b5b 100%);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
 }
@@ -255,7 +255,7 @@ body {
   background-image: -webkit-linear-gradient(top, #d2d2d2, #888888);
   background-image: -moz-linear-gradient(top, #d2d2d2, #888888);
   background-image: -o-linear-gradient(top, #d2d2d2, #888888);
-  background-image: linear-gradient(top, #d2d2d2, #888888);
+  background-image: linear-gradient(to bottom, #d2d2d2, #888888);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 0 1px 1px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 0 1px 1px rgba(0, 0, 0, 0.5);
   -webkit-transition: left 0.15s ease-out;
@@ -272,7 +272,7 @@ body {
   background-image: -webkit-linear-gradient(top, #a92488 0%, #a52485 50%, #bb0096 51%, #c331a0 100%);
   background-image: -moz-linear-gradient(top, #a92488 0%, #a52485 50%, #bb0096 51%, #c331a0 100%);
   background-image: -o-linear-gradient(top, #a92488 0%, #a52485 50%, #bb0096 51%, #c331a0 100%);
-  background-image: linear-gradient(top, #a92488 0%, #a52485 50%, #bb0096 51%, #c331a0 100%);
+  background-image: linear-gradient(to bottom, #a92488 0%, #a52485 50%, #bb0096 51%, #c331a0 100%);
 }
 .switch-input:checked + .switch .switch-handle {
   left: 39px;

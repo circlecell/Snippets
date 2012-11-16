@@ -16,11 +16,15 @@
           box-shadow: $shadows;
 }
 
-@mixin linear-gradient($gradient...) {
-  background-image: -webkit-linear-gradient($gradient);
-  background-image:    -moz-linear-gradient($gradient);
-  background-image:      -o-linear-gradient($gradient);
-  background-image:         linear-gradient($gradient);
+@mixin linear-gradient($gradientLine, $colorStops...) {
+  background-image: -webkit-linear-gradient($gradientLine, $colorStops);
+  background-image:    -moz-linear-gradient($gradientLine, $colorStops);
+  background-image:      -o-linear-gradient($gradientLine, $colorStops);
+  @if      $gradientLine == top    { $gradientLine: to bottom; }
+  @else if $gradientLine == bottom { $gradientLine: to top; }
+  @else if $gradientLine == left   { $gradientLine: to right; }
+  @else if $gradientLine == right  { $gradientLine: to left; }
+  background-image:         linear-gradient($gradientLine, $colorStops);
 }
 
 @mixin radial-gradient($gradient...) {
