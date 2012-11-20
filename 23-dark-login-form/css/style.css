@@ -105,7 +105,7 @@ table {
  * Licensed under the MIT License:
  * http://www.opensource.org/licenses/mit-license.php
  */
-.bg, body, .login-submit, .login-submit:before, .login-submit:after {
+body, .login-submit, .login-submit:before, .login-submit:after {
   background: #373737 url("../img/bg.png") 0 0 repeat;
 }
 

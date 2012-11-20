@@ -13,12 +13,12 @@
 $inputHeight: 40px;
 $labelWidth: 100px;
 
-.bg { background: #373737 url('../img/bg.png') 0 0 repeat; }
+%bg { background: #373737 url('../img/bg.png') 0 0 repeat; }
 
 body {
   font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #404040;
-  @extend .bg;
+  @extend %bg;
 }
 
 a {
@@ -92,13 +92,13 @@ label {
   padding: 8px;
   border-radius: 32px;
   @include box-shadow(0 0 4px rgba(black, .35));
-  @extend .bg;
+  @extend %bg;
 
   &:before, &:after {
     content: '';
     z-index: 1;
     position: absolute;
-    @extend .bg;
+    @extend %bg;
   }
 
   &:before {
