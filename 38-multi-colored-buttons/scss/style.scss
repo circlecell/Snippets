@@ -66,7 +66,7 @@ body {
   }
 
   &:active, &.active {
-    border-color: darken($defaultColor, 25%) darken($defaultColor, 20%) darken($defaultColor, 15%) ;
+    border-color: darken($defaultColor, 25%) darken($defaultColor, 20%) darken($defaultColor, 15%);
     background: darken($defaultColor, 4%);
     @include box-shadow(inset 0 1px 4px rgba(black, .3), 0 1px rgba(white, .8));
   }
@@ -119,7 +119,7 @@ body {
     }
 
     &:active, &.active {
-      border-color: darken($color, 25%) darken($color, 20%) darken($color, 15%) ;
+      border-color: darken($color, 25%) darken($color, 20%) darken($color, 15%);
       background: darken($color, 4%);
       @include box-shadow(inset 0 1px 4px rgba(black, .3), 0 1px rgba(white, .8));
     }
