@@ -1,0 +1,160 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+body {
+  font: 12px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: -webkit-radial-gradient(rgba(black, .5), rgba(black, .5) 14%, transparent 15%) 0 0,
+              -webkit-radial-gradient(rgba(black, .5), rgba(black, .5) 14%, transparent 15%) 7px 7px,
+              -webkit-radial-gradient(rgba(white, .1) 14%, transparent 16%) 0 1px,
+              -webkit-radial-gradient(rgba(white, .1) 14%, transparent 16%) 7px 8px;
+  background:    -moz-radial-gradient(rgba(black, .5), rgba(black, .5) 14%, transparent 15%) 0 0,
+                 -moz-radial-gradient(rgba(black, .5), rgba(black, .5) 14%, transparent 15%) 7px 7px,
+                 -moz-radial-gradient(rgba(white, .1) 14%, transparent 16%) 0 1px,
+                 -moz-radial-gradient(rgba(white, .1) 14%, transparent 16%) 7px 8px;
+  background:      -o-radial-gradient(rgba(black, .5), rgba(black, .5) 14%, transparent 15%) 0 0,
+                   -o-radial-gradient(rgba(black, .5), rgba(black, .5) 14%, transparent 15%) 7px 7px,
+                   -o-radial-gradient(rgba(white, .1) 14%, transparent 16%) 0 1px,
+                   -o-radial-gradient(rgba(white, .1) 14%, transparent 16%) 7px 8px;
+  background:         radial-gradient(rgba(black, .5), rgba(black, .5) 14%, transparent 15%) 0 0,
+                      radial-gradient(rgba(black, .5), rgba(black, .5) 14%, transparent 15%) 7px 7px,
+                      radial-gradient(rgba(white, .1) 14%, transparent 16%) 0 1px,
+                      radial-gradient(rgba(white, .1) 14%, transparent 16%) 7px 8px;
+  background-color: #40454f;
+  background-size: 16px 16px;
+}
+
+.analytics {
+  margin: 54px auto;
+  padding: 5px 6px;
+  width: 490px;
+  overflow: hidden;
+  color: #3a414f;
+  text-shadow: 0 1px rgba(white, .2);
+  background: #717c8c;
+  border-radius: 5px;
+  @include linear-gradient(top, #c3cbdd, #545b6a);
+  @include box-shadow(inset 0 1px rgba(white, .2),
+                      inset 0 0 0 1px rgba(white, .1),
+                      0 1px 4px rgba(black, .5));
+}
+
+.analytics-title {
+  margin: 0 0 5px 3px;
+  line-height: 14px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.analytics-chart { float: left; }
+
+.analytics-colchart {
+  padding: 2px 4px 0;
+  height: 120px;
+  overflow: hidden;
+  background: #3e4350;
+  border: 1px solid;
+  border-color: #242934 #2c313c #2f3542;
+  border-radius: 4px;
+  @include linear-gradient(top, #606a7e, #3e4350 50%, #4a5160 90%, #555d71);
+  @include box-shadow(inset 0 1px rgba(white, .2),
+                      inset 0 60px rgba(white, .02),
+                      0 1px rgba(white, .1));
+}
+
+.analytics-colgroup {
+  float: left;
+  margin: 0 7px;
+  height: 100%;
+}
+
+.analytics-col {
+  position: relative;
+  float: left;
+  margin: 0 2px;
+  width: 4px;
+  height: 100%;
+}
+
+.analytics-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0be4aa;
+  @include box-shadow(0 0 4px rgba(#0be4aa, .7));
+}
+
+.analytics-legend {
+  margin-top: 3px;
+  padding: 0 4px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #adb7cf;
+  text-align: center;
+  text-shadow: 0 -1px rgba(black, .3);
+
+  > p {
+    float: left;
+    width: 25%;
+  }
+
+  span {
+    line-height: 13px;
+    font-weight: normal;
+    font-size: 9px;
+    color: #a0a9bf;
+  }
+}
+
+.analytics-metrics {
+  float: right;
+  width: 195px;
+  text-align: center;
+}
+
+.analytics-count {
+  margin-bottom: 15px;
+  line-height: 60px;
+  font-size: 48px;
+  color: #242831;
+  font-weight: bold;
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.analytics-metric {
+  float: left;
+  width: 50%;
+  line-height: 15px;
+  font-size: 11px;
+  font-weight: bold;
+  @include box-sizing(border-box);
+
+  > span {
+    display: block;
+    margin-top: 6px;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #cad6eb;
+    text-shadow: 0 -1px rgba(black, .2);
+  }
+
+  & + & {
+    border-left: 1px solid #5e6876;
+    border-left-color: rgba(#282c34, .25);
+    @include box-shadow(inset 1px 0 rgba(white, .05), -1px 0 rgba(white, .05));
+  }
+}
