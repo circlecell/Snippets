@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/17-selection-widget](http://demo.webinterfacelab.com/17-selection-widget/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/selection-widget.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/selection-widget/preview-580.png)](http://www.webinterfacelab.com/snippets/selection-widget)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

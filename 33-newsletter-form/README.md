@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/33-newsletter-form](http://demo.webinterfacelab.com/33-newsletter-form/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/newsletter-sign-up-form.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/newsletter-sign-up-form/preview-580.png)](http://www.webinterfacelab.com/snippets/newsletter-sign-up-form)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

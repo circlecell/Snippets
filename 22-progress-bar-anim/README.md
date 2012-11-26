@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/22-progress-bar-anim](http://demo.webinterfacelab.com/22-progress-bar-anim/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/animated-progress-bar.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/animated-progress-bar/preview-580.png)](http://www.webinterfacelab.com/snippets/animated-progress-bar)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

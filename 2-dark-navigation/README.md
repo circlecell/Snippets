@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/2-dark-navigation](http://demo.webinterfacelab.com/2-dark-navigation/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/dark-navigation.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/dark-navigation/preview-580.png)](http://www.webinterfacelab.com/snippets/dark-navigation)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

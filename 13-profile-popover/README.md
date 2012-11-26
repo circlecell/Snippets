@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/13-profile-popover](http://demo.webinterfacelab.com/13-profile-popover/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/animated-profile-popover.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/animated-profile-popover/preview-580.png)](http://www.webinterfacelab.com/snippets/animated-profile-popover)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

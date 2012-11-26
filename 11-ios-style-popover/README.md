@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/11-ios-style-popover](http://demo.webinterfacelab.com/11-ios-style-popover/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/ios-style-popover.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/ios-style-popover/preview-580.png)](http://www.webinterfacelab.com/snippets/ios-style-popover)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

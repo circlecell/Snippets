@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/16-social-app](http://demo.webinterfacelab.com/16-social-app/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/mini-social-app.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/mini-social-app/preview-580.png)](http://www.webinterfacelab.com/snippets/mini-social-app)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

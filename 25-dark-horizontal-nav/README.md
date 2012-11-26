@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/25-dark-horizontal-nav](http://demo.webinterfacelab.com/25-dark-horizontal-nav/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/dark-horizontal-navigation.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/dark-horizontal-navigation/preview-580.png)](http://www.webinterfacelab.com/snippets/dark-horizontal-navigation)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

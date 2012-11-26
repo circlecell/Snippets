@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/36-dropdown-lists](http://demo.webinterfacelab.com/36-dropdown-lists/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/dark-and-light-dropdown-lists.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/dark-and-light-dropdown-lists/preview-580.png)](http://www.webinterfacelab.com/snippets/dark-and-light-dropdown-lists)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

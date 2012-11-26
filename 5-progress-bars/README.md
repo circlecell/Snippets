@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/5-progress-bars](http://demo.webinterfacelab.com/5-progress-bars/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/multi-colored-progress-bars.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/multi-colored-progress-bars/preview-580.png)](http://www.webinterfacelab.com/snippets/multi-colored-progress-bars)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

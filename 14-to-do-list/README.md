@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/14-to-do-list](http://demo.webinterfacelab.com/14-to-do-list/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/simple-to-do-list.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/simple-to-do-list/preview-580.png)](http://www.webinterfacelab.com/snippets/simple-to-do-list)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

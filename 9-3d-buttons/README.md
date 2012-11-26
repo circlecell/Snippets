@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/9-3d-buttons](http://demo.webinterfacelab.com/9-3d-buttons/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/3d-buttons.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/3d-buttons/preview-580.png)](http://www.webinterfacelab.com/snippets/3d-buttons)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

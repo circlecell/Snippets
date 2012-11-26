@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/30-chunky-calculator](http://demo.webinterfacelab.com/30-chunky-calculator/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/chunky-calculator.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/chunky-calculator/preview-580.png)](http://www.webinterfacelab.com/snippets/chunky-calculator)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

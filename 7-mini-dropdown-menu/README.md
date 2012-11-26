@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/7-mini-dropdown-menu](http://demo.webinterfacelab.com/7-mini-dropdown-menu/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/mini-dropdown-menu.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/mini-dropdown-menu/preview-580.png)](http://www.webinterfacelab.com/snippets/mini-dropdown-menu)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

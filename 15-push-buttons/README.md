@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/15-push-buttons](http://demo.webinterfacelab.com/15-push-buttons/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/multi-colored-push-buttons.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/multi-colored-push-buttons/preview-580.png)](http://www.webinterfacelab.com/snippets/multi-colored-push-buttons)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

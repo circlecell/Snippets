@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/35-share-buttons](http://demo.webinterfacelab.com/35-share-buttons/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/share-buttons.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/share-buttons/preview-580.png)](http://www.webinterfacelab.com/snippets/share-buttons)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

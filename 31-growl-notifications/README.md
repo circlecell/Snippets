@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/31-growl-notifications](http://demo.webinterfacelab.com/31-growl-notifications/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/growl-notifications.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/growl-notifications/preview-580.png)](http://www.webinterfacelab.com/snippets/growl-notifications)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

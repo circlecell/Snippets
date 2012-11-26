@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/37-dark-pagination](http://demo.webinterfacelab.com/37-dark-pagination/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/dark-pagination.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/dark-pagination/preview-580.png)](http://www.webinterfacelab.com/snippets/dark-pagination)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

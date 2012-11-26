@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/28-notepaper](http://demo.webinterfacelab.com/28-notepaper/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/notepaper-blockquote.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/notepaper-blockquote/preview-580.png)](http://www.webinterfacelab.com/snippets/notepaper-blockquote)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

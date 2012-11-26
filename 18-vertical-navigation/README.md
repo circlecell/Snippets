@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/18-vertical-navigation](http://demo.webinterfacelab.com/18-vertical-navigation/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/vertical-navigation-menu.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/vertical-navigation-menu/preview-580.png)](http://www.webinterfacelab.com/snippets/vertical-navigation-menu)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/39-analytics-widget](http://demo.webinterfacelab.com/39-analytics-widget/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/analytics-widget.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/analytics-widget/preview-580.png)](http://www.webinterfacelab.com/snippets/analytics-widget)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).

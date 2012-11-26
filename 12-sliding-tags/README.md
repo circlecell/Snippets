@@ -2,6 +2,8 @@
 
 **Demo**: [demo.webinterfacelab.com/12-sliding-tags](http://demo.webinterfacelab.com/12-sliding-tags/)
 
+Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/sliding-tags.zip).
+
 [![Preview](http://cdn.webinterfacelab.com/snippets/sliding-tags/preview-580.png)](http://www.webinterfacelab.com/snippets/sliding-tags)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
