@@ -227,7 +227,7 @@ a:hover {
   background-image: -webkit-linear-gradient(bottom left, #dee5f4 85%, #c7d3ec 100%);
   background-image: -moz-linear-gradient(bottom left, #dee5f4 85%, #c7d3ec 100%);
   background-image: -o-linear-gradient(bottom left, #dee5f4 85%, #c7d3ec 100%);
-  background-image: linear-gradient(bottom left, #dee5f4 85%, #c7d3ec 100%);
+  background-image: linear-gradient(to top right, #dee5f4 85%, #c7d3ec 100%);
   -webkit-transition: background 0.15s;
   -moz-transition: background 0.15s;
   -o-transition: background 0.15s;

@@ -16,15 +16,22 @@
           box-shadow: $shadows;
 }
 
+@function inverse-side($side) {
+  @if      $side == top    { @return bottom; }
+  @else if $side == bottom { @return top; }
+  @else if $side == left   { @return right; }
+  @else if $side == right  { @return left; }
+}
+
 @mixin linear-gradient($gradientLine, $colorStops...) {
   background-image: -webkit-linear-gradient($gradientLine, $colorStops);
   background-image:    -moz-linear-gradient($gradientLine, $colorStops);
   background-image:      -o-linear-gradient($gradientLine, $colorStops);
-  @if      $gradientLine == top    { $gradientLine: to bottom; }
-  @else if $gradientLine == bottom { $gradientLine: to top; }
-  @else if $gradientLine == left   { $gradientLine: to right; }
-  @else if $gradientLine == right  { $gradientLine: to left; }
-  background-image:         linear-gradient($gradientLine, $colorStops);
+  @if length($gradientLine) == 2 {
+  background-image:         linear-gradient(to #{inverse-side(nth($gradientLine, 1))} #{inverse-side(nth($gradientLine, 2))}, $colorStops);
+  } @else {
+  background-image:         linear-gradient(to #{inverse-side($gradientLine)}, $colorStops);
+  }
 }
 
 @mixin radial-gradient($gradient...) {
