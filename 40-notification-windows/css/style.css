@@ -1,0 +1,335 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.about {
+  margin: 80px auto;
+  padding: 8px;
+  width: 240px;
+  font: 10px/18px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #777;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  background: #eee;
+  background: rgba(250, 250, 250, 0.8);
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+}
+.about a {
+  color: #333;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.about a:hover {
+  text-decoration: none;
+  background: #fafafa;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.about-links {
+  height: 30px;
+}
+.about-links a {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-author {
+  margin-top: 5px;
+}
+.about-author a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+}
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+body {
+  font: 12px/20px "Lucida Grande", Verdana, sans-serif;
+  color: #404040;
+  background: #343137;
+}
+
+.container {
+  margin: 40px auto;
+  width: 380px;
+}
+.container .notif {
+  margin: 10px 0;
+}
+
+.notif {
+  position: relative;
+  padding: 25px 30px 25px 100px;
+  min-height: 50px;
+  line-height: 22px;
+  background: white;
+  border-radius: 2px;
+}
+.notif:before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  border: 5px solid;
+  border-radius: 25px;
+}
+.notif p {
+  font-size: 11px;
+  color: #666;
+}
+
+.notif-title {
+  margin: 0 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+.notif-title:before, .notif-title:after {
+  content: '';
+  position: absolute;
+  background: white;
+  border-radius: 2px;
+}
+
+.notif-notice:before {
+  background: #a7d155;
+  border-color: #8fb14f;
+}
+.notif-notice .notif-title:before, .notif-notice .notif-title:after {
+  top: 44px;
+  left: 55px;
+  width: 4px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.notif-notice .notif-title:after {
+  top: 50px;
+  left: 48px;
+  width: 8px;
+  height: 4px;
+}
+
+.notif-alert:before {
+  background: #e34f4f;
+  border-color: #c14343;
+}
+.notif-alert .notif-title:before, .notif-alert .notif-title:after {
+  top: 43px;
+  left: 53px;
+  width: 4px;
+  height: 14px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.notif-alert .notif-title:after {
+  top: 48px;
+  left: 48px;
+  width: 14px;
+  height: 4px;
+}
+
+.notif-warn:before {
+  background: #f1e472;
+  border-color: #cec260;
+}
+.notif-warn .notif-title:before, .notif-warn .notif-title:after {
+  top: 42px;
+  left: 53px;
+  width: 4px;
+  height: 11px;
+  background: #5c562b;
+}
+.notif-warn .notif-title:after {
+  top: 54px;
+  height: 4px;
+}
+
+.notif-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 16px;
+  padding: 4px 3px 5px;
+  background: #f0f0f0;
+  border: solid #dcdcdc;
+  border-width: 0 0 1px 1px;
+  border-radius: 0 2px;
+}
+.notif-controls > a {
+  position: relative;
+  float: left;
+  margin: 0 1px;
+  width: 16px;
+  height: 16px;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+.notif-minimize:before {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 4px;
+  width: 7px;
+  height: 2px;
+  background: #bbb;
+}
+.notif-minimize:hover:before {
+  background: #888;
+}
+
+.notif-zoom:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  width: 5px;
+  height: 3px;
+  border: 2px solid #bbb;
+}
+.notif-zoom:hover:before {
+  border-color: #888;
+}
+
+.notif-close:before, .notif-close:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 2px;
+  height: 10px;
+  background: #bbb;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.notif-close:after {
+  top: 8px;
+  left: 3px;
+  width: 10px;
+  height: 2px;
+}
+.notif-close:hover:before, .notif-close:hover:after {
+  background: #888;
+}
+
+/* IE 8 doesn't support CSS transforms; use Unicode instead. */
+.lt-ie9 .notif-notice .notif-title:before {
+  content: '\2714';
+  display: block;
+  top: 25px;
+  left: 30px;
+  width: 50px;
+  font: bold 18px/50px "Arial Unicode MS";
+  color: white;
+  text-align: center;
+  background: none;
+}
+.lt-ie9 .notif-notice .notif-title:after {
+  display: none;
+}
+.lt-ie9 .notif-alert .notif-title:before {
+  content: '\2716';
+  display: block;
+  top: 25px;
+  left: 30px;
+  width: 50px;
+  font: bold 17px/50px "Arial Unicode MS";
+  color: white;
+  text-align: center;
+  background: none;
+}
+.lt-ie9 .notif-alert .notif-title:after {
+  display: none;
+}
+.lt-ie9 .notif-close:before {
+  content: '\2716';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 16px;
+  font: 11px/19px "Arial Unicode MS";
+  color: #bbb;
+  text-align: center;
+  background: none;
+}
+.lt-ie9 .notif-close:after {
+  display: none;
+}
+.lt-ie9 .notif-close:hover:before {
+  color: #999;
+}

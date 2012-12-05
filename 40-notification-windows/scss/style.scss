@@ -1,0 +1,261 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+$notifPaddingTop: 25px;
+$notifPaddingLeft: 30px;
+$notifCircleWidth: 50px;
+
+body {
+  font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #343137;
+}
+
+.container {
+  margin: 40px auto;
+  width: 380px;
+
+  .notif { margin: 10px 0; }
+}
+
+.notif {
+  position: relative;
+  padding: $notifPaddingTop $notifPaddingLeft $notifPaddingTop $notifPaddingLeft + $notifCircleWidth + 20px;
+  min-height: $notifCircleWidth;
+  line-height: 22px;
+  background: white;
+  border-radius: 2px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: $notifPaddingTop;
+    left: $notifPaddingLeft;
+    width: $notifCircleWidth - 10px;
+    height: $notifCircleWidth - 10px;
+    border: 5px solid;
+    border-radius: $notifCircleWidth / 2;
+  }
+
+  p {
+    font-size: 11px;
+    color: #666;
+  }
+}
+
+.notif-title {
+  margin: 0 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 2px;
+  }
+}
+
+.notif-notice {
+  &:before {
+    background: #a7d155;
+    border-color: #8fb14f;
+  }
+
+  .notif-title {
+    &:before, &:after {
+      top: $notifPaddingTop + $notifCircleWidth / 2 - 6px;
+      left: $notifPaddingLeft + $notifCircleWidth / 2;
+      width: 4px;
+      height: 12px;
+      @include transform(rotate(45deg));
+    }
+
+    &:after {
+      top: $notifPaddingTop + $notifCircleWidth / 2;
+      left: $notifPaddingLeft + $notifCircleWidth / 2 - 7px;
+      width: 8px;
+      height: 4px;
+    }
+  }
+}
+
+.notif-alert {
+  &:before {
+    background: #e34f4f;
+    border-color: #c14343;
+  }
+
+  .notif-title {
+    &:before, &:after {
+      top: $notifPaddingTop + $notifCircleWidth / 2 - 7px;
+      left: $notifPaddingLeft + $notifCircleWidth / 2 - 2px;
+      width: 4px;
+      height: 14px;
+      @include transform(rotate(45deg));
+    }
+
+    &:after {
+      top: $notifPaddingTop + $notifCircleWidth / 2 - 2px;
+      left: $notifPaddingLeft + $notifCircleWidth / 2 - 7px;
+      width: 14px;
+      height: 4px;
+    }
+  }
+}
+
+.notif-warn {
+  &:before {
+    background: #f1e472;
+    border-color: #cec260;
+  }
+
+  .notif-title {
+      &:before, &:after {
+      top: $notifPaddingTop + $notifCircleWidth / 2 - 8px;
+      left: $notifPaddingLeft + $notifCircleWidth / 2 - 2px;
+      width: 4px;
+      height: 11px;
+      background: #5c562b;
+    }
+
+    &:after {
+      top: $notifPaddingTop + $notifCircleWidth / 2 + 4px;
+      height: 4px;
+    }
+  }
+}
+
+.notif-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 16px;
+  padding: 4px 3px 5px;
+  background: #f0f0f0;
+  border: solid #dcdcdc;
+  border-width: 0 0 1px 1px;
+  border-radius: 0 2px;
+
+  > a {
+    position: relative;
+    float: left;
+    margin: 0 1px;
+    width: 16px;
+    height: 16px;
+    @include hide-text;
+  }
+}
+
+.notif-minimize {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 4px;
+    width: 7px;
+    height: 2px;
+    background: #bbb;
+  }
+
+  &:hover:before { background: #888; }
+}
+
+.notif-zoom {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    width: 5px;
+    height: 3px;
+    border: 2px solid #bbb;
+  }
+
+  &:hover:before { border-color: #888; }
+}
+
+.notif-close {
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    width: 2px;
+    height: 10px;
+    background: #bbb;
+    @include transform(rotate(45deg));
+  }
+
+  &:after {
+    top: 8px;
+    left: 3px;
+    width: 10px;
+    height: 2px;
+  }
+
+  &:hover:before, &:hover:after { background: #888; }
+}
+
+/* IE 8 doesn't support CSS transforms; use Unicode instead. */
+
+.lt-ie9 {
+  .notif-notice {
+    .notif-title:before {
+      content: '\2714';
+      display: block;
+      top: $notifPaddingTop;
+      left: $notifPaddingLeft;
+      width: $notifCircleWidth;
+      font: bold 18px/#{$notifCircleWidth} 'Arial Unicode MS';
+      color: white;
+      text-align: center;
+      background: none;
+    }
+
+    .notif-title:after { display: none; }
+  }
+
+  .notif-alert {
+    .notif-title:before {
+      content: '\2716';
+      display: block;
+      top: $notifPaddingTop;
+      left: $notifPaddingLeft;
+      width: $notifCircleWidth;
+      font: bold 17px/#{$notifCircleWidth} 'Arial Unicode MS';
+      color: white;
+      text-align: center;
+      background: none;
+    }
+
+    .notif-title:after { display: none; }
+  }
+
+  .notif-close {
+    &:before {
+      content: '\2716';
+      display: block;
+      top: 0;
+      left: 0;
+      width: 16px;
+      font: 11px/19px 'Arial Unicode MS';
+      color: #bbb;
+      text-align: center;
+      background: none;
+    }
+
+    &:after { display: none; }
+    &:hover:before { color: #999; }
+  }
+}
