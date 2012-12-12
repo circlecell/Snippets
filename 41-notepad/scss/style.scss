@@ -1,0 +1,122 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+$notepadHeadingHeight: 38px;
+$notepadLineHeight: 23px;
+$notepadHorizontalLineColor: #e8e8e8;
+$notepadVerticalLineColor: #f6abca;
+
+/*
+ * Note: I didn't use borders because WebKit extends shadows underneath them, creating
+ * inconsistencies with other browsers. When the border is semi-transparent, as this
+ * snippet requires, it appears darker because of the shadow underneath it.
+ */
+
+body {
+  font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #3782b0;
+}
+
+.notepad, .notepad:before, .notepad:after {
+  background-color: white;
+  background-image: -webkit-linear-gradient($notepadVerticalLineColor   1px, transparent 1px),
+                    -webkit-linear-gradient($notepadVerticalLineColor   1px, transparent 1px),
+                    -webkit-linear-gradient($notepadHorizontalLineColor 1px, transparent 1px);
+  background-image:    -moz-linear-gradient($notepadVerticalLineColor   1px, transparent 1px),
+                       -moz-linear-gradient($notepadVerticalLineColor   1px, transparent 1px),
+                       -moz-linear-gradient($notepadHorizontalLineColor 1px, transparent 1px);
+  background-image:      -o-linear-gradient($notepadVerticalLineColor   1px, transparent 1px),
+                         -o-linear-gradient($notepadVerticalLineColor   1px, transparent 1px),
+                         -o-linear-gradient($notepadHorizontalLineColor 1px, transparent 1px);
+  background-image:         linear-gradient($notepadVerticalLineColor   1px, transparent 1px),
+                            linear-gradient($notepadVerticalLineColor   1px, transparent 1px),
+                            linear-gradient($notepadHorizontalLineColor 1px, transparent 1px);
+  background-size: 1px 1px, 1px 1px, $notepadLineHeight $notepadLineHeight;
+  background-repeat: repeat-y, repeat-y, repeat;
+  background-position: $notepadLineHeight - 1px 0,
+                       $notepadLineHeight + 1px 0,
+                      0 #{$notepadHeadingHeight + round($notepadLineHeight / 2)};
+  border-radius: 2px;
+  @include box-shadow(0 0 0 1px rgba(black, .15), 0 0 4px rgba(black, .5));
+}
+
+.notepad {
+  position: relative;
+  margin: 60px auto;
+  padding: 0 $notepadLineHeight round($notepadLineHeight * 0.6) round($notepadLineHeight * 1.5);
+  width: 300px;
+  line-height: $notepadLineHeight;
+  font-size: 11px;
+  color: #666;
+
+  p, blockquote { margin-bottom: $notepadLineHeight; }
+  :last-child { margin-bottom: 0; }
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 3px;
+    right: 3px;
+    margin-top: -2px;
+    height: 4px;
+    background-size: 1px 1px, 1px 1px, 0 0;
+  }
+
+  &:before {
+    z-index: -2;
+    left: 6px;
+    right: 6px;
+    height: 6px;
+    background-color: #eee;
+  }
+}
+
+.notepad-heading {
+  position: relative;
+  margin: 0 -#{$notepadLineHeight} round($notepadLineHeight * 0.6) -#{round($notepadLineHeight * 1.5)};
+  height: $notepadHeadingHeight;
+  background: #14466a;
+  border-radius: 2px 2px 0 0;
+  @include linear-gradient(top, #226797, #0c3452);
+  @include box-shadow(inset 0 1px #2f81ad,
+                      0 2px 1px rgba(black, .4),
+                      0 0 0 1px rgba(black, .5),
+                      0 1px black);
+
+  > h1 {
+    line-height: $notepadHeadingHeight - 2px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 -1px rgba(black, .7);
+  }
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 1px;
+    right: 1px;
+    height: 0;
+    border-top: 1px dashed #617c90;
+    border-color: rgba(white, .35);
+  }
+
+  &:after {
+    bottom: 3px;
+    border-color: #071c2c;
+    border-color: rgba(black, .5);
+  }
+}

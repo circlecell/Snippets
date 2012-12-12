@@ -1,0 +1,201 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.about {
+  margin: 80px auto;
+  padding: 8px;
+  width: 240px;
+  font: 10px/18px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #777;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  background: #eee;
+  background: rgba(250, 250, 250, 0.8);
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+}
+.about a {
+  color: #333;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.about a:hover {
+  text-decoration: none;
+  background: #fafafa;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.about-links {
+  height: 30px;
+}
+.about-links a {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-author {
+  margin-top: 5px;
+}
+.about-author a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+}
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/*
+ * Note: I didn't use borders because WebKit extends shadows underneath them, creating
+ * inconsistencies with other browsers. When the border is semi-transparent, as this
+ * snippet requires, it appears darker because of the shadow underneath it.
+ */
+body {
+  font: 12px/20px "Lucida Grande", Verdana, sans-serif;
+  color: #404040;
+  background: #3782b0;
+}
+
+.notepad, .notepad:before, .notepad:after {
+  background-color: white;
+  background-image: -webkit-linear-gradient(#f6abca 1px, transparent 1px), -webkit-linear-gradient(#f6abca 1px, transparent 1px), -webkit-linear-gradient(#e8e8e8 1px, transparent 1px);
+  background-image: -moz-linear-gradient(#f6abca 1px, transparent 1px), -moz-linear-gradient(#f6abca 1px, transparent 1px), -moz-linear-gradient(#e8e8e8 1px, transparent 1px);
+  background-image: -o-linear-gradient(#f6abca 1px, transparent 1px), -o-linear-gradient(#f6abca 1px, transparent 1px), -o-linear-gradient(#e8e8e8 1px, transparent 1px);
+  background-image: linear-gradient(#f6abca 1px, transparent 1px), linear-gradient(#f6abca 1px, transparent 1px), linear-gradient(#e8e8e8 1px, transparent 1px);
+  background-size: 1px 1px, 1px 1px, 23px 23px;
+  background-repeat: repeat-y, repeat-y, repeat;
+  background-position: 22px 0, 24px 0, 0 50px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.notepad {
+  position: relative;
+  margin: 60px auto;
+  padding: 0 23px 14px 35px;
+  width: 300px;
+  line-height: 23px;
+  font-size: 11px;
+  color: #666;
+}
+.notepad p, .notepad blockquote {
+  margin-bottom: 23px;
+}
+.notepad :last-child {
+  margin-bottom: 0;
+}
+.notepad:before, .notepad:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  left: 3px;
+  right: 3px;
+  margin-top: -2px;
+  height: 4px;
+  background-size: 1px 1px, 1px 1px, 0 0;
+}
+.notepad:before {
+  z-index: -2;
+  left: 6px;
+  right: 6px;
+  height: 6px;
+  background-color: #eee;
+}
+
+.notepad-heading {
+  position: relative;
+  margin: 0 -23px 14px -35px;
+  height: 38px;
+  background: #14466a;
+  border-radius: 2px 2px 0 0;
+  background-image: -webkit-linear-gradient(top, #226797, #0c3452);
+  background-image: -moz-linear-gradient(top, #226797, #0c3452);
+  background-image: -o-linear-gradient(top, #226797, #0c3452);
+  background-image: linear-gradient(to bottom, #226797, #0c3452);
+  -webkit-box-shadow: inset 0 1px #2f81ad, 0 2px 1px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.5), 0 1px black;
+  box-shadow: inset 0 1px #2f81ad, 0 2px 1px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.5), 0 1px black;
+}
+.notepad-heading > h1 {
+  line-height: 36px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+}
+.notepad-heading:before, .notepad-heading:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 1px;
+  right: 1px;
+  height: 0;
+  border-top: 1px dashed #617c90;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.notepad-heading:after {
+  bottom: 3px;
+  border-color: #071c2c;
+  border-color: rgba(0, 0, 0, 0.5);
+}
