@@ -1,0 +1,218 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.about {
+  margin: 80px auto;
+  padding: 8px;
+  width: 240px;
+  font: 10px/18px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #777;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  background: #eee;
+  background: rgba(250, 250, 250, 0.8);
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+}
+.about a {
+  color: #333;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.about a:hover {
+  text-decoration: none;
+  background: #fafafa;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.about-links {
+  height: 30px;
+}
+.about-links a {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-author {
+  margin-top: 5px;
+}
+.about-author a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+}
+
+/*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font: 12px/20px "Lucida Grande", Verdana, sans-serif;
+  color: #404040;
+  background: #404040;
+  background-image: -webkit-radial-gradient(circle, #555555, #333333 80%);
+  background-image: -moz-radial-gradient(circle, #555555, #333333 80%);
+  background-image: -o-radial-gradient(circle, #555555, #333333 80%);
+  background-image: radial-gradient(circle, #555555, #333333 80%);
+}
+
+.container {
+  margin: 120px auto;
+  width: 480px;
+  text-align: center;
+}
+.container .nav {
+  display: inline-block;
+  text-align: left;
+}
+
+.nav {
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 23px;
+  -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.08), 0 -1px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.08), 0 -1px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.nav-list {
+  padding: 0 6px;
+  height: 34px;
+  background: #f4f5f7;
+  border-radius: 18px;
+  background-image: -webkit-linear-gradient(top, white, #e1e2eb);
+  background-image: -moz-linear-gradient(top, white, #e1e2eb);
+  background-image: -o-linear-gradient(top, white, #e1e2eb);
+  background-image: linear-gradient(to bottom, white, #e1e2eb);
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.nav-list > li {
+  float: left;
+  height: 17px;
+  margin: 8px 0;
+}
+.nav-list > li + li {
+  border-left: 1px dotted #989ca8;
+}
+
+.nav-link {
+  float: left;
+  position: relative;
+  margin-top: -8px;
+  padding: 0 14px;
+  line-height: 34px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #555;
+  text-decoration: none;
+  text-shadow: 0 1px white;
+}
+.nav-link:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.nav-counter {
+  position: absolute;
+  top: -1px;
+  right: 1px;
+  min-width: 8px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: -11px;
+  padding: 0 6px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  background: #e23442;
+  border: 1px solid #911f28;
+  border-radius: 11px;
+  background-image: -webkit-linear-gradient(top, #e8616c, #dd202f);
+  background-image: -moz-linear-gradient(top, #e8616c, #dd202f);
+  background-image: -o-linear-gradient(top, #e8616c, #dd202f);
+  background-image: linear-gradient(to bottom, #e8616c, #dd202f);
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(0, 0, 0, 0.12);
+}
+
+.nav-counter-green {
+  background: #75a940;
+  border: 1px solid #42582b;
+  background-image: -webkit-linear-gradient(top, #8ec15b, #689739);
+  background-image: -moz-linear-gradient(top, #8ec15b, #689739);
+  background-image: -o-linear-gradient(top, #8ec15b, #689739);
+  background-image: linear-gradient(to bottom, #8ec15b, #689739);
+}
+
+.nav-counter-blue {
+  background: #3b8de2;
+  border: 1px solid #215a96;
+  background-image: -webkit-linear-gradient(top, #67a7e9, #2580df);
+  background-image: -moz-linear-gradient(top, #67a7e9, #2580df);
+  background-image: -o-linear-gradient(top, #67a7e9, #2580df);
+  background-image: linear-gradient(to bottom, #67a7e9, #2580df);
+}
