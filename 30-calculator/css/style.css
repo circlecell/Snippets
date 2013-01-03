@@ -50,7 +50,7 @@ table {
 .about {
   margin: 80px auto;
   padding: 8px;
-  width: 240px;
+  width: 260px;
   font: 10px/18px "Lucida Grande", Tahoma, Verdana, sans-serif;
   color: #bbb;
   text-align: center;
@@ -99,7 +99,7 @@ table {
 }
 
 /*
- * Copyright (c) 2012 Thibaut Courouble
+ * Copyright (c) 2012-2013 Thibaut Courouble
  * http://www.webinterfacelab.com
  *
  * Licensed under the MIT License:
@@ -134,7 +134,7 @@ body {
   padding: 15px;
   width: 177px;
   background: #3d4543;
-  border: 1px solid #222;
+  border: 1px solid #222222;
   border-radius: 4px;
   background-image: -webkit-linear-gradient(top, #3d4543, #2f2a2f);
   background-image: -moz-linear-gradient(top, #3d4543, #2f2a2f);
@@ -164,7 +164,7 @@ body {
   background: #bccd95;
   background-clip: padding-box;
   /* Don't let the background bleed outside the border */
-  border: 1px solid #222;
+  border: 1px solid #222222;
   border-radius: 2px;
   background-image: -webkit-linear-gradient(top, #bccd95, #e0f5b1);
   background-image: -moz-linear-gradient(top, #bccd95, #e0f5b1);

@@ -30,7 +30,7 @@ For more snippets, visit [WebInterfaceLab.com](http://www.webinterfacelab.com) o
 
 ## License
 
-Copyright (c) 2012 Thibaut Courouble
+Copyright (c) 2012-2013 Thibaut Courouble
 
 Licensed under the MIT License
 

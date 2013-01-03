@@ -6,7 +6,7 @@ Follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab) — [Subscribe via
 
 ## License
 
-Copyright (c) 2012 [Thibaut Courouble](http://thibaut.me)
+Copyright (c) 2012-2013 [Thibaut Courouble](http://thibaut.me)
 
 Licensed under the MIT License
 
