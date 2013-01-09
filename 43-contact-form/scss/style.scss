@@ -1,0 +1,203 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+$arrowSize: 12px;
+$inputHeight: 29px;
+
+::-moz-focus-inner { padding: 0; border: 0 }
+:-moz-placeholder { color: #879fa6 !important; }
+::-webkit-input-placeholder { color: #879fa6; }
+:-ms-input-placeholder { color: #879fa6 !important; }
+
+body {
+  font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #e4ecef;
+}
+
+input, textarea, select, label {
+  font-family: inherit;
+  font-size: 12px;
+  @include box-sizing(border-box);
+}
+
+.contact {
+  position: relative;
+  margin: 50px auto;
+  padding: 5px;
+  width: 320px;
+  background: #eef5f7;
+  border: 1px solid #cfd5da;
+  border-bottom-color: #ccd1d6;
+  border-radius: 3px;
+  @include box-shadow(0 1px 1px rgba(black, .05));
+}
+
+.contact-inner {
+  padding: 25px;
+  background: white;
+  border-radius: 2px;
+}
+
+.contact:before, .contact:after, .contact-inner:before, .contact-inner:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: - round($arrowSize / 2);
+  width: 1px;
+  height: 1px;
+  border: outset transparent; // "outset" prevents pixelation in Firefox
+  border-width: $arrowSize $arrowSize + 2px 0;
+  border-top-style: solid;
+  -webkit-transform: rotate(360deg); // Better anti-aliasing in some Webkit browsers
+}
+
+.contact:before { // Shadow
+  margin-top: 1px;
+  border-top-color: #d8e1e6;
+}
+
+.contact-inner:before { // Border
+  border-top-color: #ccd1d6;
+}
+
+.contact-inner:after { // Inner border
+  margin-top: -1px;
+  border-top-color: #eef5f7;
+}
+
+.contact:after { // Background
+  margin-top: -8px;
+  border-top-color: white;
+}
+
+.contact-input {
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 5px;
+  background: #eef7f9;
+  border-radius: 2px;
+
+  > input, > textarea {
+    display: block;
+    width: 100%;
+    height: $inputHeight;
+    padding: 0 floor($inputHeight / 3);
+    color: #4d5a5e;
+    background: white;
+    border: 1px solid #cfdfe3;
+    border-bottom-color: #d2e2e7;
+    border-radius: 2px;
+    @include box-shadow(inset 0 1px 2px rgba(black, .05), 0 1px rgba(white, .2));
+
+    &:focus {
+      border-color: #93c2ec;
+      outline: 0;
+      @include box-shadow(0 0 0 8px #e1ecf5);
+    }
+
+    .lt-ie9 & { line-height: $inputHeight - 2px; }
+  }
+
+  > textarea {
+    padding: 4px 8px;
+    height: 90px;
+    line-height: 20px;
+    resize: none;
+  }
+}
+
+.select {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #d2e2e7;
+  border-bottom-color: #c5d4d9;
+  border-radius: 2px;
+  @include linear-gradient(top, #fcfdff, #f2f7f7);
+  @include box-shadow(0 1px 2px rgba(black, .06));
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    right: floor($inputHeight / 2) - 3px;
+    width: 0;
+    height: 0;
+    border-left: 3px outset transparent;
+    border-right: 3px outset transparent;
+  }
+
+  &:before {
+    top: floor($inputHeight / 2) - 4px;
+    border-bottom: 3px solid #7f9298;
+  }
+
+  &:after {
+    top: floor($inputHeight / 2) + 2px;
+    border-top: 3px solid #7f9298;
+  }
+
+  > select {
+    position: relative;
+    z-index: 2;
+    width: 112%;
+    height: $inputHeight;
+    line-height: 17px;
+    padding: floor(($inputHeight - 17px - 2px) / 2) floor($inputHeight / 3);
+    padding-right: 0;
+    color: #80989f;
+    background: transparent;
+    background: rgba(black, 0); // transparent doesn't work in Opera
+    border: 0;
+    -webkit-appearance: none;
+
+    &:focus {
+      color: #4d5a5e;
+      outline: 0;
+    }
+  }
+}
+
+.contact-submit {
+  text-align: right;
+
+  > input {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 floor($inputHeight / 2);
+    height: $inputHeight;
+    font-weight: bold;
+    color: #729fb2;
+    text-shadow: 0 1px rgba(white, .5);
+    background: #deeef4;
+    border: 1px solid #bed6e3;
+    border-bottom-color: #accbd9;
+    border-radius: floor($inputHeight / 2) + 1px;
+    cursor: pointer;
+    @include linear-gradient(top, #e6f2f7, #d0e6ee);
+    @include box-shadow(inset 0 1px rgba(white, .2),
+                        0 1px 1px rgba(black, .06),
+                        0 0 0 4px #eef7f9);
+
+    &:active {
+      color: #6a95a9;
+      text-shadow: 0 1px rgba(white, .3);
+      background: #c9dfe9;
+      border-color: #a3bed0 #b5ccda #b5ccda;
+      @include box-shadow(inset 0 1px 3px rgba(black, .1),
+                          0 1px rgba(white, .2),
+                          0 0 0 4px #eef7f9);
+    }
+  }
+}
