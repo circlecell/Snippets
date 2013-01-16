@@ -1,0 +1,72 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+html, body { min-height: 100%; }
+
+body {
+  font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #c4c7cb;
+  @include radial-gradient(cover, #e8eaec, #a4a8ae);
+}
+
+.progress {
+  overflow: hidden;
+  margin: 100px auto;
+  padding: 0 15px;
+  width: 220px;
+  height: 34px;
+  background: #d3d5d9;
+  border-radius: 17px;
+  @include linear-gradient(top, #ebecef, #bfc3c7);
+  @include box-shadow(inset 0 1px rgba(white, .8),
+                      0 2px 4px rgba(black, .35),
+                      0 0 0 1px rgba(black, .1),
+                      0 0 0 6px #b6babe,
+                      0 7px rgba(white, .1));
+}
+
+.progress-val {
+  float: right;
+  margin-left: 15px;
+  font: bold 15px/34px Helvetica, Arial, sans-serif;
+  color: #333;
+  text-shadow: 0 1px rgba(white, .6);
+}
+
+.progress-bar {
+  display: block;
+  overflow: hidden;
+  height: 8px;
+  margin: 13px 0;
+  background: #b8b8b8;
+  border-radius: 4px;
+  @include linear-gradient(top, rgba(black, .2), transparent 60%);
+  @include box-shadow(inset 0 1px 2px rgba(black, .2), 0 1px rgba(white, .6));
+}
+
+.progress-in {
+  display: block;
+  min-width: 8px;
+  height: 8px;
+  background: #1997e6;
+  background-image: -webkit-linear-gradient(top, rgba(white, .3), rgba(white, 0) 60%, rgba(black, 0) 61%, rgba(black, .2)),
+                    -webkit-linear-gradient(left, #147cd6, #24c1fc);
+  background-image:    -moz-linear-gradient(top, rgba(white, .3), rgba(white, 0) 60%, rgba(black, 0) 61%, rgba(black, .2)),
+                       -moz-linear-gradient(left, #147cd6, #24c1fc);
+  background-image:      -o-linear-gradient(top, rgba(white, .3), rgba(white, 0) 60%, rgba(black, 0) 61%, rgba(black, .2)),
+                         -o-linear-gradient(left, #147cd6, #24c1fc);
+  background-image:         linear-gradient(to bottom, rgba(white, .3), rgba(white, 0) 60%, rgba(black, 0) 61%, rgba(black, .2)),
+                            linear-gradient(to right, #147cd6, #24c1fc);
+  border-radius: 4px;
+  @include box-shadow(inset 0 1px rgba(black, .2), inset 0 0 0 1px rgba(black, .2));
+}

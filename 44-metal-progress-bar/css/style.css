@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.about {
+  margin: 80px auto;
+  padding: 8px;
+  width: 260px;
+  font: 10px/18px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #bbb;
+  text-align: center;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  background: #333;
+  background: rgba(34, 34, 34, 0.75);
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.4);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+.about a {
+  color: #eee;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.about a:hover {
+  text-decoration: none;
+  background: #555;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.about-links {
+  height: 30px;
+}
+.about-links a {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-author {
+  margin-top: 5px;
+}
+.about-author a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+}
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font: 12px/20px "Lucida Grande", Verdana, sans-serif;
+  color: #404040;
+  background: #c4c7cb;
+  background-image: -webkit-radial-gradient(cover, #e8eaec, #a4a8ae);
+  background-image: -moz-radial-gradient(cover, #e8eaec, #a4a8ae);
+  background-image: -o-radial-gradient(cover, #e8eaec, #a4a8ae);
+  background-image: radial-gradient(cover, #e8eaec, #a4a8ae);
+}
+
+.progress {
+  overflow: hidden;
+  margin: 100px auto;
+  padding: 0 15px;
+  width: 220px;
+  height: 34px;
+  background: #d3d5d9;
+  border-radius: 17px;
+  background-image: -webkit-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: -moz-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: -o-linear-gradient(top, #ebecef, #bfc3c7);
+  background-image: linear-gradient(to bottom, #ebecef, #bfc3c7);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 6px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 6px #b6babe, 0 7px rgba(255, 255, 255, 0.1);
+}
+
+.progress-val {
+  float: right;
+  margin-left: 15px;
+  font: bold 15px/34px Helvetica, Arial, sans-serif;
+  color: #333;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.progress-bar {
+  display: block;
+  overflow: hidden;
+  height: 8px;
+  margin: 13px 0;
+  background: #b8b8b8;
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), transparent 60%);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2), transparent 60%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.2), transparent 60%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent 60%);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.progress-in {
+  display: block;
+  min-width: 8px;
+  height: 8px;
+  background: #1997e6;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0.2)), -webkit-linear-gradient(left, #147cd6, #24c1fc);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0.2)), -moz-linear-gradient(left, #147cd6, #24c1fc);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0.2)), -o-linear-gradient(left, #147cd6, #24c1fc);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0.2)), linear-gradient(to right, #147cd6, #24c1fc);
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
