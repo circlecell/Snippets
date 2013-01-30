@@ -1,0 +1,114 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.webinterfacelab.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+$inputHeight: 37px;
+
+::-moz-focus-inner { padding: 0; border: 0 }
+:-moz-placeholder { color: #bcc0c8 !important; }
+::-webkit-input-placeholder { color: #bcc0c8; }
+:-ms-input-placeholder { color: #bcc0c8 !important; }
+
+body {
+  font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #ebc9a2;
+}
+
+input, textarea, select, label {
+  font-family: inherit;
+  font-size: 12px;
+  @include box-sizing(border-box);
+}
+
+.login {
+  margin: 50px auto;
+  padding: 18px 20px;
+  width: 200px;
+  background: #3f65b7;
+  background-clip: padding-box;
+  border: 1px solid #172b4e;
+  border-bottom-color: #142647;
+  border-radius: 5px;
+  @include radial-gradient(cover, #437dd6, #3960a6);
+  @include box-shadow(inset 0 1px rgba(white, .3), inset 0 0 1px 1px rgba(white, .1), 0 2px 10px rgba(black, .5));
+
+  > h1 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 0 -1px rgba(black, .4);
+  }
+}
+
+.login-input {
+  display: block;
+  width: 100%;
+  height: $inputHeight;
+  margin-bottom: 20px;
+  padding: 0 floor($inputHeight / 4);
+  color: white;
+  text-shadow: 0 1px black;
+  background: #2b3e5d;
+  border: 1px solid #15243b;
+  border-top-color: #0d1827;
+  border-radius: 4px;
+  @include linear-gradient(top, rgba(black, .35), rgba(black, .2) 20%, rgba(black, 0));
+  @include box-shadow(inset 0 1px 2px rgba(black, .3), 0 1px rgba(white, .2));
+
+  &:focus {
+    outline: 0;
+    background-color: #32486d;
+    @include box-shadow(inset 0 1px 2px rgba(black, .3), 0 0 4px 1px rgba(white, .6));
+  }
+
+  .lt-ie9 & { line-height: $inputHeight - 2px; }
+}
+
+.login-submit {
+  display: block;
+  width: 100%;
+  height: $inputHeight;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #294779;
+  text-align: center;
+  text-shadow: 0 1px rgba(white, .3);
+  background: #adcbfa;
+  background-clip: padding-box;
+  border: 1px solid #284473;
+  border-bottom-color: #223b66;
+  border-radius: 4px;
+  cursor: pointer;
+  @include linear-gradient(top, #d0e1fe, #96b8ed);
+  @include box-shadow(inset 0 1px rgba(white, .5), inset 0 0 7px rgba(white, .4), 0 1px 1px rgba(black, .15));
+
+  &:active {
+    background: #a4c2f3;
+    @include box-shadow(inset 0 1px 5px rgba(black, .4), 0 1px rgba(white, .1));
+  }
+}
+
+.login-help {
+  text-align: center;
+
+  > a {
+    font-size: 11px;
+    color: #d4deef;
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(black, .4);
+
+    &:hover { text-decoration: underline; }
+  }
+}
