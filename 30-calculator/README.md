@@ -1,10 +1,10 @@
-# Chunky Calculator — CSS3 Snippet
+# Chunky Calculator — CSS Code Snippet
 
-**Demo**: [demo.webinterfacelab.com/30-chunky-calculator](http://demo.webinterfacelab.com/30-chunky-calculator/)
+**Demo**: [cssflow.com/snippets/chunky-calculator/demo](http://www.cssflow.com/snippets/chunky-calculator/demo)
 
-Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/chunky-calculator.zip).
+Download the latest version of this snippet [here](http://www.cssflow.com/snippets/chunky-calculator.zip).
 
-[![Preview](http://cdn.webinterfacelab.com/snippets/chunky-calculator/preview-580.png)](http://www.webinterfacelab.com/snippets/chunky-calculator)
+[![Preview](http://cdn.cssflow.com/snippets/chunky-calculator/preview-580.png)](http://www.cssflow.com/snippets/chunky-calculator)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 
@@ -26,7 +26,7 @@ Coded by [Thibaut Courouble](http://thibaut.me).
 
 Original PSD by [Zack Smith](http://www.premiumpixels.com/freebies/chunky-calculator-psd/).
 
-For more snippets, visit [WebInterfaceLab.com](http://www.webinterfacelab.com) or follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab).
+For more snippets, visit [CSSFlow.com](http://www.cssflow.com) or follow [@CSSFlow](https://twitter.com/CSSFlow).
 
 ## License
 
@@ -36,6 +36,6 @@ Licensed under the MIT License
 
 ## More CSS3
 
-Have a look at my [CSS-only UI kits](http://www.webinterfacelab.com/ui-kits):
+Checkout my [UI kits built entirely with CSS](http://www.cssflow.com/ui-kits):
 
-[![Thumb #1](http://cdn.webinterfacelab.com/kits/colorful_css3_ui_kit_thumb_270_1.png)](http://www.webinterfacelab.com/ui-kits) [![Thumb #2](http://cdn.webinterfacelab.com/kits/colorful_css3_ui_kit_thumb_270_2.png)](http://www.webinterfacelab.com/ui-kits) [![Thumb #3](http://cdn.webinterfacelab.com/kits/colorful_css3_ui_kit_thumb_270_3.png)](http://www.webinterfacelab.com/ui-kits)
+[![Preview](http://cdn.cssflow.com/kits/all_kits_preview_850.jpg)](http://www.cssflow.com/ui-kits)

@@ -1,10 +1,10 @@
-# Notification Windows — CSS3 Snippet
+# Notification Windows — CSS Code Snippet
 
-**Demo**: [demo.webinterfacelab.com/40-notification-windows](http://demo.webinterfacelab.com/40-notification-windows/)
+**Demo**: [cssflow.com/snippets/notification-windows/demo](http://www.cssflow.com/snippets/notification-windows/demo)
 
-Download the latest version of this snippet [here](http://www.webinterfacelab.com/snippets/notification-windows.zip).
+Download the latest version of this snippet [here](http://www.cssflow.com/snippets/notification-windows.zip).
 
-[![Preview](http://cdn.webinterfacelab.com/snippets/notification-windows/preview-580.png)](http://www.webinterfacelab.com/snippets/notification-windows)
+[![Preview](http://cdn.cssflow.com/snippets/notification-windows/preview-580.png)](http://www.cssflow.com/snippets/notification-windows)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 
@@ -26,7 +26,7 @@ Coded by [Thibaut Courouble](http://thibaut.me).
 
 Original PSD by [Cosmin Negoita](http://dribbble.com/shots/694528-Notifications-Windows-UI).
 
-For more snippets, visit [WebInterfaceLab.com](http://www.webinterfacelab.com) or follow [@WebInterfaceLab](http://twitter.com/WebInterfaceLab).
+For more snippets, visit [CSSFlow.com](http://www.cssflow.com) or follow [@CSSFlow](https://twitter.com/CSSFlow).
 
 ## License
 
@@ -36,6 +36,6 @@ Licensed under the MIT License
 
 ## More CSS3
 
-Have a look at my [CSS-only UI kits](http://www.webinterfacelab.com/ui-kits):
+Checkout my [UI kits built entirely with CSS](http://www.cssflow.com/ui-kits):
 
-[![Thumb #1](http://cdn.webinterfacelab.com/kits/colorful_css3_ui_kit_thumb_270_1.png)](http://www.webinterfacelab.com/ui-kits) [![Thumb #2](http://cdn.webinterfacelab.com/kits/colorful_css3_ui_kit_thumb_270_2.png)](http://www.webinterfacelab.com/ui-kits) [![Thumb #3](http://cdn.webinterfacelab.com/kits/colorful_css3_ui_kit_thumb_270_3.png)](http://www.webinterfacelab.com/ui-kits)
+[![Preview](http://cdn.cssflow.com/kits/all_kits_preview_850.jpg)](http://www.cssflow.com/ui-kits)
