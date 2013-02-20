@@ -1,0 +1,108 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+body {
+  font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #e1dbd1;
+}
+
+.container {
+  margin: 80px auto;
+  width: 400px;
+  text-align: center;
+
+  > .social-button { margin: 0 10px; }
+}
+
+.social-button {
+  display: inline-block;
+  padding: 6px 10px 7px 8px;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 3px;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/icons.png');
+
+    @include hidpi {
+      background-image: url('../img/icons@2x.png');
+      background-size: 48px 16px;
+    }
+  }
+}
+
+.social-button-tw {
+  color: #555;
+  text-shadow: 0 1px rgba(white, .7);
+  background: #f2f2f2;
+  border-color: #bababa #b6b6b6 #a5a5a5;
+  @include linear-gradient(top, white, #dedede);
+  @include box-shadow(inset 0 0 0 1px rgba(white, .4),
+                      0 1px 1px rgba(black, .06));
+
+  &:before { background-position: 0 0; }
+
+  &:active {
+    background: #dedede;
+    border-color: #b4b4b4 #b4b4b4 #a5a5a5;
+    @include linear-gradient(top, #e1e1e1, #f8f8f8);
+  }
+}
+
+.social-button-fb {
+  color: #304982;
+  text-shadow: 0 1px rgba(white, .6);
+  background: #eaedf6;
+  border-color: #aeb7cc #aeb7cc #9ba3b6;
+  @include linear-gradient(top, #f3f6ff, #d9dce5);
+  @include box-shadow(inset 0 1px white,
+                      inset 0 0 0 1px rgba(white, .4),
+                      0 1px 1px rgba(black, .06));
+
+  &:before { background-position: -16px 0; }
+
+  &:active {
+    background: #d9dce5;
+    border-color: #a6afc3 #a6afc3 #9ba3b6;
+    @include linear-gradient(top, #d9dce5, #f0f3fc);
+    @include box-shadow(inset 0 0 0 1px rgba(white, .4),
+                        0 1px 1px rgba(black, .06));
+  }
+}
+
+.social-button-rss {
+  color: white;
+  text-shadow: 0 -1px rgba(black, .2);
+  background: #f29b47;
+  border-color: #e38a45 #d87d46 #ca7043;
+  @include linear-gradient(top, #feb16f, #ed9135);
+  @include box-shadow(inset 0 0 0 1px rgba(white, .2),
+                      0 1px 1px rgba(black, .06));
+
+  &:before { background-position: -32px 0; }
+
+  &:active {
+    background: #ed9135;
+    border-color: #d87d46;
+    @include linear-gradient(top, #f19336, #feb16f);
+  }
+}
