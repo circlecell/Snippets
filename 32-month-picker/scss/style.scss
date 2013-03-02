@@ -34,7 +34,10 @@ body {
                       inset 0 2px 2px rgba(black, .3),
                       0 1px rgba(white, .1));
 
-  > input { display: none; }
+  > input {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
 }
 
 .month-picker-label, .month-picker-nav {
@@ -43,6 +46,11 @@ body {
   line-height: 25px;
   vertical-align: top;
   cursor: pointer;
+}
+
+input:focus + .month-picker-label, .month-picker-nav:focus {
+  outline: 2px solid  rgb(94, 158, 215);
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .month-picker-label {
