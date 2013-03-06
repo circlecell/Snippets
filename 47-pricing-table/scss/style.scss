@@ -1,0 +1,155 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+body {
+  font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #75649b;
+}
+
+.plans {
+  margin: 40px auto;
+  width: 660px;
+  @include clearfix;
+}
+
+.plan {
+  float: left;
+  width: 220px;
+  margin: 10px 0;
+  padding: 20px;
+  text-align: center;
+  background: #fafafa;
+  background-clip: padding-box;
+  border: solid #453b5d;
+  border-width: 2px 0 2px 2px;
+  @include box-sizing(border-box);
+  @include box-shadow(0 1px 2px rgba(black, .1));
+
+  &:first-child {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+
+  &:last-child {
+    border-width: 2px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+}
+
+.plan-title {
+  position: relative;
+  margin: -20px -10px 20px;
+  padding: 20px;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: bold;
+  color: #595f6b;
+  border-bottom: 1px dashed #d2d2d2;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-size: 3px 1px;
+    @include linear-gradient(left, white, white 33%, #d2d2d2 34%, #d2d2d2);
+  }
+}
+
+.plan-price {
+  margin: 0 auto 20px;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  background: #595f6b;
+  border-radius: 45px;
+
+  > span {
+    font-size: 12px;
+    font-weight: normal;
+    color: rgba(white, .9);
+  }
+}
+
+.plan-features {
+  margin-bottom: 20px;
+  line-height: 2;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+
+  > li > strong {
+    font-weight: bold;
+    color: #888;
+  }
+}
+
+.plan-button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  line-height: 30px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(black, .7);
+  background: #7c69a3;
+  border: 1px solid #222;
+  border-bottom-color: black;
+  border-radius: 3px;
+  @include linear-gradient(top, #9780cc, #6f5e96);
+  @include box-shadow(inset 0 1px rgba(white, .2),
+                      inset 0 2px rgba(white, .1),
+                      0 1px rgba(black, .1));
+
+  &:active {
+    color: rgba(white, .95);
+    background: #6f5e96;
+    border-color: black #222 #222;
+    @include linear-gradient(top, #6f5e96, #8770b9);
+    @include box-shadow(inset 0 1px 2px rgba(black, .25));
+  }
+}
+
+.plan-tall {
+  margin: 0;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 7px;
+
+  > .plan-title { font-size: 18px; }
+
+  > .plan-price {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 21px;
+    border-radius: 50px;
+  }
+
+  > .plan-features { font-size: 13px; }
+
+  > .plan-button {
+    padding: 0 16px;
+    line-height: 32px;
+  }
+
+  + .plan { border-left: 0; }
+}
