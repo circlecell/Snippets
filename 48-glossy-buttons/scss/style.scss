@@ -1,0 +1,103 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+ $buttonHeight: 48px;
+ $buttonColor: #247edd;
+ $buttonColors: green #1ca913, red #cd1d18;
+
+html, body { min-height: 100%; }
+
+body {
+  font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #92c7d6;
+  @include radial-gradient(top, circle cover, #97d0e1 0%, #427388 80%);
+}
+
+.container {
+  width: 550px;
+  margin: 70px auto;
+  text-align: center;
+
+  > .button { margin: 0 10px; }
+}
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+  min-width: $buttonHeight * 2;
+  line-height: $buttonHeight - 2px;
+  padding: 0 round($buttonHeight / 2);
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px darken($buttonColor, 20%);
+  background-color: $buttonColor;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: darken($buttonColor, 10%) darken($buttonColor, 15%) darken($buttonColor, 15%);
+  border-radius: 4px;
+  @include box-shadow(inset 0 1px rgba(white, .4), 0 1px 2px rgba(black, .2));
+  @include linear-gradient(top, rgba(white, .3), rgba(white, 0) 50%, rgba(black, .12) 51%, rgba(black, .04));
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -25%;
+    bottom: -25%;
+    left: -20%;
+    right: -20%;
+    border-radius: 50%;
+    background: transparent;
+    @include box-shadow(inset 0 0 round($buttonHeight * .8) rgba(white, .5));
+  }
+
+  &:hover { background-color: darken(saturate($buttonColor, 5%), 4%); }
+
+  &:active {
+    color: rgba(white, .9);
+    text-shadow: 0 -1px darken($buttonColor, 20%);
+    background: darken($buttonColor, 5%);
+    border-color: darken($buttonColor, 25%) darken($buttonColor, 20%) darken($buttonColor, 10%);
+    @include box-shadow(inset 0 1px 3px rgba(black, .2), 0 1px rgba(white, .4));
+    @include linear-gradient(top, darken($buttonColor, 13%), lighten($buttonColor, 5%));
+
+    &:before {
+      top: -50%;
+      bottom: -125%;
+      left: -15%;
+      right: -15%;
+      @include box-shadow(inset 0 0 $buttonHeight * 2 rgba(black, .2));
+    }
+  }
+}
+
+@each $pair in $buttonColors {
+  .button-#{nth($pair, 1)} {
+    $color: nth($pair, 2);
+    text-shadow: 0 1px darken($color, 20%);
+    background-color: $color;
+    border-color: darken($color, 10%) darken($color, 15%) darken($color, 15%);
+
+    &:hover { background-color: darken(saturate($color, 5%), 4%); }
+
+    &:active {
+      text-shadow: 0 -1px darken($color, 20%);
+      background: darken($color, 5%);
+      border-color: darken($color, 25%) darken($color, 20%) darken($color, 10%);
+      @include linear-gradient(top, darken($color, 13%), lighten($color, 5%));
+    }
+  }
+}
