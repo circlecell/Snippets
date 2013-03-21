@@ -16,4 +16,4 @@ Licensed under the MIT License
 
 Checkout my [UI kits built entirely with CSS](http://www.cssflow.com/ui-kits):
 
-[![Preview](http://cdn.cssflow.com/kits/all_kits_preview_850.jpg)](http://www.cssflow.com/ui-kits)
+[![Preview](http://cdn.cssflow.com/kits/all_kits_preview_850.png)](http://www.cssflow.com/ui-kits)
