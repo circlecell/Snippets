@@ -1,0 +1,232 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.about {
+  margin: 80px auto;
+  padding: 8px;
+  width: 260px;
+  font: 10px/18px "Lucida Grande", Arial, sans-serif;
+  color: #bbb;
+  text-align: center;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  background: #383838;
+  background: rgba(34, 34, 34, 0.8);
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.4);
+}
+.about a {
+  color: #eee;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.about a:hover {
+  text-decoration: none;
+  background: #555;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.about-links {
+  height: 30px;
+}
+.about-links > a {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-author {
+  margin-top: 5px;
+}
+.about-author > a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+}
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font: 12px/20px "Lucida Grande", Verdana, sans-serif;
+  color: #404040;
+  background: #eee;
+  background-image: -webkit-radial-gradient(circle cover, #edf0f0 0%, #d7d9da 80%);
+  background-image: -moz-radial-gradient(circle cover, #edf0f0 0%, #d7d9da 80%);
+  background-image: -o-radial-gradient(circle cover, #edf0f0 0%, #d7d9da 80%);
+  background-image: radial-gradient(circle cover, #edf0f0 0%, #d7d9da 80%);
+}
+
+.clock {
+  margin: 60px auto;
+  text-align: center;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.clock-block {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100px;
+  height: 98px;
+  margin: 0 8px;
+  padding-top: 16px;
+  line-height: 1;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+  background: #e5e7eb;
+  border: 1px solid #9fa2ad;
+  border-radius: 3px 3px 2px 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-linear-gradient(top, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
+  background-image: -moz-linear-gradient(top, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
+  background-image: -o-linear-gradient(top, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
+  background-image: linear-gradient(to bottom, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.clock-block:before, .clock-block:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: -1px;
+  right: -1px;
+  z-index: -1;
+  height: 4px;
+  background: #cacfd9;
+  border: 1px solid #9fa2ad;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.clock-block:before {
+  bottom: -7px;
+}
+
+.clock-val {
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: 64px;
+  font-weight: bold;
+  color: #4f5258;
+}
+.clock-val:before, .clock-val:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.clock-val:before {
+  z-index: -1;
+  top: -16px;
+  bottom: 50%;
+  border-radius: 2px 2px 0 0;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+.clock-val:after {
+  top: 50%;
+  bottom: -16px;
+  border-top: 1px solid rgba(60, 62, 68, 0.4);
+  border-radius: 0 0 2px 2px;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 50%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 50%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 50%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 50%);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.clock-unit {
+  display: block;
+  margin-top: -2px;
+  font-size: 13px;
+  font-weight: 200;
+  color: #6b707a;
+  text-transform: capitalize;
+}
+.clock-unit:after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  top: 100%;
+  left: -1px;
+  right: -1px;
+  height: 30px;
+  margin-top: 6px;
+  border-radius: 0 0 3px 3px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
+}
