@@ -51,7 +51,7 @@ table {
   margin: 80px auto;
   padding: 8px;
   width: 260px;
-  font: 10px/18px "Lucida Grande", Arial, sans-serif;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
   color: #bbb;
   text-align: center;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
@@ -110,7 +110,7 @@ html, body {
 }
 
 body {
-  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #404040;
   background: #dbdede;
   background-image: -webkit-radial-gradient(center, circle cover, #dbdede, #bfbdbe);
@@ -142,10 +142,10 @@ body {
   left: -6px;
   right: -6px;
   border-radius: 25px;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.6));
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.8);
 }
@@ -155,12 +155,12 @@ body {
   overflow: hidden;
   background: #eee;
   border: 1px solid;
-  border-color: #a1a1a1 #909090 gray;
+  border-color: #a1a1a1 #909090 #808080;
   border-radius: 20px;
-  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
-  background-image: -moz-linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
-  background-image: -o-linear-gradient(top, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
-  background-image: linear-gradient(to bottom, #eeeeee 0%, #ececec 40%, #cecece 70%, #a8a8a8 100%);
+  background-image: -webkit-linear-gradient(top, #eeeeee, #ececec 40%, #cecece 70%, #a8a8a8);
+  background-image: -moz-linear-gradient(top, #eeeeee, #ececec 40%, #cecece 70%, #a8a8a8);
+  background-image: -o-linear-gradient(top, #eeeeee, #ececec 40%, #cecece 70%, #a8a8a8);
+  background-image: linear-gradient(to bottom, #eeeeee, #ececec 40%, #cecece 70%, #a8a8a8);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
 }
@@ -172,7 +172,7 @@ body {
   right: 0;
   height: 110px;
   border-radius: 55px;
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
   -moz-transform: scaleY(0.2);
 }
 .widget li {
@@ -201,10 +201,10 @@ body {
   background: #508fee;
   border: 1px solid #1f2128;
   border-color: rgba(0, 0, 0, 0.7);
-  background-image: -webkit-linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
-  background-image: -moz-linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
-  background-image: -o-linear-gradient(top, #83bcff 0%, #508fee 40%, #1644c2 100%);
-  background-image: linear-gradient(to bottom, #83bcff 0%, #508fee 40%, #1644c2 100%);
+  background-image: -webkit-linear-gradient(top, #83bcff, #508fee 40%, #1644c2);
+  background-image: -moz-linear-gradient(top, #83bcff, #508fee 40%, #1644c2);
+  background-image: -o-linear-gradient(top, #83bcff, #508fee 40%, #1644c2);
+  background-image: linear-gradient(to bottom, #83bcff, #508fee 40%, #1644c2);
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 1px 1px rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 1px 1px rgba(255, 255, 255, 0.6);
 }

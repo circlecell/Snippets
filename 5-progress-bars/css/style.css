@@ -51,7 +51,7 @@ table {
   margin: 80px auto;
   padding: 8px;
   width: 260px;
-  font: 10px/18px "Lucida Grande", Arial, sans-serif;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
   color: #bbb;
   text-align: center;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
@@ -106,7 +106,7 @@ table {
  * http://www.opensource.org/licenses/mit-license.php
  */
 body {
-  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #404040;
   background: #fafafa;
 }
@@ -138,10 +138,10 @@ body {
   border: 1px solid;
   border-color: #bfbfbf #b3b3b3 #9e9e9e;
   border-radius: 10px;
-  background-image: -webkit-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
-  background-image: -moz-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
-  background-image: -o-linear-gradient(top, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
-  background-image: linear-gradient(to bottom, #f0f0f0 0%, #dbdbdb 70%, #cccccc 100%);
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #dbdbdb 70%, #cccccc);
+  background-image: -moz-linear-gradient(top, #f0f0f0, #dbdbdb 70%, #cccccc);
+  background-image: -o-linear-gradient(top, #f0f0f0, #dbdbdb 70%, #cccccc);
+  background-image: linear-gradient(to bottom, #f0f0f0, #dbdbdb 70%, #cccccc);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -168,32 +168,32 @@ body {
 .progress .green {
   background: #85c440;
   border-color: #78b337 #6ba031 #568128;
-  background-image: -webkit-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
-  background-image: -moz-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
-  background-image: -o-linear-gradient(top, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
-  background-image: linear-gradient(to bottom, #b7dc8e 0%, #99ce5f 70%, #85c440 100%);
+  background-image: -webkit-linear-gradient(top, #b7dc8e, #99ce5f 70%, #85c440);
+  background-image: -moz-linear-gradient(top, #b7dc8e, #99ce5f 70%, #85c440);
+  background-image: -o-linear-gradient(top, #b7dc8e, #99ce5f 70%, #85c440);
+  background-image: linear-gradient(to bottom, #b7dc8e, #99ce5f 70%, #85c440);
 }
 .progress .red {
   background: #db3a27;
   border-color: #c73321 #b12d1e #8e2418;
-  background-image: -webkit-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
-  background-image: -moz-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
-  background-image: -o-linear-gradient(top, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
-  background-image: linear-gradient(to bottom, #ea8a7e 0%, #e15a4a 70%, #db3a27 100%);
+  background-image: -webkit-linear-gradient(top, #ea8a7e, #e15a4a 70%, #db3a27);
+  background-image: -moz-linear-gradient(top, #ea8a7e, #e15a4a 70%, #db3a27);
+  background-image: -o-linear-gradient(top, #ea8a7e, #e15a4a 70%, #db3a27);
+  background-image: linear-gradient(to bottom, #ea8a7e, #e15a4a 70%, #db3a27);
 }
 .progress .orange {
   background: #f2b63c;
   border-color: #f0ad24 #eba310 #c5880d;
-  background-image: -webkit-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
-  background-image: -moz-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
-  background-image: -o-linear-gradient(top, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
-  background-image: linear-gradient(to bottom, #f8da9c 0%, #f5c462 70%, #f2b63c 100%);
+  background-image: -webkit-linear-gradient(top, #f8da9c, #f5c462 70%, #f2b63c);
+  background-image: -moz-linear-gradient(top, #f8da9c, #f5c462 70%, #f2b63c);
+  background-image: -o-linear-gradient(top, #f8da9c, #f5c462 70%, #f2b63c);
+  background-image: linear-gradient(to bottom, #f8da9c, #f5c462 70%, #f2b63c);
 }
 .progress .blue {
   background: #5aaadb;
   border-color: #459fd6 #3094d2 #277db2;
-  background-image: -webkit-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
-  background-image: -moz-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
-  background-image: -o-linear-gradient(top, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
-  background-image: linear-gradient(to bottom, #aed5ed 0%, #7bbbe2 70%, #5aaadb 100%);
+  background-image: -webkit-linear-gradient(top, #aed5ed, #7bbbe2 70%, #5aaadb);
+  background-image: -moz-linear-gradient(top, #aed5ed, #7bbbe2 70%, #5aaadb);
+  background-image: -o-linear-gradient(top, #aed5ed, #7bbbe2 70%, #5aaadb);
+  background-image: linear-gradient(to bottom, #aed5ed, #7bbbe2 70%, #5aaadb);
 }

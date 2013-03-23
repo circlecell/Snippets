@@ -51,7 +51,7 @@ table {
   margin: 80px auto;
   padding: 8px;
   width: 260px;
-  font: 10px/18px "Lucida Grande", Arial, sans-serif;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
   color: #666;
   text-align: center;
   text-shadow: 0 1px rgba(255, 255, 255, 0.25);
@@ -110,7 +110,7 @@ body, .login-submit, .login-submit:before, .login-submit:after {
 }
 
 body {
-  font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #404040;
 }
 
@@ -136,7 +136,7 @@ a:hover {
 }
 
 input, button, label {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   -webkit-box-sizing: border-box;

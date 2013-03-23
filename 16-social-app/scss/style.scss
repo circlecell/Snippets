@@ -128,7 +128,7 @@ a {
   background: $mainColor;
   border-top: 1px solid lighten($mainColor, 3%);
   border-bottom: 1px solid darken($mainColor, 5%);
-  @include linear-gradient(bottom left, $mainColor 85%, darken($mainColor, 6%) 100%);
+  @include linear-gradient(bottom left, $mainColor 85%, darken($mainColor, 6%));
   @include transition(background .15s);
 
   &:first-child {

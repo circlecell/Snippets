@@ -44,18 +44,18 @@ body {
   border-color: #c2ccd1 #9cacb2 #91a2aa;
   border-color: #c2ccd1 rgba(white, .1) #91a2aa;
   border-radius: 3px;
-  @include linear-gradient(top, #b9c6cc 0%, #8ea1aa 50%, #768b94 51%, #7c9099 75%, #7e929b 100%);
+  @include linear-gradient(top, #b9c6cc, #8ea1aa 50%, #768b94 51%, #7c9099 75%, #7e929b);
 
   &:hover {
     background: #a8bdc7;
     border-color: #e3eaed #d3dee3 #cedadf;
-    @include linear-gradient(top, #cfdae0 0%, #b5c7cf 50%, #a6bac5 51%, #aec1ca 100%);
+    @include linear-gradient(top, #cfdae0, #b5c7cf 50%, #a6bac5 51%, #aec1ca);
   }
 
   &:active {
     padding: 1px;
     background: #8c9da5;
     border: 0;
-    @include linear-gradient(top, #5f7681 0%, #8c9da5 45%, #9dabb1 100%);
+    @include linear-gradient(top, #5f7681, #8c9da5 45%, #9dabb1);
   }
 }

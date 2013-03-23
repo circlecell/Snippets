@@ -51,7 +51,7 @@ table {
   margin: 80px auto;
   padding: 8px;
   width: 260px;
-  font: 10px/18px "Lucida Grande", Arial, sans-serif;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
   color: #bbb;
   text-align: center;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
@@ -110,7 +110,7 @@ html, body {
 }
 
 body {
-  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #404040;
   background: #dbe2f2;
   background-image: -webkit-radial-gradient(center, cover, #eaeef7, #d6def0 80%);
@@ -147,10 +147,10 @@ body {
   border-color: #374fbb #344cb3 #2b3e94;
   border-radius: 2px;
   -webkit-font-smoothing: antialiased;
-  background-image: -webkit-linear-gradient(top, #92a0df 0%, #576dce 50%, #3f58c7 80%, #576dce 100%);
-  background-image: -moz-linear-gradient(top, #92a0df 0%, #576dce 50%, #3f58c7 80%, #576dce 100%);
-  background-image: -o-linear-gradient(top, #92a0df 0%, #576dce 50%, #3f58c7 80%, #576dce 100%);
-  background-image: linear-gradient(to bottom, #92a0df 0%, #576dce 50%, #3f58c7 80%, #576dce 100%);
+  background-image: -webkit-linear-gradient(top, #92a0df, #576dce 50%, #3f58c7 80%, #576dce);
+  background-image: -moz-linear-gradient(top, #92a0df, #576dce 50%, #3f58c7 80%, #576dce);
+  background-image: -o-linear-gradient(top, #92a0df, #576dce 50%, #3f58c7 80%, #576dce);
+  background-image: linear-gradient(to bottom, #92a0df, #576dce 50%, #3f58c7 80%, #576dce);
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -183,7 +183,7 @@ body {
   float: right;
   position: relative;
   margin-left: 15px;
-  font: bold 18px/33px "Comic Sans MS";
+  font: bold 18px/33px 'Comic Sans MS';
   /* I tried everything but couldn't get the vertical alignment to be
      consistent in IE, so this is a hack targeting IE8-9-10. */
   line-height: 31px\0;
@@ -195,10 +195,10 @@ body {
 .button-green {
   background: #75a940;
   border-color: #5b8432 #567d2f #425f24;
-  background-image: -webkit-linear-gradient(top, #9bc86e 0%, #75a940 50%, #669338 80%, #75a940 100%);
-  background-image: -moz-linear-gradient(top, #9bc86e 0%, #75a940 50%, #669338 80%, #75a940 100%);
-  background-image: -o-linear-gradient(top, #9bc86e 0%, #75a940 50%, #669338 80%, #75a940 100%);
-  background-image: linear-gradient(to bottom, #9bc86e 0%, #75a940 50%, #669338 80%, #75a940 100%);
+  background-image: -webkit-linear-gradient(top, #9bc86e, #75a940 50%, #669338 80%, #75a940);
+  background-image: -moz-linear-gradient(top, #9bc86e, #75a940 50%, #669338 80%, #75a940);
+  background-image: -o-linear-gradient(top, #9bc86e, #75a940 50%, #669338 80%, #75a940);
+  background-image: linear-gradient(to bottom, #9bc86e, #75a940 50%, #669338 80%, #75a940);
 }
 .button-green:hover, .button-green.hover {
   background-color: #7ab043;
@@ -223,10 +223,10 @@ body {
 .button-red {
   background: #cf3e38;
   border-color: #ab2e29 #a32c27 #82231f;
-  background-image: -webkit-linear-gradient(top, #de7a76 0%, #cf3e38 50%, #bb332d 80%, #cf3e38 100%);
-  background-image: -moz-linear-gradient(top, #de7a76 0%, #cf3e38 50%, #bb332d 80%, #cf3e38 100%);
-  background-image: -o-linear-gradient(top, #de7a76 0%, #cf3e38 50%, #bb332d 80%, #cf3e38 100%);
-  background-image: linear-gradient(to bottom, #de7a76 0%, #cf3e38 50%, #bb332d 80%, #cf3e38 100%);
+  background-image: -webkit-linear-gradient(top, #de7a76, #cf3e38 50%, #bb332d 80%, #cf3e38);
+  background-image: -moz-linear-gradient(top, #de7a76, #cf3e38 50%, #bb332d 80%, #cf3e38);
+  background-image: -o-linear-gradient(top, #de7a76, #cf3e38 50%, #bb332d 80%, #cf3e38);
+  background-image: linear-gradient(to bottom, #de7a76, #cf3e38 50%, #bb332d 80%, #cf3e38);
 }
 .button-red:hover, .button-red.hover {
   background-color: #d14640;

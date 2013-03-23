@@ -50,10 +50,10 @@ header {
   text-shadow: 0 -1px black;
   background: lighten($headerBackgroundColor, 4%);
   border-bottom: 1px solid #191919;
-  @include linear-gradient(top, lighten($headerBackgroundColor, 4%) 0%,
+  @include linear-gradient(top, lighten($headerBackgroundColor, 4%),
                                 lighten($headerBackgroundColor, 3%) 50%,
                                 $headerBackgroundColor 50%,
-                                darken($headerBackgroundColor, 1%) 100%);
+                                darken($headerBackgroundColor, 1%));
   @include box-shadow(inset 0 0 1px rgba(white, .1), 0 0 3px rgba(black, .8));
 
   a {

@@ -16,7 +16,7 @@ body {
   font: 12px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #404040;
   background: #282537;
-  @include radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  @include radial-gradient(top, circle cover, #3c3b52, #252233 80%);
 }
 
 .month-picker {

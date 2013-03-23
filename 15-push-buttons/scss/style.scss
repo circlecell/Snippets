@@ -105,10 +105,10 @@ body {
     background: $color;
     border-color: darken($color, 13%) darken($color, 14%) darken($color, 20%);
     @include linear-gradient(top,
-                             lighten(adjust-hue($color, 3deg), 8%) 0%,
+                             lighten(adjust-hue($color, 3deg), 8%),
                              lighten(adjust-hue($color, 5deg), 5%) 50%,
                              $color 50%,
-                             darken(saturate(adjust-hue($color, -4deg), 8%), 8%) 100%);
+                             darken(saturate(adjust-hue($color, -4deg), 8%), 8%));
 
     &:before {
       background: lighten(saturate($color, 5%), 10%);
@@ -120,9 +120,9 @@ body {
     &:active {
       background: lighten(adjust-hue($color, 2deg), 5%);
       @include linear-gradient(top,
-                               darken(saturate(adjust-hue($color, -5deg), 8%), 10%) 0%,
+                               darken(saturate(adjust-hue($color, -5deg), 8%), 10%),
                                lighten(adjust-hue($color, 2deg), 3%) 60%,
-                               lighten(adjust-hue($color, 2deg), 5%) 100%);
+                               lighten(adjust-hue($color, 2deg), 5%));
 
       &:after { border-color: lighten(adjust-hue($color, 2deg), 5%); }
     }

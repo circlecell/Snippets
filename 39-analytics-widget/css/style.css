@@ -51,7 +51,7 @@ table {
   margin: 80px auto;
   padding: 8px;
   width: 260px;
-  font: 10px/18px "Lucida Grande", Arial, sans-serif;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
   color: #666;
   text-align: center;
   text-shadow: 0 1px rgba(255, 255, 255, 0.25);
@@ -106,7 +106,7 @@ table {
  * http://www.opensource.org/licenses/mit-license.php
  */
 body {
-  font: 12px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  font: 12px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #404040;
   background: -webkit-radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 14%, transparent 15%) 0 0, -webkit-radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 14%, transparent 15%) 7px 7px, -webkit-radial-gradient(rgba(255, 255, 255, 0.1) 14%, transparent 16%) 0 1px, -webkit-radial-gradient(rgba(255, 255, 255, 0.1) 14%, transparent 16%) 7px 8px;
   background: -moz-radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 14%, transparent 15%) 0 0, -moz-radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 14%, transparent 15%) 7px 7px, -moz-radial-gradient(rgba(255, 255, 255, 0.1) 14%, transparent 16%) 0 1px, -moz-radial-gradient(rgba(255, 255, 255, 0.1) 14%, transparent 16%) 7px 8px;

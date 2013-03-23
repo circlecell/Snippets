@@ -34,7 +34,7 @@ body {
   padding: 0 7px;
   height: 25px;
   border-radius: 7px 7px 0 0;
-  @include linear-gradient(top, rgba(white, .3) 0%, // Safari 5.0 doesn't support pixel values
+  @include linear-gradient(top, rgba(white, .3), // Safari 5.0 doesn't support pixel values
                                 rgba(white, .03) 64%,
                                 rgba(white, 0) 65%);
 }
@@ -121,10 +121,10 @@ body {
   border: 1px solid;
   border-color: rgba(black, .6) rgba(black, .45) rgba(black, .4);
   border-radius: 4px;
-  @include linear-gradient(top, #4b4b4b 0%,
+  @include linear-gradient(top, #4b4b4b,
                                 #494949 50%,
                                 #505050 51%,
-                                #5b5b5b 100%);
+                                #5b5b5b);
   @include box-shadow(inset 0 1px 2px rgba(black, .3),
                       0 1px rgba(white, .1));
 }
@@ -158,10 +158,10 @@ body {
 
   &:checked + .switch {
     background: #a92488;
-    @include linear-gradient(top, #a92488 0%,
+    @include linear-gradient(top, #a92488,
                                   #a52485 50%,
                                   #bb0096 51%,
-                                  #c331a0 100%);
+                                  #c331a0);
 
     .switch-handle { left: $switchLabelWidth + 2px; }
   }

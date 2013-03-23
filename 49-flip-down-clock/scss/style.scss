@@ -16,7 +16,7 @@ body {
   font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
   color: #404040;
   background: #eee;
-  @include radial-gradient(circle cover, #edf0f0 0%, #d7d9da 80%);
+  @include radial-gradient(circle cover, #edf0f0, #d7d9da 80%);
 }
 
 .clock {

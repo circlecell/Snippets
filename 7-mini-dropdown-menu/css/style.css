@@ -51,7 +51,7 @@ table {
   margin: 80px auto;
   padding: 8px;
   width: 260px;
-  font: 10px/18px "Lucida Grande", Arial, sans-serif;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
   color: #666;
   text-align: center;
   text-shadow: 0 1px rgba(255, 255, 255, 0.25);
@@ -106,7 +106,7 @@ table {
  * http://www.opensource.org/licenses/mit-license.php
  */
 body {
-  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #404040;
   background: #323a44 url("../img/bg.png") 0 0 repeat;
 }

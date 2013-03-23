@@ -87,7 +87,7 @@ body {
       width: 30px;
       line-height: 28px;
       color: #666;
-      @include linear-gradient(top, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
+      @include linear-gradient(top, #eaeaea, #e5e5e5 60%, #d9d9d9);
       @include box-shadow(inset 1px 1px rgba(white, .5));
     }
 

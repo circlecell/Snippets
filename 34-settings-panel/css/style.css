@@ -51,7 +51,7 @@ table {
   margin: 80px auto;
   padding: 8px;
   width: 260px;
-  font: 10px/18px "Lucida Grande", Arial, sans-serif;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
   color: #bbb;
   text-align: center;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
@@ -110,7 +110,7 @@ html, body {
 }
 
 body {
-  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #404040;
   background: #93a0b0;
   background-image: -webkit-radial-gradient(center, circle cover, #a1acbb, #93a0b0 70%);
@@ -159,7 +159,7 @@ body {
   background: #ddd;
   background-clip: padding-box;
   border: 1px solid;
-  border-color: #aaaaaa #9c9c9c #888888;
+  border-color: #aaa #9c9c9c #888;
   border-radius: 13px;
   font: 0/0 serif;
   text-shadow: none;
@@ -180,7 +180,7 @@ body {
 }
 .settings-header > a:active {
   background: #ccc;
-  border-color: #888888 #9c9c9c #9c9c9c;
+  border-color: #888 #9c9c9c #9c9c9c;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
 }

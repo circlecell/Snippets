@@ -51,7 +51,7 @@ table {
   margin: 80px auto;
   padding: 8px;
   width: 260px;
-  font: 10px/18px "Lucida Grande", Arial, sans-serif;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
   color: #bbb;
   text-align: center;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
@@ -110,7 +110,7 @@ html, body {
 }
 
 body {
-  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #404040;
   background: #697ecc;
   background-image: -webkit-radial-gradient(center, circle cover, #87a3f5, #697ecc);
@@ -175,7 +175,7 @@ body {
   right: 0;
   background: #d9e3fa;
   border: 1px solid;
-  border-color: #777777 #6c6c6c #666666;
+  border-color: #777 #6c6c6c #666;
   border-radius: 5px;
   -webkit-transition: 0.2s ease-out;
   -moz-transition: 0.2s ease-out;
@@ -203,7 +203,7 @@ body {
 }
 .user ul:before {
   bottom: -14px;
-  border-top: 7px solid #555555;
+  border-top: 7px solid #555;
 }
 .user li:first-child:after {
   bottom: -13px;
