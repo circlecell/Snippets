@@ -16,7 +16,7 @@
     color: #eee;
     text-decoration: none;
     border-radius: 2px;
-    @include transition(.1s);
+    @include transition(background .1s);
 
     &:hover {
       text-decoration: none;

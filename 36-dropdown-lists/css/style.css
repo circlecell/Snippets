@@ -69,10 +69,10 @@ table {
   color: #eee;
   text-decoration: none;
   border-radius: 2px;
-  -webkit-transition: 0.1s;
-  -moz-transition: 0.1s;
-  -o-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s;
 }
 .about a:hover {
   text-decoration: none;
