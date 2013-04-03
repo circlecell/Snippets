@@ -1,0 +1,175 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+body {
+  font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #313944;
+}
+
+.datepicker {
+  position: relative;
+  margin: 60px auto;
+  padding: 4px;
+  font-size: 10px;
+  text-align: center;
+  background: #242930;
+  border: 1px solid #0e1013;
+  border-collapse: separate;
+  border-radius: 4px 4px 3px 3px;
+  @include box-shadow(0 1px #181c21,
+                      0 2px #14171b,
+                      0 3px 3px rgba(black, .3));
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -4px;
+    border: 4px solid transparent;
+    border-bottom-color: #242930;
+  }
+
+  &:before {
+    top: -9px;
+    border-bottom-color: #14171b;
+  }
+}
+
+.datepicker-caption {
+  display: block;
+  position: relative;
+  line-height: 29px;
+  background: #333941;
+  border: 1px solid #1b1e24;
+  border-bottom-color: #181b21;
+  border-radius: 3px 3px 0 0;
+  @include linear-gradient(top, #414b56, #323841 50%, #2b323a 50%, #252a31);
+  @include box-shadow(inset 0 1px rgba(white, .1),
+                      0 1px 2px rgba(black, .2));
+}
+
+.datepicker-prev,
+.datepicker-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 28px;
+  font: 0/0 a;
+  color: transparent;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -6px;
+    border: 6px solid transparent;
+  }
+
+  &:before { margin-top: -5px; }
+}
+
+.datepicker-prev {
+  left: 0;
+
+  &:before, &:after { margin-left: -9px; }
+  &:before { border-right-color: rgba(white, .1); }
+  &:after { border-right-color: #181b21; }
+}
+
+.datepicker-next {
+  right: 0;
+
+  &:before, &:after { margin-left: -3px; }
+  &:before { border-left-color: rgba(white, .1); }
+  &:after { border-left-color: #181b21; }
+}
+
+.datepicker-title {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 18px;
+  margin: 4px 0;
+  padding: 0 8px 1px;
+  font-weight: bold;
+  color: #8a99af;
+  text-shadow: 0 1px 1px rgba(black, .5);
+  background: #242930;
+  border: 1px solid;
+  border-color: #151a1f #191c21 #1c2025;
+  border-radius: 2px;
+  @include box-shadow(inset 0 1px 2px rgba(black, .2),
+                      0 1px rgba(white, .08));
+}
+
+.datepicker-head {
+  display: block;
+  background: #2a3139;
+  border: 1px solid #1b1e25;
+  border-width: 0 1px;
+}
+
+.datepicker-th {
+  width: 28px;
+  line-height: 24px;
+  padding-bottom: 1px;
+  font-weight: bold;
+  color: #18b165;
+  text-shadow: 0 1px 1px rgba(black, .5);
+  border-bottom: 1px solid #232833;
+}
+
+.datepicker-body {
+  display: block;
+  background: #404854;
+  border: 1px solid #1b1e25;
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+}
+
+.datepicker-td {
+  width: 28px;
+  line-height: 26px;
+  padding-bottom: 1px;
+  color: #8ba0b8;
+  text-shadow: 0 1px 1px rgba(black, .3);
+  border-bottom: 1px solid #323841;
+  @include box-shadow(inset 0 1px rgba(white, .06));
+
+  > a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover { color: #1dd87e; }
+  }
+
+  &.today {
+    color: white;
+    text-shadow: 0 1px 1px rgba(black, .3), 0 0 14px rgba(white, .6);
+  }
+
+  &.off {
+    color: #677387;
+    text-shadow: 0 1px 1px rgba(black, .1);
+  }
+
+  tr:last-child > & { border-bottom: 0; }
+}
