@@ -1,10 +1,10 @@
-# Date Picker — CSS Code Snippet
+# Dark Datepicker — CSS Code Snippet
 
-**Demo**: [cssflow.com/snippets/date-picker/demo](http://www.cssflow.com/snippets/date-picker/demo)
+**Demo**: [cssflow.com/snippets/dark-datepicker/demo](http://www.cssflow.com/snippets/dark-datepicker/demo)
 
-Download the latest version of this snippet [here](http://www.cssflow.com/snippets/date-picker.zip).
+Download the latest version of this snippet [here](http://www.cssflow.com/snippets/dark-datepicker.zip).
 
-[![Preview](http://cdn.cssflow.com/snippets/date-picker/preview-580.png)](http://www.cssflow.com/snippets/date-picker)
+[![Preview](http://cdn.cssflow.com/snippets/dark-datepicker/preview-580.png)](http://www.cssflow.com/snippets/dark-datepicker)
 
 This snippet is implemented with [Sass](https://github.com/nex3/sass).
 
