@@ -1,0 +1,212 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.about {
+  margin: 80px auto;
+  padding: 8px;
+  width: 260px;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
+  color: #666;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  background: #eee;
+  background: rgba(250, 250, 250, 0.8);
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.about a {
+  color: #333;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s;
+}
+.about a:hover {
+  text-decoration: none;
+  background: #fafafa;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.about-links {
+  height: 30px;
+}
+.about-links > a {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-author {
+  margin-top: 5px;
+}
+.about-author > a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+}
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+body {
+  font: 13px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #373939;
+}
+
+.container {
+  margin: 80px auto;
+  width: 460px;
+  text-align: center;
+}
+.container > .button {
+  margin: 0 12px;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+  height: 48px;
+  line-height: 46px;
+  padding: 0 25px;
+  font-family: inherit;
+  font-size: 15px;
+  color: #bbb;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+  background-color: #303030;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: #202020 #1a1a1a #111;
+  border-radius: 25px;
+  background-image: -webkit-linear-gradient(top, #3d3d3d, #272727);
+  background-image: -moz-linear-gradient(top, #3d3d3d, #272727);
+  background-image: -o-linear-gradient(top, #3d3d3d, #272727);
+  background-image: linear-gradient(to bottom, #3d3d3d, #272727);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.09), 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.09), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.button:hover {
+  background-color: #363636;
+  background-image: -webkit-linear-gradient(top, #404040, #2a2a2a);
+  background-image: -moz-linear-gradient(top, #404040, #2a2a2a);
+  background-image: -o-linear-gradient(top, #404040, #2a2a2a);
+  background-image: linear-gradient(to bottom, #404040, #2a2a2a);
+}
+.button:active, .button.active {
+  line-height: 48px;
+  color: #ccc;
+  background-color: #b42f32;
+  border-color: #1c1c1c #202020 #222;
+  background-image: -webkit-linear-gradient(top, #a3161a, #b63335 60%, #bf4749);
+  background-image: -moz-linear-gradient(top, #a3161a, #b63335 60%, #bf4749);
+  background-image: -o-linear-gradient(top, #a3161a, #b63335 60%, #bf4749);
+  background-image: linear-gradient(to bottom, #a3161a, #b63335 60%, #bf4749);
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.09);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.09);
+}
+
+.button-check {
+  position: relative;
+  width: 48px;
+  padding: 0;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+.button-check:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -7px 0 0 -10px;
+  height: 5px;
+  width: 16px;
+  border: solid #bbb;
+  border-width: 0 0 5px 5px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.button-check:active:before, .button-check.active:before {
+  margin-top: -6px;
+  border-color: #ccc;
+  -webkit-box-shadow: -1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.lt-ie9 .button {
+  line-height: 46px;
+}
+.lt-ie9 .button-check:before {
+  content: none;
+}
+.lt-ie9 .button-check:after {
+  /* a.k.a. the Unicode version */
+  content: '\2713';
+  font-size: 24px;
+  font-weight: bold;
+  color: #bbb;
+}

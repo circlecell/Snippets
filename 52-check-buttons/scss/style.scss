@@ -1,0 +1,104 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+body {
+  font: 13px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #373939;
+}
+
+.container {
+  margin: 80px auto;
+  width: 460px;
+  text-align: center;
+
+  > .button { margin: 0 12px; }
+}
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+  height: 48px;
+  line-height: 46px;
+  padding: 0 25px;
+  font-family: inherit;
+  font-size: 15px;
+  color: #bbb;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 2px rgba(black, .7);
+  background-color: #303030;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: #202020 #1a1a1a #111;
+  border-radius: 25px;
+  @include linear-gradient(top, #3d3d3d, #272727);
+  @include box-shadow(inset 0 1px rgba(white, .09),
+                      0 1px 3px rgba(black, .3));
+
+  &:hover {
+    background-color: #363636;
+    @include linear-gradient(top, #404040, #2a2a2a);
+  }
+
+  &:active,
+  &.active {
+    line-height: 48px;
+    color: #ccc;
+    background-color: #b42f32;
+    border-color: #1c1c1c #202020 #222;
+    @include linear-gradient(top, #a3161a, #b63335 60%, #bf4749);
+    @include box-shadow(inset 0 2px 4px rgba(black, .3),
+                        0 1px rgba(white, .09));
+  }
+}
+
+.button-check {
+  position: relative;
+  width: 48px;
+  padding: 0;
+  @include hide-text;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -7px 0 0 -10px;
+    height: 5px;
+    width: 16px;
+    border: solid #bbb;
+    border-width: 0 0 5px 5px;
+    @include transform(rotate(-45deg));
+    @include box-shadow(-1px 1px 1px rgba(black, .4));
+  }
+
+  &:active,
+  &.active {
+    &:before {
+      margin-top: -6px;
+      border-color: #ccc;
+      @include box-shadow(-1px 1px rgba(black, .3));
+    }
+  }
+}
+
+.lt-ie9 {
+  .button { line-height: 46px; }
+  .button-check:before { content: none; }
+  .button-check:after { /* a.k.a. the Unicode version */
+    content: '\2713';
+    font-size: 24px;
+    font-weight: bold;
+    color: #bbb;
+  }
+}
