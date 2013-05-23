@@ -1,0 +1,151 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* Note: this implementation is very hacky.
+   You may not want to use it in production. ;) */
+
+body {
+  font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #eee;
+}
+
+.widget {
+  position: relative;
+  margin: 50px auto;
+  width: 320px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  @include box-shadow(0 0 8px rgba(black, .07));
+}
+
+.widget-tabs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 9px 12px 0;
+  text-align: left;
+  /* Make the last tab in the DOM the left-most tab on the screen.
+     That way we can activate it by default and still be able to
+     deactivate it later using the ~ selector. */
+  direction: rtl;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  border-radius: 3px 3px 0 0;
+}
+
+.widget-tab,
+%inactive-widget-tab {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 3px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #999;
+  background: #fcfcfc;
+  border: solid #ddd;
+  border-width: 1px 1px 0;
+  border-radius: 5px 5px 0 0;
+
+  /* Reset %active-widget-tab */
+  padding-bottom: 0;
+  bottom: auto;
+
+  > .widget-tab-link {
+    margin: 0;
+    border-top: 0;
+  }
+}
+
+.widget-tab + .widget-tab { margin-right: -1px; }
+
+.widget-tab:last-child, // The left-most tab
+%active-widget-tab {
+  bottom: -1px;
+  margin-top: 0;
+  padding-bottom: 2px;
+  line-height: 34px;
+  font-weight: bold;
+  color: #555;
+  background: white;
+  border-top: 0;
+
+  > .widget-tab-link {
+    margin: 0 -1px;
+    border-top: 4px solid #4cc8f1;
+  }
+}
+
+/* Deactivate the default tab when a preceding tab is activated. */
+%active-widget-tab ~ .widget-tab { @extend %inactive-widget-tab; }
+
+.widget-tab-link {
+  display: block;
+  min-width: 60px;
+  padding: 0 15px;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.widget-list {
+  display: none;
+  padding-top: 50px;
+
+  > li + li { border-top: 1px solid #e8e8e8; }
+
+  /* The last list is activated (visible) by default. */
+  &:last-of-type { display: block; }
+
+  &:target {
+    display: block;
+
+    /* Hide the default list when another is activated. */
+    ~ .widget-list { display: none; }
+
+    /* First list activates the first tab, second list activates the second tab, etc. */
+    &:first-of-type  ~ .widget-tabs > .widget-tab:first-child  { @extend %active-widget-tab; }
+    &:nth-of-type(2) ~ .widget-tabs > .widget-tab:nth-child(2) { @extend %active-widget-tab; }
+    &:last-of-type   ~ .widget-tabs > .widget-tab:last-child   { @extend %active-widget-tab; }
+  }
+}
+
+.widget-list-link {
+  display: block;
+  line-height: 18px;
+  padding: 10px 12px;
+  font-weight: bold;
+  color: #555;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover { background: #f7f7f7; }
+  li:last-child > & { border-radius: 0 0 3px 3px; }
+
+  > img {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin: 2px 12px 0 0;
+  }
+
+  > span {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    color: #999;
+  }
+}
