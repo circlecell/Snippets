@@ -1,0 +1,134 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+body {
+  font: 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #404040;
+  background: #596778;
+}
+
+.sign-up {
+  position: relative;
+  margin: 50px auto;
+  width: 280px;
+  padding: 33px 25px 29px;
+  background: white;
+  border-bottom: 1px solid #c4c4c4;
+  border-radius: 5px;
+  @include box-shadow(0 1px 5px rgba(black, .25));
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: inherit;
+    border-bottom: 1px solid #d2d2d2;
+    border-radius: 4px;
+  }
+
+  &:after {
+    bottom: 3px;
+    border-color: #dcdcdc;
+  }
+}
+
+.sign-up-title {
+  margin: -25px -25px 25px;
+  padding: 15px 25px;
+  line-height: 35px;
+  font-size: 26px;
+  font-weight: 300;
+  color: #aaa;
+  text-align: center;
+  text-shadow: 0 1px rgba(white, .75);
+  background: #f7f7f7;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: #c4e17f;
+    border-radius: 5px 5px 0 0;
+    @include linear-gradient(left,
+                             #c4e17f, #c4e17f 12.5%,
+                             #f7fdca 12.5%, #f7fdca 25%,
+                             #fecf71 25%, #fecf71 37.5%,
+                             #f0776c 37.5%, #f0776c 50%,
+                             #db9dbe 50%, #db9dbe 62.5%,
+                             #c49cde 62.5%, #c49cde 75%,
+                             #669ae1 75%, #669ae1 87.5%,
+                             #62c2e4 87.5%, #62c2e4);
+  }
+}
+
+input {
+  font-family: inherit;
+  color: inherit;
+  @include box-sizing(border-box);
+}
+
+.sign-up-input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  padding: 0 15px 2px;
+  font-size: 17px;
+  background: white;
+  border: 2px solid #ebebeb;
+  border-radius: 4px;
+  @include box-shadow(inset 0 -2px #ebebeb);
+
+  &:focus {
+    border-color: #62c2e4;
+    outline: none;
+    @include box-shadow(inset 0 -2px #62c2e4);
+  }
+
+  .lt-ie9 & { line-height: 48px; }
+}
+
+.sign-up-button {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 54px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(black, .25);
+  background: #f0776c;
+  border: 0;
+  border-bottom: 2px solid #d76b60;
+  border-radius: 5px;
+  cursor: pointer;
+  @include box-shadow(inset 0 -2px #d76b60);
+
+  &:active {
+    top: 1px;
+    outline: none;
+    @include box-shadow(none);
+  }
+}
+
+:-moz-placeholder { color: #ccc; font-weight: 300; }
+::-moz-placeholder { color: #ccc; opacity: 1; font-weight: 300; }
+::-webkit-input-placeholder { color: #ccc; font-weight: 300; }
+:-ms-input-placeholder { color: #ccc; font-weight: 300; }
+
+::-moz-focus-inner { border: 0; padding: 0; }
