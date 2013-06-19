@@ -1,0 +1,144 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+body {
+  font: 13px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #eee;
+}
+
+.cart {
+  margin: 50px auto;
+  width: 300px;
+  overflow: hidden;
+  color: white;
+  text-shadow: 0 1px rgba(black, .6);
+  background: #525252;
+  border: 1px solid #202020;
+  border-radius: 3px;
+  @include box-shadow(0 1px 5px rgba(black, .5));
+}
+
+.cart-top {
+  position: relative;
+  z-index: 1;
+  height: 24px;
+  line-height: 24px;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #eee;
+  text-shadow: 0 1px 1px rgba(black, .8);
+  background: #404040;
+  border-bottom: 1px solid #222;
+  border-radius: 2px 2px 0 0;
+  -webkit-font-smoothing: antialiased;
+  @include linear-gradient(top, #525252, #3d3d3d 80%, #383838);
+  @include box-shadow(inset 0 1px rgba(white, .05),
+                      inset 0 0 0 1px rgba(white, .1),
+                      0 1px 2px rgba(black, .25));
+}
+
+.cart-top-title { float: left; }
+.cart-top-info { float: right; }
+
+.cart-item {
+  position: relative;
+  line-height: 20px;
+  padding: 10px 80px 10px 15px;
+  font-weight: bold;
+  background: #525252;
+  border-bottom: 1px solid #222;
+  @include linear-gradient(top, #575757, #4e4e4e);
+  @include box-shadow(inset 0 0 0 1px rgba(white, .08));
+
+  &:first-child {
+    margin-top: -1px;
+    padding-top: 11px;
+  }
+}
+
+.cart-item-pic {
+  position: relative;
+  float: left;
+  margin: -2px 12px 0 -7px;
+
+  > img {
+    display: block;
+    height: 44px;
+    width: 44px;
+    border-radius: 3px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    @include linear-gradient(top left, rgba(white, .15) 50%, transparent 50%);
+    @include box-shadow(inset 0 1px rgba(white, .1),
+                        inset 0 0 0 1px rgba(white, .12));
+  }
+}
+
+.cart-item-desc {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  color: #b8c6cc;
+}
+
+.cart-item-price {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -10px;
+  color: #eee;
+}
+
+.cart-bottom {
+  line-height: 31px;
+  padding: 10px 10px 10px 15px;
+  font-weight: bold;
+  background: #484848;
+  @include linear-gradient(top, #545454, #434343);
+  @include box-shadow(inset 0 0 0 1px rgba(white, .08));
+
+  > .cart-button { float: right; }
+}
+
+.cart-button {
+  line-height: 29px;
+  padding: 0 25px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(black, .3);
+  background: #5aa327 padding-box;
+  border: 1px solid #333;
+  border-radius: 4px;
+  @include linear-gradient(top, rgba(white, .15), rgba(white, .1) 50%, transparent 50%, rgba(black, .04));
+  @include box-shadow(inset 0 1px rgba(white, .15),
+                      inset 0 0 0 1px rgba(white, .1));
+
+  &:hover { background-color: #5daa2d; }
+
+  &:active {
+    background-image: none;
+    border-color: rgba(black, .4);
+    @include box-shadow(inset 0 1px 2px rgba(black, .25),
+                        0 1px rgba(white, .05));
+  }
+}
