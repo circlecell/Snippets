@@ -36,6 +36,6 @@ Licensed under the MIT License
 
 ## More CSS3
 
-Checkout my [UI kits built entirely with CSS](http://www.cssflow.com/ui-kits):
+Check out my [UI kits built entirely with CSS](http://www.cssflow.com/ui-kits):
 
 [![Preview](http://cdn.cssflow.com/kits/all_kits_preview_850.png)](http://www.cssflow.com/ui-kits)
