@@ -105,6 +105,8 @@ table {
  * Licensed under the MIT License:
  * http://www.opensource.org/licenses/mit-license.php
  */
+/* Note: this implementation is very hacky.
+   You may not want to use it in production. ;) */
 body {
   font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
   color: #404040;
