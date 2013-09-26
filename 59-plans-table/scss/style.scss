@@ -1,0 +1,138 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-dark';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+body {
+  font: 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #404040;
+  background: #eeebe4;
+}
+
+.plans {
+  width: 836px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.plan {
+  float: left;
+  width: 150px;
+  margin: 20px 2px;
+  padding: 15px 25px;
+  text-align: center;
+  background: white;
+  background-clip: padding-box;
+  border: 2px solid #e5ded6;
+  border-color: rgba(black, .1);
+  border-radius: 5px;
+}
+
+.plan-title {
+  margin-bottom: 12px;
+  font-size: 24px;
+  color: #36bce6;
+}
+
+.plan-price {
+  margin-bottom: 20px;
+  line-height: 1;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fd935a;
+}
+
+.plan-unit {
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+.plan-features {
+  width: 120px;
+  margin: 20px auto 15px;
+  padding: 15px 0 0 15px;
+  border-top: 1px solid #e5ded6;
+  text-align: left;
+}
+
+.plan-feature {
+  line-height: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+
+  & + & { margin-top: 5px; }
+}
+
+.plan-feature-unit {
+  margin-left: 2px;
+  font-size: 16px;
+}
+
+.plan-feature-name {
+  font-size: 13px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+.plan-button {
+  position: relative;
+  display: block;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(black, .1);
+  background: #fd935c;
+  border-bottom: 2px solid #cf7e3b;
+  border-color: rgba(black, .15);
+  border-radius: 4px;
+
+  &:active {
+    top: 2px;
+    margin-bottom: 2px;
+    border-bottom: 0;
+  }
+}
+
+.plan-highlight {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 170px;
+  border: 4px solid #37bbe6;
+
+  .plan-button {
+    font-size: 18px;
+    line-height: 49px;
+    background: #37bce5;
+    border-color: #3996b3;
+    border-color: rgba(black, .15);
+  }
+}
+
+.plan-recommended {
+  width: 160px;
+  margin: -15px auto 15px;
+  padding-bottom: 2px;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px rgba(black, .05);
+  background: #37bbe6;
+  border-radius: 0 0 4px 4px;
+}
