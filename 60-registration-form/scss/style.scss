@@ -1,0 +1,142 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+body {
+  font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #404040;
+  background: #2d4259;
+}
+
+.register-title {
+  width: 270px;
+  line-height: 43px;
+  margin: 50px auto 20px;
+  font-size: 19px;
+  font-weight: 500;
+  color: white;
+  color: rgba(white, .95);
+  text-align: center;
+  text-shadow: 0 1px rgba(black, .3);
+  background: #d7604b;
+  border-radius: 3px;
+  @include linear-gradient(top, #dc745e, #d45742);
+  @include box-shadow(inset 0 1px rgba(white, .1),
+                      inset 0 0 0 1px rgba(white, .05),
+                      0 0 1px 1px rgba(black, .1),
+                      0 1px 3px rgba(black, .3));
+}
+
+.register {
+  margin: 0 auto;
+  width: 230px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 3px;
+  @include box-shadow(0 0 1px 1px rgba(black, .1),
+                      0 1px 3px rgba(black, .3));
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  @include box-sizing(border-box);
+}
+
+.register-input {
+  display: block;
+  width: 100%;
+  height: 38px;
+  margin-top: 2px;
+  font-weight: 500;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #d8d8d8;
+
+  &:focus {
+    border-color: #1e9ce6;
+    outline: 0;
+  }
+}
+
+.register-button {
+  display: block;
+  width: 100%;
+  height: 42px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #494d59;
+  text-align: center;
+  text-shadow: 0 1px rgba(white, .5);
+  background: #fcfcfc;
+  border: 1px solid;
+  border-color: #d8d8d8 #d1d1d1 #c3c3c3;
+  border-radius: 2px;
+  cursor: pointer;
+  @include linear-gradient(top, #fefefe, #eee);
+  @include box-shadow(inset 0 -1px rgba(black, .03),
+                      0 1px rgba(black, .04));
+
+  &:active {
+    background: #eee;
+    border-color: #c3c3c3 #d1d1d1 #d8d8d8;
+    @include linear-gradient(top, #eee, #fcfcfc);
+    @include box-shadow(inset 0 1px rgba(black, .03));
+  }
+
+  &:focus { outline: 0; }
+}
+
+.register-switch {
+  height: 32px;
+  margin-bottom: 15px;
+  padding: 4px;
+  background: #6db244;
+  border-radius: 2px;
+  @include linear-gradient(top, #60a83a, #7dbe52);
+  @include box-shadow(inset 0 1px rgba(black, .05),
+                      inset 1px 0 rgba(black, .02),
+                      inset -1px 0 rgba(black, .02));
+}
+
+.register-switch-input {
+  display: none;
+}
+
+.register-switch-label {
+  float: left;
+  width: 50%;
+  line-height: 32px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 -1px rgba(black, .2);
+  cursor: pointer;
+
+  .register-switch-input:checked + & {
+    font-weight: 500;
+    color: #434248;
+    text-shadow: 0 1px rgba(white, .5);
+    background: white;
+    border-radius: 2px;
+    @include linear-gradient(top, #fefefe, #eee);
+    @include box-shadow(0 1px 1px rgba(black, .15),
+                        0 0 0 1px rgba(black, .1));
+  }
+}
+
+:-moz-placeholder { color: #aaa; font-weight: 300; }
+::-moz-placeholder { color: #aaa; font-weight: 300; opacity: 1; }
+::-webkit-input-placeholder { color: #aaa; font-weight: 300; }
+:-ms-input-placeholder { color: #aaa; font-weight: 300; }
+
+::-moz-focus-inner { border: 0; padding: 0; }
