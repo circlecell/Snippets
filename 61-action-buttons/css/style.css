@@ -1,0 +1,189 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.about {
+  margin: 70px auto 40px;
+  padding: 8px;
+  width: 260px;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
+  color: #bbb;
+  text-align: center;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  background: #383838;
+  background: rgba(34, 34, 34, 0.8);
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.4);
+}
+.about a {
+  color: #eee;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s;
+}
+.about a:hover {
+  text-decoration: none;
+  background: #555;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.about-links {
+  height: 30px;
+}
+.about-links > a {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-author {
+  margin-top: 5px;
+}
+.about-author > a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+}
+
+/*
+ * Copyright (c) 2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font: 13px/20px 'Lucida Grande', Verdana, sans-serif;
+  color: #404040;
+  background: #9aa8b2;
+  background-image: -webkit-radial-gradient(circle cover, #aeb8c1, #8c979f 80%);
+  background-image: -moz-radial-gradient(circle cover, #aeb8c1, #8c979f 80%);
+  background-image: -o-radial-gradient(circle cover, #aeb8c1, #8c979f 80%);
+  background-image: radial-gradient(circle cover, #aeb8c1, #8c979f 80%);
+}
+
+.container {
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+  background: #f5f5f5;
+  background-image: -webkit-linear-gradient(top, #fdfdfd, #eeeeee);
+  background-image: -moz-linear-gradient(top, #fdfdfd, #eeeeee);
+  background-image: -o-linear-gradient(top, #fdfdfd, #eeeeee);
+  background-image: linear-gradient(to bottom, #fdfdfd, #eeeeee);
+  -webkit-box-shadow: inset 0 1px white, inset 0 -1px rgba(255, 255, 255, 0.6), 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 1px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0 1px white, inset 0 -1px rgba(255, 255, 255, 0.6), 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 60px;
+  line-height: 35px;
+  padding: 0 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  background: #8c96a4;
+  border: 1px solid;
+  border-color: #8c8f9a #78828b #6e6e6e;
+  background-image: -webkit-linear-gradient(top, #a9b5c4, #848d9b 90%);
+  background-image: -moz-linear-gradient(top, #a9b5c4, #848d9b 90%);
+  background-image: -o-linear-gradient(top, #a9b5c4, #848d9b 90%);
+  background-image: linear-gradient(to bottom, #a9b5c4, #848d9b 90%);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset 0 0 1px 1px rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset 0 0 1px 1px rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.button:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.button:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.button:only-child {
+  border-radius: 3px;
+}
+.button + .button {
+  position: relative;
+  margin-left: -1px;
+}
+.button:active {
+  background: #848d9b;
+  border-color: #6e6e6e #78828b #78828b;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.button-blue {
+  background: #6990d1;
+  border-color: #687ebb #5f74a6 #4e6198;
+  background-image: -webkit-linear-gradient(top, #8eb7e0, #5f85cc 90%);
+  background-image: -moz-linear-gradient(top, #8eb7e0, #5f85cc 90%);
+  background-image: -o-linear-gradient(top, #8eb7e0, #5f85cc 90%);
+  background-image: linear-gradient(to bottom, #8eb7e0, #5f85cc 90%);
+}
+.button-blue:active {
+  background: #5f85cc;
+  border-color: #4e6198 #5f74a6 #5f74a6;
+}
